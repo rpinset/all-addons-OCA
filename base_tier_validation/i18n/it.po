@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-05 10:46+0000\n"
+"PO-Revision-Date: 2026-11-08 16:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -36,6 +36,10 @@ msgid ""
 "                <b>validated</b>\n"
 "                !"
 msgstr ""
+"<i class=\"fa fa-lg fa-check\"/>\n"
+"                L'operazone è stata\n"
+"                <b>validata</b>\n"
+"                !"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
@@ -45,11 +49,15 @@ msgid ""
 "                <b>rejected</b>\n"
 "                ."
 msgstr ""
+"<i class=\"fa fa-lg fa-times\"/>\n"
+"                L'operazione è stata\n"
+"                <b>respinta</b>\n"
+"                ."
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "<span class=\"ms-1\">days</span>"
-msgstr ""
+msgstr "<span class=\"ms-1\">giorni</span>"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -108,6 +116,11 @@ msgid ""
 "reviewer)\n"
 "                before they can move forward in their workflow."
 msgstr ""
+"Una definizione di livello indica a Odoo quali record, all'interno di un "
+"determinato modello, \n"
+"                debbano essere esaminati da uno specifico utente (o gruppo, "
+"oppure un revisore determinato in base a un campo) \n"
+"                prima di poter procedere nel relativo flusso di lavoro."
 
 #. module: base_tier_validation
 #. odoo-python
@@ -129,7 +142,7 @@ msgstr "Tutto"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
 msgid "All users"
-msgstr ""
+msgstr "Tutti gli utenti"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__allow_write_for_reviewer
@@ -139,7 +152,7 @@ msgstr "Permetti scrittura ai revisori"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
 msgid "Allow editing"
-msgstr ""
+msgstr "Consente modifica"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_validation_exception__group_ids
@@ -154,7 +167,7 @@ msgstr "Qualunque utente in un gruppo specifico"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
 msgid "Applies to"
-msgstr ""
+msgstr "Si applica a"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -296,7 +309,7 @@ msgstr "Commento predefinito quanto è abilitata l'approvazione dei commenti."
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
 msgid "Define a new validation tier"
-msgstr ""
+msgstr "Definisci un nuovo livello valutazione"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__definition_type
@@ -527,7 +540,7 @@ msgstr "Nessuna approvazione da fare."
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Notifications"
-msgstr ""
+msgstr "Notifiche"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_on_accepted
@@ -557,7 +570,7 @@ msgstr "Notifica i revisori quando passa a \"In sospeso\""
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Notify reviewers when"
-msgstr ""
+msgstr "Notifica i revisori quando"
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
@@ -624,12 +637,12 @@ msgstr "Modello documento correlato"
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_reminder_delay
 msgid "Remind Every (Days)"
-msgstr ""
+msgstr "Ricorda ogni (giorni)"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Remind every"
-msgstr ""
+msgstr "Ricorda ogni"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
@@ -637,6 +650,8 @@ msgid ""
 "Remind the reviewers every this many days until the review is done. Leave at "
 "0 to send no reminder."
 msgstr ""
+"Invia un promemoria ai revisori ogni tot giorni, finché la revisione non è "
+"completata. Imposta su 0 per non inviare alcun promemoria."
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_buttons
@@ -710,7 +725,7 @@ msgstr "Il revisore potrebbe non avere accesso"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Reviewer permissions"
-msgstr ""
+msgstr "Permessi revisori"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_ids
@@ -866,6 +881,11 @@ msgid ""
 "sequence\n"
 "                tier to be approved first."
 msgstr ""
+"I livelli possono essere concatenati -- abilita\n"
+"                <em>Approvazione in sequenza</em>\n"
+"                in ciascuna definizione affinché il modello richieda che il "
+"livello con sequenza inferiore \n"
+"                venga approvato per primo."
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__to_validate_message
@@ -975,7 +995,7 @@ msgstr "In attesa"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "When reviewing"
-msgstr ""
+msgstr "In revisione"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__exclude_requester

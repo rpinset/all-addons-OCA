@@ -51,12 +51,13 @@ class SiiMatchReport(models.Model):
         required=True,
     )
     fiscalyear = fields.Integer(
-        string="Fiscal year", required=True, default=fields.Date.today().year
+        string="Fiscal year",
+        required=True,
+        default=lambda self: fields.Date.context_today(self).year,
     )
     company_id = fields.Many2one(
         comodel_name="res.company",
         default=lambda self: self.env.company.id,
-        string="Company",
         required=True,
     )
     calculate_date = fields.Datetime(string="Calculate date")

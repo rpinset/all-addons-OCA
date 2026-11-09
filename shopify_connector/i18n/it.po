@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-11-06 13:47+0000\n"
+"PO-Revision-Date: 2026-11-08 15:18+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -41,6 +41,8 @@ msgstr "%(created)s create e %(repaired)s riparate."
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "%(message)s Fix the cause, then requeue the failed job in Queue Jobs."
 msgstr ""
+"%(message)s Risolvere la causa, quindi rimettere in coda il job non riuscito "
+"in Queue Jobs."
 
 #. module: shopify_connector
 #. odoo-python
@@ -1681,6 +1683,9 @@ msgid ""
 "(picking)s: %(error)s. Save the tracking number of the delivery again to "
 "resend it."
 msgstr ""
+"Impossibile aggiornare il tracciamento dell'evasione Shopify %(fulfillment)s "
+"per %(picking)s: %(error)s. Salvare nuovamente il numero di tracciamento "
+"della spedizione per inviarlo di nuovo."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_field_mapping__field
@@ -3372,7 +3377,7 @@ msgstr "Accoda esportazione"
 #. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_queue_job
 msgid "Queue Job"
-msgstr ""
+msgstr "Lavoro in coda"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_webhook_event__state__queued
@@ -4542,12 +4547,14 @@ msgid ""
 "Shopify fulfillment for delivery %(picking)s (order %(order)s) was not sent: "
 "%(error)s"
 msgstr ""
+"L'evasione su Shopify per la consegna %(picking)s (ordine %(order)s) non è "
+"stata inviata: %(error)s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Shopify fulfillment not sent"
-msgstr ""
+msgstr "Evasione Shopify non inviata"
 
 #. module: shopify_connector
 #. odoo-python
@@ -5090,7 +5097,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "The Shopify fulfillment was created."
-msgstr ""
+msgstr "L'evasione Shopify è stata creata."
 
 #. module: shopify_connector
 #. odoo-python
@@ -5501,7 +5508,7 @@ msgstr "Valuta %s catalogo non supportata."
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Update Shopify tracking for %s"
-msgstr ""
+msgstr "Aggiorna il tracciamento Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
@@ -5510,6 +5517,8 @@ msgid ""
 "Updated the tracking of Shopify fulfillment %(fulfillment)s for %(picking)s: "
 "%(number)s."
 msgstr ""
+"Aggiornato il monitoraggio dell'evasione Shopify %(fulfillment)s per %"
+"(picking)s: %(number)s."
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__unknown_product_policy__placeholder

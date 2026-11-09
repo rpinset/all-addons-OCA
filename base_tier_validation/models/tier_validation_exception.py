@@ -22,7 +22,6 @@ class TierValidationException(models.Model):
     active = fields.Boolean(default=True)
     model_id = fields.Many2one(
         comodel_name="ir.model",
-        string="Model",
         required=True,
         ondelete="cascade",
         domain=lambda self: [("model", "in", self._get_tier_validation_model_names())],
@@ -45,7 +44,6 @@ class TierValidationException(models.Model):
     )
     company_id = fields.Many2one(
         comodel_name="res.company",
-        string="Company",
         default=lambda self: self.env.company,
     )
     allowed_to_write_under_validation = fields.Boolean(

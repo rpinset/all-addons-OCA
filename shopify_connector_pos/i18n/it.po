@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-11-06 13:47+0000\n"
+"PO-Revision-Date: 2026-11-08 18:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -171,7 +171,7 @@ msgstr "In attesa"
 #. module: shopify_connector_pos
 #: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
 msgid "Pending POS"
-msgstr "POS in sospeso"
+msgstr "POS in attesa"
 
 #. module: shopify_connector_pos
 #: model:ir.model,name:shopify_connector_pos.model_sale_order
@@ -191,12 +191,12 @@ msgstr "Istanza Shopify"
 #. module: shopify_connector_pos
 #: model:ir.model,name:shopify_connector_pos.model_shopify_location
 msgid "Shopify Location Binding"
-msgstr "Associazione ubicazione Shopify"
+msgstr "Collegamento dell'ubicazione Shopify"
 
 #. module: shopify_connector_pos
 #: model:ir.model,name:shopify_connector_pos.model_shopify_order
 msgid "Shopify Order Binding"
-msgstr "Associazione ordine Shopify"
+msgstr "Collegamento dell'ordine Shopify"
 
 #. module: shopify_connector_pos
 #: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order_line__shopify_pos_rounding
@@ -240,15 +240,16 @@ msgstr "Sincronizzato"
 msgid ""
 "The POS cash-rounding product does not use the configured rounding account."
 msgstr ""
-"La funzionalità di arrotondamento del contante del POS non utilizza il conto "
-"di arrotondamento configurato."
+"Il prodotto per l'arrotondamento contanti del POS non utilizza il conto di "
+"arrotondamento configurato."
 
 #. module: shopify_connector_pos
 #. odoo-python
 #: code:addons/shopify_connector_pos/models/pos.py:0
 msgid "The POS cash-rounding product must be a service product."
 msgstr ""
-"Il prodotto POS per l'arrotondamento dei contanti deve essere un servizio."
+"Il prodotto per l'arrotondamento contanti del POS deve essere un prodotto di "
+"tipo servizio."
 
 #. module: shopify_connector_pos
 #. odoo-python
@@ -260,21 +261,24 @@ msgstr "L'ubicazione POS deve utilizzare l'istanza Shopify dell'ordine."
 #. odoo-python
 #: code:addons/shopify_connector_pos/models/pos.py:0
 msgid "The POS rounding account must be available to the company."
-msgstr "Il conto di arrotondamento POS deve essere a disposizione dell'azienda."
+msgstr ""
+"Il conto di arrotondamento del POS deve essere disponibile per l'azienda."
 
 #. module: shopify_connector_pos
 #. odoo-python
 #: code:addons/shopify_connector_pos/models/pos.py:0
 msgid "The POS rounding product must be a service product."
 msgstr ""
-"Il prodotto di arrotondamento POS deve essere un prodotto di tipo servizio."
+"Il prodotto di arrotondamento del POS deve essere un prodotto di tipo "
+"servizio."
 
 #. module: shopify_connector_pos
 #. odoo-python
 #: code:addons/shopify_connector_pos/models/pos.py:0
 msgid "The POS rounding product must belong to the instance company."
 msgstr ""
-"Il prodotto di arrotondamento POS deve appartenere all'azienda dell'istanza."
+"Il prodotto di arrotondamento del POS deve appartenere all'azienda "
+"dell'istanza."
 
 #. module: shopify_connector_pos
 #. odoo-python
@@ -283,7 +287,7 @@ msgid ""
 "The POS rounding product's effective income account must match the "
 "configured rounding account."
 msgstr ""
-"Il conto dei ricavi effettivi del prodotto di arrotondamento POS deve "
+"Il conto di ricavo effettivo del prodotto di arrotondamento del POS deve "
 "corrispondere al conto di arrotondamento configurato."
 
 #. module: shopify_connector_pos
@@ -296,8 +300,7 @@ msgstr "Il magazzino POS deve appartenere all'azienda dell'istanza."
 #. odoo-python
 #: code:addons/shopify_connector_pos/models/pos.py:0
 msgid "The Shopify POS order has no retail location."
-msgstr ""
-"L'ordine Shopify POS non ha una ubicazione di vendita al dettaglio associata."
+msgstr "L'ordine Shopify POS non ha un punto vendita associato."
 
 #. module: shopify_connector_pos
 #: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__pos_auto_fulfill

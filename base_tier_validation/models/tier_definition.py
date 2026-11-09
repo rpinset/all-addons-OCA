@@ -44,7 +44,7 @@ class TierDefinition(models.Model):
         string="Allow Write For Reviewers",
         default=False,
     )
-    reviewer_id = fields.Many2one(comodel_name="res.users", string="Reviewer")
+    reviewer_id = fields.Many2one(comodel_name="res.users")
     reviewer_group_id = fields.Many2one(
         comodel_name="res.groups", string="Reviewer group"
     )
@@ -65,7 +65,6 @@ class TierDefinition(models.Model):
     sequence = fields.Integer(default=30)
     company_id = fields.Many2one(
         comodel_name="res.company",
-        string="Company",
         default=lambda self: self.env.company,
     )
     notify_on_create = fields.Boolean(

@@ -279,6 +279,45 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertEqual(order.partner_shipping_id, order.partner_id)
         self.assertEqual(order.partner_invoice_id, order.partner_id)
 
+    def test_guest_order_reuses_the_matching_contact_among_many(self):
+        guest = self.instance.guest_partner_id
+        self.assertTrue(guest)
+        netherlands = self.env.ref("base.nl")
+        self.env["res.partner"].create(
+            [
+                {
+                    "parent_id": guest.id,
+                    "type": "delivery",
+                    "name": "Anna de Vries",
+                    "street": f"Leveringsweg {number}",
+                    "city": "Veendam",
+                    "zip": "9641 AA",
+                    "country_id": netherlands.id,
+                }
+                for number in range(10, 40)
+            ]
+        )
+        same = self.env["res.partner"].create(
+            {
+                "parent_id": guest.id,
+                "type": "delivery",
+                "name": "anna de vries",
+                "street": " LEVERINGSWEG 2 ",
+                "city": "Veendam",
+                "zip": "9641 AA",
+                "country_id": netherlands.id,
+            }
+        )
+
+        binding_id = self.order_model._job_import_order(
+            self.instance.id,
+            self._payload(order_id=20, shippingAddress=self._address("Leveringsweg 2")),
+        )
+
+        order = self.order_model.browse(binding_id).odoo_id
+        self.assertEqual(order.partner_id, guest)
+        self.assertEqual(order.partner_shipping_id, same)
+
     def test_total_verification_failure_leaves_no_sale_order(self):
         before = self.env["sale.order"].search_count([])
 
@@ -961,3 +1000,117 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertEqual(
             orders_updated_search(since), "updated_at:>='2026-11-02T09:30:15Z'"
         )
+
+    def _refunded_before_invoice_payload(
+        self, order_id, refunded_quantity, refunded_shipping=None
+    ):
+        """Three units at 10.00, some of them refunded before any invoice.
+
+        With ``refunded_shipping``, the order also has 5.00 of shipping and
+        the refund returns that much of it.
+        """
+        remaining = 3 - refunded_quantity
+        shipping = 5 if refunded_shipping is not None else 0
+        current_shipping = shipping - (refunded_shipping or 0)
+        total = f"{remaining * 10 + current_shipping}.00"
+        payload = self._payload(
+            order_id=order_id,
+            quantity=3,
+            total=total,
+            displayFinancialStatus="PARTIALLY_REFUNDED",
+            currentShippingPriceSet=self._bag(f"{current_shipping}.00"),
+        )
+        line = payload["lineItems"]["nodes"][0]
+        line["currentQuantity"] = remaining
+        line["refundableQuantity"] = remaining
+        refund_shipping_lines = []
+        if refunded_shipping is not None:
+            payload["shippingLines"] = {
+                "nodes": [
+                    {
+                        "id": f"gid://shopify/ShippingLine/{order_id}3",
+                        "title": "Standard",
+                        "code": "standard",
+                        "originalPriceSet": self._bag(f"{shipping}.00"),
+                        # Shopify: "The current shipping price after applying
+                        # refunds, after applying discounts."
+                        "currentDiscountedPriceSet": self._bag(
+                            f"{current_shipping}.00"
+                        ),
+                        "taxLines": [],
+                    }
+                ]
+            }
+            refund_shipping_lines = [
+                {
+                    "id": f"gid://shopify/RefundShippingLine/{order_id}4",
+                    "subtotalAmountSet": self._bag(f"{refunded_shipping}.00"),
+                }
+            ]
+        refunded_total = refunded_quantity * 10 + (refunded_shipping or 0)
+        payload["refunds"] = {
+            "nodes": [
+                {
+                    "id": f"gid://shopify/Refund/{order_id}1",
+                    "createdAt": "2026-01-11T10:00:00Z",
+                    "totalRefundedSet": self._bag(f"{refunded_total}.00"),
+                    "refundLineItems": {
+                        "nodes": [
+                            {
+                                "id": f"gid://shopify/RefundLineItem/{order_id}2",
+                                "lineItem": {"id": "gid://shopify/LineItem/30"},
+                                "quantity": refunded_quantity,
+                                "restockType": "NO_RESTOCK",
+                                "subtotalSet": self._bag(
+                                    f"{refunded_quantity * 10}.00"
+                                ),
+                                "totalTaxSet": self._bag("0.00"),
+                            }
+                        ]
+                    },
+                    "refundShippingLines": {"nodes": refund_shipping_lines},
+                    "orderAdjustments": {"nodes": []},
+                    "transactions": {"nodes": []},
+                }
+            ]
+        }
+        return payload
+
+    def test_refund_before_invoice_keeps_the_current_quantity(self):
+        payload = self._refunded_before_invoice_payload(94, refunded_quantity=1)
+
+        binding_id = self.order_model._job_import_order(self.instance.id, payload)
+
+        binding = self.order_model.browse(binding_id)
+        self.assertEqual(binding.state, "synced", binding.error_message)
+        self.assertEqual(binding.odoo_id.order_line.product_uom_qty, 2)
+        self.assertEqual(binding.odoo_id.amount_total, 20)
+
+    def test_partial_refund_before_invoice_does_not_cancel_the_order(self):
+        self.instance.refund_uninvoiced_policy = "cancel"
+        payload = self._refunded_before_invoice_payload(95, refunded_quantity=2)
+
+        binding_id = self.order_model._job_import_order(self.instance.id, payload)
+
+        sale_order = self.order_model.browse(binding_id).odoo_id
+        self.assertNotEqual(sale_order.state, "cancel")
+        self.assertEqual(sale_order.order_line.product_uom_qty, 1)
+
+    def test_full_refund_before_invoice_cancels_the_order(self):
+        self.instance.refund_uninvoiced_policy = "cancel"
+        payload = self._refunded_before_invoice_payload(96, refunded_quantity=3)
+
+        binding_id = self.order_model._job_import_order(self.instance.id, payload)
+
+        self.assertEqual(self.order_model.browse(binding_id).odoo_id.state, "cancel")
+
+    def test_full_refund_with_shipping_before_invoice_cancels_the_order(self):
+        self.instance.refund_uninvoiced_policy = "cancel"
+        payload = self._refunded_before_invoice_payload(
+            97, refunded_quantity=3, refunded_shipping=5
+        )
+
+        binding_id = self.order_model._job_import_order(self.instance.id, payload)
+
+        binding = self.order_model.browse(binding_id)
+        self.assertEqual(binding.odoo_id.state, "cancel", binding.error_message)

@@ -11,6 +11,7 @@ from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Command
 from odoo.service.model import PG_CONCURRENCY_EXCEPTIONS_TO_RETRY
+from odoo.tools import escape_psql
 
 from odoo.addons.queue_job.exception import RetryableJobError
 
@@ -652,7 +653,20 @@ class ShopifyOrderSync(models.Model):
         if not address or not any(address[key] for key in ("address1", "city", "zip")):
             return partner
         values = self._order_address_values(partner, address, address_type)
-        for candidate in partner | partner.child_ids:
+        # A shared guest customer can collect many contacts, so let the
+        # database narrow them down before the exact comparison.
+        domain = [
+            "|",
+            ("id", "=", partner.id),
+            ("parent_id", "=", partner.id),
+            ("country_id", "=", values["country_id"]),
+        ]
+        for field in ("street", "city", "zip"):
+            if values[field] and values[field].strip():
+                domain.append((field, "ilike", escape_psql(values[field].strip())))
+        candidates = self.env["res.partner"].search(domain)
+        # Prefer the customer itself, as before.
+        for candidate in (candidates & partner) | (candidates - partner):
             if self._is_same_order_address(candidate, values):
                 return candidate
         return (
@@ -1436,7 +1450,7 @@ class ShopifyOrderSync(models.Model):
                 binding, invoices[0], refund, amount, selected_side
             )
         elif not invoices:
-            self._adjust_uninvoiced_refund(binding, refund, amount)
+            self._adjust_uninvoiced_refund(binding, refund)
         if restock:
             try:
                 self._create_restock_return(binding, refund)
@@ -1613,7 +1627,7 @@ class ShopifyOrderSync(models.Model):
         move.action_post()
         return move
 
-    def _adjust_uninvoiced_refund(self, binding, refund, amount):
+    def _adjust_uninvoiced_refund(self, binding, refund):
         sale_order = binding.odoo_id
         if self._is_delivered(sale_order):
             raise ShopifyOrderImportError(
@@ -1622,30 +1636,13 @@ class ShopifyOrderSync(models.Model):
                     "manual resolution."
                 )
             )
-        expected_total = (
-            decimal_amount(
-                binding.presentment_money_json["total"]
-                if binding.instance_id.order_currency_policy == "presentment"
-                else binding.shop_money_json["total"]
-            )
-            if binding.shop_money_json
-            else Decimal(str(sale_order.amount_total))
-        )
+        # The order lines were just written from Shopify's current
+        # quantities, which already leave out the refunded units.
         if (
             binding.instance_id.refund_uninvoiced_policy == "cancel"
-            and amount >= expected_total
+            and sale_order.currency_id.compare_amounts(sale_order.amount_total, 0) <= 0
         ):
             self._cancel_sale_order(sale_order)
-            return
-        for line in refund["lines"]:
-            line_binding = binding.line_binding_ids.filtered(
-                lambda item, line=line: item.shopify_id == line["line_id"]
-            )[:1]
-            if line_binding:
-                new_quantity = max(
-                    line_binding.odoo_id.product_uom_qty - line["quantity"], 0
-                )
-                line_binding.odoo_id.product_uom_qty = new_quantity
 
     def _create_restock_return(self, binding, refund):
         picking = binding.odoo_id.picking_ids.filtered(

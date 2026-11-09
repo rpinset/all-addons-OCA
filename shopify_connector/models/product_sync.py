@@ -11,6 +11,7 @@ import requests
 from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Command
+from odoo.service.model import PG_CONCURRENCY_EXCEPTIONS_TO_RETRY
 
 from ..graphql.product import (
     COLLECTIONS_PAGE_QUERY,
@@ -338,6 +339,9 @@ class ShopifyProductTemplateSync(models.Model):
                     seed_all=seed_all,
                     complete_snapshot=complete_snapshot,
                 )
+        except PG_CONCURRENCY_EXCEPTIONS_TO_RETRY:
+            # A conflict with a parallel job: the job queue runs this job again.
+            raise
         except Exception as exc:
             binding.write({"state": "error", "error_message": str(exc)})
             instance._write_log(

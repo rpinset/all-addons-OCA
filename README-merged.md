@@ -1034,7 +1034,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_commission_oca](account_commission_oca/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Account commissions OCA
-[commission_oca](commission_oca/) | 19.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Commissions OCA
+[commission_oca](commission_oca/) | 19.0.2.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Commissions OCA
 [hr_commission_oca](hr_commission_oca/) | 19.0.1.0.0 |  | HR commissions OCA
 [sale_commission_oca](sale_commission_oca/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales commissions OCA
 [sale_commission_pricelist_oca](sale_commission_pricelist_oca/) | 19.0.1.1.0 |  | Sales commissions by pricelist OCA
@@ -1333,7 +1333,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[shopify_connector](shopify_connector/) | 19.0.1.5.0 |  | GraphQL-first Shopify commerce synchronization
+[shopify_connector](shopify_connector/) | 19.0.1.5.3 |  | GraphQL-first Shopify commerce synchronization
 [shopify_connector_account](shopify_connector_account/) | 19.0.1.0.2 |  | Shopify Payments payouts, fees, disputes, and reconciliation
 [shopify_connector_pos](shopify_connector_pos/) | 19.0.1.0.0 |  | Import Shopify POS sales into location-routed sale orders
 [shopify_connector_website_sale](shopify_connector_website_sale/) | 19.0.1.0.0 |  | Synchronize Shopify product media with eCommerce extra product media
@@ -1494,7 +1494,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 19.0.1.0.2 |  | Account Credit Control
-[account_financial_risk](account_financial_risk/) | 19.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+[account_financial_risk](account_financial_risk/) | 19.0.1.0.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [sale_financial_risk](sale_financial_risk/) | 19.0.1.0.1 |  | Manage partner risk in sales orders
@@ -3446,7 +3446,7 @@ addon | version | maintainers | summary
 [l10n_mx_catalogs](l10n_mx_catalogs/) | 19.0.1.1.1 |  | Catalogs of Servicio de Administración Tributaria (SAT) from México
 [l10n_mx_catalogs_comex](l10n_mx_catalogs_comex/) | 19.0.1.0.1 |  | Foreign trade catalogs for Mexico
 [l10n_mx_cfdi](l10n_mx_cfdi/) | 19.0.2.2.3 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Allow generating CFDI (Comprobante Fiscal Digital por Internet)
-[l10n_mx_cfdi_account](l10n_mx_cfdi_account/) | 19.0.1.3.2 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Mexico CFDI Account Integration
+[l10n_mx_cfdi_account](l10n_mx_cfdi_account/) | 19.0.1.4.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Mexico CFDI Account Integration
 [l10n_mx_cfdi_account_addenda_audi](l10n_mx_cfdi_account_addenda_audi/) | 19.0.1.0.1 |  | Mexican Localization Addendum For Audi
 [l10n_mx_cfdi_account_addenda_ford](l10n_mx_cfdi_account_addenda_ford/) | 19.0.1.0.0 |  | Mexican Localization Addendum For Ford
 [l10n_mx_cfdi_account_addenda_kuehne_nagel](l10n_mx_cfdi_account_addenda_kuehne_nagel/) | 19.0.1.0.1 |  | Mexican Localization Addendum KNRECEPCION For Kuehne+Nagel
@@ -3803,34 +3803,34 @@ addon | version | maintainers | summary
 [l10n_es_account_asset](l10n_es_account_asset/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 19.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 19.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 19.0.2.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 19.0.1.0.1 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 19.0.1.0.0 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 19.0.1.0.1 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 19.0.1.0.1 |  | AEAT modelo 190
+[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 19.0.1.0.2 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
-[l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 19.0.1.0.0 |  | AEAT modelo 296
+[l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 19.0.1.0.1 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 19.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
-[l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 19.0.1.0.4 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.1.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 19.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 19.0.1.0.5 |  | AEAT modelo 347
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
-[l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 19.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
+[l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 19.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 19.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 19.0.1.0.0 |  | Envio de factura simplificada resumen TPV a SII
-[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 19.0.2.0.1 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 19.0.2.0.3 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.2.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_facturae](l10n_es_facturae/) | 19.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
-[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 19.0.1.0.2 |  | Spanish Intrastat Product Declaration
+[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 19.0.1.0.3 |  | Spanish Intrastat Product Declaration
 [l10n_es_mis_report](l10n_es_mis_report/) | 19.0.1.1.3 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 19.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 19.0.1.0.0 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_toponyms](l10n_es_toponyms/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 19.0.1.0.4 |  | Libros registro del IVA y del IRPF
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 19.0.1.1.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Prorrata de IVA para la localización española
+[l10n_es_vat_book](l10n_es_vat_book/) | 19.0.1.0.5 |  | Libros registro del IVA y del IRPF
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 19.0.1.1.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Prorrata de IVA para la localización española
 
 [//]: # (end addons)
 
@@ -4442,7 +4442,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 19.0.1.2.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 19.0.1.2.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 19.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 19.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -5126,7 +5126,7 @@ addon | version | maintainers | summary
 [project_administrator_restricted_visibility](project_administrator_restricted_visibility/) | 19.0.1.0.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Adds a 'Project Administrator' access group with restricted visibility to 'Projects'
 [project_department](project_department/) | 19.0.1.0.0 |  | Project Department Categorization
 [project_forecast_line](project_forecast_line/) | 19.0.1.0.0 |  | Project Forecast Lines
-[project_group](project_group/) | 19.0.1.0.0 |  | Add groups for filtering on projects
+[project_group](project_group/) | 19.0.1.0.1 |  | Add groups for filtering on projects
 [project_group_hr_timesheet](project_group_hr_timesheet/) | 19.0.1.0.0 |  | This module makes project group work properly with timesheets
 [project_hr](project_hr/) | 19.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_hr_expense_analytic](project_hr_expense_analytic/) | 19.0.1.0.0 |  | Link expenses to a project and a task
@@ -5148,7 +5148,7 @@ addon | version | maintainers | summary
 [project_task_code_portal](project_task_code_portal/) | 19.0.1.0.0 |  | Use custom task code in customer portal
 [project_task_customer_ref](project_task_customer_ref/) | 19.0.1.0.0 |  | Adds Order Customer Reference to tasks, syncs it to the linked sale order, and exposes it on website webforms.
 [project_task_default_stage](project_task_default_stage/) | 19.0.1.0.0 |  | Recovery default task stages for projects from v8
-[project_task_default_user](project_task_default_user/) | 19.0.1.0.0 | <a href='https://github.com/NICO-SOLUTIONS'><img src='https://github.com/NICO-SOLUTIONS.png' width='32' height='32' style='border-radius:50%;' alt='NICO-SOLUTIONS'/></a> | Auto assign default users to tasks or when changing task stages
+[project_task_default_user](project_task_default_user/) | 19.0.1.0.1 | <a href='https://github.com/NICO-SOLUTIONS'><img src='https://github.com/NICO-SOLUTIONS.png' width='32' height='32' style='border-radius:50%;' alt='NICO-SOLUTIONS'/></a> | Auto assign default users to tasks or when changing task stages
 [project_task_description_template](project_task_description_template/) | 19.0.1.0.2 |  | Add a description template to project tasks
 [project_task_name_with_id](project_task_name_with_id/) | 19.0.1.1.1 |  | Project Task Name with ID
 [project_task_note](project_task_note/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Add notes in project tasks
@@ -5596,7 +5596,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fastapi](fastapi/) | 19.0.1.3.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 19.0.1.3.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 
 
 Unported addons
@@ -5707,6 +5707,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_blanket_order](sale_blanket_order/) | 19.0.1.1.4 |  | Blanket Orders
+[sale_order_blanket_order](sale_order_blanket_order/) | 19.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage blanket order and call of order
 
 [//]: # (end addons)
 
@@ -6113,6 +6114,7 @@ addon | version | maintainers | summary
 [auth_saml](auth_saml/) | 19.0.1.1.0 | <a href='https://github.com/vincent-hatakeyama'><img src='https://github.com/vincent-hatakeyama.png' width='32' height='32' style='border-radius:50%;' alt='vincent-hatakeyama'/></a> | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 19.0.1.0.0 |  | This module disable all inactive sessions since a given delay
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 19.0.1.0.0 |  | Makes the user login field case insensitive
+[cross_connect_client](cross_connect_client/) | 19.0.1.0.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Cross Connect Client allows to connect to a Cross Connect Server enabled odoo instance.
 [impersonate_login](impersonate_login/) | 19.0.1.0.1 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | tools
 [password_security](password_security/) | 19.0.1.0.3 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 19.0.1.0.0 | <a href='https://github.com/trojikman'><img src='https://github.com/trojikman.png' width='32' height='32' style='border-radius:50%;' alt='trojikman'/></a> | Allow to see user's actions log
@@ -6792,6 +6794,9 @@ and promote its widespread use.
 ## From OCA/stock-logistics-request
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-request
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-request&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/stock-logistics-request/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/stock-logistics-request/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/stock-logistics-request/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/stock-logistics-request/actions/workflows/test.yml?query=branch%3A19.0)
@@ -6799,8 +6804,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-request-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-request-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# stock-logistics-request
 
 stock-logistics-request
 
@@ -7144,7 +7147,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 19.0.1.1.4 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
+[fs_attachment](fs_attachment/) | 19.0.1.1.7 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
 [fs_attachment_environment](fs_attachment_environment/) | 19.0.1.0.0 |  | Allows to use server environment with fs storage attachment
 [fs_attachment_s3](fs_attachment_s3/) | 19.0.1.2.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
 [fs_attachment_s3_environment](fs_attachment_s3_environment/) | 19.0.1.0.0 |  | Allows to use server environment with fs storage attachment S3
@@ -7311,6 +7314,9 @@ that explains its license.
 ## From OCA/tier-validation
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# tier-validation
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/tier-validation&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/tier-validation/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/tier-validation/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/tier-validation/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/tier-validation/actions/workflows/test.yml?query=branch%3A19.0)
@@ -7318,8 +7324,6 @@ that explains its license.
 [![Translation Status](https://translation.odoo-community.org/widgets/tier-validation-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/tier-validation-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# tier-validation
 
 tier-validation
 
@@ -7410,7 +7414,7 @@ addon | version | maintainers | summary
 [project_timesheet_holidays_dynamic_description](project_timesheet_holidays_dynamic_description/) | 19.0.1.0.1 |  | Use the time off description for the generated timesheet lines.
 [sale_order_update_timesheet_price](sale_order_update_timesheet_price/) | 19.0.1.0.0 |  | Update the unit price of already invoiced sale order lines by creating a new line
 [sale_timesheet_invoice_link](sale_timesheet_invoice_link/) | 19.0.0.2.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Link invoices with timesheet lines
-[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 19.0.1.0.0 |  | Exclude Timesheet Line from Sale Order
+[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 19.0.1.0.1 |  | Exclude Timesheet Line from Sale Order
 [sale_timesheet_timeline](sale_timesheet_timeline/) | 19.0.1.0.0 |  | Dates planning in sales order lines
 
 [//]: # (end addons)

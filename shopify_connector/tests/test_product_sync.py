@@ -1,5 +1,7 @@
 from unittest.mock import Mock, patch
 
+import psycopg2
+
 from odoo.exceptions import ValidationError
 from odoo.tests.common import TransactionCase
 
@@ -495,6 +497,52 @@ class TestShopifyProductSync(TransactionCase):
         )
 
         self.assertEqual(unmanaged_ids, [SHARED_IMAGE_ID])
+
+    def _product_payload_for_import_error(self):
+        return {
+            "id": "gid://shopify/Product/990",
+            "name": "Conflict product",
+            "description": "",
+            "handle": "conflict-product",
+            "status": "ACTIVE",
+            "updated_at": "2026-07-29T00:00:00Z",
+            "options": [],
+            "variants": [],
+            "images": [],
+            "collections": [],
+        }
+
+    def test_import_conflict_is_left_to_the_job_queue(self):
+        """A conflict with a parallel job is retried, not recorded as failed."""
+        binding_model = self.env["shopify.product.template"]
+        payload = self._product_payload_for_import_error()
+        with patch.object(
+            type(binding_model),
+            "_apply_product_import",
+            side_effect=psycopg2.errors.SerializationFailure("concurrent update"),
+        ):
+            with self.assertRaises(psycopg2.errors.SerializationFailure):
+                binding_model._job_import_product(
+                    self.instance.id, payload, payload_normalized=True
+                )
+        binding = binding_model.search([("shopify_id", "=", payload["id"])])
+        self.assertNotEqual(binding.state, "error")
+
+    def test_import_error_is_still_recorded_on_the_binding(self):
+        binding_model = self.env["shopify.product.template"]
+        payload = self._product_payload_for_import_error()
+        with patch.object(
+            type(binding_model),
+            "_apply_product_import",
+            side_effect=ValueError("bad product"),
+        ):
+            result = binding_model._job_import_product(
+                self.instance.id, payload, payload_normalized=True
+            )
+        binding = binding_model.search([("shopify_id", "=", payload["id"])])
+        self.assertFalse(result)
+        self.assertEqual(binding.state, "error")
+        self.assertEqual(binding.error_message, "bad product")
 
 
 class TestShopifyPricelistRuleExport(TransactionCase):

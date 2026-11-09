@@ -1,0 +1,545 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* connector_mercadolibre_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-11-08 16:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: connector_mercadolibre_sale
+#: model:exception.rule,description:connector_mercadolibre_sale.exception_missing_sku
+msgid "A Mercado Libre item on this order has no matching product."
+msgstr ""
+"Un articolo Mercado Libre in questo ordine non ha un prodotto corrispondente."
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__workflow_process_id
+msgid "Automatic Workflow"
+msgstr "Flusso automatico"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__backend_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__backend_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__backend_id
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_sale_view_search
+msgid "Backend"
+msgstr "Backend"
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_partner_view_form
+msgid "Billing"
+msgstr "Fatturazione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__billing_doc_number
+msgid "Billing Document Number"
+msgstr "Numero documento di fatturazione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__billing_doc_type
+msgid "Billing Document Type"
+msgstr "Tipo documento di fatturazione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.actions.act_window,name:connector_mercadolibre_sale.action_mercadolibre_partner
+msgid "Buyers"
+msgstr "Acquirenti"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_backend.py:0
+msgid "Choose an automatic workflow before importing Mercado Libre orders."
+msgstr ""
+"Scegliere un flusso automatico prima di importare gli ordini Mercado Libre."
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__create_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__create_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__create_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__create_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__date_order
+msgid "Date Order"
+msgstr "Data ordine"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__date_updated
+msgid "Date Updated"
+msgstr "Data di aggiornamento"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_res_partner__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_sale_view_form
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_sale_view_search
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_shipment_view_form
+msgid "Error"
+msgstr "Errore"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__error_message
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__error_message
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__error_message
+msgid "Error Message"
+msgstr "Messaggio di errore"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_shipment.py:0
+msgid "Export Mercado Libre tracking for %(shipment)s"
+msgstr "Esporta tracciamento Mercado Libre per %(shipment)s"
+
+#. module: connector_mercadolibre_sale
+#: model:exception.rule,description:connector_mercadolibre_sale.exception_unmapped_logistic_type
+msgid ""
+"Export stock is on and this shipment logistic type has no seller warehouse."
+msgstr ""
+"L'esportazione della giacenza è attiva e questo tipo di logistica di "
+"spedizione non ha un magazzino del venditore."
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__external_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__external_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__external_id
+msgid "External"
+msgstr "Esterno"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__fee_product_id
+msgid "Fee Product"
+msgstr "Prodotto commissione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__fiscal_position_id
+msgid "Fiscal Position"
+msgstr "Posizione fiscale"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_res_partner__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order_line__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_stock_picking__id
+msgid "ID"
+msgstr "ID"
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_sale_view_form
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_shipment_view_form
+msgid "Import"
+msgstr "Importa"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_backend.py:0
+msgid "Import Mercado Libre order %(order)s"
+msgstr "Importa ordine Mercado Libre %(order)s"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_backend.py:0
+msgid "Import Mercado Libre orders for %(name)s"
+msgstr "Importa ordini Mercado Libre per %(name)s"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_backend.py:0
+msgid "Import Mercado Libre payment %(resource)s"
+msgstr "Importa pagamento Mercado Libre %(resource)s"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_backend.py:0
+msgid "Import Mercado Libre shipment %(shipment)s"
+msgstr "Importa spedizione Mercado Libre %(shipment)s"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__import_orders
+msgid "Import Orders"
+msgstr "Importa ordini"
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_backend_view_form_sales
+msgid "Import orders"
+msgstr "Importa ordini"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__import_orders_since
+msgid "Import orders since"
+msgstr "Importa ordini dal"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__last_order_sync_at
+msgid "Last Order Sync At"
+msgstr "Ultima sincronizzazione ordini il"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__write_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__write_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__write_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__write_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__sync_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__sync_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__sync_date
+msgid "Last synchronization date"
+msgstr "Data ultima sincronizzazione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__logistic_type
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_logistic_type
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_stock_picking__mercadolibre_logistic_type
+msgid "Logistic Type"
+msgstr "Tipo di logistica"
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.res_partner_view_form_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.sale_order_view_form_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.sale_order_view_search_mercadolibre
+msgid "Mercado Libre"
+msgstr "Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_mercadolibre_backend
+msgid "Mercado Libre Backend"
+msgstr "Backend Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_mercadolibre_res_partner
+msgid "Mercado Libre Buyer"
+msgstr "Acquirente Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_mercadolibre_sale_order
+msgid "Mercado Libre Order"
+msgstr "Ordine Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_mercadolibre_shipment
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_stock_picking__mercadolibre_shipment_id
+msgid "Mercado Libre Shipment"
+msgstr "Spedizione Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_stock_picking__mercadolibre_tracking_number
+msgid "Mercado Libre Tracking"
+msgstr "Tracciamento Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:exception.rule,name:connector_mercadolibre_sale.exception_missing_sku
+msgid "Mercado Libre missing SKU"
+msgstr "SKU Mercado Libre mancante"
+
+#. module: connector_mercadolibre_sale
+#: model:exception.rule,name:connector_mercadolibre_sale.exception_missing_fiscal_position
+msgid "Mercado Libre missing fiscal position"
+msgstr "Posizione fiscale Mercado Libre mancante"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/components/notification_handler.py:0
+msgid "Mercado Libre order notification has no order id."
+msgstr "La notifica dell'ordine Mercado Libre non ha un ID ordine."
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.sale_order_view_search_mercadolibre
+msgid "Mercado Libre pack"
+msgstr "Pacchetto Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/components/notification_handler.py:0
+msgid "Mercado Libre payment notification has no resource."
+msgstr "La notifica di pagamento Mercado Libre non ha alcuna risorsa."
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/components/notification_handler.py:0
+msgid "Mercado Libre shipment notification has no shipment id."
+msgstr "La notifica di spedizione Mercado Libre non ha un ID spedizione."
+
+#. module: connector_mercadolibre_sale
+#: model:exception.rule,name:connector_mercadolibre_sale.exception_unmapped_logistic_type
+msgid "Mercado Libre unmapped logistic type"
+msgstr "Tipo di logistica Mercado Libre non mappato"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.actions.server,name:connector_mercadolibre_sale.ir_cron_reconcile_orders_ir_actions_server
+msgid "Mercado Libre: reconcile orders"
+msgstr "Mercado Libre: riconcilia ordini"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_res_partner__mercadolibre_bind_ids
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_res_users__mercadolibre_bind_ids
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_bind_ids
+msgid "Mercadolibre Bind"
+msgstr "Associazione Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_res_partner__mercadolibre_bind_count
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_res_users__mercadolibre_bind_count
+msgid "Mercadolibre Bind Count"
+msgstr "Numero associazioni Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_order_id
+msgid "Mercadolibre Order"
+msgstr "Ordine Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_pack_id
+msgid "Mercadolibre Pack"
+msgstr "Pacchetto Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_pack_count
+msgid "Mercadolibre Pack Count"
+msgstr "Numero pacchetti Mercado Libre"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_unmapped_logistic
+msgid "Mercadolibre Unmapped Logistic"
+msgstr "Logistica Mercado Libre non mappata"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order_line__mercadolibre_unmatched
+msgid "Mercadolibre Unmatched"
+msgstr "Mercado Libre non abbinato"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__mode
+msgid "Mode"
+msgstr "Modalità"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__nickname
+msgid "Nickname"
+msgstr "Nomignolo"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__odoo_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__odoo_id
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_backend.py:0
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_sale.py:0
+msgid "Only Mercado Libre managers can import orders."
+msgstr "Solo i responsabili Mercado Libre possono importare gli ordini."
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/models/mercadolibre_shipment.py:0
+msgid "Only Mercado Libre managers can import shipments."
+msgstr "Solo i responsabili Mercado Libre possono importare le spedizioni."
+
+#. module: connector_mercadolibre_sale
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.sale_order_view_form_mercadolibre
+msgid "Open binding"
+msgstr "Apri associazione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__order_status
+msgid "Order Status"
+msgstr "Stato ordine"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.actions.act_window,name:connector_mercadolibre_sale.action_mercadolibre_sale
+#: model:ir.ui.menu,name:connector_mercadolibre_sale.menu_mercadolibre_sale_order
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_shipment_view_form
+msgid "Orders"
+msgstr "Ordini"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__pack_id
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_sale_view_form
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_sale_view_search
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.sale_order_view_form_mercadolibre
+msgid "Pack"
+msgstr "Pacchetto"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__payment_status
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_payment_status
+msgid "Payment Status"
+msgstr "Stato pagamento"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__picking_id
+msgid "Picking"
+msgstr "Prelievo"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__raw_billing
+msgid "Raw Billing"
+msgstr "Dati grezzi di fatturazione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__receiver_partner_id
+msgid "Receiver"
+msgstr "Destinatario"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__sale_binding_ids
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__sale_binding_ids
+msgid "Sale Binding"
+msgstr "Associazione vendita"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__sale_fee
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_sale_fee
+msgid "Sale Fee"
+msgstr "Commissione di vendita"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.ui.menu,name:connector_mercadolibre_sale.menu_mercadolibre_sales
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_sale.mercadolibre_backend_view_form_sales
+msgid "Sales"
+msgstr "Vendite"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Ordine di vendita"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__team_id
+msgid "Sales Team"
+msgstr "Team di vendita"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__shipment_id
+msgid "Shipment"
+msgstr "Spedizione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__shipment_external_id
+msgid "Shipment External"
+msgstr "Spedizione esterna"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_sale_order__mercadolibre_shipment_status
+msgid "Shipment Status"
+msgstr "Stato spedizione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.actions.act_window,name:connector_mercadolibre_sale.action_mercadolibre_shipment
+#: model:ir.ui.menu,name:connector_mercadolibre_sale.menu_mercadolibre_shipment
+msgid "Shipments"
+msgstr "Spedizioni"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__shipping_product_id
+msgid "Shipping Product"
+msgstr "Prodotto di spedizione"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_res_partner__state
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_sale_order__state
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__state
+msgid "State"
+msgstr "Stato"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__status
+msgid "Status"
+msgstr "Stato"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.constraint,message:connector_mercadolibre_sale.constraint_mercadolibre_res_partner_partner_external_unique
+msgid "This Mercado Libre buyer is already imported."
+msgstr "Questo acquirente Mercado Libre è già importato."
+
+#. module: connector_mercadolibre_sale
+#: model:exception.rule,description:connector_mercadolibre_sale.exception_missing_fiscal_position
+msgid "This Mercado Libre order has no fiscal position."
+msgstr "Questo ordine Mercado Libre non ha una posizione fiscale."
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.constraint,message:connector_mercadolibre_sale.constraint_mercadolibre_sale_order_sale_external_unique
+msgid "This Mercado Libre order is already imported."
+msgstr "Questo ordine Mercado Libre è già importato."
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.constraint,message:connector_mercadolibre_sale.constraint_mercadolibre_shipment_shipment_external_unique
+msgid "This Mercado Libre shipment is already imported."
+msgstr "Questa spedizione Mercado Libre è già importata."
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_backend__tracking_carrier_id
+msgid "Tracking Carrier"
+msgstr "Corriere di tracciamento"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model.fields,field_description:connector_mercadolibre_sale.field_mercadolibre_shipment__tracking_number
+msgid "Tracking Number"
+msgstr "Numero di tracciamento"
+
+#. module: connector_mercadolibre_sale
+#: model:ir.model,name:connector_mercadolibre_sale.model_stock_picking
+msgid "Transfer"
+msgstr "Trasferimento"
+
+#. module: connector_mercadolibre_sale
+#. odoo-python
+#: code:addons/connector_mercadolibre_sale/components/line_builder.py:0
+msgid "Unmatched Mercado Libre item %(item)s (%(title)s)."
+msgstr "Articolo Mercado Libre non abbinato %(item)s (%(title)s)."
