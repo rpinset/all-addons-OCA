@@ -995,7 +995,7 @@ addon | version | maintainers | summary
 [account_payment_method_fs_storage](account_payment_method_fs_storage/) | 16.0.1.0.3 |  | Add the possibility to specify on the payment method, a storage where files generated will be pushed to upon payment
 [account_payment_mode](account_payment_mode/) | 16.0.2.0.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 16.0.1.14.0 |  | Account Payment Order
-[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 16.0.1.0.4 |  | Account Payment Order - Generate grouped moves
+[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 16.0.1.0.5 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 16.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 16.0.1.0.1 |  | Account Payment Order Return
 [account_payment_order_tier_validation](account_payment_order_tier_validation/) | 16.0.1.1.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Extends the functionality of Payment Orders to support a tier validation process.
@@ -6825,7 +6825,7 @@ addon | version | maintainers | summary
 [pingen_env](pingen_env/) | 16.0.1.1.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | pingen.com server environment
 [printer_zpl2](printer_zpl2/) | 16.0.1.1.3 |  | Add a ZPL II label printing feature
 [printing_simple_configuration](printing_simple_configuration/) | 16.0.1.1.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Allow to set printing configuration in company or in warehouse
-[remote_report_to_printer](remote_report_to_printer/) | 16.0.1.0.1 |  | Report to printer on remotes
+[remote_report_to_printer](remote_report_to_printer/) | 16.0.1.0.2 |  | Report to printer on remotes
 
 [//]: # (end addons)
 
@@ -6968,7 +6968,7 @@ addon | version | maintainers | summary
 [datamodel](datamodel/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | This addon allows you to define simple data models supporting serialization/deserialization
 [extendable](extendable/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Extendable classes registry loader for Odoo
 [extendable_fastapi](extendable_fastapi/) | 16.0.2.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Allows the use of extendable into fastapi apps
-[fastapi](fastapi/) | 16.0.2.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 16.0.2.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.4 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | JWT bearer token authentication for FastAPI.
 [fastapi_auth_jwt_demo](fastapi_auth_jwt_demo/) | 16.0.2.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Test/demo module for fastapi_auth_jwt.
 [fastapi_auth_partner](fastapi_auth_partner/) | 16.0.1.0.0 |  | This provides an implementation of auth_partner for FastAPI
@@ -8668,7 +8668,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[shipment_advice](shipment_advice/) | 16.0.1.12.0 |  | Manage your (un)loading process through shipment advices.
+[shipment_advice](shipment_advice/) | 16.0.1.13.0 |  | Manage your (un)loading process through shipment advices.
 [shipment_advice_planner](shipment_advice_planner/) | 16.0.1.1.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | This module is used to plan ready transfers in shipment advices.
 [shipment_advice_planner_toursolver](shipment_advice_planner_toursolver/) | 16.0.3.2.0 |  | Shipment advices planning by geo-optimization (TourSolver)
 [shipment_advice_planner_toursolver_queue_job](shipment_advice_planner_toursolver_queue_job/) | 16.0.1.0.0 |  | Run TourSolver queries in queue jobs
