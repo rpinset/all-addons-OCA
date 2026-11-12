@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-09 11:51 UTC
+Generated 2026-11-12 21:47 UTC
 
 ## Skipped repos
 
@@ -9,14 +9,12 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | Repo | Reason | Detail |
 | ---- | ------ | ------ |
 | [.github](https://github.com/OCA/.github) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
-| [account-analytic](https://github.com/OCA/account-analytic) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-closing](https://github.com/OCA/account-closing) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [account-payment](https://github.com/OCA/account-payment) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | `no_module` | No directory with __manifest__.py at repo root |
 | [agreement](https://github.com/OCA/agreement) | `no_module` | No directory with __manifest__.py at repo root |
 | [ai](https://github.com/OCA/ai) | `no_module` | No directory with __manifest__.py at repo root |
@@ -32,7 +30,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [calendar](https://github.com/OCA/calendar) | `no_module` | No directory with __manifest__.py at repo root |
 | [cim](https://github.com/OCA/cim) | `no_module` | No directory with __manifest__.py at repo root |
 | [commission](https://github.com/OCA/commission) | `no_module` | No directory with __manifest__.py at repo root |
-| [community-data-files](https://github.com/OCA/community-data-files) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector](https://github.com/OCA/connector) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-cmis](https://github.com/OCA/connector-cmis) | `no_module` | No directory with __manifest__.py at repo root |
@@ -64,16 +61,13 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [ddmrp](https://github.com/OCA/ddmrp) | `no_module` | No directory with __manifest__.py at repo root |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | `no_module` | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
-| [dms](https://github.com/OCA/dms) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
-| [e-commerce](https://github.com/OCA/e-commerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [e-learning](https://github.com/OCA/e-learning) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi](https://github.com/OCA/edi) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-framework](https://github.com/OCA/edi-framework) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
-| [event](https://github.com/OCA/event) | `no_module` | No directory with __manifest__.py at repo root |
 | [field-service](https://github.com/OCA/field-service) | `no_module` | No directory with __manifest__.py at repo root |
 | [fleet](https://github.com/OCA/fleet) | `no_module` | No directory with __manifest__.py at repo root |
 | [geospatial](https://github.com/OCA/geospatial) | `no_module` | No directory with __manifest__.py at repo root |
@@ -86,7 +80,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [interface-git](https://github.com/OCA/interface-git) | `no_module` | No directory with __manifest__.py at repo root |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | `no_module` | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | `no_module` | No directory with __manifest__.py at repo root |
-| [knowledge](https://github.com/OCA/knowledge) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | `no_module` | No directory with __manifest__.py at repo root |
@@ -103,7 +96,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-france](https://github.com/OCA/l10n-france) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-greece](https://github.com/OCA/l10n-greece) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-india](https://github.com/OCA/l10n-india) | `no_module` | No directory with __manifest__.py at repo root |
@@ -121,7 +113,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-taiwan](https://github.com/OCA/l10n-taiwan) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | `no_module` | No directory with __manifest__.py at repo root |
@@ -131,7 +122,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-usa](https://github.com/OCA/l10n-usa) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | `no_module` | No directory with __manifest__.py at repo root |
-| [mail](https://github.com/OCA/mail) | `no_module` | No directory with __manifest__.py at repo root |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [maintenance](https://github.com/OCA/maintenance) | `no_module` | No directory with __manifest__.py at repo root |
 | [management-system](https://github.com/OCA/management-system) | `no_module` | No directory with __manifest__.py at repo root |

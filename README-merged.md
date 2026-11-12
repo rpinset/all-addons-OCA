@@ -48,6 +48,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/account-analytic
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-analytic
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-analytic&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/account-analytic/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/account-analytic/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/account-analytic/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-analytic)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-analytic-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-analytic-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+account-analytic
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[analytic_amount_security](analytic_amount_security/) | 20.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add a group to constrain which users can see what info on the analytic lines
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/account-financial-tools
 
 
@@ -74,6 +122,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_move_line_tax_editable](account_move_line_tax_editable/) | 20.0.1.0.1 |  | Allows to edit taxes on non-posted account move lines
 [account_usability](account_usability/) | 20.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 
 [//]: # (end addons)
@@ -144,6 +193,102 @@ and promote its widespread use.
 
 ---
 
+## From OCA/account-payment
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-payment
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-payment&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/account-payment/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/account-payment/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/account-payment/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/account-payment/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/account-payment/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-payment)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-payment-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-payment-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+account-payment
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_payment_method_base](account_payment_method_base/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add form and list view for account.payment.method
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/community-data-files
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# community-data-files
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/community-data-files&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/community-data-files/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/community-data-files/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/community-data-files/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/community-data-files)
+[![Translation Status](https://translation.odoo-community.org/widgets/community-data-files-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/community-data-files-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+community-data-files
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[base_bank_from_iban](base_bank_from_iban/) | 20.0.1.0.0 |  | Bank from IBAN
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/credit-control
 
 
@@ -171,6 +316,202 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_risk](account_financial_risk/) | 20.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/dms
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# dms
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/dms&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/dms/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/dms/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/dms/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/dms/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/dms/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/dms)
+[![Translation Status](https://translation.odoo-community.org/widgets/dms-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/dms-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+dms
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[dms](dms/) | 20.0.1.0.0 |  | Document Management System for Odoo
+[web_editor_media_dialog_dms](web_editor_media_dialog_dms/) | 20.0.1.0.0 |  | Integrate DMS with media dialog of web editor
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/e-commerce
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# e-commerce
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/e-commerce&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/e-commerce/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/e-commerce/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/e-commerce/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/e-commerce)
+[![Translation Status](https://translation.odoo-community.org/widgets/e-commerce-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/e-commerce-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+e-commerce
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[website_sale_require_legal](website_sale_require_legal/) | 20.0.1.0.0 |  | Force the user to accept legal tems to buy in the web shop
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/event
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# event
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/event&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/event/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/event/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/event/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/event/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/event/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/event)
+[![Translation Status](https://translation.odoo-community.org/widgets/event-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/event-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+event
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[event_sale_free_no_invoiceable](event_sale_free_no_invoiceable/) | 20.0.1.0.0 |  | Free tickets no invoiceable
+[partner_event](partner_event/) | 20.0.1.0.0 |  | Link partner to events
+[website_event_questions_by_ticket](website_event_questions_by_ticket/) | 20.0.1.0.0 |  | Events Questions conditional to the chosen ticket
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/knowledge
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# knowledge
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/knowledge&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/knowledge/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/knowledge/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/knowledge/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/knowledge/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/knowledge/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/knowledge)
+[![Translation Status](https://translation.odoo-community.org/widgets/knowledge-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/knowledge-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+knowledge
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[document_knowledge](document_knowledge/) | 20.0.1.0.0 |  | Documents Knowledge
+[document_page](document_page/) | 20.0.1.0.0 |  | Document Page
 
 [//]: # (end addons)
 
@@ -269,6 +610,54 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_fi_edicode](l10n_fi_edicode/) | 20.0.1.0.0 |  | Adds EDI code field and operators
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/l10n-france
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-france
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-france&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-france/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-france/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/l10n-france/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-france/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-france/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-france)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-france-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-france-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+l10n-france
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_fr_state](l10n_fr_state/) | 20.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with French States (Régions)
 
 [//]: # (end addons)
 
@@ -477,7 +866,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 20.0.1.0.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
 [l10n_ro_message_spv](l10n_ro_message_spv/) | 20.0.1.0.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
-[l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 20.0.1.0.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
+[l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 20.0.1.1.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
 [l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 20.0.1.0.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Payment Receipt Report
@@ -487,7 +876,7 @@ addon | version | maintainers | summary
 [l10n_ro_pos_refund](l10n_ro_pos_refund/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Credit note and payment disposal for Point of Sale refunds
 [l10n_ro_pos_retail](l10n_ro_pos_retail/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - A till sells on the fiscal position and the shelf prices of the shop it is attached to
 [l10n_ro_stock](l10n_ro_stock/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 20.0.1.0.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 20.0.1.1.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 20.0.1.0.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Landed Cost
@@ -503,6 +892,55 @@ addon | version | maintainers | summary
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> <a href='https://github.com/mcojocaru'><img src='https://github.com/mcojocaru.png' width='32' height='32' style='border-radius:50%;' alt='mcojocaru'/></a> <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 20.0.1.0.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Report (Fișă Magazie)
 [l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 20.0.1.0.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - VAT on Payment
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/l10n-spain
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-spain
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-spain&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/l10n-spain/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-spain/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-spain/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-spain)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-spain-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-spain-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+l10n-spain
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_es_bank](l10n_es_bank/) | 20.0.1.0.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Spanish bank entity code on bank accounts, taken from the IBAN
+[l10n_es_partner](l10n_es_partner/) | 20.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes y proveedores para España
 
 [//]: # (end addons)
 
@@ -573,6 +1011,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/mail
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# mail
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mail&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/mail/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/mail/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/mail/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/mail/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/mail/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/mail)
+[![Translation Status](https://translation.odoo-community.org/widgets/mail-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mail-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+mail
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[mail_activity_board](mail_activity_board/) | 20.0.1.0.0 |  | Add Activity Boards
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/manufacture
 
 
@@ -599,6 +1085,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[mrp_multi_level](mrp_multi_level/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
 
 [//]: # (end addons)
@@ -699,6 +1186,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_category_security](partner_category_security/) | 20.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner category security
 [partner_contact_department](partner_contact_department/) | 20.0.1.0.0 |  | Assign contacts to departments
+[partner_contact_personal_information_page](partner_contact_personal_information_page/) | 20.0.1.0.0 | <a href='https://github.com/Daemo00'><img src='https://github.com/Daemo00.png' width='32' height='32' style='border-radius:50%;' alt='Daemo00'/></a> | Add a page to contacts form to put personal information
 [partner_title](partner_title/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add title field on partner
 
 [//]: # (end addons)
@@ -804,6 +1292,7 @@ addon | version | maintainers | summary
 [project_task_default_stage](project_task_default_stage/) | 20.0.1.0.0 |  | Recovery default task stages for projects from v8
 [project_task_product](project_task_product/) | 20.0.1.0.0 |  | Allows to specify in a project task, the product the task relates to.
 [project_task_pull_request](project_task_pull_request/) | 20.0.1.0.0 |  | Adds a field for a PR URI to project tasks
+[project_task_stage_auto_state](project_task_stage_auto_state/) | 20.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Auto-change task state (done/canceled) after N days on selected stages
 
 [//]: # (end addons)
 
@@ -852,6 +1341,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [purchase_all_shipments](purchase_all_shipments/) | 20.0.1.0.0 |  | Purchase All Shipments
+[purchase_lot](purchase_lot/) | 20.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Purchase Lot
 [purchase_order_internal_note](purchase_order_internal_note/) | 20.0.1.0.0 |  | Adds an internal note to purchase orders, not printed in reports
 
 [//]: # (end addons)
@@ -962,7 +1452,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 20.0.1.0.0 |  | Report Qweb Element Page Visibility
-[report_xlsx](report_xlsx/) | 20.0.1.0.0 |  | Base module to create xlsx report
+[report_xlsx](report_xlsx/) | 20.0.1.0.1 |  | Base module to create xlsx report
 
 [//]: # (end addons)
 
@@ -1064,6 +1554,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[sale_commercial_partner](sale_commercial_partner/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
 [sale_order_split_strategy](sale_order_split_strategy/) | 20.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Define strategies to split sales orders
 [sale_order_type](sale_order_type/) | 20.0.1.0.0 |  | Sale Order Type
 
@@ -1114,6 +1605,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [disable_odoo_online](disable_odoo_online/) | 20.0.1.0.0 |  | Remove odoo.com Bindings
+[mail_debranding](mail_debranding/) | 20.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Remove Odoo branding in sent emails
 [remove_odoo_enterprise](remove_odoo_enterprise/) | 20.0.1.0.0 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
@@ -1213,6 +1705,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [date_range](date_range/) | 20.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
+[filter_multi_user](filter_multi_user/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined filters filters among several users.
 
 [//]: # (end addons)
 
@@ -1310,6 +1803,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [stock_demand_estimate](stock_demand_estimate/) | 20.0.1.0.0 |  | Allows to create demand estimates.
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
+[stock_warehouse_out_pull](stock_warehouse_out_pull/) | 20.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Restore delivery pull rules as in Odoo <= 17.0
 
 [//]: # (end addons)
 
@@ -1357,6 +1851,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[stock_picking_invoice_link](stock_picking_invoice_link/) | 20.0.1.0.0 |  | Adds link between pickings and invoices
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 20.0.1.0.0 |  | Link between picking and sale order
 [stock_restrict_lot](stock_restrict_lot/) | 20.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
 
@@ -1478,15 +1973,17 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[web_dialog_size](web_dialog_size/) | 20.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
+[web_dialog_size](web_dialog_size/) | 20.0.1.0.2 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_environment_ribbon](web_environment_ribbon/) | 20.0.1.0.0 |  | Web Environment Ribbon
 [web_filter_header_button](web_filter_header_button/) | 20.0.1.0.0 |  | Show selected filters as buttons in the control panel
 [web_m2x_options](web_m2x_options/) | 20.0.1.0.0 |  | web_m2x_options
 [web_navbar_light](web_navbar_light/) | 20.0.1.0.0 | <a href='https://github.com/smaddlsoft'><img src='https://github.com/smaddlsoft.png' width='32' height='32' style='border-radius:50%;' alt='smaddlsoft'/></a> | Light main navbar for the backend
+[web_pivot_computed_measure](web_pivot_computed_measure/) | 20.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Web Pivot Computed Measure
 [web_quick_start_screen](web_quick_start_screen/) | 20.0.1.0.0 |  | Configurable start screen for quick actions
 [web_refresher](web_refresher/) | 20.0.1.0.0 |  | Web Refresher
 [web_responsive](web_responsive/) | 20.0.1.0.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
-[web_timeline](web_timeline/) | 20.0.1.0.1 |  | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 20.0.1.0.2 |  | Interactive visualization chart to show events in time
+[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | This widget allows to display charts using Bokeh library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 20.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Web Widget Numeric Step
 
 [//]: # (end addons)
