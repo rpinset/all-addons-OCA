@@ -65,6 +65,12 @@ msgid "Release Reservation"
 msgstr ""
 
 #. module: sale_stock_prebook
+#. odoo-python
+#: code:addons/sale_stock_prebook/models/sale_order.py:0
+msgid "Reservation for %s"
+msgstr ""
+
+#. module: sale_stock_prebook
 #: model_terms:ir.ui.view,arch_db:sale_stock_prebook.view_sale_order_form_reserve
 msgid "Reserve Stock"
 msgstr ""

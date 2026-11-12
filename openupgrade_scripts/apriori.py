@@ -19,6 +19,8 @@ renamed_modules = {
     "website_odoo_debranding": "website_debranding",
     # OCA/sale-report
     "sales_team_invoiced_target_domain": "sales_team_invoiced_target_report",
+    # OCA/stock-logistics-workflow
+    "stock_valuation_layer_usage": "stock_move_valuation_usage",
     # OCA/...
 }
 
@@ -60,6 +62,8 @@ merged_modules = {
     "account_payment_partner": "account_payment_mode",
     # OCA/edi-framework
     "edi_account_core_oca": "edi_account_oca",
+    # OCA/e-commerce
+    "website_sale_category_breadcrumb": "website_sale",
     # OCA/hr
     "hr_employee_document_from_applicant": "hr_recruitment",
     # OCA/hr-holidays

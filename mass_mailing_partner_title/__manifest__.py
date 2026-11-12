@@ -3,7 +3,7 @@
 
 {
     "name": "Link partner titles with mass-mailing",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "author": "Odoo Community Association (OCA), glueckkanja AG",
     "website": "https://github.com/OCA/mass-mailing",
     "license": "AGPL-3",

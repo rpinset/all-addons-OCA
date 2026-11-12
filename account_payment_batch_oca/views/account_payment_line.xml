@@ -105,11 +105,6 @@
                     class="btn btn-secondary"
                     invisible="not move_line_id"
                 />
-                <field
-                    name="amount_company_currency"
-                    sum="Total in Company Currency"
-                    column_invisible="1"
-                />
                 <field name="payment_type" column_invisible="1" />
                 <field name="currency_id" column_invisible="1" />
             </list>

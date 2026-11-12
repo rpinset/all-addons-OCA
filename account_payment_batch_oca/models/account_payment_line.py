@@ -287,7 +287,7 @@ class AccountPaymentLine(models.Model):
             if order.payment_method_id.bank_account_required:
                 if (
                     move
-                    and move.move_type in ("in_invoice", "in_refund")
+                    and move.move_type in ("in_invoice", "in_refund", "in_receipt")
                     and order.payment_type == "outbound"
                 ):
                     partner_bank = move.partner_bank_id

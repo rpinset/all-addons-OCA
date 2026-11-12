@@ -20,6 +20,7 @@
         "reports/account_invoice_report_view.xml",
         "security/ir_rule.xml",
     ],
+    "pre_init_hook": "pre_init_hook",
     "demo": ["demo/demo.xml"],
     "installable": True,
 }

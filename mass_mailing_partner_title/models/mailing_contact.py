@@ -4,7 +4,7 @@ from odoo import api, fields, models
 class MailingContact(models.Model):
     _inherit = "mailing.contact"
 
-    title_id = fields.Many2one(comodel_name="res.partner.title", string="Title")
+    title_id = fields.Many2one(comodel_name="res.partner.title")
 
     @api.onchange("partner_id")
     def _onchange_partner_mass_mailing_partner(self):

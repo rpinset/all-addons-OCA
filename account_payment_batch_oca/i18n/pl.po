@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 16:15+0000\n"
-"PO-Revision-Date: 2016-09-10 16:15+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"PO-Revision-Date: 2026-11-11 13:46+0000\n"
+"Last-Translator: leszekszczepkowski <leszekszczepkowski@gmail.com>\n"
 "Language-Team: Polish (https://www.transifex.com/oca/teams/23907/pl/)\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_batch_oca
 #. odoo-python
@@ -431,7 +432,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_lot__create_uid
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Utworzył(a)"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_line__create_date
@@ -439,7 +440,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_lot__create_date
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Data utworzenia"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_line__company_currency_id
@@ -490,13 +491,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_method_line__display_name
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nazwa wyświetlana"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields.selection,name:account_payment_batch_oca.selection__account_payment_order__state__draft
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_order_search
 msgid "Draft"
-msgstr ""
+msgstr "Wersja robocza"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields.selection,name:account_payment_batch_oca.selection__account_payment_method_line__default_date_type__due
@@ -720,13 +721,13 @@ msgstr ""
 #. module: account_payment_batch_oca
 #: model:ir.model,name:account_payment_batch_oca.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Zapis dziennika"
 
 #. module: account_payment_batch_oca
 #: model:ir.model,name:account_payment_batch_oca.model_account_move_line
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_line__move_line_id
 msgid "Journal Item"
-msgstr ""
+msgstr "Pozycja zapisu"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_line_create__move_line_ids
@@ -755,7 +756,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_lot__write_uid
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ostatnio aktualizowane przez"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_line__write_date
@@ -763,7 +764,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_lot__write_date
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Data ostatniej aktualizacji"
 
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_line_create_form
@@ -1149,7 +1150,7 @@ msgstr ""
 #: model:ir.model,name:account_payment_batch_oca.model_account_payment_method
 #: model:ir.model,name:account_payment_batch_oca.model_account_payment_method_line
 msgid "Payment Methods"
-msgstr ""
+msgstr "Metody płatności"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment__payment_order_id
@@ -1246,7 +1247,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_lot_list
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_order_form
 msgid "Payments"
-msgstr ""
+msgstr "Płatności"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__name
@@ -1445,11 +1446,6 @@ msgstr ""
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_line_create_form
 msgid "Total Residual"
-msgstr ""
-
-#. module: account_payment_batch_oca
-#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_line_tree
-msgid "Total in Company Currency"
 msgstr ""
 
 #. module: account_payment_batch_oca

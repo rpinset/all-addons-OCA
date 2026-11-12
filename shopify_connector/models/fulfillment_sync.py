@@ -269,6 +269,7 @@ class ShopifyOrderFulfillmentSync(models.Model):
 
     def _fulfillment_allocation_input(self, picking):
         moves = []
+        kit_moves = {}
         for move in picking.move_ids.filtered(
             lambda item: item.state == "done" and item.sale_line_id
         ):
@@ -289,34 +290,82 @@ class ShopifyOrderFulfillmentSync(models.Model):
                         move=move.display_name,
                     )
                 )
-            variant_binding = self.env["shopify.product.variant"].search(
-                [
-                    ("instance_id", "=", self.instance_id.id),
-                    ("odoo_id", "=", move.product_id.id),
-                    ("state", "=", "synced"),
-                ],
-                limit=1,
-            )
-            if not variant_binding or (
-                line_binding.variant_shopify_id
-                and variant_binding.shopify_id != line_binding.variant_shopify_id
-            ):
-                raise ShopifyFulfillmentError(
-                    self.env._(
-                        "Delivery move %s has no matching Shopify variant binding.",
-                        move.display_name,
-                    )
-                )
+            if move.product_id != move.sale_line_id.product_id:
+                # A component of a kit: Shopify knows only the kit.
+                kit_moves.setdefault(line_binding, move)
+                continue
             moves.append(
-                {
-                    "move_id": move.id,
-                    "name": move.display_name,
-                    "line_id": line_binding.shopify_id,
-                    "variant_id": variant_binding.shopify_id,
-                    "quantity": quantity,
-                }
+                self._fulfillment_move_input(
+                    move, line_binding, move.product_id, quantity
+                )
+            )
+        for line_binding, move in kit_moves.items():
+            sale_line = line_binding.odoo_id
+            done = sale_line.move_ids.filtered(
+                lambda item: item.state == "done"
+                and item.picking_code == "outgoing"
+                and not item.origin_returned_move_id
+            )
+            # Count whole kits over the deliveries so far, so that a kit split
+            # over two deliveries is sent with the delivery that completes it.
+            before = done.filtered(
+                lambda item: (item.picking_id.date_done, item.picking_id.id)
+                < (picking.date_done, picking.id)
+            )
+            through = before | done.filtered(lambda item: item.picking_id == picking)
+            kits = self._delivered_kits(sale_line, through) - self._delivered_kits(
+                sale_line, before
+            )
+            if kits <= 0:
+                continue
+            moves.append(
+                self._fulfillment_move_input(
+                    move, line_binding, sale_line.product_id, kits
+                )
             )
         return moves
+
+    def _delivered_kits(self, sale_line, moves):
+        needs = self.env["shopify.fulfillment"]._external_line_needs(sale_line, 1)
+        delivered = defaultdict(float)
+        for move in moves:
+            # A kit component moves in the unit of its BoM line, and the needs
+            # are in the unit of the product.
+            delivered[move.product_id] += move.product_uom._compute_quantity(
+                move.quantity, move.product_id.uom_id
+            )
+        kits = min(
+            (delivered[product] / need for product, need in needs.items() if need),
+            default=0,
+        )
+        return float_round(kits, precision_digits=0, rounding_method="DOWN")
+
+    def _fulfillment_move_input(self, move, line_binding, product, quantity):
+        variant_binding = self.env["shopify.product.variant"].search(
+            [
+                ("instance_id", "=", self.instance_id.id),
+                ("odoo_id", "=", product.id),
+                ("state", "=", "synced"),
+            ],
+            limit=1,
+        )
+        if not variant_binding or (
+            line_binding.variant_shopify_id
+            and variant_binding.shopify_id != line_binding.variant_shopify_id
+        ):
+            raise ShopifyFulfillmentError(
+                self.env._(
+                    "Delivery move %s has no matching Shopify variant binding.",
+                    move.display_name,
+                )
+            )
+        return {
+            "move_id": move.id,
+            "name": move.display_name,
+            "line_id": line_binding.shopify_id,
+            "variant_id": variant_binding.shopify_id,
+            "quantity": quantity,
+        }
 
     def _fulfillment_orders_input(self):
         return [

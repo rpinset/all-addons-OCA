@@ -410,6 +410,38 @@ class TestPrintingLabelZpl2(PrinterZpl2Common):
             "^XZ",
         )
 
+    def test_typeset_text_label_contents(self):
+        """Check contents of a text label positioned by field typeset"""
+        label = self.new_label()
+        data = "Some text"
+        self.new_component(
+            {"label_id": label.id, "data": f'"{data}"', "position_type": "typeset"}
+        )
+        contents = label._generate_zpl2_data(self.printer).decode("utf-8")
+        self.assertEqual(
+            contents,
+            # Label start
+            "^XA\n"
+            # Print width
+            "^PW480\n"
+            # UTF-8 encoding
+            "^CI28\n"
+            # Label position
+            "^LH10,10\n"
+            # Component position (bottom left corner)
+            "^FT10,10"
+            # Component format
+            "^A0N,10,10"
+            # Component contents
+            f"^FD{data}"
+            # Component end
+            "^FS\n"
+            # Recall last saved parameters
+            "^JUR\n"
+            # Label end
+            "^XZ",
+        )
+
     def test_reversed_text_label_contents(self):
         """Check contents of a text label"""
         label = self.new_label()
@@ -475,6 +507,34 @@ class TestPrintingLabelZpl2(PrinterZpl2Common):
             # Recall last saved parameters
             "^JUR\n"
             # Label end
+            "^XZ",
+        )
+
+    def test_multiline_text_label_contents(self):
+        """The line breaks of the text break the line in a block, and are
+        replaced by a space out of a block"""
+        label = self.new_label()
+        data = "Line one\r\nLine two\nLine three"
+        self.new_component(
+            {
+                "label_id": label.id,
+                "data": repr(data),
+                "in_block": True,
+                "block_lines": 3,
+            }
+        )
+        self.new_component({"label_id": label.id, "data": repr(data)})
+        contents = label._generate_zpl2_data(self.printer).decode("utf-8")
+        self.assertEqual(
+            contents,
+            "^XA\n"
+            "^PW480\n"
+            "^CI28\n"
+            "^LH10,10\n"
+            "^FO10,10^A0N,10,10^FB0,3,0,L,0"
+            "^FDLine one\\&Line two\\&Line three^FS\n"
+            "^FO10,10^A0N,10,10^FDLine one Line two Line three^FS\n"
+            "^JUR\n"
             "^XZ",
         )
 
@@ -1018,13 +1078,7 @@ class TestPrintingLabelZpl2(PrinterZpl2Common):
         contents = label._generate_zpl2_data(self.printer).decode("utf-8")
         self.assertEqual(
             contents,
-            "^XA\n"
-            "^PW480\n"
-            "^CI28\n"
-            "^LH10,10\n"
-            "^FO10,10^GFA,1.0,1.0,1.0,b'00'^FS\n"
-            "^JUR\n"
-            "^XZ",
+            "^XA\n^PW480\n^CI28\n^LH10,10\n^FO10,10^GFA,1,1,1,00^FS\n^JUR\n^XZ",
         )
 
     def test_graphic_label_contents_blank_rotated(self):
@@ -1049,8 +1103,8 @@ class TestPrintingLabelZpl2(PrinterZpl2Common):
             "^PW480\n"
             "^CI28\n"
             "^LH10,10\n"
-            "^FO10,10^GFA,20.0,20.0,2.0,"
-            "b'FFC0FFC0FFC0FFC0FFC0FFC0FFC0FFC0FFC0FFC0'^FS\n"
+            "^FO10,10^GFA,20,20,2,"
+            "FFC0FFC0FFC0FFC0FFC0FFC0FFC0FFC0FFC0FFC0^FS\n"
             "^JUR\n"
             "^XZ",
         )
@@ -1070,13 +1124,7 @@ class TestPrintingLabelZpl2(PrinterZpl2Common):
         contents = label._generate_zpl2_data(self.printer).decode("utf-8")
         self.assertEqual(
             contents,
-            "^XA\n"
-            "^PW480\n"
-            "^CI28\n"
-            "^LH10,10\n"
-            "^FO10,10^GFA,1.0,1.0,1.0,b'00'^FS\n"
-            "^JUR\n"
-            "^XZ",
+            "^XA\n^PW480\n^CI28\n^LH10,10\n^FO10,10^GFA,1,1,1,00^FS\n^JUR\n^XZ",
         )
 
     def test_graphic_label_contents_blank_bottom(self):
@@ -1094,13 +1142,7 @@ class TestPrintingLabelZpl2(PrinterZpl2Common):
         contents = label._generate_zpl2_data(self.printer).decode("utf-8")
         self.assertEqual(
             contents,
-            "^XA\n"
-            "^PW480\n"
-            "^CI28\n"
-            "^LH10,10\n"
-            "^FO10,10^GFA,1.0,1.0,1.0,b'00'^FS\n"
-            "^JUR\n"
-            "^XZ",
+            "^XA\n^PW480\n^CI28\n^LH10,10\n^FO10,10^GFA,1,1,1,00^FS\n^JUR\n^XZ",
         )
 
     def test_zpl2_raw_contents_blank(self):

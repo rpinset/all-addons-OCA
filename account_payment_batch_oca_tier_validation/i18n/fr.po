@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_batch_oca_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-22 21:09+0000\n"
+"PO-Revision-Date: 2025-08-22 21:09+0000\n"
+"Last-Translator: Alexis de Lattre <alexis.delattre@akretion.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__can_review
+msgid "Can Review"
+msgstr "Prêt pour revue"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__has_comment
+msgid "Has Comment"
+msgstr "A un commentaire"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__hide_reviews
+msgid "Hide Reviews"
+msgstr "Masquer les revues"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,help:account_payment_batch_oca_tier_validation.field_account_payment_order__has_comment
+msgid "If set, Allow the reviewer to leave a comment on the review."
+msgstr ""
+"Si cette option est activée, la personne qui fait la revue pourra laisser un "
+"commentaire."
+
+#. module: account_payment_batch_oca_tier_validation
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_tier_validation.account_payment_order_search_view
+msgid "My Payment Orders to review"
+msgstr "Ordres de paiement que je dois vérifier"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__need_validation
+msgid "Need Validation"
+msgstr "En attente de validation"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_tier_validation.account_payment_order_search_view
+msgid "Needs my Review"
+msgstr "Requiert ma revue"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__next_review
+msgid "Next Review"
+msgstr "Prochaine revue"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_tier_validation.account_payment_order_search_view
+msgid "Payment Orders validated and ready to be confirmed"
+msgstr "Ordres de paiement validés et prêts à être confirmés"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model,name:account_payment_batch_oca_tier_validation.model_account_payment_order
+msgid "Payment/Debit Order"
+msgstr "Ordre de paiement/prélèvement"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__rejected
+msgid "Rejected"
+msgstr "Refusé"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__rejected_message
+msgid "Rejected Message"
+msgstr "Message de refus"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__reviewer_ids
+msgid "Reviewers"
+msgstr "Réviseurs"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model,name:account_payment_batch_oca_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "Niveau de validation"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__to_validate_message
+msgid "To Validate Message"
+msgstr "Message de la demande de validation"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__validated
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_tier_validation.account_payment_order_search_view
+msgid "Validated"
+msgstr "Approuvé"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__validated_message
+msgid "Validated Message"
+msgstr "Message de validation"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__validation_status
+msgid "Validation Status"
+msgstr "Statut de validation"
+
+#. module: account_payment_batch_oca_tier_validation
+#: model:ir.model.fields,field_description:account_payment_batch_oca_tier_validation.field_account_payment_order__review_ids
+msgid "Validations"
+msgstr "Validations"
+
+#~ msgid "Tier Validation Accepted"
+#~ msgstr "Niveau de validation approuvé"
+
+#~ msgid "Tier Validation Rejected"
+#~ msgstr "Niveau de validation refusé"
+
+#~ msgid "Tier Validation Requested"
+#~ msgstr "Demande de validation"

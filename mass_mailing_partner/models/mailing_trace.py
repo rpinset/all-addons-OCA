@@ -8,9 +8,7 @@ from odoo import api, fields, models
 class MailingTrace(models.Model):
     _inherit = "mailing.trace"
 
-    partner_id = fields.Many2one(
-        string="Partner", comodel_name="res.partner", readonly=True
-    )
+    partner_id = fields.Many2one(comodel_name="res.partner", readonly=True)
 
     @api.model
     def partner_id_from_obj(self, model, res_id):

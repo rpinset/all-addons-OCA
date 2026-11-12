@@ -10,7 +10,7 @@
 {
     "name": "Account Payment Batch OCA",
     "summary": "Add payment orders and debit orders",
-    "version": "19.0.2.0.0",
+    "version": "19.0.2.2.0",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV, "
     "Therp BV, "

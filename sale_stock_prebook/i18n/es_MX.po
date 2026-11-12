@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_stock_prebook
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-11-12 16:46+0000\n"
+"Last-Translator: Maxime Chambreuil <mchambreuil@opensourceintegrators.com>\n"
+"Language-Team: none\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_forecasted_product_product__display_name
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_move__display_name
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_route__display_name
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_rule__display_name
+msgid "Display Name"
+msgstr "Nombre en pantalla"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_sale_order_line__id
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_forecasted_product_product__id
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_move__id
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_route__id
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,help:sale_stock_prebook.field_stock_route__no_sale_stock_prebook
+msgid ""
+"If set no stock will be prebooked, for configured Products with this route"
+msgstr ""
+"Si está activo, no se reservarán existencias de forma anticipada para los "
+"productos configurados con esta ruta."
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_route
+msgid "Inventory Routes"
+msgstr "Rutas de inventario"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.stock_route_view_form_inherit_prebook_dropshipment
+msgid "No Prebook Stock"
+msgstr "No reservar existencias"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_route__no_sale_stock_prebook
+msgid "No Sale Stock Prebook"
+msgstr "No reservar existencias de venta"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_rule__prebook_picking_type_id
+msgid "Prebook Picking Type"
+msgstr "Tipo de operación para reserva"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.view_sale_order_form_reserve
+msgid "Release Reservation"
+msgstr "Liberar reserva"
+
+#. module: sale_stock_prebook
+#. odoo-python
+#: code:addons/sale_stock_prebook/models/sale_order.py:0
+msgid "Reservation for %s"
+msgstr "Reserva para %s"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.view_sale_order_form_reserve
+msgid "Reserve Stock"
+msgstr "Reservar existencias"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de la orden de venta"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_sale_order__stock_is_reserved
+msgid "Stock Is Reserved"
+msgstr "Existencias reservadas"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_forecasted_product_product
+msgid "Stock Replenishment Report"
+msgstr "Reporte de reabastecimiento de existencias"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regla de inventario"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,help:sale_stock_prebook.field_stock_rule__prebook_picking_type_id
+msgid ""
+"This operation type will be used for prebooking stock for sale orders. It's "
+"therefore only relevant for rules that are used for sale order lines."
+msgstr ""
+"Este tipo de operación se usará para la reserva anticipada de existencias de "
+"las órdenes de venta. Solo aplica a las reglas usadas en las líneas de la "
+"orden de venta."
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_move__used_for_sale_reservation
+msgid "Used For Sale Reservation"
+msgstr "Usado para reserva de venta"
+
+#. module: sale_stock_prebook
+#. odoo-python
+#: code:addons/sale_stock_prebook/models/stock_move.py:0
+msgid "You cannot set a move used for sales reservation as picked"
+msgstr ""
+"No puede marcar como recolectado un movimiento usado para la reserva de "
+"ventas."

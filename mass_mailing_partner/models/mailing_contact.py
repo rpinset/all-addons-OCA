@@ -13,7 +13,7 @@ class MailingContact(models.Model):
     _inherit = "mailing.contact"
 
     partner_id = fields.Many2one(
-        comodel_name="res.partner", string="Partner", domain=[("email", "!=", False)]
+        comodel_name="res.partner", domain=[("email", "!=", False)]
     )
     tag_ids = fields.Many2many(compute="_compute_tag_ids", store=True)
 

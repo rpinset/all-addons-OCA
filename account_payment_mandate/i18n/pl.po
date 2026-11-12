@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 16:15+0000\n"
-"PO-Revision-Date: 2016-09-10 16:15+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"PO-Revision-Date: 2026-11-11 13:46+0000\n"
+"Last-Translator: leszekszczepkowski <leszekszczepkowski@gmail.com>\n"
 "Language-Team: Polish (https://www.transifex.com/oca/teams/23907/pl/)\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_mandate
 #: model_terms:ir.actions.act_window,help:account_payment_mandate.mandate_action
@@ -105,7 +106,7 @@ msgstr ""
 #. module: account_payment_mandate
 #: model:ir.model,name:account_payment_mandate.model_res_partner_bank
 msgid "Bank Accounts"
-msgstr ""
+msgstr "Konta bankowe"
 
 #. module: account_payment_mandate
 #: model:ir.actions.act_window,name:account_payment_mandate.mandate_action
@@ -164,17 +165,17 @@ msgstr ""
 #. module: account_payment_mandate
 #: model:ir.model,name:account_payment_mandate.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #. module: account_payment_mandate
 #: model:ir.model.fields,field_description:account_payment_mandate.field_account_banking_mandate__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Utworzył(a)"
 
 #. module: account_payment_mandate
 #: model:ir.model.fields,field_description:account_payment_mandate.field_account_banking_mandate__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Data utworzenia"
 
 #. module: account_payment_mandate
 #: model:ir.model.fields,field_description:account_payment_mandate.field_account_banking_mandate__signature_date
@@ -209,14 +210,14 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_mandate.field_res_partner__display_name
 #: model:ir.model.fields,field_description:account_payment_mandate.field_res_partner_bank__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nazwa wyświetlana"
 
 #. module: account_payment_mandate
 #: model:ir.model.fields.selection,name:account_payment_mandate.selection__account_banking_mandate__state__draft
 #: model_terms:ir.ui.view,arch_db:account_payment_mandate.view_mandate_search
 #: model_terms:ir.ui.view,arch_db:account_payment_mandate.view_mandate_tree
 msgid "Draft"
-msgstr ""
+msgstr "Wersja robocza"
 
 #. module: account_payment_mandate
 #: model:ir.model.fields.selection,name:account_payment_mandate.selection__account_banking_mandate__state__expired
@@ -303,7 +304,7 @@ msgstr ""
 #. module: account_payment_mandate
 #: model:ir.model,name:account_payment_mandate.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Zapis dziennika"
 
 #. module: account_payment_mandate
 #: model_terms:ir.ui.view,arch_db:account_payment_mandate.view_mandate_tree
@@ -313,12 +314,12 @@ msgstr ""
 #. module: account_payment_mandate
 #: model:ir.model.fields,field_description:account_payment_mandate.field_account_banking_mandate__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ostatnio aktualizowane przez"
 
 #. module: account_payment_mandate
 #: model:ir.model.fields,field_description:account_payment_mandate.field_account_banking_mandate__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Data ostatniej aktualizacji"
 
 #. module: account_payment_mandate
 #. odoo-python
@@ -477,7 +478,7 @@ msgstr ""
 #. module: account_payment_mandate
 #: model:ir.model,name:account_payment_mandate.model_account_payment_method
 msgid "Payment Methods"
-msgstr ""
+msgstr "Metody płatności"
 
 #. module: account_payment_mandate
 #. odoo-python

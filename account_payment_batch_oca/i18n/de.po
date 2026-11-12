@@ -1489,11 +1489,6 @@ msgid "Total Residual"
 msgstr "Gesamt offen"
 
 #. module: account_payment_batch_oca
-#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_line_tree
-msgid "Total in Company Currency"
-msgstr "Summe in Unternehmenswährung"
-
-#. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__payment_line_ids
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_order_form
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_order_tree
@@ -1565,6 +1560,9 @@ msgid ""
 "{{object.payment_type == \"inbound\" and 'Debit' or 'Payment'}} notification "
 "of {{ object.company_id.name }}"
 msgstr ""
+
+#~ msgid "Total in Company Currency"
+#~ msgstr "Summe in Unternehmenswährung"
 
 #~ msgid "Accounting / Payments"
 #~ msgstr "Buchhaltung / Zahlungen"

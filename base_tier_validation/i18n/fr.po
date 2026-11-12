@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-11-06 19:46+0000\n"
+"PO-Revision-Date: 2026-11-09 17:46+0000\n"
 "Last-Translator: Rémy Lescallier <5632327+Coosos@users.noreply.github.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -57,7 +57,7 @@ msgstr ""
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "<span class=\"ms-1\">days</span>"
-msgstr ""
+msgstr "<span class=\"ms-1\">jour(s)</span>"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -116,6 +116,9 @@ msgid ""
 "reviewer)\n"
 "                before they can move forward in their workflow."
 msgstr ""
+"Une définition de niveau indique à Odoo quels enregistrements d'un modèle \n"
+"donné doivent être revus par quel utilisateur (ou groupe, ou approbateur \n"
+"défini par un champ) avant de pouvoir avancer dans leur flux de travail."
 
 #. module: base_tier_validation
 #. odoo-python
@@ -214,8 +217,8 @@ msgid ""
 "At least one of these fields must be checked! Write under Validation, Write "
 "after Validation"
 msgstr ""
-"Au moins un de ces champs doit être vérifié ! Modification sous Validation, "
-"Modification après validation"
+"Au moins un de ces champs doit être coché ! Écrire sous validation, Écrire "
+"après validation"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__approve_sequence_bypass
@@ -462,7 +465,7 @@ msgstr ""
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
 msgid "It's fully validated"
-msgstr "C'est validé complétement"
+msgstr "C'est entièrement validé"
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
@@ -570,7 +573,7 @@ msgstr "Notifier les approbateurs en atteignant l’état « en attente »"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Notify reviewers when"
-msgstr ""
+msgstr "Notifier les approbateurs lorsque"
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
@@ -650,6 +653,8 @@ msgid ""
 "Remind the reviewers every this many days until the review is done. Leave at "
 "0 to send no reminder."
 msgstr ""
+"Envoyer un rappel aux approbateurs tous les X jours jusqu'à ce que la revue "
+"soit effectuée. Laisser à 0 pour n'envoyer aucun rappel."
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_buttons
@@ -775,6 +780,15 @@ msgid ""
 "belong to a group with read access on the target model, or pick different "
 "reviewers."
 msgstr ""
+"Le ou les approbateurs suivants pourraient ne pas pouvoir lire les "
+"enregistrements « %(model)s » et donc ne pas pouvoir traiter les revues "
+"créées par ce niveau : %(reviewers)s.\n"
+"\n"
+"Cette vérification est indicative et ne porte que sur les droits d'accès au "
+"niveau du modèle : des règles d'enregistrement peuvent encore accorder ou "
+"retirer l'accès à l'exécution. Assurez-vous que ces utilisateurs "
+"appartiennent à un groupe disposant d'un accès en lecture sur le modèle "
+"cible, ou choisissez d'autres approbateurs."
 
 #. module: base_tier_validation
 #. odoo-python
@@ -991,6 +1005,12 @@ msgid ""
 "request. Only meaningful for review_type='group'; the form hides this field "
 "for the other review types."
 msgstr ""
+"Si défini, l'utilisateur ayant demandé la validation est retiré des "
+"approbateurs de ce niveau. Tout autre membre du groupe configuré peut "
+"valider, sauf le demandeur lui-même. Sans cette option, un demandeur "
+"appartenant au même groupe que les approbateurs configurés peut valider sa "
+"propre demande. Ne s'applique qu'à review_type='group' ; le formulaire "
+"masque ce champ pour les autres types de revue."
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__no
