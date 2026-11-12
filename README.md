@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-11-09 11:43 UTC** (elapsed 124s)
+Last build: **2026-11-12 21:39 UTC** (elapsed 146s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -38,7 +38,7 @@ Last build: **2026-11-09 11:43 UTC** (elapsed 124s)
 | [connector-magento](https://github.com/OCA/connector-magento) | 1 | c496d4c 2025-02-20 mymage Translated using Weblate (Italian) |
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 14 | a964366 2024-07-22 mymage Translated using Weblate (Italian) |
 | [contract](https://github.com/OCA/contract) | 35 | 1ae526b 2026-10-01 mymage Translated using Weblate (Italian) |
-| [cooperative](https://github.com/OCA/cooperative) | 9 | 9fae69b 2025-11-28 mymage Translated using Weblate (Italian) |
+| [cooperative](https://github.com/OCA/cooperative) | 9 | bebb28f 2026-11-09 mymage Translated using Weblate (Italian) |
 | [credit-control](https://github.com/OCA/credit-control) | 10 | 67f333f 2026-09-16 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 23 | 557b822 2026-07-22 mymage Translated using Weblate (Italian) |
 | [currency](https://github.com/OCA/currency) | 7 | 921cf10 2025-02-01 oca-git-bot [IMP] update dotfiles |
@@ -87,7 +87,7 @@ Last build: **2026-11-09 11:43 UTC** (elapsed 124s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 7 | e3a7de4 2025-02-01 oca-ci [UPD] Update pim.pot |
 | [operating-unit](https://github.com/OCA/operating-unit) | 26 | 63d82bc 2024-10-03 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 64 | f7de324 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [pos](https://github.com/OCA/pos) | 82 | b0ed243 2026-06-10 mymage Translated using Weblate (Italian) |
+| [pos](https://github.com/OCA/pos) | 82 | 7fe18cf 2026-11-09 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 56 | d0b2171 2026-05-12 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | fa25c0b 2025-02-12 mymage Translated using Weblate (Italian) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | de26874 2026-11-06 mymage Translated using Weblate (Italian) |
@@ -102,7 +102,7 @@ Last build: **2026-11-09 11:43 UTC** (elapsed 124s)
 | [rest-framework](https://github.com/OCA/rest-framework) | 6 | ce695b4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [rma](https://github.com/OCA/rma) | 6 | 17c1b2c 2026-10-01 mymage Translated using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 6 | b18afd3 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | 983257d 2026-10-28 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | 08d34e2 2026-11-10 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 1197df9 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [server-auth](https://github.com/OCA/server-auth) | 21 | 4f19d40 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [server-backend](https://github.com/OCA/server-backend) | 16 | e63658d 2025-09-18 mymage Translated using Weblate (Italian) |
