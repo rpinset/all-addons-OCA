@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-11-09 11:43 UTC** (elapsed 135s)
+Last build: **2026-11-12 21:38 UTC** (elapsed 129s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -86,7 +86,7 @@ Last build: **2026-11-09 11:43 UTC** (elapsed 135s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 17 | db3d30f 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [partner-contact](https://github.com/OCA/partner-contact) | 62 | b8c7c6d 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [payroll](https://github.com/OCA/payroll) | 2 | a36983b 2026-07-28 mymage Translated using Weblate (Italian) |
-| [pos](https://github.com/OCA/pos) | 22 | 6e18841 2026-11-06 mymage Translated using Weblate (Italian) |
+| [pos](https://github.com/OCA/pos) | 22 | bc7d005 2026-11-09 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 59 | 8991c7d 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | 1fb032c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 11 | a19b76a 2026-11-06 mymage Translated using Weblate (Italian) |
@@ -112,7 +112,7 @@ Last build: **2026-11-09 11:43 UTC** (elapsed 135s)
 | [server-ux](https://github.com/OCA/server-ux) | 35 | 2c38496 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [social](https://github.com/OCA/social) | 41 | 7d075ac 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 15 | fd8c438 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | d1d93ec 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | 7d5bf3a 2026-11-10 mymage Translated using Weblate (Italian) |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 1 | 1e5a911 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 4 | 8a38b20 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 94 | 6192cbb 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
