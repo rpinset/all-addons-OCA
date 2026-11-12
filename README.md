@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-11-09 11:46 UTC** (elapsed 104s)
+Last build: **2026-11-12 21:41 UTC** (elapsed 92s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
@@ -18,9 +18,9 @@ Last build: **2026-11-09 11:46 UTC** (elapsed 104s)
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | 27f668e 2026-10-01 mymage Translated using Weblate (Italian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | 79 | c99fd2b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [account-invoicing](https://github.com/OCA/account-invoicing) | 79 | 4cda929 2026-11-09 mymage Translated using Weblate (Italian) |
 | [account-payment](https://github.com/OCA/account-payment) | 24 | 77243c2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [account-reconcile](https://github.com/OCA/account-reconcile) | 11 | 8219cd8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [account-reconcile](https://github.com/OCA/account-reconcile) | 11 | 5caa476 2026-11-09 mymage Translated using Weblate (Italian) |
 | [agreement](https://github.com/OCA/agreement) | 4 | 0eb9de0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [bank-payment](https://github.com/OCA/bank-payment) | 14 | ab6f7b6 2026-08-19 Weblate Update translation files |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 15 | 57ce9ae 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -85,7 +85,7 @@ Last build: **2026-11-09 11:46 UTC** (elapsed 104s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 36 | 0e22e8c 2025-10-14 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 65 | 52c4359 2026-07-30 Pedro M. Baeza Merge pull request #2413 from hbrunn/15.0-fix-ci |
 | [payroll](https://github.com/OCA/payroll) | 3 | 7a7d13a 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [pos](https://github.com/OCA/pos) | 19 | 80ad19a 2026-10-12 mymage Translated using Weblate (Italian) |
+| [pos](https://github.com/OCA/pos) | 19 | 7c7068d 2026-11-09 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 55 | 90c92b7 2026-09-11 Weblate Update translation files |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | ee07b90 2026-11-06 mymage Translated using Weblate (Italian) |
@@ -100,7 +100,7 @@ Last build: **2026-11-09 11:46 UTC** (elapsed 104s)
 | [rma](https://github.com/OCA/rma) | 7 | bb31ac9 2026-10-01 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 117 | 3c4d3a2 2026-10-28 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 117 | 44dc64c 2026-11-10 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -112,7 +112,7 @@ Last build: **2026-11-09 11:46 UTC** (elapsed 104s)
 | [sign](https://github.com/OCA/sign) | 3 | 48e9f44 2026-11-06 mymage Translated using Weblate (Italian) |
 | [social](https://github.com/OCA/social) | 50 | e56fe28 2026-10-07 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 4112ec6 2026-11-06 mymage Translated using Weblate (Italian) |
-| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | c4b3e65 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | f80ea8f 2026-11-10 mymage Translated using Weblate (Italian) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 60 | f710c14 2026-10-01 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 79 | 1976215 2026-07-23 OCA-git-bot [BOT] post-merge updates |
@@ -122,7 +122,7 @@ Last build: **2026-11-09 11:46 UTC** (elapsed 104s)
 | [timesheet](https://github.com/OCA/timesheet) | 19 | ce46fb5 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [vertical-association](https://github.com/OCA/vertical-association) | 7 | f8bcf39 2025-06-21 mymage Translated using Weblate (Italian) |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 9690e36 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 247d3ac 2026-11-06 mymage Translated using Weblate (Italian) |
+| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 24810dd 2026-11-09 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 1 | 9debad8 2026-03-27 OCA-git-bot [ADD] setup.py |
 | [web](https://github.com/OCA/web) | 53 | 0503b0a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [web-api](https://github.com/OCA/web-api) | 1 | 0102039 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
