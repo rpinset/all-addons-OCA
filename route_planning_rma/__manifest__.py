@@ -3,7 +3,7 @@
 
 {
     "name": "Route Planning RMA Integration",
-    "version": "18.0.1.0.2",
+    "version": "18.0.1.0.3",
     "license": "AGPL-3",
     "author": "Tecnativa,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/route-planning",

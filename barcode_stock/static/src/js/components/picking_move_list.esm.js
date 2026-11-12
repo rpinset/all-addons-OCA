@@ -1,6 +1,7 @@
 import {Component} from "@odoo/owl";
 import {PickingMoveCard} from "./picking_move_card.esm";
 import {isMovePending} from "@barcode_stock/js/utils/move_progress.esm";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 
 export class PickingMoveList extends Component {
     showMove(move) {
@@ -13,7 +14,7 @@ export class PickingMoveList extends Component {
                 demandQty: move.product_uom_qty || move.quantity || 0,
                 doneQty: move.qty_done_total || 0,
                 remainingQty: Math.max(
-                    (move.quantity || 0) - (move.qty_done_total || 0),
+                    roundQty((move.quantity || 0) - (move.qty_done_total || 0)),
                     0
                 ),
                 completionLabel: "0%",

@@ -24,8 +24,8 @@ msgstr ""
 #: code:addons/account_payment_batch_oca/models/account_move.py:0
 #, fuzzy
 msgid ""
-"%(count)d payment line(s) added to the existing draft payment order "
-"%(pay_order_link)s."
+"%(count)d payment line(s) added to the existing draft payment order %"
+"(pay_order_link)s."
 msgstr ""
 "S'han afegit %d línies de pagament a l'ordre de pagament en esborrany "
 "existent %s."
@@ -35,8 +35,8 @@ msgstr ""
 #: code:addons/account_payment_batch_oca/models/account_move.py:0
 #, fuzzy
 msgid ""
-"%(count)d payment lines added to the new draft payment order "
-"%(pay_order_link)s, which has been automatically created."
+"%(count)d payment lines added to the new draft payment order %"
+"(pay_order_link)s, which has been automatically created."
 msgstr ""
 "S'han afegit %d línies de pagament a la nova ordre de pagament %s en "
 "esborrany que s'ha creat automàticament."
@@ -65,9 +65,9 @@ msgid ""
 "                <p><t t-out=\"object.company_id.name\">My Company</t> has "
 "sent instructions to its bank to execute a <t t-if=\"object.payment_type == "
 "'inbound'\">debit order</t><t t-if=\"object.payment_type == "
-"'outbound'\">payment order</t> which includes the <t t-if=\"object."
-"payment_type == 'inbound'\">debit(s)</t><t t-if=\"object.payment_type == "
-"'outbound'\">payment(s)</t> below for <strong>\n"
+"'outbound'\">payment order</t> which includes the <t t-"
+"if=\"object.payment_type == 'inbound'\">debit(s)</t><t t-"
+"if=\"object.payment_type == 'outbound'\">payment(s)</t> below for <strong>\n"
 "                    <t t-out=\"ctx['partner_display_name']\">Azur Interior</"
 "t>\n"
 "                </strong>.</p>\n"
@@ -125,8 +125,8 @@ msgid ""
 "                                            </td>\n"
 "                                            <td style=\"padding: 2px; "
 "border: 1px solid grey; text-align: right;\">\n"
-"                                                <t t-"
-"out=\"line['amount']\">1 400,36 €</t>\n"
+"                                                <t t-out=\"line['amount']"
+"\">1 400,36 €</t>\n"
 "                                            </td>\n"
 "                                        </tr>\n"
 "                                    </t>\n"
@@ -1030,16 +1030,16 @@ msgstr "Número de missatges amb error de lliurament"
 #: code:addons/account_payment_batch_oca/models/account_payment_order.py:0
 msgid ""
 "Odoo <strong>failed to generate the email</strong> for partner <a href=# "
-"data-oe-model=res.partner data-oe-id=%(partner_id)d> %(partner_name)s</a>: "
-"%(error)s"
+"data-oe-model=res.partner data-oe-id=%(partner_id)d> %(partner_name)s</a>: %"
+"(error)s"
 msgstr ""
 
 #. module: account_payment_batch_oca
 #. odoo-python
 #: code:addons/account_payment_batch_oca/models/account_payment_line.py:0
 msgid ""
-"On payment line %(name)s with partner '%(partner)s', the bank account "
-"'%(bank_account)s' belongs to partner '%(bank_account_partner)s'."
+"On payment line %(name)s with partner '%(partner)s', the bank account '%"
+"(bank_account)s' belongs to partner '%(bank_account_partner)s'."
 msgstr ""
 
 #. module: account_payment_batch_oca
@@ -1055,8 +1055,8 @@ msgstr ""
 #: code:addons/account_payment_batch_oca/models/account_payment_order.py:0
 msgid ""
 "On payment/debit order %(order)s, the payment type is %(order_ptype)s, but "
-"the payment method %(method)s is configured with payment type "
-"%(method_ptype)s."
+"the payment method %(method)s is configured with payment type %"
+"(method_ptype)s."
 msgstr ""
 
 #. module: account_payment_batch_oca
@@ -1526,11 +1526,6 @@ msgid "Total Residual"
 msgstr "Total residual"
 
 #. module: account_payment_batch_oca
-#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_line_tree
-msgid "Total in Company Currency"
-msgstr "Total en la moneda de la companyia"
-
-#. module: account_payment_batch_oca
 #: model:ir.model.fields,field_description:account_payment_batch_oca.field_account_payment_order__payment_line_ids
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_order_form
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.account_payment_order_tree
@@ -1604,6 +1599,9 @@ msgid ""
 "{{object.payment_type == \"inbound\" and 'Debit' or 'Payment'}} notification "
 "of {{ object.company_id.name }}"
 msgstr ""
+
+#~ msgid "Total in Company Currency"
+#~ msgstr "Total en la moneda de la companyia"
 
 #~ msgid "<strong>Company Currency:</strong>"
 #~ msgstr "<strong>Moneda de la companyia:</strong>"

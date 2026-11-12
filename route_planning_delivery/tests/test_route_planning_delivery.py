@@ -14,7 +14,11 @@ class TestRoutePlanningDelivery(RouteCommon):
     def setUpClass(cls):
         super().setUpClass()
         Product = cls.env["product.product"]
-        cls.warehouse = cls.env.ref("stock.warehouse0")
+        cls.warehouse = cls.env["stock.warehouse"].search(
+            [("company_id", "=", cls.env.company.id)], limit=1
+        )
+        customer_loc, _supplier_loc = cls.warehouse._get_partner_locations()
+        cls.customer_loc = customer_loc
         # Archive all pricelists to avoid conflicts with the test
         cls.env["product.pricelist"].search([]).action_archive()
         cls.area_north.warehouse_id = cls.warehouse
@@ -163,8 +167,10 @@ class TestRoutePlanningDelivery(RouteCommon):
         self._add_shipping_to_order(self.order, self.carrier)
         self.assertEqual(picking.carrier_id, self.carrier)
         self.assertFalse(picking.route_area_id)
-        self.assertNotEqual(move_a.location_dest_id, self.area_north.location_id)
-        self.assertNotEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertEqual(move_a.location_dest_id, self.customer_loc)
+        self.assertNotEqual(move_a.location_id, self.area_north.location_id)
+        self.assertEqual(picking.location_dest_id, self.customer_loc)
+        self.assertNotEqual(picking.location_id, self.area_north.location_id)
         # Change carrier with route area
         self._add_shipping_to_order(
             self.order, self.carrier_route, route_area=self.area_north
@@ -173,3 +179,144 @@ class TestRoutePlanningDelivery(RouteCommon):
         self.assertEqual(picking.route_area_id, self.area_north)
         self.assertEqual(move_a.location_dest_id, self.area_north.location_id)
         self.assertEqual(picking.location_dest_id, self.area_north.location_id)
+
+    @mute_logger("odoo.models.unlink")
+    def test_sale_order_confirm_picking_done_choose_delivery_carrier(self):
+        line_a = self.order.order_line
+        self._add_shipping_to_order(
+            self.order, self.carrier_route, route_area=self.area_north
+        )
+        self.assertEqual(self.order.carrier_id, self.carrier_route)
+        self.assertEqual(self.order.route_area_id, self.area_north)
+        self.order.action_confirm()
+        move_a = line_a.move_ids
+        picking = self.order.picking_ids
+        self.assertEqual(picking.carrier_id, self.carrier_route)
+        self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(move_a.location_dest_id, self.area_north.location_id)
+        self.assertEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertFalse(picking.has_route_planning)
+        picking.button_validate()
+        self.assertEqual(picking.state, "done")
+        next_picking = picking._get_next_transfers()
+        self.assertTrue(next_picking)
+        self.assertEqual(next_picking.carrier_id, self.carrier_route)
+        self.assertEqual(next_picking.route_area_id, self.area_north)
+        self.assertTrue(next_picking.route_checkpoint_ids)
+        checkpoint_0 = next_picking.route_checkpoint_ids
+        route = checkpoint_0.route_id
+        self.assertEqual(route.state, "draft")
+        route.checkpoint_ids = [
+            Command.create(
+                {
+                    "sequence": 10,
+                    "partner_id": self.partner_1.id,
+                }
+            )
+        ]
+        checkpoint_extra = route.checkpoint_ids - checkpoint_0
+        route.action_planned()
+        self.assertEqual(route.state, "planned")
+        # checkpoint_extra._action_create_incident(self.incident_reschedule, False)
+        # self.assertEqual(checkpoint_extra.state, "incident")
+        # Change to south route area
+        self._add_shipping_to_order(
+            self.order, self.carrier_route, route_area=self.area_south
+        )
+        self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertEqual(move_a.location_dest_id, self.area_north.location_id)
+        self.assertEqual(
+            move_a.move_line_ids.location_dest_id, self.area_north.location_id
+        )
+        self.assertEqual(next_picking.carrier_id, self.carrier_route)
+        self.assertEqual(next_picking.route_area_id, self.area_south)
+        self.assertFalse(checkpoint_0.exists())
+        move_a_extra = next_picking.move_ids
+        self.assertEqual(move_a_extra.location_id, self.area_south.location_id)
+        self.assertNotEqual(move_a_extra.location_dest_id, self.area_south.location_id)
+        self.assertEqual(next_picking.location_id, self.area_south.location_id)
+        self.assertNotEqual(next_picking.location_dest_id, self.area_south.location_id)
+        self.assertTrue(next_picking.route_checkpoint_ids)
+        self.assertEqual(len(next_picking.route_checkpoint_ids), 1)
+        checkpoint_1 = next_picking.route_checkpoint_ids
+        self.assertNotEqual(checkpoint_1.route_id, route)
+        self.assertEqual(checkpoint_1.state, "draft")
+        self.assertEqual(checkpoint_1.route_id.state, "draft")
+        self.assertEqual(len(checkpoint_1.route_id), 1)
+        self.assertEqual(checkpoint_extra.sequence, 1)
+        self.assertEqual(route.state, "planned")
+        self.assertEqual(len(route.checkpoint_ids), 1)
+        self.assertIn(checkpoint_extra, route.checkpoint_ids)
+
+    @mute_logger("odoo.models.unlink")
+    def test_sale_order_confirm_picking_done_incident_choose_delivery_carrier(
+        self,
+    ):
+        line_a = self.order.order_line
+        self._add_shipping_to_order(
+            self.order, self.carrier_route, route_area=self.area_north
+        )
+        self.assertEqual(self.order.carrier_id, self.carrier_route)
+        self.assertEqual(self.order.route_area_id, self.area_north)
+        self.order.action_confirm()
+        move_a = line_a.move_ids
+        picking = self.order.picking_ids
+        self.assertEqual(picking.carrier_id, self.carrier_route)
+        self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(move_a.location_dest_id, self.area_north.location_id)
+        self.assertEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertFalse(picking.has_route_planning)
+        picking.button_validate()
+        self.assertEqual(picking.state, "done")
+        next_picking = picking._get_next_transfers()
+        self.assertTrue(next_picking)
+        self.assertEqual(next_picking.carrier_id, self.carrier_route)
+        self.assertEqual(next_picking.route_area_id, self.area_north)
+        self.assertTrue(next_picking.route_checkpoint_ids)
+        checkpoint_0 = next_picking.route_checkpoint_ids
+        route = checkpoint_0.route_id
+        self.assertEqual(route.state, "draft")
+        route.checkpoint_ids = [
+            Command.create(
+                {
+                    "sequence": 10,
+                    "partner_id": self.partner_1.id,
+                }
+            )
+        ]
+        checkpoint_extra = route.checkpoint_ids - checkpoint_0
+        route.action_planned()
+        self.assertEqual(route.state, "planned")
+        checkpoint_extra._action_create_incident(self.incident_reschedule, False)
+        self.assertEqual(checkpoint_extra.state, "incident")
+        # Change to south route area
+        self._add_shipping_to_order(
+            self.order, self.carrier_route, route_area=self.area_south
+        )
+        self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertEqual(move_a.location_dest_id, self.area_north.location_id)
+        self.assertEqual(
+            move_a.move_line_ids.location_dest_id, self.area_north.location_id
+        )
+        self.assertEqual(next_picking.carrier_id, self.carrier_route)
+        self.assertEqual(next_picking.route_area_id, self.area_south)
+        self.assertFalse(checkpoint_0.exists())
+        move_a_extra = next_picking.move_ids
+        self.assertEqual(move_a_extra.location_id, self.area_south.location_id)
+        self.assertNotEqual(move_a_extra.location_dest_id, self.area_south.location_id)
+        self.assertEqual(next_picking.location_id, self.area_south.location_id)
+        self.assertNotEqual(next_picking.location_dest_id, self.area_south.location_id)
+        self.assertTrue(next_picking.route_checkpoint_ids)
+        self.assertEqual(len(next_picking.route_checkpoint_ids), 1)
+        checkpoint_1 = next_picking.route_checkpoint_ids
+        self.assertNotEqual(checkpoint_1.route_id, route)
+        self.assertEqual(checkpoint_1.state, "draft")
+        self.assertEqual(checkpoint_1.route_id.state, "draft")
+        self.assertEqual(len(checkpoint_1.route_id), 1)
+        self.assertEqual(checkpoint_extra.state, "incident")
+        self.assertEqual(checkpoint_extra.sequence, 2)
+        self.assertEqual(route.state, "done")
+        self.assertEqual(len(route.checkpoint_ids), 1)
+        self.assertIn(checkpoint_extra, route.checkpoint_ids)

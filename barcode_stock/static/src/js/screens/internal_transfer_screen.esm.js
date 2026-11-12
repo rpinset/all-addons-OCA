@@ -5,6 +5,7 @@ import {
 } from "@barcode_scanner/js/utils/scan_match.esm";
 import {_t} from "@web/core/l10n/translation";
 import {barcodeScreens} from "@barcode_scanner/js/registries.esm";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.esm";
 import {useBarcodeScanner} from "@barcode_scanner/js/hooks/use_inventory.esm";
 import {useService} from "@web/core/utils/hooks";
@@ -171,7 +172,8 @@ export class InternalTransferScreen extends Component {
             (l) => l.product_id === product.id && l.lot_id === lotId
         );
         if (existing) {
-            existing.qty += qty;
+            // The input hands an edited quantity back as text.
+            existing.qty = roundQty((parseFloat(existing.qty) || 0) + qty);
             if (existing.tracking !== "none") {
                 if (!existing.lots) {
                     existing.lots = [];

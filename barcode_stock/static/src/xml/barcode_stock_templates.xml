@@ -1393,7 +1393,7 @@
                         <t t-esc="line.lot_id ? line.lot_id[1] : 'No lot'" />
                     </strong>
                     <span>
-                        <t t-esc="line.quantity - line.qty_picked" />
+                        <t t-esc="linePending(line)" />
                         <t t-esc="pendingLabel" />
                     </span>
                 </li>

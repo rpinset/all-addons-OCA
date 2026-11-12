@@ -22,6 +22,7 @@ function moveWizard({
     defaultQty = null,
     tracking = "lot",
     remaining = 4,
+    lotName = null,
 } = {}) {
     const wizard = Object.create(MoveWizardScreen.prototype);
     wizard.props = {
@@ -31,6 +32,7 @@ function moveWizard({
             pickingTypeCode: type,
             defaultLot,
             defaultQty,
+            lotName,
         },
     };
     wizard.state = {
@@ -43,6 +45,8 @@ function moveWizard({
         useCreateLots: false,
         sourceLocation: null,
         destLocation: null,
+        newLotName: lotName || "",
+        lotRead: Boolean(lotName),
     };
     wizard.barcodeScannerState = {
         ready: true,
@@ -62,9 +66,17 @@ function moveWizard({
         getLotsForProduct: () => [LOT_B],
         getRemainingQty: () => remaining,
         lotSourceLocation: async () => false,
+        // A scan as the parsers hand it over, read as is.
+        applyScanResult: ({barcode, ...scan}) => ({product: barcode, ...scan}),
+        getProductByBarcode: () => ({id: 7, display_name: "Duck confit"}),
     };
     Object.assign(wizard, {
-        feedback: {success: () => undefined},
+        warnings: [],
+        successes: 0,
+        feedback: {
+            success: () => (wizard.successes += 1),
+            warning: ({message}) => wizard.warnings.push(message),
+        },
         barcodeScannerSync: {
             validateConfirmMovePayload: () => null,
             confirmMove: async (payload) => {
@@ -249,5 +261,134 @@ describe("BarcodeStock", () => {
         expect(receipt.pickableQty).toBe(4);
         receipt.fulfillRemaining();
         expect(receipt.state.qtyPicked).toBe(4);
+    });
+    test("a label of another lot than the one read is left out", async () => {
+        // Opened by a label of lot A carrying 2 units.
+        const wizard = moveWizard({
+            lines: [line(21, 4)],
+            defaultLot: 21,
+            defaultQty: 2,
+            lotName: LOT_A.name,
+            remaining: 10,
+        });
+        await wizard.loadData();
+        // Another label of lot A adds its quantity.
+        await wizard.onBarcodeScanned("A", {quantity: 3, lot: LOT_A});
+        expect(wizard.state.selectedLotId).toBe("21");
+        expect(wizard.state.qtyPicked).toBe(5);
+        expect(wizard.warnings).toEqual([]);
+        // One of lot B changes neither the lot nor the quantity, and says so.
+        await wizard.onBarcodeScanned("B", {quantity: 3, lot: LOT_B});
+        expect(wizard.state.selectedLotId).toBe("21");
+        expect(wizard.state.qtyPicked).toBe(5);
+        expect(wizard.warnings).toEqual([
+            "Lot 6077103 is not the selected lot (6077102). The lot and the quantity are left unchanged.",
+        ]);
+        // A barcode without a lot still adds its unit.
+        await wizard.onBarcodeScanned("P", {quantity: 1});
+        expect(wizard.state.qtyPicked).toBe(6);
+        // Read again after the location picker's round-trip.
+        let params = null;
+        wizard.store = {navigate: (name, values) => (params = values)};
+        wizard.selectSourceLocation();
+        expect(params.lotRead).toBe(true);
+        // Lot B chosen by hand keeps the quantity and becomes the lot held.
+        await wizard.onLotChange({target: {value: "22"}});
+        expect(wizard.state.qtyPicked).toBe(6);
+        await wizard.onBarcodeScanned("A", {quantity: 3, lot: LOT_A});
+        expect(wizard.state.selectedLotId).toBe("22");
+        expect(wizard.state.qtyPicked).toBe(6);
+        expect(wizard.warnings[1]).toBe(
+            "Lot 6077102 is not the selected lot (6077103). The lot and the quantity are left unchanged."
+        );
+    });
+
+    test("a lot no scan read is still replaced by the lot scanned", async () => {
+        // Tapped: the reserved lot A is chosen, but nothing was read.
+        const wizard = moveWizard({lines: [line(21, 4)], remaining: 10});
+        await wizard.loadData();
+        expect(wizard.state.selectedLotId).toBe("21");
+        await wizard.onBarcodeScanned("B", {quantity: 3, lot: LOT_B});
+        expect(wizard.state.selectedLotId).toBe("22");
+        expect(wizard.state.qtyPicked).toBe(4);
+        expect(wizard.warnings).toEqual([]);
+        // Lot B is the one read now.
+        await wizard.onBarcodeScanned("A", {quantity: 3, lot: LOT_A});
+        expect(wizard.state.selectedLotId).toBe("22");
+        expect(wizard.state.qtyPicked).toBe(4);
+        expect(wizard.warnings.length).toBe(1);
+    });
+
+    test("a label of the lot preselected adds its quantity and reads it", async () => {
+        // Tapped: the reserved lot A is chosen, but nothing was read.
+        const wizard = moveWizard({lines: [line(21, 4)], remaining: 10});
+        await wizard.loadData();
+        await wizard.onBarcodeScanned("A", {quantity: 3, lot: LOT_A});
+        expect(wizard.state.selectedLotId).toBe("21");
+        expect(wizard.state.qtyPicked).toBe(4);
+        expect(wizard.state.lotRead).toBe(true);
+        // Lot A is the one read now.
+        await wizard.onBarcodeScanned("B", {quantity: 3, lot: LOT_B});
+        expect(wizard.state.selectedLotId).toBe("21");
+        expect(wizard.state.qtyPicked).toBe(4);
+        expect(wizard.warnings.length).toBe(1);
+    });
+
+    test("a label of a lot that can't be used adds nothing", async () => {
+        // Tapped on a delivery: the reserved lot A is chosen, nothing read.
+        const wizard = moveWizard({lines: [line(21, 4)], remaining: 10});
+        await wizard.loadData();
+        // A lot the database lacks, which a delivery can't create.
+        await wizard.onBarcodeScanned("X", {quantity: 3, lotName: "6077999"});
+        expect(wizard.state.selectedLotId).toBe("21");
+        expect(wizard.state.qtyPicked).toBe(1);
+        expect(wizard.state.lotRead).toBe(false);
+        expect(wizard.successes).toBe(0);
+        expect(wizard.warnings).toEqual([
+            "Lot 6077999 is not available for this product.",
+        ]);
+    });
+
+    test("a lot being created takes no label of another lot", async () => {
+        const wizard = moveWizard({
+            type: "incoming",
+            defaultQty: 2,
+            lotName: "L-001",
+            remaining: 10,
+        });
+        await wizard.loadData();
+        wizard.state.mode = "create_lot";
+        // The same lot, spaced and cased otherwise, adds its quantity and
+        // leaves the name as it is.
+        await wizard.onBarcodeScanned("A", {quantity: 2, lotName: " l-001"});
+        expect(wizard.state.newLotName).toBe("L-001");
+        expect(wizard.state.qtyPicked).toBe(4);
+        await wizard.onBarcodeScanned("B", {quantity: 2, lotName: "L-002"});
+        expect(wizard.state.newLotName).toBe("L-001");
+        expect(wizard.state.qtyPicked).toBe(4);
+        expect(wizard.warnings.length).toBe(1);
+        // A name typed by hand is the lot held from then on.
+        wizard.state.newLotName = "L-009";
+        await wizard.onBarcodeScanned("A", {quantity: 2, lotName: "L-001"});
+        expect(wizard.state.newLotName).toBe("L-009");
+        expect(wizard.state.qtyPicked).toBe(4);
+        expect(wizard.warnings[1]).toBe(
+            "Lot L-001 is not the selected lot (L-009). The lot and the quantity are left unchanged."
+        );
+    });
+
+    test("a label of another serial number is left out", async () => {
+        const wizard = moveWizard({
+            tracking: "serial",
+            defaultLot: 21,
+            lotName: LOT_A.name,
+        });
+        await wizard.loadData();
+        await wizard.onBarcodeScanned("B", {quantity: 1, lot: LOT_B});
+        expect(wizard.state.selectedLotId).toBe("21");
+        expect(wizard.state.qtyPicked).toBe(1);
+        expect(wizard.warnings).toEqual([
+            "Serial number 6077103 is not the selected one (6077102). The serial number and the quantity are left unchanged.",
+        ]);
     });
 });

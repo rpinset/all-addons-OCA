@@ -8,6 +8,7 @@ import {
 import {_t} from "@web/core/l10n/translation";
 import {barcodeScreens} from "@barcode_scanner/js/registries.esm";
 import {deserializeDateTime} from "@web/core/l10n/dates";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 import {scanBarcode} from "@web/core/barcode/barcode_dialog";
 import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.esm";
 import {useBarcodeScanner} from "@barcode_scanner/js/hooks/use_inventory.esm";
@@ -164,6 +165,11 @@ export class PickingListScreen extends Component {
                     (move.qty_done_total || 0),
                 0
             );
+        }
+        for (const pickingStats of Object.values(stats)) {
+            for (const key of ["demandQty", "doneQty", "remainingQty"]) {
+                pickingStats[key] = roundQty(pickingStats[key]);
+            }
         }
         return stats;
     }

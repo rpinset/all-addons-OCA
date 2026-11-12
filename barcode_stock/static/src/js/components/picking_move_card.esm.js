@@ -1,5 +1,6 @@
 import {Component} from "@odoo/owl";
 import {_t} from "@web/core/l10n/translation";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 
 export class PickingMoveCard extends Component {
     get linesForMove() {
@@ -34,6 +35,16 @@ export class PickingMoveCard extends Component {
             this.props.move.product_uom_qty ??
             0
         );
+    }
+
+    /**
+     * What a line of the move still holds.
+     *
+     * @param {Object} line a move line
+     * @returns {Number} the quantity still to pick on it
+     */
+    linePending(line) {
+        return roundQty(line.quantity - line.qty_picked);
     }
 
     get pendingLabel() {

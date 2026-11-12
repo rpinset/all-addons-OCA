@@ -3,7 +3,7 @@
 {
     "name": "Weighing assistant",
     "summary": "Weighing assistant for stock operations",
-    "version": "18.0.1.3.2",
+    "version": "18.0.1.3.3",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-weighing",
     "license": "AGPL-3",
@@ -34,6 +34,9 @@
         "web.assets_backend": [
             "stock_weighing/static/src/base_weight_record_kanban/**/*",
             "stock_weighing/static/src/clear_quant_button/*",
+        ],
+        "web.assets_unit_tests": [
+            "stock_weighing/static/tests/*",
         ],
     },
     "post_init_hook": "post_init_hook",

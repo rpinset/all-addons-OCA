@@ -13,6 +13,8 @@ class TestRoutePlanningSaleStock(RouteCommon):
         cls.warehouse = cls.env["stock.warehouse"].search(
             [("company_id", "=", cls.env.company.id)], limit=1
         )
+        customer_loc, _supplier_loc = cls.warehouse._get_partner_locations()
+        cls.customer_loc = customer_loc
         cls.area_north.warehouse_id = cls.warehouse
         cls.area_south.warehouse_id = cls.warehouse
         cls.product_a = cls.env["product.product"].create(
@@ -72,16 +74,22 @@ class TestRoutePlanningSaleStock(RouteCommon):
         move = self.order.order_line.move_ids
         picking = self.order.picking_ids
         self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(move.location_id, self.warehouse.lot_stock_id)
         self.assertEqual(move.location_dest_id, self.area_north.location_id)
+        self.assertEqual(picking.location_id, self.warehouse.lot_stock_id)
         self.assertEqual(picking.location_dest_id, self.area_north.location_id)
         self.assertFalse(picking.has_route_planning)
         # Change to empty route area
         self.order.route_area_id = False
         self.assertFalse(picking.route_area_id)
-        self.assertNotEqual(move.location_dest_id, self.area_north.location_id)
-        self.assertNotEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertEqual(move.location_id, self.warehouse.lot_stock_id)
+        self.assertEqual(move.location_dest_id, self.customer_loc)
+        self.assertEqual(picking.location_id, self.warehouse.lot_stock_id)
+        self.assertEqual(picking.location_dest_id, self.customer_loc)
         # Change to specific route area again
         self.order.route_area_id = self.area_north
         self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(move.location_id, self.warehouse.lot_stock_id)
         self.assertEqual(move.location_dest_id, self.area_north.location_id)
+        self.assertEqual(picking.location_id, self.warehouse.lot_stock_id)
         self.assertEqual(picking.location_dest_id, self.area_north.location_id)

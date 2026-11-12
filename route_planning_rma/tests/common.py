@@ -11,6 +11,8 @@ class TestRoutePlanningRmaCommon(RouteCommon):
         cls.warehouse = cls.env["stock.warehouse"].search(
             [("company_id", "=", cls.env.company.id)], limit=1
         )
+        customer_loc, _supplier_loc = cls.warehouse._get_partner_locations()
+        cls.customer_loc = customer_loc
         cls.area_north.warehouse_id = cls.warehouse
         cls.area_south.warehouse_id = cls.warehouse
         cls.product_a = cls.env["product.product"].create(

@@ -613,6 +613,14 @@ msgstr "El lote %(lot)s no está disponible aquí."
 
 #. module: barcode_stock
 #. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid ""
+"Lot %(lot)s is not the selected lot (%(held)s). The lot and the quantity are "
+"left unchanged."
+msgstr ""
+
+#. module: barcode_stock
+#. odoo-javascript
 #: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
 msgid "Lot %(lot)s matched and ready to confirm."
 msgstr "Lote %(lot)s encontrado y listo para confirmar."
@@ -1381,6 +1389,14 @@ msgstr "El número de serie ya existe para este producto."
 #: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
 msgid "Serial number"
 msgstr "Número de serie"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid ""
+"Serial number %(lot)s is not the selected one (%(held)s). The serial number "
+"and the quantity are left unchanged."
+msgstr ""
 
 #. module: barcode_stock
 #. odoo-javascript

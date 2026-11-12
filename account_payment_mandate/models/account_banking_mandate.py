@@ -54,6 +54,7 @@ class AccountBankingMandate(models.Model):
         index="btree",
         required=True,
         tracking=35,
+        domain="['|', ('is_company', '=', True), ('parent_id', '=', False)]",
         ondelete="restrict",
     )
     company_id = fields.Many2one(

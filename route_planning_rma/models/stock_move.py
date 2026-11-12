@@ -33,6 +33,7 @@ class StockMove(models.Model):
                 custom_location = item.rma_id._get_location_final()
             else:
                 custom_location = fields.first(item.rma_receiver_ids).location_id
-            item.location_dest_id = custom_location
-            item.move_line_ids.location_dest_id = custom_location
+            vals = item._get_stock_move_vals_from_record_route_area(custom_location)
+            if vals:
+                item.write(vals)
         return res

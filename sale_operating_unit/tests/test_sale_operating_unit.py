@@ -27,7 +27,9 @@ class TestSaleOperatingUnit(OperatingUnitCommon):
         # Customer
         cls.customer = cls.env.ref("base.res_partner_2")
         # Price list
-        cls.pricelist = cls.env["product.pricelist"].search([], limit=1)
+        cls.pricelist = cls.env["product.pricelist"].search(
+            [("company_id", "in", [False, cls.company.id])], limit=1
+        )
         # Products
         cls.product1 = cls.env.ref("product.product_product_2")
         cls.product1.write({"invoice_policy": "order"})
@@ -177,6 +179,12 @@ class TestSaleOperatingUnit(OperatingUnitCommon):
         with existing sale orders raises an error."""
         with self.assertRaises(ValidationError):
             self.sale_team_ou1.operating_unit_id = self.b2c.id
+
+    def test_check_sales_order_operating_unit_shared_team(self):
+        """Test that clearing the operating unit of a sales team (making it
+        shared) does not raise an error even when existing sale orders are
+        linked to it."""
+        self.sale_team_ou1.operating_unit_id = False
 
     def test_compute_operating_unit_id(self):
         """Test that changing the sales team updates the

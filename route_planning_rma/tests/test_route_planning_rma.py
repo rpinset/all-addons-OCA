@@ -100,10 +100,12 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         rma_picking = rma.delivery_move_ids.picking_id
         self.assertEqual(rma_picking.picking_type_id, self.warehouse.rma_out_type_id)
         self.assertEqual(rma_picking.route_area_id, self.area_south)
+        self.assertEqual(rma_picking.location_id, self.warehouse.rma_loc_id)
         self.assertEqual(rma_picking.location_dest_id, self.area_south.location_id)
         # Change route area
         rma.route_area_id = self.area_north
         self.assertEqual(rma_picking.route_area_id, self.area_north)
+        self.assertEqual(rma_picking.location_id, self.warehouse.rma_loc_id)
         self.assertEqual(rma_picking.location_dest_id, self.area_north.location_id)
         rma_picking.move_ids.quantity = rma_picking.move_ids.product_uom_qty
         rma_picking.button_validate()
@@ -115,6 +117,7 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         )
         self.assertEqual(next_rma_picking.route_area_id, self.area_north)
         self.assertEqual(next_rma_picking.location_id, self.area_north.location_id)
+        self.assertEqual(next_rma_picking.location_dest_id, self.customer_loc)
         checkpoint = next_rma_picking.route_checkpoint_ids
         checkpoint.route_id.action_planned()
         next_rma_picking.button_validate()
@@ -138,6 +141,7 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         self.assertTrue(rma.delivery_move_ids.picking_id)
         rma_picking = rma.delivery_move_ids.picking_id
         self.assertFalse(rma_picking.route_area_id)
+        self.assertEqual(rma_picking.location_id, self.warehouse.rma_loc_id)
         self.assertNotEqual(rma_picking.location_dest_id, self.area_north.location_id)
         rma_picking.button_validate()
         self.assertEqual(rma_picking.state, "done")
@@ -156,9 +160,11 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         self.assertEqual(rma.reception_route_area_id, self.area_north)
         reception_picking = rma.reception_move_id.picking_id
         self.assertEqual(reception_picking.route_area_id, self.area_north)
+        self.assertEqual(rma.reception_move_id.location_id, self.customer_loc)
         self.assertEqual(
             rma.reception_move_id.location_dest_id, self.area_north.location_id
         )
+        self.assertEqual(reception_picking.location_id, self.customer_loc)
         self.assertEqual(
             reception_picking.location_dest_id, self.area_north.location_id
         )
@@ -166,9 +172,11 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         in_checkpoint_0 = reception_picking.route_checkpoint_ids
         rma.reception_route_area_id = self.area_south
         self.assertEqual(reception_picking.route_area_id, self.area_south)
+        self.assertEqual(rma.reception_move_id.location_id, self.customer_loc)
         self.assertEqual(
             rma.reception_move_id.location_dest_id, self.area_south.location_id
         )
+        self.assertEqual(reception_picking.location_id, self.customer_loc)
         self.assertEqual(
             reception_picking.location_dest_id, self.area_south.location_id
         )
@@ -177,9 +185,11 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         in_checkpoint_1 = reception_picking.route_checkpoint_ids
         rma.reception_route_area_id = False
         self.assertFalse(reception_picking.route_area_id)
+        self.assertEqual(rma.reception_move_id.location_id, self.customer_loc)
         self.assertNotEqual(
             rma.reception_move_id.location_dest_id, self.area_south.location_id
         )
+        self.assertEqual(reception_picking.location_id, self.customer_loc)
         self.assertNotEqual(
             reception_picking.location_dest_id, self.area_south.location_id
         )
@@ -196,23 +206,29 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         wizard.action_deliver()
         out_picking = rma.delivery_move_ids.picking_id
         self.assertEqual(out_picking.route_area_id, self.area_north)
+        self.assertEqual(rma.delivery_move_ids.location_id, self.warehouse.rma_loc_id)
         self.assertEqual(
             rma.delivery_move_ids.location_dest_id, self.area_north.location_id
         )
+        self.assertEqual(out_picking.location_id, self.warehouse.rma_loc_id)
         self.assertEqual(out_picking.location_dest_id, self.area_north.location_id)
         self.assertFalse(out_picking.has_route_planning)
         rma.route_area_id = self.area_south
         self.assertEqual(out_picking.route_area_id, self.area_south)
+        self.assertEqual(out_picking.move_ids.location_id, self.warehouse.rma_loc_id)
         self.assertEqual(
             out_picking.move_ids.location_dest_id, self.area_south.location_id
         )
+        self.assertEqual(out_picking.location_id, self.warehouse.rma_loc_id)
         self.assertEqual(out_picking.location_dest_id, self.area_south.location_id)
         self.assertFalse(out_picking.has_route_planning)
         rma.route_area_id = False
         self.assertFalse(out_picking.route_area_id)
+        self.assertEqual(out_picking.move_ids.location_id, self.warehouse.rma_loc_id)
         self.assertNotEqual(
             out_picking.move_ids.location_dest_id, self.area_south.location_id
         )
+        self.assertEqual(out_picking.location_id, self.warehouse.rma_loc_id)
         self.assertNotEqual(out_picking.location_dest_id, self.area_south.location_id)
         self.assertFalse(out_picking.has_route_planning)
 
@@ -257,9 +273,11 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         self.assertEqual(new_rma.reception_route_area_id, self.area_north)
         reception_picking_extra = new_rma.reception_move_id.picking_id
         self.assertEqual(reception_picking_extra.route_area_id, self.area_north)
+        self.assertEqual(new_rma.reception_move_id.location_id, self.customer_loc)
         self.assertEqual(
             new_rma.reception_move_id.location_dest_id, self.area_north.location_id
         )
+        self.assertEqual(reception_picking_extra.location_id, self.customer_loc)
         self.assertEqual(
             reception_picking_extra.location_dest_id, self.area_north.location_id
         )
@@ -267,9 +285,11 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         in_checkpoint_0 = reception_picking_extra.route_checkpoint_ids
         new_rma.reception_route_area_id = self.area_south
         self.assertEqual(reception_picking_extra.route_area_id, self.area_south)
+        self.assertEqual(new_rma.reception_move_id.location_id, self.customer_loc)
         self.assertEqual(
             new_rma.reception_move_id.location_dest_id, self.area_south.location_id
         )
+        self.assertEqual(reception_picking_extra.location_id, self.customer_loc)
         self.assertEqual(
             reception_picking_extra.location_dest_id, self.area_south.location_id
         )

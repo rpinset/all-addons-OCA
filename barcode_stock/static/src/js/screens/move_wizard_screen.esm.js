@@ -1,6 +1,7 @@
 import {Component, onMounted, onWillStart, onWillUnmount, useState} from "@odoo/owl";
 import {_t} from "@web/core/l10n/translation";
 import {barcodeScreens} from "@barcode_scanner/js/registries.esm";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.esm";
 import {useBarcodeScanner} from "@barcode_scanner/js/hooks/use_inventory.esm";
 import {useService} from "@web/core/utils/hooks";
@@ -8,6 +9,18 @@ import {user} from "@web/core/user";
 
 function lineLotId(line) {
     return line.lot_id?.[0] || false;
+}
+
+/**
+ * Whether two lot names are the same lot, as a scan matches one: with no
+ * regard to surrounding spaces or case.
+ *
+ * @param {String} left a lot name
+ * @param {String} right another lot name
+ * @returns {Boolean}
+ */
+function sameLotName(left, right) {
+    return (left || "").trim().toUpperCase() === (right || "").trim().toUpperCase();
 }
 
 export class MoveWizardScreen extends Component {
@@ -53,6 +66,10 @@ export class MoveWizardScreen extends Component {
             // whether it lies nowhere under the move's source.
             lotLocation: null,
             lotMissing: false,
+            // Whether a scan read the lot: the one the wizard was opened with (a
+            // scan carrying a lot hands its name over) or one scanned here.
+            // Carried across the location picker's round-trip too.
+            lotRead: this.props.params?.lotRead ?? Boolean(this.props.params?.lotName),
         });
 
         useBarcodeHandler({
@@ -96,40 +113,126 @@ export class MoveWizardScreen extends Component {
             this.onProductScanned(product);
             return;
         }
-        await this.applyScannedLot(normalized);
+        if (this.isOtherLotScan(normalized)) {
+            this.warnOtherLot(normalized);
+            return;
+        }
+        if (this.isHeldLotScan(normalized)) {
+            // The lot held already: its quantity adds, the lot stays as it is.
+            this.state.lotRead = true;
+        } else if (!(await this.applyScannedLot(normalized))) {
+            return;
+        }
         this.adjustQty(normalized.quantity);
         this.feedback.success();
     }
 
     /**
+     * The lot the wizard holds: the one chosen, or the one being created.
+     *
+     * @returns {String} its name, empty when there is none
+     */
+    get heldLotName() {
+        if (this.state.mode === "create_lot") {
+            return this.state.newLotName || "";
+        }
+        return this.selectedLot?.name || "";
+    }
+
+    /**
+     * Whether a scan carries the lot the wizard holds.
+     *
+     * @param {Object} scan the scan, as applyScanResult reads it
+     * @returns {Boolean}
+     */
+    isHeldLotScan({lot, lotName}) {
+        const name = lot?.name || lotName;
+        const held = this.heldLotName;
+        return Boolean(this.isTracked && name && held && sameLotName(name, held));
+    }
+
+    /**
+     * Whether a scan carries another lot than the one held once a scan has
+     * read one here. A label of the lot held adds its quantity; one of another
+     * lot is most likely read by mistake, so it neither changes the lot nor
+     * adds to the quantity: the operator confirms (or leaves) this lot first,
+     * then scans the other one. The lot held is the one read, or one chosen by
+     * hand since. Until a scan reads a lot, a lot preselected from the
+     * reservation, or chosen, is still replaced by the lot scanned.
+     *
+     * @param {Object} scan the scan, as applyScanResult reads it
+     * @returns {Boolean}
+     */
+    isOtherLotScan({lot, lotName}) {
+        const name = lot?.name || lotName;
+        const held = this.heldLotName;
+        return Boolean(
+            this.isTracked &&
+                this.state.lotRead &&
+                name &&
+                held &&
+                !sameLotName(name, held)
+        );
+    }
+
+    /**
+     * Tell the operator a scan carries another lot than the one selected,
+     * which is left as it is, with the quantity.
+     *
+     * @param {Object} scan the scan, as applyScanResult reads it
+     */
+    warnOtherLot({lot, lotName}) {
+        const values = {lot: lot?.name || lotName, held: this.heldLotName};
+        const message = this.isSerial
+            ? _t(
+                  "Serial number %(lot)s is not the selected one (%(held)s). The serial number and the quantity are left unchanged.",
+                  values
+              )
+            : _t(
+                  "Lot %(lot)s is not the selected lot (%(held)s). The lot and the quantity are left unchanged.",
+                  values
+              );
+        this.feedback.warning({notify: true, message});
+    }
+
+    /**
      * Apply the lot or serial a scan carries: select it when it already exists,
      * otherwise prefill the create-lot form where creating one is allowed.
+     *
+     * @param {Object} scan the scan, as applyScanResult reads it
+     * @returns {Promise<Boolean>} false when the lot can't be used here, so the
+     *   scan's quantity must not be added to another lot
      */
     async applyScannedLot({lot, lotName, expiration}) {
         const name = lot?.name || lotName;
         if (!name || !this.isTracked) {
-            return;
+            return true;
         }
         if (lot && this.canUseExistingLot) {
             if (!this.state.lots.some((item) => item.id === lot.id)) {
                 this.state.lots = [lot, ...this.state.lots];
             }
             this.state.selectedLotId = String(lot.id);
+            this.state.lotRead = true;
             await this.locateLot();
-            return;
+            return true;
         }
         if (!this.canCreateLot) {
-            this.inventory.notify(
-                _t("Lot %(lot)s is not available for this product.", {lot: name}),
-                {type: "warning"}
-            );
-            return;
+            this.feedback.warning({
+                notify: true,
+                message: _t("Lot %(lot)s is not available for this product.", {
+                    lot: name,
+                }),
+            });
+            return false;
         }
         this.state.newLotName = name;
         if (expiration) {
             this.state.newLotExpirationDate = expiration;
         }
+        this.state.lotRead = true;
         this.setMode("create_lot");
+        return true;
     }
 
     get isIncoming() {
@@ -377,9 +480,11 @@ export class MoveWizardScreen extends Component {
      * @returns {Number} the quantity still to pick of it
      */
     reservedLeft(moveLines, lotId) {
-        return moveLines
-            .filter((line) => lineLotId(line) === lotId)
-            .reduce((sum, line) => sum + this.lineLeft(line), 0);
+        return roundQty(
+            moveLines
+                .filter((line) => lineLotId(line) === lotId)
+                .reduce((sum, line) => sum + this.lineLeft(line), 0)
+        );
     }
 
     /**
@@ -389,7 +494,7 @@ export class MoveWizardScreen extends Component {
      * @returns {Number} the quantity still to pick on it
      */
     lineLeft(line) {
-        return (Number(line.quantity) || 0) - (Number(line.qty_picked) || 0);
+        return roundQty((Number(line.quantity) || 0) - (Number(line.qty_picked) || 0));
     }
 
     get isOutgoing() {
@@ -423,7 +528,7 @@ export class MoveWizardScreen extends Component {
     }
 
     get doneQty() {
-        return Math.max(this.demandQty - this.remainingQty, 0);
+        return Math.max(roundQty(this.demandQty - this.remainingQty), 0);
     }
 
     get remainingQty() {
@@ -467,11 +572,11 @@ export class MoveWizardScreen extends Component {
         if (this.isSerial) return false;
         // Shown while anything is still missing, including the last unit: the
         // shortcut disappearing at 1 reads as "nothing left to pick".
-        return this.pickableQty - (this.state.qtyPicked || 0) > 0;
+        return this.fulfillIncrement > 0;
     }
 
     get fulfillIncrement() {
-        return Math.max(this.pickableQty - (this.state.qtyPicked || 0), 0);
+        return Math.max(roundQty(this.pickableQty - (this.state.qtyPicked || 0)), 0);
     }
 
     get isTracked() {
@@ -603,7 +708,7 @@ export class MoveWizardScreen extends Component {
 
     adjustQty(delta) {
         if (this.state.loading) return;
-        const next = (parseFloat(this.state.qtyPicked) || 0) + delta;
+        const next = roundQty((parseFloat(this.state.qtyPicked) || 0) + delta);
         if (this.isSerial) {
             this.state.qtyPicked = Math.max(0, Math.min(1, next));
         } else {
@@ -709,6 +814,7 @@ export class MoveWizardScreen extends Component {
             lotName: this.state.newLotName,
             expiration: this.state.newLotExpirationDate,
             createLot: this.state.mode === "create_lot",
+            lotRead: this.state.lotRead,
             moveSourceLocation: this.state.sourceLocation,
             moveDestLocation: this.state.destLocation,
             locationDomain,

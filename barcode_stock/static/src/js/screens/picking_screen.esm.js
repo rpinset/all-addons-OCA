@@ -6,6 +6,7 @@ import {PickingMoveList} from "@barcode_stock/js/components/picking_move_list.es
 import {_t} from "@web/core/l10n/translation";
 import {barcodeMatchDomain} from "@barcode_scanner/js/utils/scan_match.esm";
 import {barcodeScreens} from "@barcode_scanner/js/registries.esm";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 import {tabForMove} from "@barcode_stock/js/utils/move_progress.esm";
 import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.esm";
 import {useBarcodeScanner} from "@barcode_scanner/js/hooks/use_inventory.esm";
@@ -135,7 +136,7 @@ export class PickingScreen extends Component {
             if (!moveId) {
                 return totals;
             }
-            totals[moveId] = (totals[moveId] || 0) + (line.qty_picked || 0);
+            totals[moveId] = roundQty((totals[moveId] || 0) + (line.qty_picked || 0));
             return totals;
         }, {});
 
@@ -144,7 +145,7 @@ export class PickingScreen extends Component {
                 const demandQty = move.product_uom_qty || move.quantity || 0;
                 const reservedQty = move.quantity || 0;
                 const doneQty = moveLineTotals[move.id] || 0;
-                const remainingQty = Math.max(reservedQty - doneQty, 0);
+                const remainingQty = Math.max(roundQty(reservedQty - doneQty), 0);
                 const completion = demandQty ? Math.min(doneQty / demandQty, 1) : 0;
                 return [
                     move.id,
@@ -182,6 +183,9 @@ export class PickingScreen extends Component {
             },
             {demandQty: 0, doneQty: 0, remainingQty: 0}
         );
+        for (const key of ["demandQty", "doneQty", "remainingQty"]) {
+            summary[key] = roundQty(summary[key]);
+        }
         summary.percent = summary.demandQty
             ? Math.round((summary.doneQty / summary.demandQty) * 100)
             : 0;
@@ -688,7 +692,7 @@ export class PickingScreen extends Component {
                 // the existing line by the qtyPicked it receives, so pass the
                 // scanned delta here -- passing the total would add the existing
                 // quantity a second time (a re-scan jumped by +2 instead of +1).
-                const newQty = (existingLine.qty_picked || 0) + scannedQty;
+                const newQty = roundQty((existingLine.qty_picked || 0) + scannedQty);
                 await this.barcodeScannerSync.confirmMove({
                     moveId: candidateMove.id,
                     pickingId: this.state.picking.id,

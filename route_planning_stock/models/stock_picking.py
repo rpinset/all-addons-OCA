@@ -37,13 +37,31 @@ class StockPicking(models.Model):
         the route_area_id for pending pickings and moves
         """
         for item in self.filtered("move_ids"):
+            if item.state in ("done", "cancel"):
+                continue
             item.move_ids._set_locations_from_record_route_area()
-            # Change location_dest_id to be consistent
-            item.location_dest_id = item.move_ids[0].location_dest_id
+            # Change locations to be consistent
+            move_0 = item.move_ids[0]
+            item.location_id = move_0.location_id
+            item.location_dest_id = move_0.location_dest_id
             # We removed the linked checkpoint because there may not be a defined
             # route area, or the route area may have changed and need to be added
             # to another route.
-            item.route_checkpoint_ids.unlink()
+            checkpoints = item.route_checkpoint_ids
+            planned_checkpoints = checkpoints.filtered(lambda x: x.state == "planned")
+            planned_routes = planned_checkpoints.route_id
+            if planned_checkpoints:
+                planned_checkpoints.action_draft()
+            checkpoints.filtered(lambda x: x.state in ("draft", "planned")).unlink()
+            if planned_routes:
+                # If there were planned routes with checkpoints, it's important to
+                # replan them
+                planned_routes_with_checkpoints = planned_routes.filtered(
+                    lambda x: x.checkpoint_ids and x.state != "done"
+                )
+                if planned_routes_with_checkpoints:
+                    planned_routes_with_checkpoints.action_draft()
+                    planned_routes_with_checkpoints.action_planned()
             # We'll try to create a new one (it will only be created if necessary,
             # for example, if a route area is defined)
             item._find_auto_route()

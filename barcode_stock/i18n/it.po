@@ -314,7 +314,8 @@ msgstr "Crea lotto e conferma"
 #. odoo-javascript
 #: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
 msgid "Create the lot first, then confirm the move in one pass."
-msgstr "Crea prima il lotto, quindi conferma il movimento in un solo passaggio."
+msgstr ""
+"Crea prima il lotto, quindi conferma il movimento in un solo passaggio."
 
 #. module: barcode_stock
 #. odoo-javascript
@@ -611,6 +612,14 @@ msgstr "Il lotto %(lot)s non è disponibile per questo prodotto."
 #: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
 msgid "Lot %(lot)s is not available here."
 msgstr "Il lotto %(lot)s non è disponibile qui."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid ""
+"Lot %(lot)s is not the selected lot (%(held)s). The lot and the quantity are "
+"left unchanged."
+msgstr ""
 
 #. module: barcode_stock
 #. odoo-javascript
@@ -1384,6 +1393,14 @@ msgstr "Il numero di serie esiste già per questo prodotto."
 #: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
 msgid "Serial number"
 msgstr "Numero di serie"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid ""
+"Serial number %(lot)s is not the selected one (%(held)s). The serial number "
+"and the quantity are left unchanged."
+msgstr ""
 
 #. module: barcode_stock
 #. odoo-javascript
