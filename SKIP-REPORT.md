@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-11-12 21:47 UTC
+Generated 2026-11-16 01:06 UTC
 
-Total skipped: **228**
+Total skipped: **226**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -40,7 +40,7 @@ Count: **27**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **201**
+Count: **199**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -87,7 +87,6 @@ Count: **201**
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | [20.0](https://github.com/OCA/connector-woocommerce/tree/20.0) | No directory with __manifest__.py at repo root |
 | [contract](https://github.com/OCA/contract) | [20.0](https://github.com/OCA/contract/tree/20.0) | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | [20.0](https://github.com/OCA/cooperative/tree/20.0) | No directory with __manifest__.py at repo root |
-| [crm](https://github.com/OCA/crm) | [20.0](https://github.com/OCA/crm/tree/20.0) | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [20.0](https://github.com/OCA/crowdfunding/tree/20.0) | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | [20.0](https://github.com/OCA/currency/tree/20.0) | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | [20.0](https://github.com/OCA/data-protection/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -218,7 +217,6 @@ Count: **201**
 | [survey](https://github.com/OCA/survey) | [20.0](https://github.com/OCA/survey/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sustainability](https://github.com/OCA/sustainability) | [20.0](https://github.com/OCA/sustainability/tree/20.0) | No directory with __manifest__.py at repo root |
 | [tier-validation](https://github.com/OCA/tier-validation) | [20.0](https://github.com/OCA/tier-validation/tree/20.0) | No directory with __manifest__.py at repo root |
-| [timesheet](https://github.com/OCA/timesheet) | [20.0](https://github.com/OCA/timesheet/tree/20.0) | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [20.0](https://github.com/OCA/version-control-platform/tree/20.0) | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [20.0](https://github.com/OCA/vertical-abbey/tree/20.0) | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | [20.0](https://github.com/OCA/vertical-agriculture/tree/20.0) | No directory with __manifest__.py at repo root |

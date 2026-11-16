@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-12 21:47 UTC
+Generated 2026-11-16 01:06 UTC
 
 ## Skipped repos
 
@@ -54,7 +54,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [contract](https://github.com/OCA/contract) | `no_module` | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | `no_module` | No directory with __manifest__.py at repo root |
-| [crm](https://github.com/OCA/crm) | `no_module` | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | `no_module` | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | `no_module` | No directory with __manifest__.py at repo root |
@@ -209,7 +208,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [survey](https://github.com/OCA/survey) | `no_module` | No directory with __manifest__.py at repo root |
 | [sustainability](https://github.com/OCA/sustainability) | `no_module` | No directory with __manifest__.py at repo root |
 | [tier-validation](https://github.com/OCA/tier-validation) | `no_module` | No directory with __manifest__.py at repo root |
-| [timesheet](https://github.com/OCA/timesheet) | `no_module` | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |

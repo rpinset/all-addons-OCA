@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `20.0`
 
-Last build: **2026-11-12 21:47 UTC** (elapsed 86s)
+Last build: **2026-11-16 01:06 UTC** (elapsed 74s)
 
-- Repos integrated: **39**
-- Canonical modules: **167**
+- Repos integrated: **41**
+- Canonical modules: **172**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **228**
+- Skipped repos (no branch / no module): **226**
 
 ## Integrated repos
 
@@ -18,8 +18,9 @@ Last build: **2026-11-12 21:47 UTC** (elapsed 86s)
 | [account-payment](https://github.com/OCA/account-payment) | 1 | 5aa44db 2026-11-11 oca-ci [UPD] Update account_payment_method_base.pot |
 | [community-data-files](https://github.com/OCA/community-data-files) | 1 | 05e4c30 2026-11-11 oca-ci [UPD] Update base_bank_from_iban.pot |
 | [credit-control](https://github.com/OCA/credit-control) | 1 | 95d5d6f 2026-11-12 Pedro M. Baeza Merge pull request #613 from Tecnativa/20.0-imp-update-dotfiles-v1.48 |
+| [crm](https://github.com/OCA/crm) | 2 | 81e6c37 2026-11-14 mymage Translated using Weblate (Italian) |
 | [dms](https://github.com/OCA/dms) | 2 | 45dfa24 2026-11-10 oca-ci [UPD] Update web_editor_media_dialog_dms.pot |
-| [e-commerce](https://github.com/OCA/e-commerce) | 1 | a2117ad 2026-11-12 oca-ci [UPD] Update website_sale_require_legal.pot |
+| [e-commerce](https://github.com/OCA/e-commerce) | 2 | 64b53e8 2026-11-13 oca-ci [UPD] Update website_sale_tax_toggle.pot |
 | [event](https://github.com/OCA/event) | 3 | a4d3289 2026-11-12 oca-ci [UPD] Update website_event_questions_by_ticket.pot |
 | [knowledge](https://github.com/OCA/knowledge) | 2 | 87b0589 2026-11-12 oca-ci [UPD] Update document_page.pot |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 3 | e8191ef 2026-11-06 Stéphane Bidoul Exclude uninstallable addons from pre-commit |
@@ -30,7 +31,7 @@ Last build: **2026-11-12 21:47 UTC** (elapsed 86s)
 | [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | 6 | 825cec2 2026-10-12 oca-ci [UPD] Update l10n_py_libros.pot |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 35 | 8226691 2026-11-10 Weblate Update translation files |
 | [l10n-spain](https://github.com/OCA/l10n-spain) | 2 | 02d6eee 2026-11-12 Weblate Update translation files |
-| [l10n-thailand](https://github.com/OCA/l10n-thailand) | 2 | aea618e 2026-11-04 oca-ci [UPD] Update l10n_th_base_utils.pot |
+| [l10n-thailand](https://github.com/OCA/l10n-thailand) | 2 | 4940289 2026-11-14 Saran @ Ecosoft Merge pull request #637 from ecosoft-odoo/20.0-upd-copier |
 | [mail](https://github.com/OCA/mail) | 1 | 82d9ef6 2026-11-11 oca-ci [UPD] Update mail_activity_board.pot |
 | [manufacture](https://github.com/OCA/manufacture) | 2 | 919de87 2026-11-10 oca-ci [UPD] Update mrp_multi_level.pot |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 70560de 2026-11-03 Stéphane Bidoul Merge pull request #852 from OCA/renovate/20.0-https-github.com-oca-oca-addons-repo-template-1.x |
@@ -39,7 +40,7 @@ Last build: **2026-11-12 21:47 UTC** (elapsed 86s)
 | [project](https://github.com/OCA/project) | 6 | 4fcbd34 2026-11-10 oca-ci [UPD] Update project_task_stage_auto_state.pot |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 3 | 962626d 2026-11-10 oca-ci [UPD] Update purchase_lot.pot |
 | [queue](https://github.com/OCA/queue) | 8 | 8ef3956 2026-10-30 mymage Translated using Weblate (Italian) |
-| [reporting-engine](https://github.com/OCA/reporting-engine) | 2 | 88e32d1 2026-11-10 Weblate Update translation files |
+| [reporting-engine](https://github.com/OCA/reporting-engine) | 2 | 11e7dbf 2026-11-13 mymage Translated using Weblate (Italian) |
 | [rest-framework](https://github.com/OCA/rest-framework) | 7 | 2a2da13 2026-10-16 Laurent Mignon (ACSONE) Merge pull request #661 from acsone/20.0-fix-licence |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | 3 | df09239 2026-11-11 Carlos Dauden Translated using Weblate (Spanish) |
 | [server-brand](https://github.com/OCA/server-brand) | 3 | 07de5d7 2026-11-12 oca-ci [UPD] Update mail_debranding.pot |
@@ -49,5 +50,6 @@ Last build: **2026-11-12 21:47 UTC** (elapsed 86s)
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 3 | 939adca 2026-11-10 oca-ci [UPD] Update stock_warehouse_out_pull.pot |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 3 | 68458f7 2026-11-10 oca-ci [UPD] Update stock_picking_invoice_link.pot |
 | [storage](https://github.com/OCA/storage) | 25 | a7169e7 2026-09-25 OCA-git-bot [BOT] post-merge updates |
-| [web](https://github.com/OCA/web) | 12 | fc769c4 2026-11-12 oca-ci [UPD] Update web_widget_bokeh_chart.pot |
+| [timesheet](https://github.com/OCA/timesheet) | 1 | 97cf78b 2026-11-13 oca-ci [UPD] Update hr_employee_cost_history.pot |
+| [web](https://github.com/OCA/web) | 13 | f1e1e83 2026-11-13 mymage Translated using Weblate (Italian) |
 
