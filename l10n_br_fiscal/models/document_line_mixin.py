@@ -6,7 +6,7 @@ from copy import deepcopy
 from lxml import etree
 from lxml.builder import E
 
-from odoo import Command, api, fields, models
+from odoo import Command, _, api, fields, models
 
 from ..constants.fiscal import (
     CFOP_DESTINATION_EXPORT,
@@ -41,6 +41,8 @@ from ..constants.fiscal import (
     TAX_DOMAIN_PIS_ST,
     TAX_DOMAIN_PIS_WH,
     TAX_ICMS_OR_ISSQN,
+    TAX_VALUE_FIELD_NAMES,
+    TAX_VALUE_FIELDS,
 )
 from ..constants.icms import (
     ICMS_BASE_TYPE,
@@ -362,6 +364,12 @@ class FiscalDocumentLineMixin(models.AbstractModel):
             # Por segurança, sempre recalcula se um campo relevante mudou.
             self._update_fiscal_tax_ids()
 
+        imported = self.filtered(lambda line: line._is_imported())
+        if imported and TAX_VALUE_FIELD_NAMES.intersection(vals):
+            tax_groups = imported._tax_groups_by_domain()
+            for line in imported:
+                line._update_imported_tax_amounts(tax_groups)
+
         return res
 
     def _update_fiscal_tax_ids(self):
@@ -417,7 +425,13 @@ class FiscalDocumentLineMixin(models.AbstractModel):
         Compute base, percent, value... tax fields for ICMS, IPI, PIS, COFINS... taxes.
         """
         null_mask = None
-        for line in self.filtered(lambda line: not line._is_imported()):
+        tax_groups = None
+        for line in self:
+            if line._is_imported():
+                if tax_groups is None:
+                    tax_groups = line._tax_groups_by_domain()
+                line._update_imported_tax_amounts(tax_groups)
+                continue
             if null_mask is None:
                 null_mask = self._build_null_mask_dict()
             to_update = null_mask.copy()
@@ -485,6 +499,38 @@ class FiscalDocumentLineMixin(models.AbstractModel):
                 line.update(to_update)
             else:
                 line.write(to_update)
+
+    def _tax_groups_by_domain(self):
+        groups = self.env["l10n_br_fiscal.tax.group"].search([])
+        return {group.tax_domain: group for group in groups}
+
+    def _update_imported_tax_amounts(self, tax_groups):
+        self.ensure_one()
+        empty_group = self.env["l10n_br_fiscal.tax.group"]
+        amount_included = amount_not_included = amount_withholding = 0.0
+        for tax_field in FISCAL_TAX_ID_FIELDS:
+            tax_domain = tax_field[: -len("_tax_id")]
+            tax_value = self[TAX_VALUE_FIELDS[tax_domain]]
+            if not tax_value:
+                continue
+            tax_group = self[tax_field].tax_group_id or tax_groups.get(
+                tax_domain, empty_group
+            )
+            if tax_group.tax_withholding:
+                amount_withholding += tax_value
+            elif tax_group.tax_include:
+                amount_included += tax_value
+            else:
+                amount_not_included += tax_value
+        to_update = {
+            "amount_tax_included": amount_included,
+            "amount_tax_not_included": amount_not_included,
+            "amount_tax_withholding": amount_withholding,
+        }
+        if self != self._origin:
+            self.update(to_update)
+        else:
+            self.write(to_update)
 
     def _prepare_tax_fields(self, compute_result):
         self.ensure_one()
@@ -916,6 +962,33 @@ class FiscalDocumentLineMixin(models.AbstractModel):
     @api.model
     def _rm_fields_to_amount(self):
         return ["icms_relief_value"]
+
+    def _get_report_product_code(self):
+        """Product reference printed before the description, as the product
+        display name does, unless the description already starts with it."""
+        self.ensure_one()
+        code = self.product_id.default_code
+        if code and not (self.name or "").startswith(f"[{code}]"):
+            return f"[{code}] "
+        return ""
+
+    def _get_report_fiscal_details(self):
+        """Fiscal classification printed below the line description."""
+        self.ensure_one()
+        company = self.company_id
+        details = []
+        if company.report_line_classification:
+            if self.service_type_id:
+                details.append(_("Service %s") % self.service_type_id.code)
+                if self.nbs_id:
+                    details.append(f"NBS {self.nbs_id.code}")
+            elif self.ncm_id and (self.ncm_id.code_unmasked or "").strip("0"):
+                details.append(f"NCM {self.ncm_id.code}")
+        if company.report_line_cfop and self.cfop_id:
+            details.append(f"CFOP {self.cfop_id.code}")
+        if company.report_line_operation_line and self.fiscal_operation_line_id:
+            details.append(self.fiscal_operation_line_id.name)
+        return " | ".join(details)
 
     def _is_imported(self):
         # When the mixin is used for instance

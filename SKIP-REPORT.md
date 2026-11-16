@@ -1,8 +1,8 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-11-12 21:41 UTC
+Generated 2026-11-16 01:03 UTC
 
-Total skipped: **124**
+Total skipped: **123**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -61,7 +61,7 @@ Count: **48**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **76**
+Count: **75**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -125,7 +125,6 @@ Count: **76**
 | [shift-planning](https://github.com/OCA/shift-planning) | [16.0](https://github.com/OCA/shift-planning/tree/16.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [16.0](https://github.com/OCA/stock-logistics-interfaces/tree/16.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [16.0](https://github.com/OCA/stock-weighing/tree/16.0) | No directory with __manifest__.py at repo root |
-| [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | [16.0](https://github.com/OCA/vertical-agriculture/tree/16.0) | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | [16.0](https://github.com/OCA/vertical-community/tree/16.0) | No directory with __manifest__.py at repo root |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [16.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/16.0) | No directory with __manifest__.py at repo root |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | [16.0](https://github.com/OCA/vertical-edition/tree/16.0) | No directory with __manifest__.py at repo root |

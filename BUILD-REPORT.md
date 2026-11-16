@@ -1,6 +1,6 @@
 # Build report — `16.0`
 
-Generated 2026-11-12 21:41 UTC
+Generated 2026-11-16 01:03 UTC
 
 ## Skipped repos
 
@@ -116,7 +116,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-weighing](https://github.com/OCA/stock-weighing) | `no_module` | No directory with __manifest__.py at repo root |
 | [tier-validation](https://github.com/OCA/tier-validation) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
-| [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | `no_module` | No directory with __manifest__.py at repo root |
