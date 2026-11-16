@@ -1,6 +1,6 @@
 # Skipped repos — branch `12.0`
 
-Generated 2026-11-12 21:39 UTC
+Generated 2026-11-16 00:59 UTC
 
 Total skipped: **151**
 
