@@ -605,7 +605,7 @@ class ShopifyCustomerSync(models.Model):
         if owners["customer_email"] == "odoo":
             values["email"] = partner.email or None
         if owners["customer_phone"] == "odoo":
-            values["phone"] = partner.phone or partner.mobile or None
+            values["phone"] = partner.phone or None
         if owners["customer_addresses"] == "odoo":
             values["addresses"] = [
                 self._export_address_values(child)

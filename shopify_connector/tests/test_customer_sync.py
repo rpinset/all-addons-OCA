@@ -1,4 +1,4 @@
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from odoo.tests.common import TransactionCase
 
@@ -311,3 +311,31 @@ class TestShopifyCustomerSync(TransactionCase):
         )
 
         self.assertEqual(binding.contact_binding_ids.roles, "Ordering only")
+
+    def test_export_sends_no_phone_when_the_partner_has_none(self):
+        # Odoo owns the phone and the partner has no phone: the export sends
+        # an empty phone instead of failing.
+        binding = self.customer_model.browse(
+            self.customer_model._job_import_customer(self.instance.id, self._payload(7))
+        )
+        self.instance.customer_export_enabled = True
+        mapping = self.instance.field_mapping_ids.filtered(
+            lambda item: item.field == "customer_phone"
+        )
+        if mapping:
+            mapping.owner = "odoo"
+        else:
+            self.env["shopify.field.mapping"].create(
+                {
+                    "instance_id": self.instance.id,
+                    "field": "customer_phone",
+                    "owner": "odoo",
+                }
+            )
+        binding.odoo_id.phone = False
+        client = Mock()
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            binding._job_export_customer()
+
+        sent = client.execute.call_args.args[1]["input"]
+        self.assertEqual(sent, {"id": binding.shopify_id, "phone": None})
