@@ -1,6 +1,6 @@
 {
     "name": "Barcode Scanner",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Hidden",
     "summary": "Base scanning framework: client action, registries, scanner "
     "input and hooks",

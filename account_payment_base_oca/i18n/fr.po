@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-17 17:47+0000\n"
-"Last-Translator: matnoublanche <log-github@thieu.biz>\n"
+"PO-Revision-Date: 2026-11-13 11:01+0000\n"
+"Last-Translator: ninatorrel <nina.torrel@xcg-consulting.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_base_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
@@ -50,8 +50,8 @@ msgid ""
 "Activate this option if this payment method requires you to know the bank "
 "account number of your customer or supplier."
 msgstr ""
-"Activez cette option si ce mode de paiement nécessite de connaître le numéro "
-"de compte bancaire de votre client ou fournisseur."
+"Activez cette option si cette méthode de paiement comptable nécessite de "
+"connaître le numéro de compte bancaire de votre client ou fournisseur."
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__active
@@ -149,14 +149,14 @@ msgid ""
 "you will select the bank account on the payment order. If your company only "
 "has one bank account, you should always select 'Fixed'."
 msgstr ""
-"Pour les modes de paiement toujours rattachés au même compte bancaire de "
-"votre entreprise (comme les virements bancaires des clients ou les "
-"prélèvements SEPA des fournisseurs), sélectionnez 'Fixe'. Pour les modes de "
-"paiement qui ne sont pas toujours rattachés au même compte bancaire (comme "
-"les prélèvements SEPA des clients ou les virements des fournisseurs), "
-"sélectionnez 'Variable', ce qui signifie que vous sélectionnerez le compte "
-"bancaire figurant sur l'ordre de paiement. Si votre entreprise n'a qu'un "
-"seul compte bancaire, sélectionnez toujours 'Fixe'."
+"Pour les méthodes de paiement comptables toujours rattachés au même compte "
+"bancaire de votre entreprise (comme les virements bancaires des clients ou "
+"les prélèvements SEPA des fournisseurs), sélectionnez 'Fixe'. Pour les "
+"méthodes de paiement comptables qui ne sont pas toujours rattachés au même "
+"compte bancaire (comme les prélèvements SEPA des clients ou les virements "
+"des fournisseurs), sélectionnez 'Variable', ce qui signifie que vous "
+"sélectionnerez le compte bancaire figurant sur l'ordre de paiement. Si votre "
+"entreprise n'a qu'un seul compte bancaire, sélectionnez toujours 'Fixe'."
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__show_bank_account__full
@@ -220,8 +220,8 @@ msgid ""
 "On %(name)s, the Payment Method %(method)s is configured with Bank Account "
 "Required but journal %(journal)s is not linked to a bank account."
 msgstr ""
-"Sur %(name)s, le mode de paiement %(method)s est configuré avec Compte "
-"bancaire requis mais le journal %(journal)s n'est pas lié à un compte "
+"Sur %(name)s, le méthode de paiement comptable %(method)s est configuré avec "
+"Compte bancaire requis mais le journal %(journal)s n'est pas lié à un compte "
 "bancaire."
 
 #. module: account_payment_base_oca
@@ -272,12 +272,12 @@ msgstr "Compte de réception en suspens"
 #: model_terms:ir.ui.view,arch_db:account_payment_base_oca.view_account_invoice_report_search
 #: model_terms:ir.ui.view,arch_db:account_payment_base_oca.view_move_form
 msgid "Payment Method"
-msgstr "Mode de paiement"
+msgstr "Méthode de paiement comptable"
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__refund_payment_method_line_id
 msgid "Payment Method for Refunds"
-msgstr "Mode de paiement pour les remboursements"
+msgstr "Méthode de paiement comptable pour les remboursements"
 
 #. module: account_payment_base_oca
 #: model:ir.actions.act_window,name:account_payment_base_oca.account_payment_method_line_action
@@ -285,7 +285,7 @@ msgstr "Mode de paiement pour les remboursements"
 #: model:ir.model,name:account_payment_base_oca.model_account_payment_method_line
 #: model:ir.ui.menu,name:account_payment_base_oca.account_payment_method_line_menu
 msgid "Payment Methods"
-msgstr "Modes de paiement"
+msgstr "Méthodes de paiement comptable"
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,help:account_payment_base_oca.field_res_partner__property_outbound_payment_method_line_id
@@ -294,9 +294,9 @@ msgid ""
 "Preferred payment method when buying from this vendor. This will be set by "
 "default on all outgoing payments created for this vendor"
 msgstr ""
-"Mode de paiement privilégié pour les achats auprès de ce fournisseur. Ce "
-"mode sera défini par défaut pour tous les paiements sortants créés pour ce "
-"fournisseur"
+"Méthode de paiement comptable privilégiée pour les achats auprès de ce "
+"fournisseur. Cette méthode sera définie par défaut pour tous les paiements "
+"sortants créés pour ce fournisseur"
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,help:account_payment_base_oca.field_res_partner__property_inbound_payment_method_line_id
@@ -305,20 +305,21 @@ msgid ""
 "Preferred payment method when selling to this customer. This will be set by "
 "default on all incoming payments created for this customer"
 msgstr ""
-"Mode de paiement privilégié pour la vente à ce client. Ce mode sera défini "
-"par défaut pour tous les paiements entrants créés pour ce client"
+"Méthode de paiement comptable privilégiée pour la vente à ce client. Cette "
+"méthode sera définie par défaut pour tous les paiements entrants créés pour "
+"ce client"
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_res_partner__property_inbound_payment_method_line_id
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_res_users__property_inbound_payment_method_line_id
 msgid "Property Inbound Payment Method Line"
-msgstr "Ligne de mode de paiement entrant"
+msgstr "Ligne de méthode de paiement comptable entrant"
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_res_partner__property_outbound_payment_method_line_id
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_res_users__property_outbound_payment_method_line_id
 msgid "Property Outbound Payment Method Line"
-msgstr "Ligne de mode de paiement sortant"
+msgstr "Ligne de méthode de paiement comptable sortant"
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__report_description
@@ -345,7 +346,7 @@ msgstr "Afficher le compte bancaire du client"
 #: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__payment_method_id
 #: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
 msgid "Technical Payment Method"
-msgstr "Mode de paiement technique"
+msgstr "Méthode de paiement comptable technique"
 
 #. module: account_payment_base_oca
 #: model:ir.model.constraint,message:account_payment_base_oca.constraint_account_payment_method_line_show_bank_account_chars_positive
@@ -364,10 +365,10 @@ msgid ""
 "should not have an outstanding payment/receipt account. Only payment methods"
 " with a fixed link to a bank account can have one."
 msgstr ""
-"Le mode de paiement '%(name)s' possède un lien variable vers un compte "
-"bancaire, il ne doit donc pas avoir de compte de paiement/reçu en attente. "
-"Seuls les modes de paiement ayant un lien fixe vers un compte bancaire "
-"peuvent en avoir un."
+"La méthode de paiement comptable technique '%(name)s' possède un lien "
+"variable vers un compte bancaire, il ne doit donc pas avoir de compte de "
+"paiement/reçu en attente. Seuls les méthodes de paiement comptable technique "
+"ayant un lien fixe vers un compte bancaire peuvent en avoir un."
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields,help:account_payment_base_oca.field_account_payment_method_line__refund_payment_method_line_id
@@ -375,8 +376,8 @@ msgid ""
 "This payment method will be used when doing refunds coming from the current "
 "payment method."
 msgstr ""
-"Ce mode de paiement sera utilisé lors des remboursements provenant du mode "
-"de paiement actuel."
+"Cette méthode de paiement comptable sera utilisée lors des remboursements "
+"provenant du mode de paiement actuel."
 
 #. module: account_payment_base_oca
 #: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__bank_account_link__variable
@@ -391,6 +392,7 @@ msgid ""
 "bank account link to a variable bank account link. You should create a new "
 "payment method with a variable bank account link."
 msgstr ""
-"Vous ne devez pas modifier le mode de paiement '%(name)s' pour passer d'un "
-"compte bancaire fixe à un compte bancaire variable. Vous devez créer un "
-"nouveau mode de paiement avec un compte bancaire variable."
+"Vous ne devez pas modifier la méthode de paiement comptable '%(name)s' pour "
+"passer d'un compte bancaire fixe à un compte bancaire variable. Vous devez "
+"créer une nouvelle méthode de paiement comptable avec un compte bancaire "
+"variable."

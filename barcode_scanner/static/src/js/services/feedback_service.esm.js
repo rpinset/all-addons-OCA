@@ -1,6 +1,13 @@
 import {Reactive} from "@web/core/utils/reactive";
 import {registry} from "@web/core/registry";
 
+const NOTIFICATION_TYPES = {
+    success: "success",
+    warning: "warning",
+    error: "danger",
+    info: "info",
+};
+
 const DEFAULT_PROFILES = {
     success: {
         vibration: [35],
@@ -83,7 +90,9 @@ export class BarcodeScannerFeedbackService extends Reactive {
         const signal = {level, message: options.message || "", at: Date.now()};
         this.lastSignal = signal;
         if (options.notify && options.message) {
-            this.notification.add(options.message, {type: level});
+            this.notification.add(options.message, {
+                type: NOTIFICATION_TYPES[level] || "info",
+            });
         }
         if (this.enabled.flash) {
             this.flashOnce(level, options.flashDurationMs || 180);
