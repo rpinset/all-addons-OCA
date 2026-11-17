@@ -12,6 +12,7 @@ from odoo.exceptions import AccessError, ValidationError
 from odoo.fields import Domain
 from odoo.tests import Form
 from odoo.tests.common import tagged
+from odoo.tools import mute_logger
 
 from ..models.tier_validation import BASE_EXCEPTION_FIELDS as BEF
 from ..models.tier_validation import TierValidation as TV
@@ -2176,3 +2177,154 @@ class TierTierValidationView(CommonTierValidation):
         self.assertIn("validation_status", res["models"][self.test_model_2._name])
         self.assertIn('name="validation_status"', arch)
         self.assertIn("validation_status not in", arch)
+
+    @mute_logger(
+        "odoo.addons.base_tier_validation.models.tier_validation",
+        "odoo.addons.base.models.ir_model",
+    )
+    def test_request_validation_warns_reviewer_without_access(self):
+        """When request_validation creates reviews for a reviewer who has
+        no read access on the validated model, a chatter message is posted
+        on the document so the requester can see why the workflow won't
+        progress."""
+        test_record = self.test_model.create({"test_field": 2.5})
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+            }
+        )
+        # Restrict the tester model's read access to base.group_system so
+        # the requester (test_user_1, in group_system) keeps access while
+        # the reviewer (test_user_2, only base.group_user) loses it. This
+        # is the "assigned reviewer but no ACL" state the chatter warning
+        # exists to surface.
+        self.env["ir.model.access"].search(
+            Domain("model_id", "=", self.tester_model.id)
+        ).write({"group_id": self.env.ref("base.group_system").id})
+        # Ensure the ACL cache picks up the change before the helper checks.
+        self.env["ir.model.access"].call_cache_clearing_methods()
+        messages_before = len(test_record.message_ids)
+        test_record.with_user(self.test_user_1).request_validation()
+        messages_after = test_record.message_ids
+        self.assertGreater(len(messages_after), messages_before)
+        # The newest message should name the user without access.
+        body = messages_after[0].body
+        self.assertIn(self.test_user_2.display_name, body)
+        self.assertIn("may not be able to read", body)
+
+    @mute_logger("odoo.addons.base_tier_validation.models.tier_validation")
+    def test_request_validation_warns_reviewer_hidden_by_record_rule(self):
+        """The reviewer can read the model, but a record rule hides this
+        document from them: the warning still names them."""
+        test_record = self.test_model.create({"test_field": 2.5})
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+            }
+        )
+        self.env["ir.rule"].create(
+            {
+                "name": "Reviewer only sees small tests",
+                "model_id": self.tester_model.id,
+                "groups": [Command.link(self.env.ref("base.group_user").id)],
+                "domain_force": "[('test_field', '<', 1.0)]",
+            }
+        )
+        self.env["ir.rule"].create(
+            {
+                "name": "Admins see all tests",
+                "model_id": self.tester_model.id,
+                "groups": [Command.link(self.env.ref("base.group_system").id)],
+                "domain_force": "[(1, '=', 1)]",
+            }
+        )
+        self.assertTrue(self.test_model.with_user(self.test_user_2).has_access("read"))
+        messages_before = test_record.message_ids
+        test_record.with_user(self.test_user_1).request_validation()
+        new_messages = test_record.message_ids - messages_before
+        bodies = " ".join(message.body or "" for message in new_messages)
+        self.assertIn("may not be able to read", bodies)
+        self.assertIn(self.test_user_2.display_name, bodies)
+
+    def test_request_validation_no_warning_when_reviewer_has_access(self):
+        """No spurious chatter message when reviewers have model access."""
+        test_record = self.test_model.create({"test_field": 2.5})
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+            }
+        )
+        # Default public ACL is in place; test_user_1 can read the model.
+        messages_before = test_record.message_ids
+        test_record.with_user(self.test_user_2).request_validation()
+        new_messages = test_record.message_ids - messages_before
+        bodies = " ".join(message.body or "" for message in new_messages)
+        self.assertNotIn("may not be able to read", bodies)
+
+    def test_warn_reviewers_lacking_access_short_circuits(self):
+        """Direct exercise of the helper's defensive branches: no
+        reviewers and no access-issue early exits, without going through
+        the full ``request_validation`` flow."""
+        # No reviews -> empty for-loop, no chatter.
+        self.test_record._warn_reviewers_lacking_access(self.env["tier.review"])
+        # Real reviews but reviewer has access -> `if not no_access`
+        # exit, again no chatter.
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+            }
+        )
+        record = self.test_model.create({"test_field": 2.5})
+        reviews = record.with_user(self.test_user_2).request_validation()
+        messages_before = record.message_ids
+        record._warn_reviewers_lacking_access(reviews)
+        new_messages = record.message_ids - messages_before
+        bodies = " ".join(msg.body or "" for msg in new_messages)
+        self.assertNotIn("may not be able to read", bodies)
+
+    @mute_logger(
+        "odoo.addons.base_tier_validation.models.tier_validation",
+        "odoo.addons.base.models.ir_model",
+    )
+    def test_request_validation_warning_without_mail_thread(self):
+        """Models without mail.thread can't accept ``message_post``. The
+        warning helper must still log the issue but skip the chatter
+        post without raising. Covers the ``hasattr(rec, "message_post")``
+        False branch."""
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model_2.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+            }
+        )
+        # Restrict the model's ACL so the reviewer (user_2) loses read
+        # access and triggers the warning branch.
+        self.env["ir.model.access"].search(
+            Domain("model_id", "=", self.tester_model_2.id)
+        ).write({"group_id": self.env.ref("base.group_system").id})
+        self.env["ir.model.access"].call_cache_clearing_methods()
+        # Create a fresh record whose field actually matches the
+        # tier-definition domain (the shared fixture's test_field is 1.0
+        # which does not trigger the > 1.0 rule).
+        record = self.test_model_2.create({"test_field": 2.5})
+        # `tier.validation.tester2` does not inherit ``mail.thread``;
+        # the helper must not crash trying to post a chatter message
+        # on it.
+        reviews = record.with_user(self.test_user_1).request_validation()
+        self.assertTrue(reviews)
+        # Sanity: no chatter on a non-mail.thread model.
+        self.assertFalse(hasattr(record, "message_ids"))

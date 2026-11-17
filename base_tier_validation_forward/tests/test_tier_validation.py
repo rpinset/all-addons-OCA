@@ -13,6 +13,14 @@ class TierTierValidation(CommonTierValidation):
         super().setUpClass()
         cls.other_test_user = new_test_user(cls.env, name="Clarissa", login="forward")
 
+    def _forward(self, record, user, target):
+        action = record.with_user(user).forward_tier()
+        self.env[action["res_model"]].with_user(user).with_context(
+            **action["context"]
+        ).create(
+            {"forward_reviewer_id": target.id, "forward_description": "Have a look"}
+        ).add_forward()
+
     def test_01_forward_tier(self):
         # Create new test record
         test_record = self.test_model.create({"test_field": 2.5})
@@ -208,3 +216,53 @@ class TierTierValidation(CommonTierValidation):
     def test_03_forward_tier_multiple_without_comment(self):
         """Expected flow with forwards, but without comments"""
         self._test_forward_tier_multiple(has_comment=False)
+
+    def test_04_forward_a_forwarded_review(self):
+        """User 1 forwards to user 2, who forwards it back to user 1, who
+        forwards it on to a third user. Each forwarded review keeps the
+        comment naming its own next reviewer."""
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+                "approve_sequence": True,
+                "has_forward": True,
+            }
+        )
+        test_record = self.test_model.create({"test_field": 2.5})
+        test_record.with_user(self.test_user_2).request_validation()
+        self._forward(test_record, self.test_user_1, self.test_user_2)
+        self._forward(test_record, self.test_user_2, self.test_user_1)
+        self._forward(test_record, self.test_user_1, self.other_test_user)
+        self.assertRecordValues(
+            test_record.review_ids,
+            [
+                {
+                    "reviewer_id": self.test_user_1.id,
+                    "status": "forwarded",
+                    "comment": f">> {self.test_user_2.display_name}",
+                },
+                {
+                    "reviewer_id": self.test_user_2.id,
+                    "status": "forwarded",
+                    "comment": f">> {self.test_user_1.display_name}",
+                },
+                {
+                    "reviewer_id": self.test_user_1.id,
+                    "status": "forwarded",
+                    "comment": f">> {self.other_test_user.display_name}",
+                },
+                {
+                    "reviewer_id": self.other_test_user.id,
+                    "status": "pending",
+                    "comment": False,
+                },
+            ],
+        )
+        action = test_record.with_user(self.other_test_user).validate_tier()
+        self.env[action["res_model"]].with_user(self.other_test_user).with_context(
+            **action["context"]
+        ).create({"comment": "Reviewed"}).add_comment()
+        self.assertEqual(test_record.validation_status, "validated")

@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-11-16 01:06 UTC
+Generated 2026-11-17 12:08 UTC
 
-Total skipped: **135**
+Total skipped: **134**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -44,7 +44,7 @@ Count: **31**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **104**
+Count: **103**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -129,7 +129,6 @@ Count: **104**
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [19.0](https://github.com/OCA/stock-logistics-putaway/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [19.0](https://github.com/OCA/stock-logistics-release-channel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [19.0](https://github.com/OCA/stock-logistics-shopfloor/tree/19.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [19.0](https://github.com/OCA/stock-logistics-tracking/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [19.0](https://github.com/OCA/stock-weighing/tree/19.0) | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [19.0](https://github.com/OCA/version-control-platform/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [19.0](https://github.com/OCA/vertical-abbey/tree/19.0) | No directory with __manifest__.py at repo root |

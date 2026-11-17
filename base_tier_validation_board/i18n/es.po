@@ -1,0 +1,522 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_tier_validation_board
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 11:06+0000\n"
+"PO-Revision-Date: 2025-05-20 09:26+0000\n"
+"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"ms-2 text-muted\">on </span>"
+msgstr "<span class=\"ms-2 text-muted\">el </span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted me-2\">Done by</span>"
+msgstr "<span class=\"text-muted me-2\">Hecho por</span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted me-2\">Requested by</span>"
+msgstr "<span class=\"text-muted me-2\">Solicitado por</span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted me-2\">To review</span>"
+msgstr "<span class=\"text-muted me-2\">Por revisar</span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted\">Comment: </span>"
+msgstr "<span class=\"text-muted\">Comentario: </span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted\">Todo by: </span>"
+msgstr "<span class=\"text-muted\">Por hacer por: </span>"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_needaction
+msgid "Action Needed"
+msgstr "Acción requerida"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de excepción de actividad"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: base_tier_validation_board
+#: model:ir.ui.menu,name:base_tier_validation_board.board_menu_tier_reviews
+msgid "All Reviews"
+msgstr "Todas las revisiones"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_attachment_count
+msgid "Attachment Count"
+msgstr "Número de archivos adjuntos"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Comments"
+msgstr "Comentarios"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__response_days
+msgid ""
+"Days between the review being created and it being done (0 until it is "
+"approved or rejected). Averaged in pivot/graph views, so the measure reads "
+"as the mean review turnaround."
+msgstr ""
+"Días transcurridos entre la creación de la revisión y su resolución (0 hasta"
+" que se aprueba o rechaza). Se promedia en las vistas de tabla dinámica y "
+"gráfico, de modo que la medida indica el tiempo medio de respuesta de las "
+"revisiones."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Definition"
+msgstr "Definición"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Description"
+msgstr "Descripción"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_res_users__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__related_model_instance
+msgid "Document"
+msgstr "Documento"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Document Model"
+msgstr "Modelo del documento"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_boards_tier_reviews
+msgid ""
+"Every tier review across the models that use tier validation.\n"
+"                Reviews are created automatically by tier definitions -- they\n"
+"                are never added by hand. Clear the\n"
+"                <em>Pending</em>\n"
+"                filter to see approved, rejected and waiting reviews too."
+msgstr ""
+"Todas las revisiones de todos los modelos que usan validación por niveles.\n"
+"                Las revisiones se crean automáticamente a partir de las definiciones de nivel; nunca\n"
+"                se añaden manualmente. Quite el filtro\n"
+"                <em>Pendiente</em>\n"
+"                para ver también las revisiones aprobadas, rechazadas y en espera."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Contactos)"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono de Font Awesome, p. ej. fa-tasks"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__has_message
+msgid "Has Message"
+msgstr "Tiene un mensaje"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__age_display
+msgid ""
+"How long an open (pending/waiting) review has been waiting, in a short "
+"relative form (e.g. 3d, 2w, 4mo). Empty once the review is done. Used on the"
+" kanban card so aging stands out."
+msgstr ""
+"Tiempo que lleva esperando una revisión abierta (pendiente/en espera), en "
+"formato relativo corto (p. ej. 3d, 2w, 4mo). Vacío una vez resuelta la "
+"revisión. Se muestra en la tarjeta kanban para que destaque la antigüedad."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_res_users__id
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__is_late
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Late"
+msgstr "Retrasada"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega del mensaje"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__model_id
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Model"
+msgstr "Modelo"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Fecha límite de mi actividad"
+
+#. module: base_tier_validation_board
+#: model:ir.ui.menu,name:base_tier_validation_board.menu_my_tier_reviews
+msgid "My Reviews"
+msgstr "Mis revisiones"
+
+#. module: base_tier_validation_board
+#: model:ir.actions.act_window,name:base_tier_validation_board.open_my_tier_reviews
+msgid "My Tier Reviews"
+msgstr "Mis revisiones por niveles"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite de la siguiente actividad"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo de la siguiente actividad"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_review_statistics
+msgid "No completed reviews to chart yet."
+msgstr "Todavía no hay revisiones completadas para mostrar en el gráfico."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_boards_tier_reviews
+msgid "No tier reviews to show"
+msgstr "No hay revisiones para mostrar"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_my_tier_reviews
+msgid "Nothing waiting for your review"
+msgstr "No hay nada pendiente de su revisión"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid ""
+"Pending or waiting reviews older than the configured late threshold "
+"(base_tier_validation.late_after_days)."
+msgstr ""
+"Revisiones pendientes o en espera más antiguas que el umbral de retraso "
+"configurado (base_tier_validation.late_after_days)."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Related Document"
+msgstr "Documento relacionado"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "Requested"
+msgstr "Solicitado"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Requested by"
+msgstr "Solicitado por"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Requested by me"
+msgstr "Solicitado por mí"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Requested in last 7 days"
+msgstr "Solicitado en los últimos 7 días"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__res_name
+msgid "Resource Name"
+msgstr "Nombre del recurso"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__response_days
+msgid "Response time (days)"
+msgstr "Tiempo de respuesta (días)"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Review"
+msgstr "Revisión"
+
+#. module: base_tier_validation_board
+#: model:ir.actions.act_window,name:base_tier_validation_board.open_review_statistics
+#: model:ir.ui.menu,name:base_tier_validation_board.menu_tier_review_statistics
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_stats_graph
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_stats_pivot
+msgid "Review Statistics"
+msgstr "Estadísticas de revisión"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Reviewed by"
+msgstr "Revisado por"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Reviewed by me"
+msgstr "Revisado por mí"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Reviewed today"
+msgstr "Revisado hoy"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__is_late
+msgid ""
+"Set when the review is still waiting for a decision and has been pending "
+"longer than the configured threshold (base_tier_validation.late_after_days, "
+"default 7 days). Shown on the kanban with a 'rotten' colour and available as"
+" the 'Late' filter."
+msgstr ""
+"Se marca cuando la revisión sigue esperando una decisión y lleva pendiente "
+"más tiempo que el umbral configurado (base_tier_validation.late_after_days, "
+"7 días por defecto). Se muestra en el kanban con un color de 'estancado' y "
+"está disponible como el filtro 'Retrasada'."
+
+#. module: base_tier_validation_board
+#: model:res.groups,name:base_tier_validation_board.group_show_tier_review_board
+msgid "Show tier review board"
+msgstr "Ve el tablero de revisiones"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_review_statistics
+msgid ""
+"Statistics are computed across approved and rejected reviews.\n"
+"            The default *Avg. days* measure shows the average response\n"
+"            time per reviewer. Use the *Group by* menu in the search bar\n"
+"            to slice by Model, Definition or Requested by."
+msgstr ""
+"Las estadísticas se calculan sobre las revisiones aprobadas y rechazadas.\n"
+"            La medida predeterminada *Días prom.* muestra el tiempo medio de\n"
+"            respuesta por revisor. Use el menú *Agrupar por* de la barra de búsqueda\n"
+"            para desglosar por Modelo, Definición o Solicitado por."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Status"
+msgstr "Estado"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencida: la fecha límite ya pasó\n"
+"Hoy: la fecha de la actividad es hoy\n"
+"Planificada: actividades futuras."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__model_id
+msgid ""
+"The kind of document this review is for (e.g. Journal Entry, Contract)."
+msgstr ""
+"El tipo de documento al que corresponde esta revisión (p. ej. asiento "
+"contable, contrato)."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Tier"
+msgstr "Nivel"
+
+#. module: base_tier_validation_board
+#: model:ir.model,name:base_tier_validation_board.model_tier_review
+msgid "Tier Review"
+msgstr "Revisión"
+
+#. module: base_tier_validation_board
+#: model:ir.actions.act_window,name:base_tier_validation_board.open_boards_tier_reviews
+#: model:ir.ui.menu,name:base_tier_validation_board.menu_tier_reviews_root
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_graph
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_pivot
+msgid "Tier Reviews"
+msgstr "Revisiones"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_my_tier_reviews
+msgid ""
+"Tier reviews assigned to you, across every model that uses\n"
+"                tier validation. You land on the ones still\n"
+"                <em>Pending</em>\n"
+"                your decision; clear that filter to see your full review\n"
+"                history."
+msgstr ""
+"Revisiones asignadas a usted en todos los modelos que usan\n"
+"                validación por niveles. Se muestran primero las que siguen\n"
+"                <em>Pendiente</em>\n"
+"                de su decisión; quite ese filtro para ver su historial\n"
+"                completo de revisiones."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "To review by me"
+msgstr "Por revisar por mí"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Todo by"
+msgstr "Por hacer por"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividad de excepción registrada."
+
+#. module: base_tier_validation_board
+#: model:ir.model,name:base_tier_validation_board.model_res_users
+msgid "User"
+msgstr "Usuario"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Validated by"
+msgstr "Validado por"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__age_display
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Waiting"
+msgstr "En espera"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación del sitio web"
+
+#. module: base_tier_validation_board
+#. odoo-python
+#: code:addons/base_tier_validation_board/models/tier_review.py:0
+msgid "today"
+msgstr "hoy"

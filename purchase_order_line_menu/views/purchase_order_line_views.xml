@@ -39,6 +39,9 @@
                 <field name="qty_received" optional="hide" />
                 <field name="qty_received_manual" optional="hide" />
             </xpath>
+            <xpath expr="//field[@name='price_unit']" position="after">
+                <field name="discount" string="Disc.%" optional="hide" />
+            </xpath>
             <xpath expr="//field[@name='price_subtotal']" position="after">
                 <field name="tax_ids" widget="many2many_tags" optional="hide" />
                 <field
@@ -108,7 +111,7 @@
                 <filter
                     name="flt_state_to_approve"
                     string="To Approve"
-                    domain="[('state','=','to_approve')]"
+                    domain="[('state','=','to approve')]"
                 />
                 <filter
                     name="flt_state_purchase"
@@ -118,7 +121,7 @@
                 <filter
                     name="flt_state_done"
                     string="Locked"
-                    domain="[('state','=','done')]"
+                    domain="[('order_id.locked','=',True)]"
                 />
                 <filter
                     name="flt_state_cancel"

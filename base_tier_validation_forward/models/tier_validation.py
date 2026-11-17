@@ -31,7 +31,13 @@ class TierValidation(models.AbstractModel):
     def forward_tier(self):
         self.ensure_one()
         sequences = self._get_sequences_to_approve(self.env.user)
-        reviews = self.review_ids.filtered(lambda r: r.sequence in sequences)
+        # Forwarded reviews share their sequence: only take the user's own
+        # pending one, or the wizard overwrites earlier forward comments.
+        reviews = self.review_ids.filtered(
+            lambda r: r.sequence in sequences
+            and r.status == "pending"
+            and self.env.user in r.reviewer_ids
+        )
         ctx = self._add_comment("forward", reviews)["context"]
         comment = (
             self.env["comment.wizard"].with_context(**ctx).create({"comment": "/"})

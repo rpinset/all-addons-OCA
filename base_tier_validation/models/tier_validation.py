@@ -2,6 +2,7 @@
 # Copyright 2024 Moduon Team (https://www.moduon.team)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+import logging
 from ast import literal_eval
 
 from lxml import etree
@@ -13,6 +14,8 @@ from odoo.exceptions import ValidationError
 from odoo.fields import Domain
 from odoo.tools import SQL
 from odoo.tools.misc import frozendict
+
+_logger = logging.getLogger(__name__)
 
 BASE_EXCEPTION_FIELDS = [
     "message_follower_ids",
@@ -868,11 +871,60 @@ class TierValidation(models.AbstractModel):
         # ``notify_on_create`` definition is present), reviews would stay in
         # ``waiting`` indefinitely and no reviewer would be notified.
         created_trs._update_review_status()
+        self._warn_reviewers_lacking_access(created_trs)
         # Notify the reviewers, whether or not the requester is one of them.
         if created_trs:
             self._update_counter({"review_created": True})
         self._notify_review_requested(created_trs)
         return created_trs
+
+    def _warn_reviewers_lacking_access(self, reviews):
+        """Post a chatter message + server warning if any of the reviewers
+        assigned to ``reviews`` cannot read the validated record.
+
+        Without this, a reviewer who cannot see the document makes the
+        workflow stall silently: the review exists, but the reviewer can't
+        open the document and so can't act on it. The chatter message makes
+        the misconfiguration visible to the requester.
+
+        Checked on the record itself, so record rules count as well as
+        access rights.
+        """
+        for rec in self:
+            rec_reviews = reviews.filtered(lambda r, rec=rec: r.res_id == rec.id)
+            no_access = rec_reviews.reviewer_ids.filtered(
+                lambda user, rec=rec: not rec._reviewer_can_read(user)
+            )
+            if not no_access:
+                continue
+            _logger.warning(
+                "Tier validation requested on %s(%s) but reviewer(s) %s "
+                "cannot read it; the workflow will stall until they get "
+                "access or are replaced.",
+                rec._name,
+                rec.id,
+                no_access.mapped("login"),
+            )
+            if hasattr(rec, "message_post"):
+                rec.sudo().message_post(
+                    body=self.env._(
+                        "Tier validation was requested but the following "
+                        "reviewer(s) may not be able to read this document "
+                        "and so cannot act on it: %(reviewers)s. The "
+                        "workflow will remain pending until they get "
+                        "access or are replaced.",
+                        reviewers=", ".join(no_access.mapped("display_name")),
+                    )
+                )
+
+    def _reviewer_can_read(self, user):
+        """Whether ``user`` can read this record, in any of their companies."""
+        self.ensure_one()
+        return (
+            self.with_context(allowed_company_ids=user.sudo().company_ids.ids)
+            .with_user(user)
+            .has_access("read")
+        )
 
     def _notify_restarted_review_body(self):
         return self.env._("The review has been reset by %s.", self.env.user.name)

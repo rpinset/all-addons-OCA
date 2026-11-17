@@ -3,39 +3,45 @@ ul.o_review {
     max-width: 800px;
 }
 
-.panel-group {
+.o_tier_review_widget {
     min-height: auto !important;
     margin-top: -6px !important;
     padding: 16px 16px 8px 16px !important;
 }
 
-.panel-heading {
-    background-color: initial !important;
-}
-
-.panel {
-    border: 0 !important;
-}
-
-.panel-body {
+.o_tier_review_body {
     overflow-y: hidden;
     overflow-x: auto;
 }
 
-.panel-title > a,
-.panel-title > a:active {
+/* Style the native <summary> as a section heading. The browser
+   handles open/close state itself; we only re-skin the disclosure
+   triangle to match Odoo's FontAwesome caret look. */
+.o_tier_review_details > summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+    padding: 8px 0;
     display: block;
 }
 
-.panel-heading a:before {
-    font-family: FontAwesome;
-    content: "\f0d7";
-    float: right;
-    transition: all 0.5s;
+.o_tier_review_details > summary::-webkit-details-marker {
+    display: none;
 }
 
-.panel-heading.active a:before {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
+.o_tier_review_details > summary::before {
+    font-family: FontAwesome;
+    content: "\f0d7";
+    margin-right: 8px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.o_tier_review_details:not([open]) > summary::before {
+    transform: rotate(-90deg);
+}
+
+.o_tier_review_widget .o_tier_review_seq {
+    width: 2rem;
+    white-space: nowrap;
 }

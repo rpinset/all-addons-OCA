@@ -1,0 +1,522 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_tier_validation_board
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 11:06+0000\n"
+"PO-Revision-Date: 2026-11-07 11:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"ms-2 text-muted\">on </span>"
+msgstr "<span class=\"ms-2 text-muted\">op </span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted me-2\">Done by</span>"
+msgstr "<span class=\"text-muted me-2\">Gedaan door</span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted me-2\">Requested by</span>"
+msgstr "<span class=\"text-muted me-2\">Aangevraagd door</span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted me-2\">To review</span>"
+msgstr "<span class=\"text-muted me-2\">Te beoordelen</span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted\">Comment: </span>"
+msgstr "<span class=\"text-muted\">Opmerking: </span>"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "<span class=\"text-muted\">Todo by: </span>"
+msgstr "<span class=\"text-muted\">Uit te voeren door: </span>"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_needaction
+msgid "Action Needed"
+msgstr "Actie gevraagd"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_ids
+msgid "Activities"
+msgstr "Activiteiten"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activiteit uitzondering decoratie"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_state
+msgid "Activity State"
+msgstr "Activiteitsfase"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Activiteitensoort icoon"
+
+#. module: base_tier_validation_board
+#: model:ir.ui.menu,name:base_tier_validation_board.board_menu_tier_reviews
+msgid "All Reviews"
+msgstr "Alle beoordelingen"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Approved"
+msgstr "Goedgekeurd"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_attachment_count
+msgid "Attachment Count"
+msgstr "Aantal bijlagen"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Comments"
+msgstr "Opmerkingen"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__response_days
+msgid ""
+"Days between the review being created and it being done (0 until it is "
+"approved or rejected). Averaged in pivot/graph views, so the measure reads "
+"as the mean review turnaround."
+msgstr ""
+"Aantal dagen tussen het aanmaken van de beoordeling en de afhandeling ervan "
+"(0 totdat deze is goedgekeurd of geweigerd). Wordt gemiddeld in de "
+"draaitabel- en grafiekweergave, zodat de meetwaarde de gemiddelde "
+"doorlooptijd van een beoordeling toont."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Definition"
+msgstr "Definitie"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_res_users__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__related_model_instance
+msgid "Document"
+msgstr "Document"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Document Model"
+msgstr "Documentmodel"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_boards_tier_reviews
+msgid ""
+"Every tier review across the models that use tier validation.\n"
+"                Reviews are created automatically by tier definitions -- they\n"
+"                are never added by hand. Clear the\n"
+"                <em>Pending</em>\n"
+"                filter to see approved, rejected and waiting reviews too."
+msgstr ""
+"Alle niveaubeoordelingen van alle modellen die niveauvalidatie gebruiken.\n"
+"                Beoordelingen worden automatisch aangemaakt door niveaudefinities -- ze\n"
+"                worden nooit handmatig toegevoegd. Wis het filter\n"
+"                <em>In afwachting</em>\n"
+"                om ook goedgekeurde, geweigerde en wachtende beoordelingen te zien."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_follower_ids
+msgid "Followers"
+msgstr "Volgers"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Volgers (Relaties)"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome icoon bijv. fa-tasks"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__has_message
+msgid "Has Message"
+msgstr "Heeft bericht"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__age_display
+msgid ""
+"How long an open (pending/waiting) review has been waiting, in a short "
+"relative form (e.g. 3d, 2w, 4mo). Empty once the review is done. Used on the"
+" kanban card so aging stands out."
+msgstr ""
+"Hoe lang een openstaande (in afwachting/wachtende) beoordeling al wacht, in "
+"een korte relatieve notatie (bijv. 3d, 2w, 4mo). Leeg zodra de beoordeling "
+"is afgehandeld. Wordt op de kanbankaart getoond zodat verouderde "
+"beoordelingen opvallen."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_res_users__id
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_exception_icon
+msgid "Icon"
+msgstr "Icoon"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icoon om uitzondering op activiteit aan te geven."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Indien aangevinkt vragen nieuwe berichten je aandacht."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Indien aangevinkt hebben sommige berichten een afleverfout."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_is_follower
+msgid "Is Follower"
+msgstr "Is volger"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__is_late
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Late"
+msgstr "Te laat"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_has_error
+msgid "Message Delivery error"
+msgstr "Bericht afleverfout"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_ids
+msgid "Messages"
+msgstr "Berichten"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__model_id
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Model"
+msgstr "Model"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Mijn activiteit deadline"
+
+#. module: base_tier_validation_board
+#: model:ir.ui.menu,name:base_tier_validation_board.menu_my_tier_reviews
+msgid "My Reviews"
+msgstr "Mijn beoordelingen"
+
+#. module: base_tier_validation_board
+#: model:ir.actions.act_window,name:base_tier_validation_board.open_my_tier_reviews
+msgid "My Tier Reviews"
+msgstr "Mijn niveaubeoordelingen"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Volgende activiteit deadline"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_summary
+msgid "Next Activity Summary"
+msgstr "Volgende activiteit overzicht"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_type_id
+msgid "Next Activity Type"
+msgstr "Volgende activiteitensoort"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_review_statistics
+msgid "No completed reviews to chart yet."
+msgstr "Nog geen afgeronde beoordelingen om weer te geven."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_boards_tier_reviews
+msgid "No tier reviews to show"
+msgstr "Geen niveaubeoordelingen om te tonen"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_my_tier_reviews
+msgid "Nothing waiting for your review"
+msgstr "Er wacht niets op jouw beoordeling"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aantal acties"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__message_has_error_counter
+msgid "Number of errors"
+msgstr "Aantal fouten"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Aantal berichten die actie vereisen"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Aantal berichten met afleverfout"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Pending"
+msgstr "In afwachting"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid ""
+"Pending or waiting reviews older than the configured late threshold "
+"(base_tier_validation.late_after_days)."
+msgstr ""
+"Beoordelingen in afwachting of wachtend die ouder zijn dan de ingestelde "
+"drempel voor te laat (base_tier_validation.late_after_days)."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Rejected"
+msgstr "Geweigerd"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Related Document"
+msgstr "Gerelateerd document"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+msgid "Requested"
+msgstr "Aangevraagd"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Requested by"
+msgstr "Aangevraagd door"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Requested by me"
+msgstr "Aangevraagd door mij"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Requested in last 7 days"
+msgstr "Aangevraagd in de afgelopen 7 dagen"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__res_name
+msgid "Resource Name"
+msgstr "Resourcenaam"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__response_days
+msgid "Response time (days)"
+msgstr "Reactietijd (dagen)"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__activity_user_id
+msgid "Responsible User"
+msgstr "Verantwoordelijke gebruiker"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Review"
+msgstr "Beoordeling"
+
+#. module: base_tier_validation_board
+#: model:ir.actions.act_window,name:base_tier_validation_board.open_review_statistics
+#: model:ir.ui.menu,name:base_tier_validation_board.menu_tier_review_statistics
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_stats_graph
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_stats_pivot
+msgid "Review Statistics"
+msgstr "Beoordelingsstatistieken"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Reviewed by"
+msgstr "Beoordeeld door"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Reviewed by me"
+msgstr "Beoordeeld door mij"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Reviewed today"
+msgstr "Vandaag beoordeeld"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__is_late
+msgid ""
+"Set when the review is still waiting for a decision and has been pending "
+"longer than the configured threshold (base_tier_validation.late_after_days, "
+"default 7 days). Shown on the kanban with a 'rotten' colour and available as"
+" the 'Late' filter."
+msgstr ""
+"Ingesteld wanneer de beoordeling nog op een beslissing wacht en langer in "
+"afwachting is dan de ingestelde drempel "
+"(base_tier_validation.late_after_days, standaard 7 dagen). Wordt in de "
+"kanban met een 'verouderd'-kleur getoond en is beschikbaar als het filter "
+"'Te laat'."
+
+#. module: base_tier_validation_board
+#: model:res.groups,name:base_tier_validation_board.group_show_tier_review_board
+msgid "Show tier review board"
+msgstr "Niveaubeoordelingsoverzicht tonen"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_review_statistics
+msgid ""
+"Statistics are computed across approved and rejected reviews.\n"
+"            The default *Avg. days* measure shows the average response\n"
+"            time per reviewer. Use the *Group by* menu in the search bar\n"
+"            to slice by Model, Definition or Requested by."
+msgstr ""
+"Statistieken worden berekend over goedgekeurde en geweigerde beoordelingen.\n"
+"            De standaard meetwaarde *Gem. dagen* toont de gemiddelde reactietijd\n"
+"            per beoordelaar. Gebruik het menu *Groeperen op* in de zoekbalk\n"
+"            om te groeperen op Model, Definitie of Aangevraagd door."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Status"
+msgstr "Status"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status gebaseerd op activiteiten\n"
+"Te laat: Deadline is al verstreken\n"
+"Vandaag: Activiteit datum is vandaag\n"
+"Gepland: Toekomstige activiteiten."
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__model_id
+msgid ""
+"The kind of document this review is for (e.g. Journal Entry, Contract)."
+msgstr ""
+"Het soort document waarvoor deze beoordeling is (bijv. boeking, contract)."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Tier"
+msgstr "Niveau"
+
+#. module: base_tier_validation_board
+#: model:ir.model,name:base_tier_validation_board.model_tier_review
+msgid "Tier Review"
+msgstr "Niveaubeoordeling"
+
+#. module: base_tier_validation_board
+#: model:ir.actions.act_window,name:base_tier_validation_board.open_boards_tier_reviews
+#: model:ir.ui.menu,name:base_tier_validation_board.menu_tier_reviews_root
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_graph
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_pivot
+msgid "Tier Reviews"
+msgstr "Niveaubeoordelingen"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.actions.act_window,help:base_tier_validation_board.open_my_tier_reviews
+msgid ""
+"Tier reviews assigned to you, across every model that uses\n"
+"                tier validation. You land on the ones still\n"
+"                <em>Pending</em>\n"
+"                your decision; clear that filter to see your full review\n"
+"                history."
+msgstr ""
+"Niveaubeoordelingen die aan jou zijn toegewezen, voor elk model dat\n"
+"                niveauvalidatie gebruikt. Je ziet eerst de beoordelingen die nog\n"
+"                <em>In afwachting</em>\n"
+"                zijn van jouw beslissing; wis dat filter om je volledige\n"
+"                beoordelingsgeschiedenis te zien."
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "To review by me"
+msgstr "Door mij te beoordelen"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Todo by"
+msgstr "Uit te voeren door"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type van de uitzonderingsactiviteit op het record."
+
+#. module: base_tier_validation_board
+#: model:ir.model,name:base_tier_validation_board.model_res_users
+msgid "User"
+msgstr "Gebruiker"
+
+#. module: base_tier_validation_board
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_list_board
+msgid "Validated by"
+msgstr "Gevalideerd door"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__age_display
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_kanban
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_board.tier_review_view_search
+msgid "Waiting"
+msgstr "Wachtend"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,field_description:base_tier_validation_board.field_tier_review__website_message_ids
+msgid "Website Messages"
+msgstr "Websiteberichten"
+
+#. module: base_tier_validation_board
+#: model:ir.model.fields,help:base_tier_validation_board.field_tier_review__website_message_ids
+msgid "Website communication history"
+msgstr "Website communicatiegeschiedenis"
+
+#. module: base_tier_validation_board
+#. odoo-python
+#: code:addons/base_tier_validation_board/models/tier_review.py:0
+msgid "today"
+msgstr "vandaag"

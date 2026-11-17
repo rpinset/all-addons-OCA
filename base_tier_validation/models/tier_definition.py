@@ -101,8 +101,8 @@ class TierDefinition(models.Model):
     )
     notify_reminder_delay = fields.Integer(
         string="Remind Every (Days)",
-        help="Remind the reviewers every this many days until the review is "
-        "done. Leave at 0 to send no reminder.",
+        help="Remind the reviewers every this many days while their review is "
+        "pending. Leave at 0 to send no reminder.",
     )
     approve_sequence = fields.Boolean(
         string="Approve by sequence",
@@ -229,7 +229,8 @@ class TierDefinition(models.Model):
         )
         domain = (
             Domain("definition_id", "=", self.id)
-            & Domain("status", "in", ["waiting", "pending"])
+            # A waiting review is not the reviewer's turn yet: nothing to remind.
+            & Domain("status", "=", "pending")
             & (
                 Domain("create_date", "<", review_date)
                 & Domain("last_reminder_date", "=", False)

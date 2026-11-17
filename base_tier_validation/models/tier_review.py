@@ -295,7 +295,17 @@ class TierReview(models.Model):
             rev.last_reminder_date = fields.Datetime.now()
 
     def _notify_review_reminder(self, record):
-        record.message_post(
+        """Remind the reviewers of this review, and nobody else.
+
+        ``message_post`` without recipients would notify the followers of the
+        reminder subtype instead: on a record that has been through earlier
+        reminders those are not necessarily the reviewers whose turn it is
+        (a later tier that was reminded under an older version, a requester
+        who follows everything), while the pending reviewers, subscribed to
+        the *requested* subtype only, would get nothing.
+        """
+        record.message_notify(
+            partner_ids=self.reviewer_ids.partner_id.ids,
             subtype_xmlid=self._get_reminder_notification_subtype(),
             body=self._notify_review_reminder_body(),
         )

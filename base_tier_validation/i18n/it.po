@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-11-08 16:46+0000\n"
+"PO-Revision-Date: 2026-11-16 12:13+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #. module: base_tier_validation
 #. odoo-python
@@ -647,11 +647,9 @@ msgstr "Ricorda ogni"
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
 msgid ""
-"Remind the reviewers every this many days until the review is done. Leave at "
-"0 to send no reminder."
+"Remind the reviewers every this many days while their review is pending. "
+"Leave at 0 to send no reminder."
 msgstr ""
-"Invia un promemoria ai revisori ogni tot giorni, finché la revisione non è "
-"completata. Imposta su 0 per non inviare alcun promemoria."
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_buttons
@@ -747,8 +745,6 @@ msgid "Send Tier Review Reminder"
 msgstr "Invia promemoria revisione livello"
 
 #. module: base_tier_validation
-#. odoo-javascript
-#: code:addons/base_tier_validation/static/src/components/tier_review_widget/tier_review_widget.xml:0
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__sequence
 msgid "Sequence"
 msgstr "Sequenza"
@@ -871,6 +867,19 @@ msgstr "Approvazione Riavviata"
 #: model:ir.ui.menu,name:base_tier_validation.menu_tier_confirmation
 msgid "Tier Validations"
 msgstr "Livelli di Approvazione"
+
+#. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+msgid ""
+"Tier validation was requested but the following reviewer(s) may not be able "
+"to read this document and so cannot act on it: %(reviewers)s. The workflow "
+"will remain pending until they get access or are replaced."
+msgstr ""
+"È stata richiesta la convalida del livello, ma i seguenti revisori "
+"potrebbero non essere in grado di leggere questo documento e, pertanto, non "
+"possono intervenire: %(reviewers)s. Il flusso di lavoro rimarrà in sospeso "
+"finché non otterranno l'accesso o non verranno sostituiti."
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
@@ -1089,6 +1098,19 @@ msgstr "es. Validazione livello per ..."
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "the assigned reviewer"
 msgstr "il revisore assegnato"
+
+#. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_widget/tier_review_widget.xml:0
+msgid "· requested by"
+msgstr ""
+
+#~ msgid ""
+#~ "Remind the reviewers every this many days until the review is done. Leave "
+#~ "at 0 to send no reminder."
+#~ msgstr ""
+#~ "Invia un promemoria ai revisori ogni tot giorni, finché la revisione non "
+#~ "è completata. Imposta su 0 per non inviare alcun promemoria."
 
 #~ msgid ""
 #~ "<i class=\"fa fa-lg fa-thumbs-down\"/>\n"

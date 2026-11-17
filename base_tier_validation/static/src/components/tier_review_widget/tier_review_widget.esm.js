@@ -1,37 +1,36 @@
-import {Component, useState} from "@odoo/owl";
+import {Component} from "@odoo/owl";
 import {registry} from "@web/core/registry";
-import {useService} from "@web/core/utils/hooks";
+import {standardFieldProps} from "@web/views/fields/standard_field_props";
 
 export class ReviewsTable extends Component {
-    setup() {
-        super.setup();
-        this.orm = useService("orm");
-        this.state = useState({
-            collapse: false,
-        });
-    }
-
     _getReviewData() {
         const records = this.props.record.data.review_ids.records;
         return records.map((record) => record.data);
     }
 
-    onToggleCollapse(ev) {
-        const panelHeading = ev.currentTarget.closest(".panel-heading");
-        const collapseDiv = panelHeading.nextElementSibling.matches("div#collapse1")
-            ? panelHeading.nextElementSibling
-            : null;
-        if (!collapseDiv) return;
-        if (this.state.collapse) {
-            collapseDiv.style.display = "none";
-        } else {
-            collapseDiv.style.display = "block";
+    /** Hide the Comment column on documents where nobody commented. */
+    get hasComments() {
+        return this._getReviewData().some((review) => review.comment);
+    }
+
+    /**
+     * The requester when every review has the same one, as after a single
+     * validation request. Shown once above the table instead of a column.
+     * Forwarding adds reviews requested by someone else: then the column
+     * is kept.
+     */
+    get singleRequester() {
+        const requesters = this._getReviewData().map((review) => review.requested_by);
+        const first = requesters[0];
+        if (!first || !first.id || requesters.some((r) => !r || r.id !== first.id)) {
+            return null;
         }
-        this.state.collapse = !this.state.collapse;
+        return first.display_name;
     }
 }
 
 ReviewsTable.template = "base_tier_validation.Collapse";
+ReviewsTable.props = {...standardFieldProps};
 
 export const reviewsTableComponent = {
     component: ReviewsTable,

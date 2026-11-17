@@ -630,8 +630,8 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
 msgid ""
-"Remind the reviewers every this many days until the review is done. Leave at "
-"0 to send no reminder."
+"Remind the reviewers every this many days while their review is pending. "
+"Leave at 0 to send no reminder."
 msgstr ""
 
 #. module: base_tier_validation
@@ -728,8 +728,6 @@ msgid "Send Tier Review Reminder"
 msgstr ""
 
 #. module: base_tier_validation
-#. odoo-javascript
-#: code:addons/base_tier_validation/static/src/components/tier_review_widget/tier_review_widget.xml:0
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__sequence
 msgid "Sequence"
 msgstr "Sekvens"
@@ -839,6 +837,15 @@ msgstr "Attestering omstartad"
 #: model:ir.ui.menu,name:base_tier_validation.menu_tier_confirmation
 msgid "Tier Validations"
 msgstr "Attesteringar"
+
+#. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+msgid ""
+"Tier validation was requested but the following reviewer(s) may not be able "
+"to read this document and so cannot act on it: %(reviewers)s. The workflow "
+"will remain pending until they get access or are replaced."
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
@@ -1034,6 +1041,12 @@ msgstr "t.ex. attestvalidering för..."
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "the assigned reviewer"
+msgstr ""
+
+#. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_widget/tier_review_widget.xml:0
+msgid "· requested by"
 msgstr ""
 
 #~ msgid ""

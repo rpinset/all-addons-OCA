@@ -12,6 +12,72 @@ from .common import CommonTierValidation
 
 @tagged("post_install", "-at_install")
 class TierTierValidation(CommonTierValidation):
+    def test_validation_reminder_skips_waiting_reviews(self):
+        """Only pending reviews are reminded: a waiting review is not the
+        reviewer's turn yet. Once it becomes pending, it is reminded."""
+        (self.definition_2 | self.definition_3).notify_reminder_delay = 1
+        record = self.test_model.create({"test_field": 4.0})
+        record.with_user(self.test_user_2).request_validation()
+        first = record.review_ids.filtered(
+            lambda r: r.definition_id == self.definition_2
+        )
+        second = record.review_ids.filtered(
+            lambda r: r.definition_id == self.definition_3
+        )
+        self.assertEqual(first.status, "pending")
+        self.assertEqual(second.status, "waiting")
+
+        in_2_days = fields.Datetime.add(fields.Datetime.now(), days=2)
+        with freeze_time(in_2_days):
+            self.env["tier.definition"]._cron_send_review_reminder()
+        self.assertEqual(first.last_reminder_date, in_2_days)
+        self.assertFalse(second.last_reminder_date)
+
+        record.with_user(self.test_user_1).validate_tier()
+        self.assertEqual(second.status, "pending")
+        in_3_days = fields.Datetime.add(fields.Datetime.now(), days=3)
+        with freeze_time(in_3_days):
+            self.env["tier.definition"]._cron_send_review_reminder()
+        self.assertEqual(second.last_reminder_date, in_3_days)
+
+    def test_validation_reminder_reaches_the_reviewers_only(self):
+        """The reminder goes to the pending review's reviewers, not to whoever
+        follows the record with the reminder subtype."""
+        (self.definition_2 | self.definition_3).notify_reminder_delay = 1
+        record = self.test_model.create({"test_field": 4.0})
+        record.with_user(self.test_user_2).request_validation()
+        first = record.review_ids.filtered(
+            lambda r: r.definition_id == self.definition_2
+        )
+        self.assertEqual(first.status, "pending")
+        # a bystander and the waiting reviewer follow the reminder subtype,
+        # as records reminded under older versions do
+        reminder_subtype = self.env.ref(
+            "base_tier_validation.mt_tier_validation_reminder"
+        )
+        record.message_subscribe(
+            partner_ids=[
+                self.test_user_2.partner_id.id,
+                self.env.ref("base.partner_admin").id,
+            ],
+            subtype_ids=reminder_subtype.ids,
+        )
+        in_2_days = fields.Datetime.add(fields.Datetime.now(), days=2)
+        with freeze_time(in_2_days):
+            self.env["tier.definition"]._cron_send_review_reminder()
+        reminder = self.env["mail.message"].search(
+            [
+                ("model", "=", record._name),
+                ("res_id", "=", record.id),
+                ("subtype_id", "=", reminder_subtype.id),
+            ]
+        )
+        self.assertEqual(len(reminder), 1)
+        self.assertEqual(reminder.partner_ids, first.reviewer_ids.partner_id)
+        self.assertEqual(
+            reminder.notification_ids.res_partner_id, first.reviewer_ids.partner_id
+        )
+
     def test_validation_reminder(self):
         """Check the posting of reminder to reviews."""
         tier_definition = self.tier_definition
