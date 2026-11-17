@@ -1,0 +1,2 @@
+- Jacques-Etienne Baudoux (BCIM) \<je@bcim.be\>
+- Matthieu Méquignon \<matthieu.mequignon@camptocamp.com\>
