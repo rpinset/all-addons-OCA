@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-16 01:06 UTC
+Generated 2026-11-17 12:08 UTC
 
 ## Skipped repos
 
@@ -57,7 +57,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | `no_module` | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | `no_module` | No directory with __manifest__.py at repo root |
-| [ddmrp](https://github.com/OCA/ddmrp) | `no_module` | No directory with __manifest__.py at repo root |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | `no_module` | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |
@@ -77,7 +76,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [hr-holidays](https://github.com/OCA/hr-holidays) | `no_module` | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | `no_module` | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | `no_module` | No directory with __manifest__.py at repo root |
-| [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | `no_module` | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
@@ -122,7 +120,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | `no_module` | No directory with __manifest__.py at repo root |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
-| [maintenance](https://github.com/OCA/maintenance) | `no_module` | No directory with __manifest__.py at repo root |
 | [management-system](https://github.com/OCA/management-system) | `no_module` | No directory with __manifest__.py at repo root |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | `no_module` | No directory with __manifest__.py at repo root |
@@ -130,7 +127,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | `no_module` | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | `no_module` | No directory with __manifest__.py at repo root |
-| [multi-company](https://github.com/OCA/multi-company) | `no_module` | No directory with __manifest__.py at repo root |
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-apps-store](https://github.com/OCA/oca-apps-store) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |

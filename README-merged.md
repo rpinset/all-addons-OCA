@@ -386,6 +386,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/ddmrp
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# ddmrp
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/ddmrp&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/ddmrp/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/ddmrp/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/ddmrp/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/ddmrp)
+[![Translation Status](https://translation.odoo-community.org/widgets/ddmrp-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/ddmrp-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+ddmrp
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[ddmrp](ddmrp/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/dms
 
 
@@ -413,6 +461,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 20.0.1.0.0 |  | Document Management System for Odoo
+[dms_field](dms_field/) | 20.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Create DMS View and allow to use them inside a record
 [web_editor_media_dialog_dms](web_editor_media_dialog_dms/) | 20.0.1.0.0 |  | Integrate DMS with media dialog of web editor
 
 [//]: # (end addons)
@@ -513,6 +562,54 @@ addon | version | maintainers | summary
 [event_sale_free_no_invoiceable](event_sale_free_no_invoiceable/) | 20.0.1.0.0 |  | Free tickets no invoiceable
 [partner_event](partner_event/) | 20.0.1.0.0 |  | Link partner to events
 [website_event_questions_by_ticket](website_event_questions_by_ticket/) | 20.0.1.0.0 |  | Events Questions conditional to the chosen ticket
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/intrastat-extrastat
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# intrastat-extrastat
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/intrastat-extrastat&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/intrastat-extrastat/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/intrastat-extrastat)
+[![Translation Status](https://translation.odoo-community.org/widgets/intrastat-extrastat-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/intrastat-extrastat-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+intrastat-extrastat
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[product_harmonized_system](product_harmonized_system/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
 
 [//]: # (end addons)
 
@@ -1109,6 +1206,55 @@ and promote its widespread use.
 
 ---
 
+## From OCA/maintenance
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# maintenance
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/maintenance&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/maintenance/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/maintenance/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/maintenance/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/maintenance/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/maintenance/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/maintenance)
+[![Translation Status](https://translation.odoo-community.org/widgets/maintenance-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/maintenance-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+maintenance
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[maintenance_equipment_ref](maintenance_equipment_ref/) | 20.0.1.0.0 |  | Adds reference field to maintenance equipment
+[maintenance_purchase](maintenance_purchase/) | 20.0.1.0.0 |  | Create Equipments with purchases
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/manufacture
 
 
@@ -1187,6 +1333,54 @@ addon | version | maintainers | summary
 [mis_builder](mis_builder/) | 19.0.1.2.1 (unported) | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 19.0.1.0.1 (unported) | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 19.0.1.0.1 (unported) | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/multi-company
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# multi-company
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/multi-company&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/multi-company/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/multi-company/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/multi-company/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/multi-company)
+[![Translation Status](https://translation.odoo-community.org/widgets/multi-company-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/multi-company-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+multi-company
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[base_multi_company](base_multi_company/) | 20.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
 
 [//]: # (end addons)
 
@@ -1342,6 +1536,7 @@ addon | version | maintainers | summary
 [project_task_default_stage](project_task_default_stage/) | 20.0.1.0.0 |  | Recovery default task stages for projects from v8
 [project_task_product](project_task_product/) | 20.0.1.0.0 |  | Allows to specify in a project task, the product the task relates to.
 [project_task_pull_request](project_task_pull_request/) | 20.0.1.0.0 |  | Adds a field for a PR URI to project tasks
+[project_task_pull_request_state](project_task_pull_request_state/) | 20.0.1.0.0 |  | Track Pull Request state in tasks
 [project_task_stage_auto_state](project_task_stage_auto_state/) | 20.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Auto-change task state (done/canceled) after N days on selected stages
 
 [//]: # (end addons)
@@ -1756,6 +1951,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [date_range](date_range/) | 20.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
 [filter_multi_user](filter_multi_user/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined filters filters among several users.
+[server_action_mass_edit](server_action_mass_edit/) | 20.0.1.0.0 |  | Mass Editing
 
 [//]: # (end addons)
 

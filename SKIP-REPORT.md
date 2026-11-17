@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-11-16 01:06 UTC
+Generated 2026-11-17 12:08 UTC
 
-Total skipped: **226**
+Total skipped: **222**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -40,7 +40,7 @@ Count: **27**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **199**
+Count: **195**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -90,7 +90,6 @@ Count: **199**
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [20.0](https://github.com/OCA/crowdfunding/tree/20.0) | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | [20.0](https://github.com/OCA/currency/tree/20.0) | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | [20.0](https://github.com/OCA/data-protection/tree/20.0) | No directory with __manifest__.py at repo root |
-| [ddmrp](https://github.com/OCA/ddmrp) | [20.0](https://github.com/OCA/ddmrp/tree/20.0) | No directory with __manifest__.py at repo root |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | [20.0](https://github.com/OCA/delivery-carrier/tree/20.0) | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | [20.0](https://github.com/OCA/department/tree/20.0) | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | [20.0](https://github.com/OCA/donation/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -110,7 +109,6 @@ Count: **199**
 | [hr-holidays](https://github.com/OCA/hr-holidays) | [20.0](https://github.com/OCA/hr-holidays/tree/20.0) | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | [20.0](https://github.com/OCA/infrastructure/tree/20.0) | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | [20.0](https://github.com/OCA/interface-git/tree/20.0) | No directory with __manifest__.py at repo root |
-| [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | [20.0](https://github.com/OCA/intrastat-extrastat/tree/20.0) | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | [20.0](https://github.com/OCA/iot/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | [20.0](https://github.com/OCA/l10n-argentina/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [20.0](https://github.com/OCA/l10n-australia/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -154,14 +152,12 @@ Count: **199**
 | [l10n-usa](https://github.com/OCA/l10n-usa) | [20.0](https://github.com/OCA/l10n-usa/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | [20.0](https://github.com/OCA/l10n-venezuela/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | [20.0](https://github.com/OCA/l10n-vietnam/tree/20.0) | No directory with __manifest__.py at repo root |
-| [maintenance](https://github.com/OCA/maintenance) | [20.0](https://github.com/OCA/maintenance/tree/20.0) | No directory with __manifest__.py at repo root |
 | [management-system](https://github.com/OCA/management-system) | [20.0](https://github.com/OCA/management-system/tree/20.0) | No directory with __manifest__.py at repo root |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | [20.0](https://github.com/OCA/manufacture-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | [20.0](https://github.com/OCA/margin-analysis/tree/20.0) | No directory with __manifest__.py at repo root |
 | [mass-mailing](https://github.com/OCA/mass-mailing) | [20.0](https://github.com/OCA/mass-mailing/tree/20.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [20.0](https://github.com/OCA/mis-builder-contrib/tree/20.0) | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | [20.0](https://github.com/OCA/module-composition-analysis/tree/20.0) | No directory with __manifest__.py at repo root |
-| [multi-company](https://github.com/OCA/multi-company) | [20.0](https://github.com/OCA/multi-company/tree/20.0) | No directory with __manifest__.py at repo root |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | [20.0](https://github.com/OCA/odoo-pim/tree/20.0) | No directory with __manifest__.py at repo root |
 | [operating-unit](https://github.com/OCA/operating-unit) | [20.0](https://github.com/OCA/operating-unit/tree/20.0) | No directory with __manifest__.py at repo root |
 | [payroll](https://github.com/OCA/payroll) | [20.0](https://github.com/OCA/payroll/tree/20.0) | No directory with __manifest__.py at repo root |
