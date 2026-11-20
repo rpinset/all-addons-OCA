@@ -1,6 +1,6 @@
 # Build report — `12.0`
 
-Generated 2026-11-17 12:00 UTC
+Generated 2026-11-20 22:01 UTC
 
 ## Skipped repos
 
@@ -39,6 +39,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [e-learning](https://github.com/OCA/e-learning) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |
 | [edi-framework](https://github.com/OCA/edi-framework) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |
 | [hr-expense](https://github.com/OCA/hr-expense) | `no_branch` | fatal: Remote branch 12.0 not found in upstream origin |

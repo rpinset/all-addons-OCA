@@ -1,12 +1,12 @@
 # Skipped repos — branch `12.0`
 
-Generated 2026-11-17 12:00 UTC
+Generated 2026-11-20 22:01 UTC
 
-Total skipped: **151**
+Total skipped: **152**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **90**
+Count: **91**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -27,6 +27,7 @@ Count: **90**
 | [e-learning](https://github.com/OCA/e-learning) | [12.0](https://github.com/OCA/e-learning/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [12.0](https://github.com/OCA/edi-ediversa/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [edi-framework](https://github.com/OCA/edi-framework) | [12.0](https://github.com/OCA/edi-framework/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [12.0](https://github.com/OCA/edi-framework-wms/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [12.0](https://github.com/OCA/edi-voxel/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | [12.0](https://github.com/OCA/hr-attendance/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [hr-expense](https://github.com/OCA/hr-expense) | [12.0](https://github.com/OCA/hr-expense/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
