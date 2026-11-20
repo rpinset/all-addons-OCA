@@ -1,12 +1,12 @@
 # Skipped repos — branch `14.0`
 
-Generated 2026-11-17 11:59 UTC
+Generated 2026-11-20 22:00 UTC
 
-Total skipped: **127**
+Total skipped: **128**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **69**
+Count: **70**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -23,6 +23,7 @@ Count: **69**
 | [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [14.0](https://github.com/OCA/connector-mercadolibre/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [14.0](https://github.com/OCA/connector-shopify/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [14.0](https://github.com/OCA/edi-ediversa/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [14.0](https://github.com/OCA/edi-framework-wms/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [14.0](https://github.com/OCA/edi-voxel/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [14.0](https://github.com/OCA/l10n-australia/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | [14.0](https://github.com/OCA/l10n-bulgaria/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
