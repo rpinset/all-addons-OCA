@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-17 12:08 UTC
+Generated 2026-11-20 22:09 UTC
 
 ## Skipped repos
 
@@ -12,7 +12,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [account-budgeting](https://github.com/OCA/account-budgeting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-closing](https://github.com/OCA/account-closing) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
-| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | `no_module` | No directory with __manifest__.py at repo root |
@@ -57,7 +56,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | `no_module` | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | `no_module` | No directory with __manifest__.py at repo root |
-| [delivery-carrier](https://github.com/OCA/delivery-carrier) | `no_module` | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
@@ -65,6 +63,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [edi](https://github.com/OCA/edi) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-framework](https://github.com/OCA/edi-framework) | `no_module` | No directory with __manifest__.py at repo root |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
 | [field-service](https://github.com/OCA/field-service) | `no_module` | No directory with __manifest__.py at repo root |
 | [fleet](https://github.com/OCA/fleet) | `no_module` | No directory with __manifest__.py at repo root |
@@ -81,7 +80,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-belarus](https://github.com/OCA/l10n-belarus) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-canada](https://github.com/OCA/l10n-canada) | `no_module` | No directory with __manifest__.py at repo root |
@@ -138,7 +136,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [oca.recipe.odoo](https://github.com/OCA/oca.recipe.odoo) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [odoo-community.org](https://github.com/OCA/odoo-community.org) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [odoo-module-migrator](https://github.com/OCA/odoo-module-migrator) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
-| [odoo-pim](https://github.com/OCA/odoo-pim) | `no_module` | No directory with __manifest__.py at repo root |
 | [odoo-pre-commit-hooks](https://github.com/OCA/odoo-pre-commit-hooks) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [odoo-sentinel](https://github.com/OCA/odoo-sentinel) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [odoo-sphinx-autodoc](https://github.com/OCA/odoo-sphinx-autodoc) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
@@ -195,7 +192,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | `no_module` | No directory with __manifest__.py at repo root |

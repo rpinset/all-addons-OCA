@@ -74,7 +74,56 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_analytic_line_commercial_partner](account_analytic_line_commercial_partner/) | 20.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | This module add the commercial partner field to analytic items
 [analytic_amount_security](analytic_amount_security/) | 20.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add a group to constrain which users can see what info on the analytic lines
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/account-financial-reporting
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-financial-reporting
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-reporting&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/account-financial-reporting/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-financial-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-financial-reporting-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-reporting-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+account-financial-reporting
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_tax_balance](account_tax_balance/) | 20.0.1.0.0 |  | Compute tax balances based on date range
 
 [//]: # (end addons)
 
@@ -172,6 +221,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 20.0.1.0.0 |  | Manage triple discount on invoice lines
+[portal_account_personal_data_only](portal_account_personal_data_only/) | 20.0.1.0.0 |  | Portal Accounting Personal Data Only
 
 [//]: # (end addons)
 
@@ -413,6 +463,58 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp_chatter](ddmrp_chatter/) | 20.0.1.0.0 |  | Adds chatter and activities to stock buffers.
+[ddmrp_history](ddmrp_history/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to store historical data of DDMRP buffers.
+[ddmrp_warning](ddmrp_warning/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds configuration warnings on stock buffers.
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/delivery-carrier
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# delivery-carrier
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/delivery-carrier&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/delivery-carrier/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/delivery-carrier)
+[![Translation Status](https://translation.odoo-community.org/widgets/delivery-carrier-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/delivery-carrier-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+delivery-carrier
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[delivery_package_number](delivery_package_number/) | 20.0.1.0.0 |  | Set or compute number of packages for a picking
+[delivery_state](delivery_state/) | 20.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 
 [//]: # (end addons)
 
@@ -462,6 +564,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 20.0.1.0.0 |  | Document Management System for Odoo
 [dms_field](dms_field/) | 20.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Create DMS View and allow to use them inside a record
+[hr_dms_field](hr_dms_field/) | 20.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Add dms field for employees
 [web_editor_media_dialog_dms](web_editor_media_dialog_dms/) | 20.0.1.0.0 |  | Integrate DMS with media dialog of web editor
 
 [//]: # (end addons)
@@ -659,6 +762,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [document_knowledge](document_knowledge/) | 20.0.1.0.0 |  | Documents Knowledge
 [document_page](document_page/) | 20.0.1.0.0 |  | Document Page
+[document_page_partner](document_page_partner/) | 20.0.1.0.0 |  | Allows to link doucment pages to a partner
 
 [//]: # (end addons)
 
@@ -709,6 +813,54 @@ addon | version | maintainers | summary
 [companyweb_base](companyweb_base/) | 19.0.1.1.5 (unported) | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Know exactly who you are doing business with. Enrich Odoo contacts with Companyweb.
 [companyweb_payment_info](companyweb_payment_info/) | 19.0.1.0.2 (unported) | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Send your customer payment information to Companyweb
 [l10n_be_mis_reports](l10n_be_mis_reports/) | 19.0.1.0.0 (unported) |  | MIS Builder templates for the Belgium P&L, Balance Sheets and VAT Declaration
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/l10n-brazil
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-brazil
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-brazil&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-brazil/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-brazil/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/l10n-brazil/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-brazil/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-brazil/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-brazil)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-brazil-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-brazil-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+l10n-brazil
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_br_coa](l10n_br_coa/) | 20.0.1.2.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Base dos Planos de Contas brasileiros
 
 [//]: # (end addons)
 
@@ -804,6 +956,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_fr_siret](l10n_fr_siret/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Check validity between SIREN, SIRET and TVA on partners and detectduplicate based on SIREN.
 [l10n_fr_state](l10n_fr_state/) | 20.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with French States (Régions)
 
 [//]: # (end addons)
@@ -1185,6 +1338,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_activity_board](mail_activity_board/) | 20.0.1.0.0 |  | Add Activity Boards
+[mail_gateway](mail_gateway/) | 20.0.1.0.0 |  | Base module for gateway communications
 
 [//]: # (end addons)
 
@@ -1282,7 +1436,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mrp_multi_level](mrp_multi_level/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
+[mrp_production_unique_lot](mrp_production_unique_lot/) | 20.0.1.0.0 |  | Ensures that production lot numbers are unique and cannot be reused in another manufacturing order.
+[mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 20.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
+[mrp_workorder_last_worker](mrp_workorder_last_worker/) | 20.0.1.0.0 |  | See the last user who worked on a workorder
 
 [//]: # (end addons)
 
@@ -1402,6 +1559,55 @@ and promote its widespread use.
 
 ---
 
+## From OCA/odoo-pim
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# odoo-pim
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/odoo-pim&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/odoo-pim/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/odoo-pim/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/odoo-pim/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/odoo-pim/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/odoo-pim/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/odoo-pim)
+[![Translation Status](https://translation.odoo-community.org/widgets/odoo-pim-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/odoo-pim-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+odoo-pim
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[attribute_set](attribute_set/) | 20.0.1.0.0 |  | Attribute Set
+[product_attribute_set](product_attribute_set/) | 20.0.1.0.0 |  | Product Attribute Set
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/partner-contact
 
 
@@ -1431,6 +1637,8 @@ addon | version | maintainers | summary
 [partner_category_security](partner_category_security/) | 20.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner category security
 [partner_contact_department](partner_contact_department/) | 20.0.1.0.0 |  | Assign contacts to departments
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 20.0.1.0.0 | <a href='https://github.com/Daemo00'><img src='https://github.com/Daemo00.png' width='32' height='32' style='border-radius:50%;' alt='Daemo00'/></a> | Add a page to contacts form to put personal information
+[partner_employee_quantity](partner_employee_quantity/) | 20.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Know how many employees a partner has
+[partner_industry_secondary](partner_industry_secondary/) | 20.0.1.0.1 |  | Add secondary partner industries
 [partner_title](partner_title/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add title field on partner
 
 [//]: # (end addons)
@@ -1481,6 +1689,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_attribute_value_avoid_auto_fill](product_attribute_value_avoid_auto_fill/) | 20.0.1.0.0 |  | Add option allow filling automatically the values
 [product_category_active](product_category_active/) | 20.0.1.0.0 |  | Add option to archive product categories
+[product_category_code](product_category_code/) | 20.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a code on product categories
 [product_code_mandatory](product_code_mandatory/) | 20.0.1.0.1 |  | Set Product Internal Reference as a required field
 [product_manufacturer](product_manufacturer/) | 20.0.1.0.0 |  | Adds manufacturers and attributes on the product view.
 [product_set](product_set/) | 20.0.1.0.0 |  | Product set
@@ -1588,6 +1797,8 @@ addon | version | maintainers | summary
 [purchase_all_shipments](purchase_all_shipments/) | 20.0.1.0.0 |  | Purchase All Shipments
 [purchase_lot](purchase_lot/) | 20.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Purchase Lot
 [purchase_order_internal_note](purchase_order_internal_note/) | 20.0.1.0.0 |  | Adds an internal note to purchase orders, not printed in reports
+[purchase_order_line_menu](purchase_order_line_menu/) | 20.0.1.0.1 |  | Adds Purchase Order Lines Menu
+[purchase_order_line_price_unit_digits](purchase_order_line_price_unit_digits/) | 20.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Legacy digits visualization for price unit
 
 [//]: # (end addons)
 
@@ -1698,6 +1909,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 20.0.1.0.0 |  | Report Qweb Element Page Visibility
 [report_xlsx](report_xlsx/) | 20.0.1.0.1 |  | Base module to create xlsx report
+[report_xlsx_helper](report_xlsx_helper/) | 20.0.1.0.0 |  | Report xlsx helpers
 
 [//]: # (end addons)
 
@@ -1799,7 +2011,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[portal_sale_personal_data_only](portal_sale_personal_data_only/) | 20.0.1.0.0 |  | Portal Sale Personal Data Only
 [sale_commercial_partner](sale_commercial_partner/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
+[sale_order_archive](sale_order_archive/) | 20.0.1.0.0 |  | Archive Sale Orders
+[sale_order_line_menu](sale_order_line_menu/) | 20.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_split_strategy](sale_order_split_strategy/) | 20.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Define strategies to split sales orders
 [sale_order_type](sale_order_type/) | 20.0.1.0.0 |  | Sale Order Type
 
@@ -1902,6 +2117,7 @@ addon | version | maintainers | summary
 [auto_backup](auto_backup/) | 20.0.1.0.0 |  | Backups database
 [base_cron_exclusion](base_cron_exclusion/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 20.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Adds more operators for view inheritance
+[upgrade_analysis](upgrade_analysis/) | 20.0.1.0.0 | <a href='https://github.com/StefanRijnhart'><img src='https://github.com/StefanRijnhart.png' width='32' height='32' style='border-radius:50%;' alt='StefanRijnhart'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Performs a difference analysis between modules installed on two different Odoo instances
 
 [//]: # (end addons)
 
@@ -1950,6 +2166,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [date_range](date_range/) | 20.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
+[developer_menu](developer_menu/) | 20.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Shortcut menus for developer usage
 [filter_multi_user](filter_multi_user/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined filters filters among several users.
 [server_action_mass_edit](server_action_mass_edit/) | 20.0.1.0.0 |  | Mass Editing
 
@@ -2000,6 +2217,54 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [spreadsheet_dashboard_purchase_oca](spreadsheet_dashboard_purchase_oca/) | 20.0.1.0.1 |  | Spreadsheet dashboard for vendors
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/stock-logistics-request
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-request
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-request&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-request/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/stock-logistics-request/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/stock-logistics-request/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/stock-logistics-request/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-request/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-request)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-request-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-request-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+stock-logistics-request
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[stock_request](stock_request/) | 20.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Internal request for stock
 
 [//]: # (end addons)
 
@@ -2097,6 +2362,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 20.0.1.0.0 |  | Add hooks in the FIFO valuation of stock moves.
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 20.0.1.0.0 |  | Adds link between pickings and invoices
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 20.0.1.0.0 |  | Link between picking and sale order
 [stock_restrict_lot](stock_restrict_lot/) | 20.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
@@ -2220,6 +2486,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_employee_cost_history](hr_employee_cost_history/) | 20.0.1.0.1 | <a href='https://github.com/SabrinaRMArtin'><img src='https://github.com/SabrinaRMArtin.png' width='32' height='32' style='border-radius:50%;' alt='SabrinaRMArtin'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Adds an history to employee's costs.
+[hr_timesheet_amount_security](hr_timesheet_amount_security/) | 20.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add security restrictions to timesheet amount fields
 
 [//]: # (end addons)
 
