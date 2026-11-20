@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-11-17 12:04 UTC
+Generated 2026-11-20 22:04 UTC
 
-Total skipped: **123**
+Total skipped: **124**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **48**
+Count: **49**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -20,6 +20,7 @@ Count: **48**
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [16.0](https://github.com/OCA/connector-shopify/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [16.0](https://github.com/OCA/crowdfunding/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [16.0](https://github.com/OCA/edi-ediversa/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [16.0](https://github.com/OCA/edi-framework-wms/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [16.0](https://github.com/OCA/edi-voxel/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [16.0](https://github.com/OCA/l10n-australia/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | [16.0](https://github.com/OCA/maintainer-tools/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |

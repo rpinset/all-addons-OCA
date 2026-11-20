@@ -4,7 +4,7 @@
 {
     "name": "Image Tag - Server Environment",
     "summary": "Server environment features for the Image Tag model",
-    "version": "16.0.2.0.0",
+    "version": "16.0.2.0.1",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Akretion,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/storage",
@@ -12,5 +12,4 @@
     "data": [
         "views/image_tag.xml",
     ],
-    "auto_install": True,
 }

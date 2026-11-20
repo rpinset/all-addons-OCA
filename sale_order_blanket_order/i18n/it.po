@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-17 14:30+0000\n"
-"PO-Revision-Date: 2026-03-19 18:45+0000\n"
+"PO-Revision-Date: 2026-11-19 10:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #. module: sale_order_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
@@ -177,7 +177,7 @@ msgstr "Crea chiamata da OV se possibile"
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_company__create_call_off_from_so_if_possible
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_config_settings__create_call_off_from_so_if_possible
 msgid "Create Call-Off from SO if possible"
-msgstr "Crea chiavata da OV se possibile"
+msgstr "Crea chiamata da OV se possibile"
 
 #. module: sale_order_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.view_create_call_off_wizard_form
@@ -275,8 +275,8 @@ msgstr ""
 "Se selezionata, questa opzione farà in modo che i prodotti vengano prelevati "
 "con lo stesso imballaggio definito nelle righe dell'ordine quadro. Se non "
 "selezionata, il sistema non terrà conto né dell'imballaggio definito nelle "
-"righe dell'ordine quadro né di quello definito nelle righe degli ordini di "
-"prelievo."
+"righe dell'ordine quadro né di quello definito nelle righe degli ordini a "
+"chiamata."
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_res_company__create_call_off_from_so_if_possible
@@ -324,7 +324,7 @@ msgstr ""
 "Se questa opzione è abilitata, verrà generato un ordine a chiamata da un "
 "ordine di vendita se quest'ultimo contiene\n"
 "                            prodotti che fanno parte di un ordine quadro "
-"aperto. L'ordine a chiamata verrà generato con gli stessi prodotti e "
+"quadro. L'ordine a chiamata verrà generato con gli stessi prodotti e "
 "quantità dell'ordine di vendita, \n"
 "                            a condizione che l'ordine quadro disponga di una "
 "quantità disponibile sufficiente. Se l'ordine quadro non dispone di una "
@@ -423,6 +423,14 @@ msgstr "Ordini normali"
 #, python-format
 msgid "Only blanket orders can be confirmed as blanket orders."
 msgstr "Solo gli ordini quadro possono essere confermati come ordini quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "Only call-off orders can be canceled as call-off orders."
+msgstr ""
+"Solo gli ordini call-off possono essere cancellati come ordini call-off."
 
 #. module: sale_order_blanket_order
 #. odoo-python
@@ -566,12 +574,12 @@ msgstr "Regola di giacenza"
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_strict_packaging
 msgid "Strict Packaging"
-msgstr "Imballaggio ristretto"
+msgstr "Imballaggio rigido"
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_strict_packaging
 msgid "Strict Packaging ?"
-msgstr "Imballaggio ristretto?"
+msgstr "Imballaggio rigido?"
 
 #. module: sale_order_blanket_order
 #. odoo-python
@@ -622,6 +630,17 @@ msgstr "Le righe ordine a chiamata relative a questa riga ordine quadro."
 msgid ""
 "The call-off order must be within the validity period of the blanket order."
 msgstr "L'ordine a chiamata deve essere entro la validità dell'ordine quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"The call-off order(s) %(orders)s cannot be canceled since some products have "
+"already been delivered."
+msgstr ""
+"Gli ordini call-off %(orders)s non può essere cancellato perché alcuni "
+"prodotti sono già stati conegnati."
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__call_off_order_ids
@@ -756,8 +775,8 @@ msgid ""
 msgstr ""
 "La quantità da consegnare sulla riga dell'ordine di fornitura deve essere "
 "compatibile con l'imballaggio definito sulla riga dell'ordine quadro. "
-"(Prodotto: '%(product)s', Imballaggio: '%(packaging)s', Quantità: '%"
-"(quantity)s %(uom)s')"
+"(Prodotto: '%(product)s', Imballaggio: '%(packaging)s', Quantità: "
+"'%(quantity)s %(uom)s')"
 
 #. module: sale_order_blanket_order
 #. odoo-python

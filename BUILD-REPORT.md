@@ -1,6 +1,6 @@
 # Build report — `16.0`
 
-Generated 2026-11-17 12:04 UTC
+Generated 2026-11-20 22:04 UTC
 
 ## Skipped repos
 
@@ -36,6 +36,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | `no_module` | No directory with __manifest__.py at repo root |

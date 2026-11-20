@@ -133,6 +133,45 @@ class TestSaleCallOffOrderProcessing(SaleOrderBlanketOrderCase):
             15.0,
         )
 
+    def _get_reserved_qty(self, product):
+        moves = self.blanket_so.order_line.move_ids.filtered(
+            lambda m: m.used_for_sale_reservation
+            and m.state != "cancel"
+            and m.product_id == product
+        )
+        return sum(moves.mapped("product_uom_qty"))
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order(self):
+        self.assertEqual(self._get_reserved_qty(self.product_2), 10.0)
+        order = self.env["sale.order"].create(
+            {
+                "order_type": "call_off",
+                "partner_id": self.partner.id,
+                "blanket_order_id": self.blanket_so.id,
+                "order_line": [
+                    Command.create(
+                        {
+                            "product_id": self.product_2.id,
+                            "product_uom_qty": 4.0,
+                        }
+                    ),
+                ],
+            }
+        )
+        order.action_confirm()
+        delivery_moves = order.order_line.blanket_move_ids
+        self.assertFalse(any(delivery_moves.mapped("used_for_sale_reservation")))
+        self.assertEqual(sum(delivery_moves.mapped("product_uom_qty")), 4.0)
+        self.assertEqual(self._get_reserved_qty(self.product_2), 6.0)
+
+        order._action_cancel()
+
+        self.assertEqual(set(delivery_moves.mapped("state")), {"cancel"})
+        # The qty no more called off is reserved again on the blanket order
+        self.assertEqual(self._get_reserved_qty(self.product_2), 10.0)
+        self.assertEqual(self._get_reserved_qty(self.product_1), 20.0)
+
 
 class TestSaleAutoDoneCallOffOrderProcessing(TestSaleCallOffOrderProcessing):
     @classmethod
