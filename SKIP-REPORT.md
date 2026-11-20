@@ -1,12 +1,12 @@
 # Skipped repos — branch `13.0`
 
-Generated 2026-11-17 12:01 UTC
+Generated 2026-11-20 22:01 UTC
 
-Total skipped: **150**
+Total skipped: **151**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **88**
+Count: **89**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -28,6 +28,7 @@ Count: **88**
 | [e-learning](https://github.com/OCA/e-learning) | [13.0](https://github.com/OCA/e-learning/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [13.0](https://github.com/OCA/edi-ediversa/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [edi-framework](https://github.com/OCA/edi-framework) | [13.0](https://github.com/OCA/edi-framework/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [13.0](https://github.com/OCA/edi-framework-wms/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [13.0](https://github.com/OCA/edi-voxel/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [13.0](https://github.com/OCA/l10n-australia/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | [13.0](https://github.com/OCA/l10n-bulgaria/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
