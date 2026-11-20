@@ -9,6 +9,19 @@ MONEY_FIELDS = """
     presentmentMoney { amount currencyCode }
 """
 
+ADDRESS_FIELDS = """
+    firstName
+    lastName
+    company
+    address1
+    address2
+    city
+    provinceCode
+    countryCodeV2
+    zip
+    phone
+"""
+
 ORDER_FIELDS = f"""
     id
     name
@@ -31,8 +44,8 @@ ORDER_FIELDS = f"""
     currencyCode
     presentmentCurrencyCode
     customer {{ id }}
-    shippingAddress {{ countryCodeV2 }}
-    billingAddress {{ countryCodeV2 }}
+    shippingAddress {{ {ADDRESS_FIELDS} }}
+    billingAddress {{ {ADDRESS_FIELDS} }}
     discountCodes
     currentSubtotalPriceSet {{ {MONEY_FIELDS} }}
     currentTotalDiscountsSet {{ {MONEY_FIELDS} }}
@@ -236,10 +249,14 @@ DRAFT_ORDER_FIELDS = f"""
     currencyCode
     presentmentCurrencyCode
     customer {{ id }}
-    shippingAddress {{ countryCodeV2 }}
-    billingAddress {{ countryCodeV2 }}
+    shippingAddress {{ {ADDRESS_FIELDS} }}
+    billingAddress {{ {ADDRESS_FIELDS} }}
     order {{ id }}
     discountCodes
+    appliedDiscount {{
+      title
+      amountSet {{ {MONEY_FIELDS} }}
+    }}
     subtotalPriceSet {{ {MONEY_FIELDS} }}
     totalDiscountsSet {{ {MONEY_FIELDS} }}
     totalShippingPriceSet {{ {MONEY_FIELDS} }}

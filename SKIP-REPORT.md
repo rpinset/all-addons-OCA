@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-11-17 12:06 UTC
+Generated 2026-11-20 22:08 UTC
 
-Total skipped: **108**
+Total skipped: **109**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -44,7 +44,7 @@ Count: **31**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **77**
+Count: **78**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -71,6 +71,7 @@ Count: **77**
 | [dotnet](https://github.com/OCA/dotnet) | [18.0](https://github.com/OCA/dotnet/tree/18.0) | No directory with __manifest__.py at repo root |
 | [e-learning](https://github.com/OCA/e-learning) | [18.0](https://github.com/OCA/e-learning/tree/18.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [18.0](https://github.com/OCA/edi-ediversa/tree/18.0) | No directory with __manifest__.py at repo root |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [18.0](https://github.com/OCA/edi-framework-wms/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | [18.0](https://github.com/OCA/l10n-argentina/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [18.0](https://github.com/OCA/l10n-australia/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | [18.0](https://github.com/OCA/l10n-austria/tree/18.0) | No directory with __manifest__.py at repo root |

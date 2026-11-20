@@ -2,7 +2,7 @@ from __future__ import annotations
 
 # pylint: disable=consider-merging-classes-inherited
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from odoo import fields, models
 from odoo.exceptions import UserError
@@ -17,9 +17,11 @@ from ..graphql.fulfillment import (
     FULFILLMENT_CREATE_MUTATION,
     FULFILLMENT_ORDER_MOVE_MUTATION,
     FULFILLMENT_ORDER_RELEASE_HOLD_MUTATION,
+    FULFILLMENT_TRACKING_INFO_UPDATE_MUTATION,
     ORDER_FULFILLMENT_ORDERS_QUERY,
+    ORDER_FULFILLMENTS_QUERY,
 )
-from ..lib.client import ShopifyError
+from ..lib.client import ShopifyError, ShopifyServerError, ShopifyThrottled
 from ..lib.fulfillment import (
     FulfillmentAllocationError,
     allocate_fulfillment_lines,
@@ -31,6 +33,11 @@ from .webhook_event import WEBHOOK_HANDLERS
 # Delivery steps are validated one at a time, because Odoo creates each step
 # when the previous one is done. Stop after this many in case a route loops back.
 MAX_DELIVERY_STEPS = 10
+
+# Shopify and Odoo clocks may drift; a fulfillment created by an unconfirmed
+# push can carry a Shopify timestamp slightly before the Odoo attempt record.
+UNCONFIRMED_PUSH_CLOCK_SKEW = timedelta(minutes=5)
+FAILED_FULFILLMENT_STATUSES = ("CANCELLED", "ERROR", "FAILURE")
 
 
 class ShopifyFulfillmentError(UserError):
@@ -262,6 +269,7 @@ class ShopifyOrderFulfillmentSync(models.Model):
 
     def _fulfillment_allocation_input(self, picking):
         moves = []
+        kit_moves = {}
         for move in picking.move_ids.filtered(
             lambda item: item.state == "done" and item.sale_line_id
         ):
@@ -282,34 +290,82 @@ class ShopifyOrderFulfillmentSync(models.Model):
                         move=move.display_name,
                     )
                 )
-            variant_binding = self.env["shopify.product.variant"].search(
-                [
-                    ("instance_id", "=", self.instance_id.id),
-                    ("odoo_id", "=", move.product_id.id),
-                    ("state", "=", "synced"),
-                ],
-                limit=1,
-            )
-            if not variant_binding or (
-                line_binding.variant_shopify_id
-                and variant_binding.shopify_id != line_binding.variant_shopify_id
-            ):
-                raise ShopifyFulfillmentError(
-                    self.env._(
-                        "Delivery move %s has no matching Shopify variant binding.",
-                        move.display_name,
-                    )
-                )
+            if move.product_id != move.sale_line_id.product_id:
+                # A component of a kit: Shopify knows only the kit.
+                kit_moves.setdefault(line_binding, move)
+                continue
             moves.append(
-                {
-                    "move_id": move.id,
-                    "name": move.display_name,
-                    "line_id": line_binding.shopify_id,
-                    "variant_id": variant_binding.shopify_id,
-                    "quantity": quantity,
-                }
+                self._fulfillment_move_input(
+                    move, line_binding, move.product_id, quantity
+                )
+            )
+        for line_binding, move in kit_moves.items():
+            sale_line = line_binding.odoo_id
+            done = sale_line.move_ids.filtered(
+                lambda item: item.state == "done"
+                and item.picking_code == "outgoing"
+                and not item.origin_returned_move_id
+            )
+            # Count whole kits over the deliveries so far, so that a kit split
+            # over two deliveries is sent with the delivery that completes it.
+            before = done.filtered(
+                lambda item: (item.picking_id.date_done, item.picking_id.id)
+                < (picking.date_done, picking.id)
+            )
+            through = before | done.filtered(lambda item: item.picking_id == picking)
+            kits = self._delivered_kits(sale_line, through) - self._delivered_kits(
+                sale_line, before
+            )
+            if kits <= 0:
+                continue
+            moves.append(
+                self._fulfillment_move_input(
+                    move, line_binding, sale_line.product_id, kits
+                )
             )
         return moves
+
+    def _delivered_kits(self, sale_line, moves):
+        needs = self.env["shopify.fulfillment"]._external_line_needs(sale_line, 1)
+        delivered = defaultdict(float)
+        for move in moves:
+            # A kit component moves in the unit of its BoM line, and the needs
+            # are in the unit of the product.
+            delivered[move.product_id] += move.product_uom._compute_quantity(
+                move.quantity, move.product_id.uom_id
+            )
+        kits = min(
+            (delivered[product] / need for product, need in needs.items() if need),
+            default=0,
+        )
+        return float_round(kits, precision_digits=0, rounding_method="DOWN")
+
+    def _fulfillment_move_input(self, move, line_binding, product, quantity):
+        variant_binding = self.env["shopify.product.variant"].search(
+            [
+                ("instance_id", "=", self.instance_id.id),
+                ("odoo_id", "=", product.id),
+                ("state", "=", "synced"),
+            ],
+            limit=1,
+        )
+        if not variant_binding or (
+            line_binding.variant_shopify_id
+            and variant_binding.shopify_id != line_binding.variant_shopify_id
+        ):
+            raise ShopifyFulfillmentError(
+                self.env._(
+                    "Delivery move %s has no matching Shopify variant binding.",
+                    move.display_name,
+                )
+            )
+        return {
+            "move_id": move.id,
+            "name": move.display_name,
+            "line_id": line_binding.shopify_id,
+            "variant_id": variant_binding.shopify_id,
+            "quantity": quantity,
+        }
 
     def _fulfillment_orders_input(self):
         return [
@@ -330,6 +386,21 @@ class ShopifyOrderFulfillmentSync(models.Model):
             }
             for fulfillment_order in self.fulfillment_order_ids
         ]
+
+    def _allocated_variant_quantities(self, groups, moves):
+        """The units of each Shopify variant that a fulfillment request sends."""
+        order_lines = {
+            line.shopify_id: line.order_line_shopify_id
+            for line in self.fulfillment_order_ids.line_ids
+        }
+        variants = {move["line_id"]: move["variant_id"] for move in moves}
+        quantities = defaultdict(int)
+        for group in groups:
+            for item in group["line_items"]:
+                variant = variants.get(order_lines.get(item["id"]))
+                if variant:
+                    quantities[variant] += int(item["quantity"])
+        return quantities
 
     def _mapped_source_location(self, picking):
         candidates = self.env["shopify.location"].search(
@@ -379,7 +450,83 @@ class ShopifyOrderFulfillmentSync(models.Model):
             url,
         )
 
-    def _job_push_picking_fulfillment(self, picking_id):  # noqa: C901
+    def _job_push_picking_fulfillment(self, picking_id):
+        result = self._push_picking_fulfillment(picking_id)
+        if result:
+            self._close_fulfillment_push_activities(picking_id)
+        return result
+
+    def _close_fulfillment_push_activities(self, picking_id):
+        """Mark done the activities left by failed pushes of this delivery."""
+        # The job may run as a stock user; the activities belong to the
+        # connector's failure reports.
+        picking = self.env["stock.picking"].sudo().browse(picking_id).exists()
+        summary = self._fulfillment_push_failed_summary()
+        activities = picking.activity_ids.filtered(
+            lambda activity: activity.summary == summary
+        )
+        if activities:
+            activities.action_feedback(
+                feedback=self.env._("The Shopify fulfillment was created.")
+            )
+
+    def _fulfillment_push_failed_summary(self):
+        return self.env._("Shopify fulfillment not sent")
+
+    def _fulfillment_push_failure_user(self, picking):
+        """Return who gets the to-do for a failed push of this delivery.
+
+        The job usually runs as the superuser or OdooBot, which nobody
+        watches: assign the delivery's responsible, else the salesperson of
+        the order.
+        """
+        candidates = picking.user_id | picking.sale_id.user_id | self.odoo_id.user_id
+        return candidates.filtered(lambda user: user.active and not user.share)[:1]
+
+    def _report_fulfillment_push_failure(self, picking_id, error):
+        """Make a failed push visible on the delivery and in the Shopify log.
+
+        The push job only reaches Shopify at its end. When it fails before,
+        for example because the delivery's source location is not mapped,
+        Odoo has no fulfillment record to mark as failed, so the error would
+        otherwise only show in Queue Jobs.
+        """
+        self.ensure_one()
+        binding = self.sudo()
+        picking = self.env["stock.picking"].sudo().browse(picking_id).exists()
+        if not picking:
+            return
+        message = self.env._(
+            "Shopify fulfillment for delivery %(picking)s (order %(order)s) "
+            "was not sent: %(error)s",
+            picking=picking.name,
+            order=binding.order_name or binding.shopify_id,
+            error=error,
+        )
+        binding.instance_id._write_log(
+            entity="fulfillment",
+            direction="export",
+            level="error",
+            message=message,
+            record=picking,
+        )
+        summary = self._fulfillment_push_failed_summary()
+        if not picking.activity_ids.filtered(
+            lambda activity: activity.summary == summary
+        ):
+            user = binding._fulfillment_push_failure_user(picking)
+            picking.activity_schedule(
+                "mail.mail_activity_data_todo",
+                summary=summary,
+                user_id=user.id or self.env.uid,
+                note=self.env._(
+                    "%(message)s Fix the cause, then requeue the failed job in "
+                    "Queue Jobs.",
+                    message=message,
+                ),
+            )
+
+    def _push_picking_fulfillment(self, picking_id):  # noqa: C901
         self = self.sudo()
         self.ensure_one()
         if not self.instance_id.active:
@@ -412,15 +559,11 @@ class ShopifyOrderFulfillmentSync(models.Model):
         if existing:
             if existing.shopify_id:
                 return existing.id
-            raise ShopifyFulfillmentError(
-                self.env._(
-                    "A previous Shopify fulfillment attempt exists for %(picking)s "
-                    "without a confirmed Shopify ID. Resolve binding %(binding)s "
-                    "before retrying to avoid a duplicate fulfillment.",
-                    picking=picking.name,
-                    binding=existing.display_name,
-                )
-            )
+            recovered = self._recover_unconfirmed_push(existing, picking)
+            if recovered:
+                return recovered.id
+            # Shopify holds no fulfillment from that attempt: send it again.
+            existing.unlink()
 
         self._job_refresh_fulfillment_orders()
         location = self._mapped_source_location(picking)
@@ -574,21 +717,7 @@ class ShopifyOrderFulfillmentSync(models.Model):
                 record=binding,
             )
             return False
-        tracking_payload = _tracking(payload) or tracking
-        binding.write(
-            {
-                "shopify_id": payload["id"],
-                "fulfillment_status": str(payload.get("status") or "").upper(),
-                "tracking_company": tracking_payload.get("company"),
-                "tracking_number": tracking_payload.get("number"),
-                "tracking_url": tracking_payload.get("url"),
-                "raw_payload": payload,
-                "external_updated_at": _utc_datetime(payload.get("updatedAt")),
-                "last_sync_date": fields.Datetime.now(),
-                "state": "synced",
-                "error_message": False,
-            }
-        )
+        binding.write(self._pushed_fulfillment_values(payload, tracking))
         for warning in allocation["warnings"]:
             self.instance_id._write_log(
                 entity="fulfillment",
@@ -597,6 +726,11 @@ class ShopifyOrderFulfillmentSync(models.Model):
                 message=warning,
                 record=binding,
             )
+        self.env["shopify.inventory.state"]._record_fulfilled_quantities(
+            self.instance_id,
+            location.shopify_id,
+            self._allocated_variant_quantities(groups, moves),
+        )
         self.instance_id._write_log(
             entity="fulfillment",
             direction="export",
@@ -609,6 +743,25 @@ class ShopifyOrderFulfillmentSync(models.Model):
             ),
             record=binding,
         )
+        self._refresh_after_push(binding)
+        return binding.id
+
+    def _pushed_fulfillment_values(self, payload, tracking):
+        tracking_payload = _tracking(payload) or tracking
+        return {
+            "shopify_id": payload["id"],
+            "fulfillment_status": str(payload.get("status") or "").upper(),
+            "tracking_company": tracking_payload.get("company"),
+            "tracking_number": tracking_payload.get("number"),
+            "tracking_url": tracking_payload.get("url"),
+            "raw_payload": payload,
+            "external_updated_at": _utc_datetime(payload.get("updatedAt")),
+            "last_sync_date": fields.Datetime.now(),
+            "state": "synced",
+            "error_message": False,
+        }
+
+    def _refresh_after_push(self, binding):
         try:
             self._job_refresh_fulfillment_orders()
         except ShopifyError as exc:
@@ -623,7 +776,168 @@ class ShopifyOrderFulfillmentSync(models.Model):
                 ),
                 record=binding,
             )
-        return binding.id
+
+    def _unconfirmed_push_matches(self, attempt, picking, payloads):
+        """Return the Shopify fulfillments an unconfirmed push may have created.
+
+        ``attempt`` is a connector fulfillment that never received its Shopify
+        ID, so Shopify may or may not have created it. A fulfillment matches
+        when Shopify created it at the attempt's location, no earlier than the
+        attempt, and it only holds items of the delivery, in quantities the
+        delivery covers.
+        """
+        self.ensure_one()
+        delivered = defaultdict(float)
+        for move in self._fulfillment_allocation_input(picking):
+            delivered[move["line_id"]] += move["quantity"]
+        not_before = attempt.create_date - UNCONFIRMED_PUSH_CLOCK_SKEW
+        matches = []
+        for payload in payloads:
+            if not payload.get("id"):
+                continue
+            status = str(payload.get("status") or "").upper()
+            if status in FAILED_FULFILLMENT_STATUSES:
+                continue
+            location_id = (payload.get("location") or {}).get("id")
+            if (
+                attempt.location_shopify_id
+                and location_id != attempt.location_shopify_id
+            ):
+                continue
+            created_at = _utc_datetime(payload.get("createdAt"))
+            if not created_at or created_at < not_before:
+                continue
+            quantities = defaultdict(float)
+            for line in _nodes(payload.get("fulfillmentLineItems")):
+                line_id = str((line.get("lineItem") or {}).get("id") or "")
+                quantities[line_id] += float(line.get("quantity") or 0)
+            if not quantities or any(
+                not line_id or quantity > delivered.get(line_id, 0)
+                for line_id, quantity in quantities.items()
+            ):
+                continue
+            matches.append(payload)
+        return matches
+
+    def _recover_unconfirmed_push(self, attempt, picking):
+        """Bind the Shopify fulfillment an unconfirmed push created, if any.
+
+        Returns the confirmed binding, or an empty recordset when Shopify holds
+        no fulfillment from that attempt and the delivery can be sent again.
+        """
+        self.ensure_one()
+        fulfillment_model = self.env["shopify.fulfillment"]
+        data = self.instance_id._shopify_client().execute(
+            ORDER_FULFILLMENTS_QUERY,
+            {"id": self.shopify_id},
+        )
+        order = data.get("order")
+        if not order:
+            raise ShopifyFulfillmentError(
+                self.env._("Shopify order %s was not found.", self.shopify_id)
+            )
+        payloads = _nodes(order.get("fulfillments"))
+        known = fulfillment_model.search(
+            [
+                ("instance_id", "=", self.instance_id.id),
+                (
+                    "shopify_id",
+                    "in",
+                    [payload["id"] for payload in payloads if payload.get("id")],
+                ),
+            ]
+        )
+        # Fulfillments the connector pushed for other deliveries are not
+        # candidates; external ones may be this attempt imported by webhook.
+        pushed_ids = set(
+            known.filtered(lambda item: item.origin == "odoo").mapped("shopify_id")
+        )
+        matches = [
+            payload
+            for payload in self._unconfirmed_push_matches(attempt, picking, payloads)
+            if payload["id"] not in pushed_ids
+        ]
+        if not matches:
+            return fulfillment_model
+        if len(matches) > 1:
+            raise ShopifyFulfillmentError(
+                self.env._(
+                    "A previous Shopify fulfillment attempt for %(picking)s was not "
+                    "confirmed, and several Shopify fulfillments could be the one "
+                    "it created: %(fulfillments)s. Bind the right one manually.",
+                    picking=picking.name,
+                    fulfillments=", ".join(payload["id"] for payload in matches),
+                )
+            )
+        payload = matches[0]
+        binding = attempt
+        imported = known.filtered(lambda item: item.shopify_id == payload["id"])
+        if imported:
+            if imported.picking_id:
+                raise ShopifyFulfillmentError(
+                    self.env._(
+                        "Shopify fulfillment %(fulfillment)s, created by an "
+                        "unconfirmed attempt for %(picking)s, was imported as an "
+                        "external fulfillment that validated %(other)s. Review "
+                        "both deliveries before binding it.",
+                        fulfillment=payload["id"],
+                        picking=picking.name,
+                        other=imported.picking_id.name,
+                    )
+                )
+            fulfillment_orders = attempt.fulfillment_order_ids | (
+                imported.fulfillment_order_ids
+            )
+            attempt.unlink()
+            imported.write(
+                {
+                    "origin": "odoo",
+                    "picking_id": picking.id,
+                    "idempotency_key": f"picking:{picking.id}",
+                    "fulfillment_order_ids": [Command.set(fulfillment_orders.ids)],
+                }
+            )
+            binding = imported
+        binding.write(
+            self._pushed_fulfillment_values(payload, self._tracking_info(picking))
+        )
+        self.instance_id._write_log(
+            entity="fulfillment",
+            direction="export",
+            level="info",
+            message=self.env._(
+                "Bound Shopify fulfillment %(fulfillment)s, created by an "
+                "unconfirmed attempt, to delivery %(delivery)s.",
+                fulfillment=binding.shopify_id,
+                delivery=picking.name,
+            ),
+            record=binding,
+        )
+        self._refresh_after_push(binding)
+        return binding
+
+    def _unconfirmed_push_for(self, payload):
+        """Return the single unconfirmed connector push matching ``payload``."""
+        self.ensure_one()
+        attempts = self.env["shopify.fulfillment"].search(
+            [
+                ("instance_id", "=", self.instance_id.id),
+                ("order_binding_id", "=", self.id),
+                ("origin", "=", "odoo"),
+                ("shopify_id", "=", False),
+                ("picking_id", "!=", False),
+            ]
+        )
+        found = self.env["shopify.fulfillment"]
+        for attempt in attempts:
+            try:
+                if self._unconfirmed_push_matches(
+                    attempt, attempt.picking_id, [payload]
+                ):
+                    found |= attempt
+            except ShopifyFulfillmentError:
+                continue
+        return found if len(found) == 1 else self.env["shopify.fulfillment"]
 
 
 class ShopifyFulfillmentOrderActions(models.Model):
@@ -665,6 +979,88 @@ class ShopifyFulfillmentOrderActions(models.Model):
 
 class ShopifyFulfillmentActions(models.Model):
     _inherit = "shopify.fulfillment"
+
+    def _job_update_tracking(self):
+        """Send the current carrier and tracking number of the delivery."""
+        self = self.sudo()  # noqa: PLW0642
+        self.ensure_one()
+        picking = self.picking_id
+        if not (
+            self.instance_id.active
+            and self.shopify_id
+            and self.origin == "odoo"
+            and picking.state == "done"
+        ):
+            return False
+        tracking = self.order_binding_id._tracking_info(picking)
+        sent = {
+            "company": self.tracking_company or "",
+            "number": self.tracking_number or "",
+            "url": self.tracking_url or "",
+        }
+        if not tracking.get("number") or all(
+            tracking.get(key, "") == value for key, value in sent.items()
+        ):
+            # Nothing new, e.g. Shopify's own tracking written back by an
+            # import, or a number that was cleared.
+            return False
+        try:
+            data = self.instance_id._shopify_client().execute(
+                FULFILLMENT_TRACKING_INFO_UPDATE_MUTATION,
+                {
+                    "fulfillmentId": self.shopify_id,
+                    "trackingInfoInput": tracking,
+                    "notifyCustomer": bool(
+                        self.instance_id.fulfillment_notify_customer
+                    ),
+                },
+            )
+        except (ShopifyThrottled, ShopifyServerError) as exc:
+            # Temporary: let queue_job retry the update later.
+            raise RetryableJobError(str(exc), seconds=60) from exc
+        except ShopifyError as exc:
+            self.instance_id._write_log(
+                entity="fulfillment",
+                direction="export",
+                level="error",
+                message=self.env._(
+                    "Failed to update the tracking of Shopify fulfillment "
+                    "%(fulfillment)s for %(picking)s: %(error)s. Save the "
+                    "tracking number of the delivery again to resend it.",
+                    fulfillment=self.shopify_id,
+                    picking=picking.name,
+                    error=exc,
+                ),
+                record=self,
+            )
+            # Return instead of raising: the log entry must be kept.
+            return False
+        payload = (data.get("fulfillmentTrackingInfoUpdate") or {}).get(
+            "fulfillment"
+        ) or {}
+        tracking_payload = _tracking(payload) or tracking
+        self.write(
+            {
+                "tracking_company": tracking_payload.get("company"),
+                "tracking_number": tracking_payload.get("number"),
+                "tracking_url": tracking_payload.get("url"),
+                "last_sync_date": fields.Datetime.now(),
+            }
+        )
+        self.instance_id._write_log(
+            entity="fulfillment",
+            direction="export",
+            level="info",
+            message=self.env._(
+                "Updated the tracking of Shopify fulfillment %(fulfillment)s "
+                "for %(picking)s: %(number)s.",
+                fulfillment=self.shopify_id,
+                picking=picking.name,
+                number=self.tracking_number,
+            ),
+            record=self,
+        )
+        return True
 
     def _job_cancel_shopify(self):
         self = self.sudo()
@@ -713,6 +1109,32 @@ class ShopifyFulfillmentActions(models.Model):
 
 class StockPickingShopifyFulfillmentSync(models.Model):
     _inherit = "stock.picking"
+
+    def write(self, vals):
+        result = super().write(vals)
+        if {"carrier_tracking_ref", "carrier_id"}.intersection(vals):
+            self._queue_shopify_tracking_update()
+        return result
+
+    def _queue_shopify_tracking_update(self):
+        """Send a carrier or tracking number changed after the push."""
+        for picking in self.filtered(
+            lambda item: (
+                item.state == "done" and item.picking_type_id.code == "outgoing"
+            )
+        ):
+            # Any stock user may edit the tracking; only the lookup of the
+            # fulfillments needs Shopify access.
+            fulfillments = picking.sudo().shopify_fulfillment_ids.filtered(
+                lambda item: item.shopify_id and item.origin == "odoo"
+            )
+            for fulfillment in fulfillments:
+                fulfillment.with_delay(
+                    description=self.env._(
+                        "Update Shopify tracking for %s", picking.name
+                    ),
+                    identity_key=f"shopify.fulfillment.tracking.{fulfillment.id}",
+                )._job_update_tracking()
 
     def _action_done(self, *args, **kwargs):
         result = super()._action_done(*args, **kwargs)
@@ -867,6 +1289,10 @@ class ShopifyExternalFulfillmentImport(models.Model):
             ],
             limit=1,
         )
+        if not binding:
+            # A connector push whose response was lost: this is its echo, not
+            # an external fulfillment that should validate another delivery.
+            binding = order_binding._unconfirmed_push_for(payload)
         tracking = _tracking(payload)
         values = {
             "instance_id": instance.id,
@@ -896,6 +1322,7 @@ class ShopifyExternalFulfillmentImport(models.Model):
             "error_message": False,
         }
         echo = bool(binding and binding.origin == "odoo")
+        was_fulfilled = binding.fulfillment_status == "SUCCESS"
         if binding:
             binding.write(values)
         else:
@@ -944,6 +1371,12 @@ class ShopifyExternalFulfillmentImport(models.Model):
             ),
             record=binding,
         )
+        if binding.fulfillment_status == "SUCCESS" and not was_fulfilled:
+            self.env["shopify.inventory.state"]._record_fulfilled_quantities(
+                instance,
+                binding.location_shopify_id,
+                binding._fulfilled_variant_quantities(payload, webhook_payload),
+            )
         if instance.fulfillment_auto_validate_webhook:
             binding._auto_validate_external(payload, webhook_payload)
         else:
@@ -957,6 +1390,38 @@ class ShopifyExternalFulfillmentImport(models.Model):
                 record=binding,
             )
         return binding.id
+
+    def _fulfilled_variant_quantities(self, payload, webhook_payload):
+        """The units of each Shopify variant that a Shopify fulfillment holds."""
+        self.ensure_one()
+        variants = {}
+        for line in self.order_binding_id.line_binding_ids:
+            variant = line.variant_shopify_id
+            if not variant and line.odoo_id.product_id:
+                variant = (
+                    self.env["shopify.product.variant"]
+                    .search(
+                        [
+                            ("instance_id", "=", self.instance_id.id),
+                            ("odoo_id", "=", line.odoo_id.product_id.id),
+                        ],
+                        limit=1,
+                    )
+                    .shopify_id
+                )
+            variants[line.shopify_id] = variant
+        quantities = defaultdict(int)
+        lines = _nodes(payload.get("fulfillmentLineItems"))
+        for line in lines:
+            variant = variants.get(str((line.get("lineItem") or {}).get("id") or ""))
+            if variant:
+                quantities[variant] += int(line.get("quantity") or 0)
+        if not lines:
+            for line in webhook_payload.get("line_items") or []:
+                variant = shopify_gid("ProductVariant", line.get("variant_id"))
+                if variant:
+                    quantities[variant] += int(line.get("quantity") or 0)
+        return quantities
 
     def _auto_validate_external(self, payload, webhook_payload):
         self.ensure_one()
@@ -1382,3 +1847,23 @@ WEBHOOK_HANDLERS.update(
         "fulfillments/update": "_handle_fulfillments_update",
     }
 )
+
+
+class QueueJobShopifyFulfillmentFailure(models.Model):
+    _inherit = "queue.job"
+
+    def write(self, vals):
+        result = super().write(vals)
+        if vals.get("state") == "failed":
+            # The job runner stores the failure in a new transaction, after
+            # the job's own changes were rolled back.
+            for job in self.filtered(
+                lambda item: item.model_name == "shopify.order"
+                and item.method_name == "_job_push_picking_fulfillment"
+                and item.args
+            ):
+                for binding in job.records.exists():
+                    binding._report_fulfillment_push_failure(
+                        job.args[0], job.exc_message or job.exc_name or ""
+                    )
+        return result

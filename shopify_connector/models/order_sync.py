@@ -11,6 +11,7 @@ from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Command
 from odoo.service.model import PG_CONCURRENCY_EXCEPTIONS_TO_RETRY
+from odoo.tools import escape_psql
 
 from odoo.addons.queue_job.exception import RetryableJobError
 
@@ -27,6 +28,7 @@ from ..graphql.order import (
 from ..lib.bulk import ShopifyBulkRunner
 from ..lib.client import ShopifyAccessDenied, ShopifyError
 from ..lib.order import (
+    apply_draft_order_discount,
     decimal_amount,
     line_diffs,
     normalize_order_payload,
@@ -375,6 +377,10 @@ class ShopifyOrderSync(models.Model):
             if payload_normalized
             else normalize_order_payload(payload, is_draft=is_draft)
         )
+        if order_data.get("order_discount"):
+            order_data = apply_draft_order_discount(
+                order_data, self._currency_quanta(order_data)
+            )
         if order_data["is_draft"] and not instance.draft_order_import_enabled:
             return False
         digest = payload_digest(order_data)
@@ -564,6 +570,11 @@ class ShopifyOrderSync(models.Model):
                 order_data,
             )
             return sale_order
+        if sale_order and order_data["cancelled_at"]:
+            # Shopify sets the current quantity of every line of a cancelled
+            # order to 0. Keep the lines: Odoo does not remove the lines of a
+            # confirmed order, and _apply_state cancels the order.
+            return sale_order
         if sale_order and self._is_delivered(sale_order):
             differences = line_diffs(
                 self._existing_line_snapshot(binding, sale_order),
@@ -584,6 +595,12 @@ class ShopifyOrderSync(models.Model):
         pricelist = self._pricelist(instance, currency)
         values = {
             "partner_id": partner.id,
+            "partner_shipping_id": self._order_address_partner(
+                partner, order_data.get("shipping_address"), "delivery"
+            ).id,
+            "partner_invoice_id": self._order_address_partner(
+                partner, order_data.get("billing_address"), "invoice"
+            ).id,
             "company_id": instance.company_id.id,
             "pricelist_id": pricelist.id,
             "currency_id": currency.id,
@@ -616,6 +633,7 @@ class ShopifyOrderSync(models.Model):
                 # orders even when their values have not changed.
                 immutable_fields = {
                     "partner_id",
+                    "partner_invoice_id",
                     "company_id",
                     "pricelist_id",
                     "currency_id",
@@ -638,6 +656,79 @@ class ShopifyOrderSync(models.Model):
         self._apply_lines(binding, sale_order, instance, order_data)
         self._verify_total(sale_order, currency, instance, order_data)
         return sale_order
+
+    def _order_address_partner(self, partner, address, address_type):
+        """Return the contact of a Shopify order address.
+
+        An existing contact of the customer with the same address is reused;
+        otherwise a delivery or invoice contact is created under the customer.
+        Without an address the customer itself is used.
+        """
+        if not address or not any(address[key] for key in ("address1", "city", "zip")):
+            return partner
+        values = self._order_address_values(partner, address, address_type)
+        # A shared guest customer can collect many contacts, so let the
+        # database narrow them down before the exact comparison.
+        domain = [
+            "|",
+            ("id", "=", partner.id),
+            ("parent_id", "=", partner.id),
+            ("country_id", "=", values["country_id"]),
+        ]
+        for field in ("street", "city", "zip"):
+            if values[field] and values[field].strip():
+                domain.append((field, "ilike", escape_psql(values[field].strip())))
+        candidates = self.env["res.partner"].search(domain)
+        # Prefer the customer itself, as before.
+        for candidate in (candidates & partner) | (candidates - partner):
+            if self._is_same_order_address(candidate, values):
+                return candidate
+        return (
+            self.env["res.partner"]
+            .with_context(shopify_customer_import=True)
+            .create(values)
+        )
+
+    def _order_address_values(self, partner, address, address_type):
+        country = self.env["res.country"]
+        if address["country"]:
+            country = country.search([("code", "=", address["country"])], limit=1)
+        state = self.env["res.country.state"]
+        if country and address["province"]:
+            state = state.search(
+                [
+                    ("country_id", "=", country.id),
+                    "|",
+                    ("code", "=ilike", address["province"]),
+                    ("name", "=ilike", address["province"]),
+                ],
+                limit=1,
+            )
+        name = " ".join(
+            part for part in (address["first_name"], address["last_name"]) if part
+        )
+        return {
+            "parent_id": partner.id,
+            "company_id": partner.company_id.id,
+            "type": address_type,
+            "name": name or address["company"] or partner.name,
+            "street": address["address1"] or False,
+            "street2": address["address2"] or False,
+            "city": address["city"] or False,
+            "state_id": state.id or False,
+            "country_id": country.id or False,
+            "zip": address["zip"] or False,
+            "phone": address["phone"] or False,
+        }
+
+    def _is_same_order_address(self, partner, values):
+        def text(value):
+            return (value or "").strip().casefold()
+
+        return all(
+            text(partner[field]) == text(values[field])
+            for field in ("name", "street", "street2", "city", "zip")
+        ) and partner.country_id.id == (values["country_id"] or False)
 
     def _shopify_order_extra_values(self, instance, order_data):
         """Allow optional modules to supply sale-order routing values."""
@@ -741,6 +832,20 @@ class ShopifyOrderSync(models.Model):
                     }
                 )
         return result
+
+    def _currency_quanta(self, order_data):
+        """Return the smallest unit of the shop and presentment currencies."""
+        quanta = {}
+        for side in ("shop", "presentment"):
+            currency = (
+                self.env["res.currency"]
+                .with_context(active_test=False)
+                .search([("name", "=", order_data["total"][side]["currency"])], limit=1)
+            )
+            quanta[side] = (
+                Decimal(str(currency.rounding)) if currency else Decimal("0.01")
+            )
+        return quanta
 
     def _currency(self, instance, order_data):
         side = (
@@ -1025,14 +1130,19 @@ class ShopifyOrderSync(models.Model):
         return self.env["res.country"].search([("code", "=", country_code)], limit=1)
 
     def _mapped_taxes(self, instance, tax_lines, country, included):
-        taxes = self.env["account.tax"]
+        # Two tax lines can share a rate (a 1 % city tax and a 1 % transit tax).
+        # Odoo cannot apply one tax twice on a line, so look up their sum (0.02).
+        rate_counts = Counter()
         for line in tax_lines:
-            rate = format(decimal_amount(line["rate"]).normalize(), "f")
             line_country = country
             if line.get("country_code"):
                 line_country = self.env["res.country"].search(
                     [("code", "=", line["country_code"])], limit=1
                 )
+            rate_counts[(decimal_amount(line["rate"]), line_country)] += 1
+        taxes = self.env["account.tax"]
+        for (line_rate, line_country), count in rate_counts.items():
+            rate = format((line_rate * count).normalize(), "f")
             mapping = self.env["shopify.tax.mapping"].search(
                 [
                     ("instance_id", "=", instance.id),
@@ -1354,7 +1464,7 @@ class ShopifyOrderSync(models.Model):
                 binding, invoices[0], refund, amount, selected_side
             )
         elif not invoices:
-            self._adjust_uninvoiced_refund(binding, refund, amount)
+            self._adjust_uninvoiced_refund(binding, refund)
         if restock:
             try:
                 self._create_restock_return(binding, refund)
@@ -1531,7 +1641,7 @@ class ShopifyOrderSync(models.Model):
         move.action_post()
         return move
 
-    def _adjust_uninvoiced_refund(self, binding, refund, amount):
+    def _adjust_uninvoiced_refund(self, binding, refund):
         sale_order = binding.odoo_id
         if self._is_delivered(sale_order):
             raise ShopifyOrderImportError(
@@ -1540,30 +1650,13 @@ class ShopifyOrderSync(models.Model):
                     "manual resolution."
                 )
             )
-        expected_total = (
-            decimal_amount(
-                binding.presentment_money_json["total"]
-                if binding.instance_id.order_currency_policy == "presentment"
-                else binding.shop_money_json["total"]
-            )
-            if binding.shop_money_json
-            else Decimal(str(sale_order.amount_total))
-        )
+        # The order lines were just written from Shopify's current
+        # quantities, which already leave out the refunded units.
         if (
             binding.instance_id.refund_uninvoiced_policy == "cancel"
-            and amount >= expected_total
+            and sale_order.currency_id.compare_amounts(sale_order.amount_total, 0) <= 0
         ):
             self._cancel_sale_order(sale_order)
-            return
-        for line in refund["lines"]:
-            line_binding = binding.line_binding_ids.filtered(
-                lambda item, line=line: item.shopify_id == line["line_id"]
-            )[:1]
-            if line_binding:
-                new_quantity = max(
-                    line_binding.odoo_id.product_uom_qty - line["quantity"], 0
-                )
-                line_binding.odoo_id.product_uom_qty = new_quantity
 
     def _create_restock_return(self, binding, refund):
         picking = binding.odoo_id.picking_ids.filtered(

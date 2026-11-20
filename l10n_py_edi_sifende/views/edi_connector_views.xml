@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_edi_connector_form_sifende" model="ir.ui.view">
+        <field name="name">l10n_py.edi.connector.form.sifende</field>
+        <field name="model">l10n_py.edi.connector</field>
+        <field name="inherit_id" ref="l10n_py_edi_base.view_edi_connector_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='test_connection']" position="attributes">
+                <attribute name="groups">account.group_account_manager</attribute>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_sifende_register_webhook"
+                    string="Registrar webhook"
+                    type="object"
+                    groups="base.group_system"
+                    invisible="provider_type != 'sifende' or sifende_webhook_id"
+                />
+                <button
+                    name="action_sifende_rotate_webhook_secret"
+                    string="Rotar secreto"
+                    type="object"
+                    groups="base.group_system"
+                    invisible="provider_type != 'sifende' or not sifende_webhook_id"
+                    confirm="El secreto anterior deja de valer de inmediato. ¿Rotarlo?"
+                />
+                <button
+                    name="action_sifende_remove_webhook"
+                    string="Quitar webhook"
+                    type="object"
+                    groups="base.group_system"
+                    invisible="provider_type != 'sifende' or not sifende_webhook_id"
+                    confirm="Sifende dejará de avisar a Odoo; el cron seguirá consultando los estados. ¿Quitarlo?"
+                />
+            </xpath>
+            <xpath expr="//group[@name='credentials']" position="inside">
+                <field
+                    name="sifende_base_url"
+                    invisible="provider_type != 'sifende'"
+                    groups="base.group_system"
+                    placeholder="https://api.sifende.com.py"
+                />
+                <field
+                    name="sifende_api_key"
+                    invisible="provider_type != 'sifende'"
+                    password="True"
+                    groups="base.group_system"
+                    placeholder="sk_..."
+                />
+                <field name="sifende_ambiente" invisible="provider_type != 'sifende'" />
+                <field
+                    name="sifende_webhook_url"
+                    invisible="provider_type != 'sifende'"
+                />
+                <field
+                    name="sifende_webhook_id"
+                    invisible="provider_type != 'sifende' or not sifende_webhook_id"
+                    groups="base.group_system"
+                />
+                <field
+                    name="sifende_webhook_secret"
+                    invisible="provider_type != 'sifende'"
+                    password="True"
+                    groups="base.group_system"
+                    placeholder="whsec_..."
+                />
+                <div
+                    colspan="2"
+                    class="text-muted"
+                    invisible="provider_type != 'sifende'"
+                >
+                    El ambiente (Sandbox, Pruebas o Producción) lo define la API key.
+                    Use «Probar Conexión» para verificar que coincida con el ambiente
+                    de este conector.
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

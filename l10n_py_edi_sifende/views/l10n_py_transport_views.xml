@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_l10n_py_transport_form_sifende" model="ir.ui.view">
+        <field name="name">l10n_py.transport.form.sifende</field>
+        <field name="model">l10n_py.transport</field>
+        <field name="inherit_id" ref="l10n_py_edi_base.view_l10n_py_transport_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='manifest_number']" position="after">
+                <field name="sifende_import_dispatch" />
+            </xpath>
+            <xpath expr="//field[@name='departure_department']" position="before">
+                <field name="sifende_departure_city_id" />
+            </xpath>
+            <xpath expr="//field[@name='departure_department']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='departure_district']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='departure_city']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='transporter_ruc']" position="attributes">
+                <attribute name="invisible">transporter_nature == '2'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='transporter_dv']" position="attributes">
+                <attribute name="invisible">transporter_nature == '2'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='transporter_dv']" position="after">
+                <field
+                    name="sifende_transporter_document_type"
+                    invisible="transporter_nature != '2'"
+                />
+                <field
+                    name="sifende_transporter_document_number"
+                    invisible="transporter_nature != '2'"
+                />
+                <field name="sifende_transporter_address" />
+            </xpath>
+            <xpath expr="//field[@name='driver_name']" position="after">
+                <field name="sifende_driver_address" />
+            </xpath>
+            <xpath
+                expr="//field[@name='transporter_nature']/parent::group"
+                position="after"
+            >
+                <group string="Agente intermediario del transporte">
+                    <field name="sifende_agent_name" />
+                    <field name="sifende_agent_ruc" />
+                    <field name="sifende_agent_dv" />
+                    <field name="sifende_agent_address" />
+                </group>
+            </xpath>
+            <xpath
+                expr="//field[@name='vehicle_ids']/list/field[@name='plate_number']"
+                position="after"
+            >
+                <field
+                    name="sifende_flight_number"
+                    column_invisible="parent.transport_mode != '3'"
+                />
+            </xpath>
+            <xpath
+                expr="//field[@name='delivery_ids']/list/field[@name='department']"
+                position="before"
+            >
+                <field name="sifende_city_id" />
+            </xpath>
+            <xpath
+                expr="//field[@name='delivery_ids']/list/field[@name='department']"
+                position="attributes"
+            >
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='delivery_ids']/list/field[@name='district']"
+                position="attributes"
+            >
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='delivery_ids']/list/field[@name='city']"
+                position="attributes"
+            >
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

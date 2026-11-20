@@ -1,0 +1,80 @@
+{
+  "tipoDocumento": "NOTA_DE_REMISION_ELECTRONICA",
+  "fechaEmision": "2026-10-20T00:00:00",
+  "tipoEmision": "NORMAL",
+  "numeroEstablecimiento": 1,
+  "puntoExpedicion": 1,
+  "numeroDocumento": 1,
+  "numeroTimbrado": 24681357,
+  "codigoSeguridad": "123456789",
+  "receptor": {
+    "tipoContribuyente": "CONTRIBUYENTE",
+    "tipoOperacion": "B2B",
+    "nombreRazonSocial": "Comercial San Roque S.A.",
+    "direccion": "Avenida Mariscal López",
+    "numeroCasa": 0,
+    "telefono": "+595214441111",
+    "pais": "PRY",
+    "tipoContribuyenteReceptor": "PERSONA_JURIDICA",
+    "numeroDocumento": "80009401",
+    "digitoVerificador": "$DV$",
+    "email": "facturacion@sanroque.com.py",
+    "codigoCliente": "CLI-001",
+    "departamento": "CENTRAL",
+    "codigoDistrito": 169,
+    "ciudad": "6106"
+  },
+  "items": [
+    {
+      "codigo": "PAP-A4",
+      "descripcion": "Resma de papel A4",
+      "cantidad": 1,
+      "unidadMedida": "UNI",
+      "ncm": "48025610"
+    }
+  ],
+  "motivoTraslado": "TRASLADO_ENTRE_LOCALES",
+  "responsableEmision": "EMPRESA_TRANSPORTISTA",
+  "kilometrosRecorrido": 8,
+  "transporte": {
+    "modalidad": "TERRESTRE",
+    "fechaInicioTraslado": "2026-10-21",
+    "fechaFinTraslado": "2026-10-21",
+    "tipoTransporte": "PROPIO",
+    "responsableFlete": "EMISOR_FACTURA_ELECTRONICA",
+    "salida": {
+      "direccion": "Calle Teniente Benítez",
+      "numeroCasa": 120,
+      "departamento": "CENTRAL",
+      "codigoDistrito": 169,
+      "ciudad": "6106"
+    },
+    "entregas": [
+      {
+        "direccion": "Avenida Mariscal López",
+        "numeroCasa": 450,
+        "departamento": "CENTRAL",
+        "codigoDistrito": 169,
+        "ciudad": "6106"
+      }
+    ],
+    "vehiculos": [
+      {
+        "tipoVehiculo": "CAMION",
+        "marca": "ISUZU",
+        "tipoIdentificacion": 2,
+        "matricula": "ABC1234"
+      }
+    ],
+    "transportista": {
+      "naturaleza": "NO_CONTRIBUYENTE",
+      "nombreRazonSocial": "Carlos Benítez",
+      "tipoDocumento": "CEDULA_PARAGUAYA",
+      "numeroDocumento": "3456789",
+      "domicilioFiscal": "Calle Teniente Benítez 120, Lambaré",
+      "numeroDocumentoConductor": "3456789",
+      "nombreConductor": "Carlos Benítez",
+      "direccionConductor": "Calle Teniente Benítez 120, Lambaré"
+    }
+  }
+}

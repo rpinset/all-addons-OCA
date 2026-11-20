@@ -45,6 +45,7 @@ from .order import (
     ShopifyOrderPayloadError,
     allocate_amount,
     allocate_refund,
+    apply_draft_order_discount,
     decimal_amount,
     line_diffs,
     normalize_bulk_orders,
@@ -54,7 +55,7 @@ from .order import (
     selected_money,
     shopify_gid,
 )
-from .webhook import verify_webhook_hmac
+from .webhook import verify_webhook_hmac, webhook_topic_header
 
 __all__ = [
     "API_VERSION",
@@ -96,6 +97,7 @@ __all__ = [
     "ShopifyOrderPayloadError",
     "allocate_amount",
     "allocate_refund",
+    "apply_draft_order_discount",
     "decimal_amount",
     "line_diffs",
     "normalize_bulk_orders",
@@ -105,9 +107,11 @@ __all__ = [
     "selected_money",
     "shopify_gid",
     "verify_webhook_hmac",
+    "webhook_topic_header",
 ]
 from .operability import (
     REQUIRED_ADMIN_SCOPES,
+    identity_key_pattern,
     missing_scopes,
     scope_handles,
     state_count_label,
@@ -115,6 +119,7 @@ from .operability import (
 
 __all__ = [
     "REQUIRED_ADMIN_SCOPES",
+    "identity_key_pattern",
     "missing_scopes",
     "scope_handles",
     "state_count_label",

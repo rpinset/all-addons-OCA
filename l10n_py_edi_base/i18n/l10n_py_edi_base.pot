@@ -91,12 +91,17 @@ msgstr ""
 
 #. module: l10n_py_edi_base
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__active
-msgid "Active"
+msgid "Activo"
 msgstr ""
 
 #. module: l10n_py_edi_base
 #: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__freight_responsibility__4
 msgid "Agente intermediario del transporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__environment
+msgid "Ambiente"
 msgstr ""
 
 #. module: l10n_py_edi_base
@@ -278,7 +283,6 @@ msgid "Companies"
 msgstr ""
 
 #. module: l10n_py_edi_base
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__company_id
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__company_id
 msgid "Company"
 msgstr ""
@@ -1084,6 +1088,11 @@ msgid "Emisor de la Factura Electrónica"
 msgstr ""
 
 #. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__company_id
+msgid "Empresa"
+msgstr ""
+
+#. module: l10n_py_edi_base
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__endpoint
 msgid "Endpoint"
 msgstr ""
@@ -1117,11 +1126,6 @@ msgstr ""
 #. module: l10n_py_edi_base
 #: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__send
 msgid "Envio de Documento"
-msgstr ""
-
-#. module: l10n_py_edi_base
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__environment
-msgid "Environment"
 msgstr ""
 
 #. module: l10n_py_edi_base
@@ -1364,6 +1368,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_edi_batch_id
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_edi_batch_id
 msgid "ID de Lote"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_receipt_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_receipt_id
+msgid "ID de recibo"
 msgstr ""
 
 #. module: l10n_py_edi_base
@@ -2131,12 +2141,6 @@ msgid "RUC:"
 msgstr ""
 
 #. module: l10n_py_edi_base
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_receipt_id
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_receipt_id
-msgid "Receipt ID"
-msgstr ""
-
-#. module: l10n_py_edi_base
 #: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__freight_responsibility__2
 msgid "Receptor de la Factura Electrónica"
 msgstr ""
@@ -2296,14 +2300,14 @@ msgid "Terrestre"
 msgstr ""
 
 #. module: l10n_py_edi_base
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__timbrado
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__authorization_id
-msgid "Timbrado"
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__timeout
+msgid "Tiempo de espera (segundos)"
 msgstr ""
 
 #. module: l10n_py_edi_base
-#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__timeout
-msgid "Timeout"
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__timbrado
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__authorization_id
+msgid "Timbrado"
 msgstr ""
 
 #. module: l10n_py_edi_base

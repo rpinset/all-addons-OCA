@@ -159,6 +159,16 @@ class ShopifyInventoryState(models.Model):
     last_pushed_quantity = fields.Integer(readonly=True)
     last_pushed_at = fields.Datetime(readonly=True)
     last_shopify_quantity = fields.Integer(readonly=True)
+    last_shopify_on_hand = fields.Integer(
+        readonly=True,
+        help="Shopify's on-hand quantity as Odoo has recorded it: the last one "
+        "read, less what the connector has fulfilled since.",
+    )
+    shopify_snapshot_at = fields.Datetime(
+        readonly=True,
+        help="When Shopify's on-hand quantity was last read. Empty until the "
+        "first inventory webhook reads it.",
+    )
     last_sync_date = fields.Datetime(readonly=True)
 
     _sql_constraints = [
@@ -168,6 +178,52 @@ class ShopifyInventoryState(models.Model):
             "Inventory state must be unique per instance, variant, and location.",
         )
     ]
+
+    def _snapshot_values(self, quantities):
+        """The values that record a Shopify level read now."""
+        values = {"last_sync_date": fields.Datetime.now()}
+        if quantities and "available" in quantities:
+            values["last_shopify_quantity"] = quantities["available"]
+        if quantities and "on_hand" in quantities:
+            values.update(
+                {
+                    "last_shopify_on_hand": quantities["on_hand"],
+                    "shopify_snapshot_at": values["last_sync_date"],
+                }
+            )
+        return values
+
+    @api.model
+    def _record_fulfilled_quantities(self, instance, location_shopify_id, quantities):
+        """Take units fulfilled in Shopify out of its recorded on-hand stock.
+
+        Fulfilling lowers Shopify's on-hand and committed quantities and leaves
+        the available one as it was, so Shopify sends no inventory webhook for
+        it. Odoo takes the same units out with the order's delivery: the
+        recorded on-hand stock follows, or the next webhook would apply them
+        again as a change made in Shopify.
+
+        ``quantities`` maps Shopify variant IDs to the units fulfilled.
+        """
+        quantities = {
+            variant: int(quantity)
+            for variant, quantity in quantities.items()
+            if variant and quantity
+        }
+        if not quantities or not location_shopify_id:
+            return
+        states = self.sudo().search(
+            [
+                ("instance_id", "=", instance.id),
+                ("location_binding_id.shopify_id", "=", location_shopify_id),
+                ("variant_binding_id.shopify_id", "in", list(quantities)),
+                ("shopify_snapshot_at", "!=", False),
+            ]
+        )
+        for state in states:
+            state.last_shopify_on_hand -= quantities[
+                state.variant_binding_id.shopify_id
+            ]
 
     @api.constrains("instance_id", "variant_binding_id", "location_binding_id")
     def _check_inventory_state_scope(self):

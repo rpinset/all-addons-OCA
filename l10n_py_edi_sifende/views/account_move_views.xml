@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_l10n_py_edi_cancel_wizard" model="ir.actions.act_window">
+        <field name="name">Cancelar documento electrónico</field>
+        <field name="res_model">l10n_py.edi.cancel.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <record id="view_move_form_edi_sifende" model="ir.ui.view">
+        <field name="name">account.move.form.edi.sifende</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="l10n_py_edi_base.view_move_form_edi" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//div[hasclass('oe_title')]//h1/field[@name='name']"
+                position="attributes"
+            >
+                <attribute
+                    name="invisible"
+                >l10n_py_sifende_document_name or not (name or name_placeholder or quick_edit_mode)</attribute>
+            </xpath>
+            <xpath
+                expr="//div[hasclass('oe_title')]//h1/field[@name='name']"
+                position="after"
+            >
+                <field
+                    name="l10n_py_sifende_document_name"
+                    invisible="not l10n_py_sifende_document_name"
+                />
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_edi_batch_id']" position="attributes">
+                <attribute name="invisible">l10n_py_sifende_enabled</attribute>
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_edi_batch_id']" position="after">
+                <field
+                    name="l10n_py_qr_code"
+                    widget="image"
+                    options="{'size': [128, 128]}"
+                    invisible="not l10n_py_qr_code"
+                />
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_security_code']" position="after">
+                <field name="l10n_py_sifende_numero_ocupado" invisible="1" />
+                <field
+                    name="l10n_py_sifende_motivo_emision"
+                    invisible="l10n_py_doc_type_code not in ['5', '6']"
+                    readonly="l10n_py_sifende_frozen"
+                />
+            </xpath>
+            <xpath expr="//button[@name='action_cancel_edi']" position="attributes">
+                <attribute
+                    name="name"
+                >%(l10n_py_edi_sifende.action_l10n_py_edi_cancel_wizard)d</attribute>
+                <attribute name="type">action</attribute>
+                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute
+                    name="invisible"
+                >not l10n_py_cdc or l10n_py_sifende_sandbox</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name="l10n_py_sifende_enabled" invisible="1" />
+                <field name="l10n_py_sifende_sandbox" invisible="1" />
+                <field name="l10n_py_sifende_frozen" invisible="1" />
+            </xpath>
+            <xpath expr="//button[@name='action_send_edi']" position="attributes">
+                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute
+                    name="invisible"
+                >state != 'posted' or l10n_py_edi_status in ['sent', 'accepted', 'processing']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_preview_xml']" position="attributes">
+                <attribute
+                    name="invisible"
+                >l10n_py_sifende_enabled or l10n_py_edi_status in ['sent', 'accepted', 'processing']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_preview_kude']" position="attributes">
+                <attribute
+                    name="invisible"
+                >l10n_py_sifende_enabled or l10n_py_edi_status in ['sent', 'accepted', 'processing']</attribute>
+            </xpath>
+            <xpath
+                expr="//button[@name='action_l10n_py_preview_qr']"
+                position="attributes"
+            >
+                <attribute
+                    name="invisible"
+                >l10n_py_sifende_enabled or l10n_py_edi_status in ['sent', 'accepted', 'processing']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_retry_edi']" position="attributes">
+                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute
+                    name="invisible"
+                >state != 'posted' or l10n_py_sifende_numero_ocupado or l10n_py_edi_status not in ['error', 'rejected']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_retry_edi']" position="after">
+                <button
+                    name="action_l10n_py_sifende_renumber"
+                    string="Renumerar"
+                    type="object"
+                    groups="account.group_account_invoice"
+                    invisible="state != 'posted' or not l10n_py_sifende_numero_ocupado"
+                    confirm="Sifende ya tiene ese número. El documento tomará el siguiente número libre del timbrado y deberá enviarlo de nuevo. ¿Renumerarlo?"
+                />
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_payment_type']" position="attributes">
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_payment_type']" position="after">
+                <field
+                    name="l10n_py_sifende_tarjeta_marca"
+                    invisible="l10n_py_payment_type not in ['3', '4']"
+                    readonly="l10n_py_sifende_frozen"
+                />
+                <field
+                    name="l10n_py_sifende_cheque_numero"
+                    invisible="l10n_py_payment_type != '2'"
+                    readonly="l10n_py_sifende_frozen"
+                />
+                <field
+                    name="l10n_py_sifende_cheque_banco"
+                    invisible="l10n_py_payment_type != '2'"
+                    readonly="l10n_py_sifende_frozen"
+                />
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_emission_type']" position="attributes">
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_transaction_type']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_presence_type']" position="attributes">
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_exchange_rate_condition']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_receipt_id']" position="attributes">
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_contingency_motive']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath expr="//field[@name='l10n_py_nre_motive']" position="attributes">
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_nre_estimated_invoice_date']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_constancia_type']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_constancia_number']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_constancia_control']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_vendor_doc_type']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_vendor_doc_number']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_vendor_name']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_vendor_address']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_vendor_house']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_afe_provision_address']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='nre_section']//field[@name='l10n_py_transport_id']"
+                position="attributes"
+            >
+                <attribute
+                    name="domain"
+                >['|', ('move_id', '=', False), ('move_id', '=', id)]</attribute>
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='export_transport_section']//field[@name='l10n_py_transport_id']"
+                position="attributes"
+            >
+                <attribute
+                    name="domain"
+                >['|', ('move_id', '=', False), ('move_id', '=', id)]</attribute>
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='l10n_py_associated_document_ids']"
+                position="attributes"
+            >
+                <attribute name="readonly">l10n_py_sifende_frozen</attribute>
+            </xpath>
+            <xpath expr="//group[@name='nre_section']" position="inside">
+                <field
+                    name="l10n_py_sifende_responsable_emision"
+                    readonly="l10n_py_sifende_frozen"
+                />
+                <field
+                    name="l10n_py_sifende_km_recorrido"
+                    readonly="l10n_py_sifende_frozen"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

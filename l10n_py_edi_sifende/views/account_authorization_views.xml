@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_account_authorization_form_sifende" model="ir.ui.view">
+        <field name="name">account.authorization.form.sifende</field>
+        <field name="model">account.authorization</field>
+        <field
+            name="inherit_id"
+            ref="l10n_py_account.view_account_authorization_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='next_number']" position="after">
+                <field
+                    name="l10n_py_sifende_ultimo_numero_en_uso"
+                    groups="account.group_account_manager"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

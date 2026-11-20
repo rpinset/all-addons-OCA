@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-11-17 12:06 UTC
+Generated 2026-11-20 22:08 UTC
 
 ## Skipped repos
 
@@ -35,6 +35,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
 | [e-learning](https://github.com/OCA/e-learning) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | `no_module` | No directory with __manifest__.py at repo root |

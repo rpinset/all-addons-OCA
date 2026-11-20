@@ -51,3 +51,13 @@ def state_count_label(counts: dict[str, int]) -> str:
         f"{counts.get('pending', 0)} pending · "
         f"{counts.get('error', 0)} errors"
     )
+
+
+def identity_key_pattern(instance_id: int) -> str:
+    """A regular expression that matches the identity keys of a store's jobs.
+
+    Every key of the connector names the job with words and then the store:
+    ``shopify.inventory.delta.<store>.<binding>.<location>``. The IDs after
+    the store are other records', which can equal any store's ID.
+    """
+    return rf"^shopify(\.[a-z_][a-z0-9_]*)+\.{int(instance_id)}(\.|$)"

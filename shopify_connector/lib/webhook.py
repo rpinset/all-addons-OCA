@@ -21,3 +21,15 @@ def verify_webhook_hmac(
         return hmac.compare_digest(expected, provided_hmac.strip())
     except (TypeError, ValueError):
         return False
+
+
+def webhook_topic_header(topic: str) -> str:
+    """Return the ``X-Shopify-Topic`` form of a webhook subscription topic.
+
+    Subscriptions use the GraphQL enum (``CUSTOMERS_CREATE``), while each
+    delivery names its topic as ``customers/create``, which is the value a
+    webhook event stores.
+    """
+
+    resource, _sep, action = str(topic or "").strip().lower().rpartition("_")
+    return f"{resource}/{action}" if resource else action

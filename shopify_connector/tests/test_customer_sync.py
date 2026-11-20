@@ -122,6 +122,59 @@ class TestShopifyCustomerSync(TransactionCase):
         self.assertEqual(binding.odoo_id.company_id, self.instance.company_id)
         self.assertFalse(binding.odoo_id.is_company)
 
+    def test_failed_first_import_still_seeds_the_new_partner_on_retry(self):
+        mapping = self.instance.field_mapping_ids.filtered(
+            lambda item: item.field == "customer_addresses"
+        )
+        if mapping:
+            mapping.owner = "odoo"
+        else:
+            self.env["shopify.field.mapping"].create(
+                {
+                    "instance_id": self.instance.id,
+                    "field": "customer_addresses",
+                    "owner": "odoo",
+                }
+            )
+        payload = self._payload(
+            5,
+            addressesV2={
+                "nodes": [
+                    {
+                        "id": "gid://shopify/MailingAddress/50",
+                        "firstName": "Seed",
+                        "lastName": "Address",
+                        "address1": "Seed Street",
+                        "city": "Jakarta",
+                        "countryCodeV2": "ID",
+                    }
+                ]
+            },
+        )
+        customer_class = type(self.customer_model)
+        sync_tags = customer_class._sync_tags
+
+        # The first import creates the partner, then fails before seeding.
+        with patch.object(
+            customer_class, "_sync_tags", side_effect=ValueError("Tag failure")
+        ):
+            self.assertFalse(
+                self.customer_model._job_import_customer(self.instance.id, payload)
+            )
+        binding = self.customer_model.search(
+            [("shopify_id", "=", "gid://shopify/Customer/5")]
+        )
+        self.assertEqual(binding.state, "error")
+        self.assertTrue(binding.initial_seed_pending)
+
+        with patch.object(customer_class, "_sync_tags", sync_tags):
+            self.customer_model._job_import_customer(self.instance.id, payload)
+
+        # Odoo owns addresses, yet the new partner gets them once from Shopify.
+        self.assertEqual(binding.state, "synced")
+        self.assertFalse(binding.initial_seed_pending)
+        self.assertEqual(binding.address_binding_ids.odoo_id.street, "Seed Street")
+
     def test_address_import_is_idempotent_by_shopify_address_id(self):
         payload = self._payload(
             4,
@@ -147,6 +200,45 @@ class TestShopifyCustomerSync(TransactionCase):
         self.assertEqual(len(binding.address_binding_ids), 1)
         self.assertEqual(binding.address_binding_ids.odoo_id.street, "First Street")
         self.assertEqual(binding.address_binding_ids.odoo_id.type, "invoice")
+
+    def test_removed_address_used_by_an_order_is_archived(self):
+        def address(address_id, street):
+            return {
+                "id": f"gid://shopify/MailingAddress/{address_id}",
+                "firstName": "Alice",
+                "lastName": "Address",
+                "address1": street,
+                "city": "Jakarta",
+                "countryCodeV2": "ID",
+            }
+
+        payload = self._payload(
+            5,
+            defaultAddress={"id": "gid://shopify/MailingAddress/50"},
+            addressesV2={
+                "nodes": [address(50, "First Street"), address(51, "Old Street")]
+            },
+        )
+        binding_id = self.customer_model._job_import_customer(self.instance.id, payload)
+        binding = self.customer_model.browse(binding_id)
+        old_address = binding.address_binding_ids.filtered(
+            lambda item: item.shopify_id.endswith("/51")
+        ).odoo_id
+        self.env["sale.order"].create(
+            {
+                "partner_id": binding.odoo_id.id,
+                "partner_shipping_id": old_address.id,
+            }
+        )
+
+        payload["addressesV2"] = {"nodes": [address(50, "First Street")]}
+        payload["lastName"] = "Renamed"
+        self.customer_model._job_import_customer(self.instance.id, payload)
+
+        self.assertEqual(binding.state, "synced", binding.error_message)
+        self.assertEqual(binding.odoo_id.name, "Shopify Renamed")
+        self.assertEqual(len(binding.address_binding_ids), 1)
+        self.assertFalse(old_address.active)
 
     def test_tags_create_company_scoped_categories_without_duplicates(self):
         payload = self._payload(5, tags=["VIP", "Wholesale"])

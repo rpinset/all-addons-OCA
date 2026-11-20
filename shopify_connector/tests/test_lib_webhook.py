@@ -4,7 +4,10 @@ import hmac
 
 from odoo.tests.common import TransactionCase
 
-from odoo.addons.shopify_connector.lib.webhook import verify_webhook_hmac
+from odoo.addons.shopify_connector.lib.webhook import (
+    verify_webhook_hmac,
+    webhook_topic_header,
+)
 
 
 def make_hmac(payload, secret):
@@ -27,3 +30,12 @@ class TestShopifyLibWebhook(TransactionCase):
     def test_missing_hmac_is_rejected(self):
         assert not verify_webhook_hmac(b"{}", "webhook-secret", None)
         assert not verify_webhook_hmac(b"{}", "webhook-secret", "")
+
+    def test_topic_header_matches_the_delivered_topic(self):
+        assert webhook_topic_header("CUSTOMERS_CREATE") == "customers/create"
+        assert webhook_topic_header("APP_UNINSTALLED") == "app/uninstalled"
+        assert webhook_topic_header("DRAFT_ORDERS_UPDATE") == "draft_orders/update"
+        assert (
+            webhook_topic_header("INVENTORY_LEVELS_UPDATE") == "inventory_levels/update"
+        )
+        assert webhook_topic_header("ORDERS_UPDATED") == "orders/updated"

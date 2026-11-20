@@ -60,6 +60,34 @@ query ShopifyFulfillment($id: ID!) {
 }
 """
 
+ORDER_FULFILLMENTS_QUERY = """
+query ShopifyOrderFulfillments($id: ID!) {
+  order(id: $id) {
+    id
+    fulfillments(first: 250) {
+      id
+      name
+      status
+      createdAt
+      updatedAt
+      location { id }
+      trackingInfo {
+        company
+        number
+        url
+      }
+      fulfillmentLineItems(first: 250) {
+        nodes {
+          id
+          quantity
+          lineItem { id }
+        }
+      }
+    }
+  }
+}
+"""
+
 FULFILLMENT_CREATE_MUTATION = """
 mutation ShopifyFulfillmentCreate($fulfillment: FulfillmentInput!) {
   fulfillmentCreate(fulfillment: $fulfillment) {
@@ -70,6 +98,35 @@ mutation ShopifyFulfillmentCreate($fulfillment: FulfillmentInput!) {
       createdAt
       updatedAt
       location { id }
+      trackingInfo {
+        company
+        number
+        url
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+"""
+
+FULFILLMENT_TRACKING_INFO_UPDATE_MUTATION = """
+mutation ShopifyFulfillmentTrackingInfoUpdate(
+  $fulfillmentId: ID!
+  $trackingInfoInput: FulfillmentTrackingInput!
+  $notifyCustomer: Boolean
+) {
+  fulfillmentTrackingInfoUpdate(
+    fulfillmentId: $fulfillmentId
+    trackingInfoInput: $trackingInfoInput
+    notifyCustomer: $notifyCustomer
+  ) {
+    fulfillment {
+      id
+      status
+      updatedAt
       trackingInfo {
         company
         number

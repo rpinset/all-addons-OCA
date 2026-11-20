@@ -1,0 +1,45 @@
+{
+  "tipoDocumento": "NOTA_DE_DEBITO_ELECTRONICA",
+  "fechaEmision": "2026-10-20T00:00:00",
+  "tipoEmision": "NORMAL",
+  "numeroEstablecimiento": 1,
+  "puntoExpedicion": 1,
+  "numeroDocumento": 1,
+  "numeroTimbrado": 24681357,
+  "codigoSeguridad": "123456789",
+  "monedaOperacion": "PYG",
+  "receptor": {
+    "tipoContribuyente": "CONTRIBUYENTE",
+    "tipoOperacion": "B2B",
+    "nombreRazonSocial": "Comercial San Roque S.A.",
+    "direccion": "Avenida Mariscal López",
+    "numeroCasa": 0,
+    "telefono": "+595214441111",
+    "pais": "PRY",
+    "tipoContribuyenteReceptor": "PERSONA_JURIDICA",
+    "numeroDocumento": "80012345",
+    "digitoVerificador": "$DV$",
+    "email": "facturacion@sanroque.com.py",
+    "codigoCliente": "CLI-001",
+    "departamento": "CENTRAL",
+    "codigoDistrito": 169,
+    "ciudad": "6106"
+  },
+  "items": [
+    {
+      "codigo": "PAP-A4",
+      "descripcion": "Resma de papel A4",
+      "cantidad": 1,
+      "unidadMedida": "UNI",
+      "precioUnitario": 11000,
+      "afectacionTributaria": "GRAVADO",
+      "tasaIVA": 10,
+      "ncm": "48025610"
+    }
+  ],
+  "motivoEmision": "AJUSTE_DE_PRECIO",
+  "documentoAsociado": {
+    "tipoDocumento": "ELECTRONICO",
+    "cdc": "01800123451001001000000012026010112345678901"
+  }
+}

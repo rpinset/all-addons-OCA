@@ -5,9 +5,12 @@ from uuid import uuid4
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.tools import SQL
 
 from ..graphql import WEBHOOK_SUBSCRIPTIONS_QUERY
+from ..lib import identity_key_pattern
 from ..lib.operability import state_count_label
+from ..lib.webhook import webhook_topic_header
 
 BINDING_DASHBOARD_MODELS = (
     ("Products", "shopify.product.template"),
@@ -78,7 +81,10 @@ class ShopifyBindingOperations(models.AbstractModel):
                 model=self._description,
                 record=self.display_name,
             ),
-            "identity_key": (f"shopify.retry.{self._name}.{self.id}.{uuid4().hex}"),
+            "identity_key": (
+                f"shopify.retry.{self._name}.{self.instance_id.id}.{self.id}."
+                f"{uuid4().hex}"
+            ),
         }
 
     def _shopify_enqueue_fresh_retry(self):  # noqa: C901
@@ -148,6 +154,12 @@ class ShopifyBindingOperations(models.AbstractModel):
                 self.env["shopify.fulfillment"].with_delay(
                     **self._shopify_retry_options()
                 )._job_import_from_shopify(instance.id, self.shopify_id)
+            elif self.origin == "odoo" and self.picking_id:
+                # An unconfirmed push: the job binds what Shopify created, or
+                # sends the delivery again when Shopify holds nothing.
+                self.order_binding_id.with_delay(
+                    **self._shopify_retry_options()
+                )._job_push_picking_fulfillment(self.picking_id.id)
             else:
                 self.order_binding_id.with_delay(
                     **self._shopify_retry_options()
@@ -185,6 +197,7 @@ class ShopifyInstanceOperability(models.Model):
     dashboard_fulfillments = fields.Char(compute="_compute_operability_dashboard")
     dashboard_financial = fields.Char(compute="_compute_operability_dashboard")
     dashboard_queue_backlog = fields.Integer(compute="_compute_operability_dashboard")
+    dashboard_failed_jobs = fields.Integer(compute="_compute_operability_dashboard")
     dashboard_recent_errors = fields.Text(compute="_compute_operability_dashboard")
     dashboard_webhooks = fields.Text(compute="_compute_operability_dashboard")
     dashboard_drift_crons = fields.Text(compute="_compute_operability_dashboard")
@@ -211,20 +224,35 @@ class ShopifyInstanceOperability(models.Model):
         )
         return state_count_label({state: count for state, count in groups if state})
 
-    def _dashboard_queue_domain(self):
+    def _dashboard_queue_domain(self, states=None):
         self.ensure_one()
         return [
             ("channel", "=like", "root.shopify%"),
             (
                 "state",
                 "in",
-                ("pending", "enqueued", "started", "wait_dependencies"),
+                states or ("pending", "enqueued", "started", "wait_dependencies"),
             ),
             ("company_id", "in", (False, self.company_id.id)),
-            "|",
-            ("identity_key", "=like", f"%.{self.id}"),
-            ("identity_key", "=like", f"%.{self.id}.%"),
+            ("identity_key", "=like", "shopify.%"),
         ]
+
+    def _dashboard_queue_query(self, states=None):
+        """The store's jobs in ``states``, by default the ones still to run."""
+        self.ensure_one()
+        query = (
+            self.env["queue.job"].sudo()._search(self._dashboard_queue_domain(states))
+        )
+        # The store is the first ID of a job's key: the IDs after it are other
+        # records', which can equal this store's.
+        query.add_where(
+            SQL(
+                "%s ~ %s",
+                SQL.identifier(query.table, "identity_key"),
+                identity_key_pattern(self.id),
+            )
+        )
+        return query
 
     @api.depends("active")
     def _compute_operability_dashboard(self):
@@ -254,10 +282,12 @@ class ShopifyInstanceOperability(models.Model):
                 instance.dashboard_financial = f"Payouts: {payout}\nDisputes: {dispute}"
             else:
                 instance.dashboard_financial = self.env._("Module not installed")
-            instance.dashboard_queue_backlog = (
-                self.env["queue.job"]
-                .sudo()
-                .search_count(instance._dashboard_queue_domain())
+            instance.dashboard_queue_backlog = len(instance._dashboard_queue_query())
+            # A failed job is not a binding in error and writes no log of its
+            # own, so without this count the dashboard reads "0 errors" while
+            # the store's imports or pushes keep failing.
+            instance.dashboard_failed_jobs = len(
+                instance._dashboard_queue_query(states=("failed",))
             )
             errors = (
                 self.env["shopify.log"]
@@ -345,10 +375,13 @@ class ShopifyInstanceOperability(models.Model):
             remote = self.env._("Remote subscriptions: healthy")
         lines = [remote]
         for topic in self._required_webhook_topics():
+            # Events store the topic as Shopify delivers it (customers/create),
+            # not as the subscription enum (CUSTOMERS_CREATE).
+            header = webhook_topic_header(topic)
             event = event_model.search(
                 [
                     ("instance_id", "=", self.id),
-                    ("topic", "=", topic),
+                    ("topic", "in", [header, topic]),
                 ],
                 order="create_date desc",
                 limit=1,
@@ -358,7 +391,7 @@ class ShopifyInstanceOperability(models.Model):
                 if event
                 else self.env._("never")
             )
-            lines.append(f"{topic}: {received}")
+            lines.append(f"{header}: {received}")
         return "\n".join(lines)
 
     def action_check_webhook_health(self):
@@ -395,6 +428,24 @@ class ShopifyInstanceOperability(models.Model):
             record=self,
         )
         return True
+
+    def action_open_failed_jobs(self):
+        self.ensure_one()
+        return {
+            "type": "ir.actions.act_window",
+            "name": self.env._("Failed Shopify Jobs"),
+            "res_model": "queue.job",
+            "view_mode": "list,form",
+            "domain": [
+                (
+                    "id",
+                    "in",
+                    list(
+                        self._dashboard_queue_query(states=("failed",)).get_result_ids()
+                    ),
+                )
+            ],
+        }
 
     def action_open_binding_errors(self):
         self.ensure_one()

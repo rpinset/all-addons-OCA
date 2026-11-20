@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_move_form_edi_sifende_remision" model="ir.ui.view">
+        <field name="name">account.move.form.edi.sifende.remision</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="l10n_py_edi_base.view_move_form_edi" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//group[@name='nre_section']//field[@name='l10n_py_transport_id']"
+                position="attributes"
+            >
+                <attribute name="options">{"no_quick_create": true}</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='export_transport_section']//field[@name='l10n_py_transport_id']"
+                position="attributes"
+            >
+                <attribute name="options">{"no_quick_create": true}</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_vendor_department']"
+                position="before"
+            >
+                <field
+                    name="l10n_py_sifende_afe_vendor_city_id"
+                    readonly="l10n_py_sifende_frozen"
+                />
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_provision_department']"
+                position="before"
+            >
+                <field
+                    name="l10n_py_sifende_afe_provision_city_id"
+                    readonly="l10n_py_sifende_frozen"
+                />
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_vendor_department']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_vendor_district']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_vendor_city']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_provision_department']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_provision_district']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='afe_section']//field[@name='l10n_py_afe_provision_city']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

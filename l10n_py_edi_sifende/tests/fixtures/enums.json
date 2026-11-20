@@ -1,0 +1,1022 @@
+{
+  "tipoDocumento": [
+    {
+      "name": "FACTURA_ELECTRONICA",
+      "label": "Factura electrónica",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "AUTOFACTURA_ELECTRONICA",
+      "label": "Autofactura electrónica",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "NOTA_DE_CREDITO_ELECTRONICA",
+      "label": "Nota de crédito electrónica",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "NOTA_DE_DEBITO_ELECTRONICA",
+      "label": "Nota de débito electrónica",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "NOTA_DE_REMISION_ELECTRONICA",
+      "label": "Nota de remisión electrónica",
+      "val": 7,
+      "extra": null
+    }
+  ],
+  "tipoEmision": [
+    {
+      "name": "NORMAL",
+      "label": "Normal",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "CONTINGENCIA",
+      "label": "Contingencia",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "tipoTransaccion": [
+    {
+      "name": "VENTA_MERCADERIA",
+      "label": "Venta de mercadería",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "PRESTACION_SERVICIOS",
+      "label": "Prestación de servicios",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "MIXTO",
+      "label": "Mixto (Venta de mercadería y servicios)",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "VENTA_ACTIVO_FIJO",
+      "label": "Venta de activo fijo",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "VENTA_DIVISAS",
+      "label": "Venta de divisas",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "COMPRA_DIVISAS",
+      "label": "Compra de divisas",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "PROMOCION_O_MUESTRAS",
+      "label": "Promoción o entrega de muestras",
+      "val": 7,
+      "extra": null
+    },
+    {
+      "name": "DONACION",
+      "label": "Donación",
+      "val": 8,
+      "extra": null
+    },
+    {
+      "name": "ANTICIPO",
+      "label": "Anticipo",
+      "val": 9,
+      "extra": null
+    },
+    {
+      "name": "COMPRA_PRODUCTOS",
+      "label": "Compra de productos",
+      "val": 10,
+      "extra": null
+    },
+    {
+      "name": "COMPRA_SERVICIOS",
+      "label": "Compra de servicios",
+      "val": 11,
+      "extra": null
+    },
+    {
+      "name": "VENTA_CREDITO_FISCAL",
+      "label": "Venta de crédito fiscal",
+      "val": 12,
+      "extra": null
+    },
+    {
+      "name": "MUESTRAS_MEDICAS",
+      "label": "Muestras médicas (Art. 3 RG 24/2014)",
+      "val": 13,
+      "extra": null
+    }
+  ],
+  "condicionOperacion": [
+    {
+      "name": "CONTADO",
+      "label": "Contado",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "CREDITO",
+      "label": "Crédito",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "condicionCredito": [
+    {
+      "name": "PLAZO",
+      "label": "Plazo",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "CUOTA",
+      "label": "Cuota",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "tipoPago": [
+    {
+      "name": "EFECTIVO",
+      "label": "Efectivo",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "CHEQUE",
+      "label": "Cheque",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "TARJETA_DE_CREDITO",
+      "label": "Tarjeta de crédito",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "TARJETA_DE_DEBITO",
+      "label": "Tarjeta de débito",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "TRANSFERENCIA",
+      "label": "Transferencia",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "GIRO",
+      "label": "Giro",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "BILLETERA_ELECTRONICA",
+      "label": "Billetera electrónica",
+      "val": 7,
+      "extra": null
+    },
+    {
+      "name": "TARJETA_EMPRESARIAL",
+      "label": "Tarjeta empresarial",
+      "val": 8,
+      "extra": null
+    },
+    {
+      "name": "VALE",
+      "label": "Vale",
+      "val": 9,
+      "extra": null
+    },
+    {
+      "name": "RETENCION",
+      "label": "Retención",
+      "val": 10,
+      "extra": null
+    },
+    {
+      "name": "PAGO_POR_ANTICIPO",
+      "label": "Pago por anticipo",
+      "val": 11,
+      "extra": null
+    },
+    {
+      "name": "VALOR_FISCAL",
+      "label": "Valor fiscal",
+      "val": 12,
+      "extra": null
+    },
+    {
+      "name": "VALOR_COMERCIAL",
+      "label": "Valor comercial",
+      "val": 13,
+      "extra": null
+    },
+    {
+      "name": "COMPENSACION",
+      "label": "Compensación",
+      "val": 14,
+      "extra": null
+    },
+    {
+      "name": "PERMUTA",
+      "label": "Permuta",
+      "val": 15,
+      "extra": null
+    },
+    {
+      "name": "PAGO_BANCARIO",
+      "label": "Pago bancario",
+      "val": 16,
+      "extra": null
+    },
+    {
+      "name": "PAGO_MOVIL",
+      "label": "Pago Móvil",
+      "val": 17,
+      "extra": null
+    },
+    {
+      "name": "DONACION",
+      "label": "Donación",
+      "val": 18,
+      "extra": null
+    },
+    {
+      "name": "PROMOCION",
+      "label": "Promoción",
+      "val": 19,
+      "extra": null
+    },
+    {
+      "name": "CONSUMO_INTERNO",
+      "label": "Consumo Interno",
+      "val": 20,
+      "extra": null
+    },
+    {
+      "name": "PAGO_ELECTRONICO",
+      "label": "Pago Electrónico",
+      "val": 21,
+      "extra": null
+    },
+    {
+      "name": "OTRO",
+      "label": "Otro",
+      "val": 99,
+      "extra": null
+    }
+  ],
+  "naturalezaReceptor": [
+    {
+      "name": "CONTRIBUYENTE",
+      "label": "Contribuyente",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "NO_CONTRIBUYENTE",
+      "label": "No Contribuyente",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "tipoContribuyenteReceptor": [
+    {
+      "name": "PERSONA_FISICA",
+      "label": "Persona Física",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "PERSONA_JURIDICA",
+      "label": "Persona Jurídica",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "tipoOperacion": [
+    {
+      "name": "B2B",
+      "label": "Business To Business",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "B2C",
+      "label": "Business To Consumer",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "B2G",
+      "label": "Business To Government",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "B2F",
+      "label": "Business To Foreign",
+      "val": 4,
+      "extra": null
+    }
+  ],
+  "tipoDocumentoReceptor": [
+    {
+      "name": "CEDULA_PARAGUAYA",
+      "label": "Cédula paraguaya",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "PASAPORTE",
+      "label": "Pasaporte",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "CEDULA_EXTRANJERA",
+      "label": "Cédula extranjera",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "CARNET_DE_RESIDENCIA",
+      "label": "Carnet de residencia",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "INNOMINADO",
+      "label": "Innominado",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "TARJETA_DIPLOMATICA",
+      "label": "Tarjeta Diplomática de exoneración fiscal",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "OTRO",
+      "label": "Otro",
+      "val": 9,
+      "extra": null
+    }
+  ],
+  "unidadMedida": [
+    {
+      "name": "UNI",
+      "label": "Unidad - UNI",
+      "val": 77,
+      "extra": null
+    },
+    {
+      "name": "kg",
+      "label": "Kilogramos - kg",
+      "val": 83,
+      "extra": "kg"
+    },
+    {
+      "name": "m",
+      "label": "Metros - m",
+      "val": 87,
+      "extra": "m"
+    }
+  ],
+  "afectacionIVA": [
+    {
+      "name": "GRAVADO",
+      "label": "Gravado IVA",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "EXONERADO",
+      "label": "Exonerado (Art. 100 - Ley 6380/2019)",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "EXENTO",
+      "label": "Exento",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "GRAVADO_PARCIAL",
+      "label": "Gravado parcial (Grav- Exento)",
+      "val": 4,
+      "extra": null
+    }
+  ],
+  "motivoEmision": [
+    {
+      "name": "DEVOLUCION_Y_AJUSTES_DE_PRECIOS",
+      "label": "Devolución y Ajuste de precios",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "DEVOLUCION",
+      "label": "Devolución",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "DESCUENTO",
+      "label": "Descuento",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "BONIFICACION",
+      "label": "Bonificación",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "CREDITO_INCOBRABLE",
+      "label": "Crédito incobrable",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "RECUPERO_DE_COSTO",
+      "label": "Recupero de costo",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "RECUPERO_DE_GASTO",
+      "label": "Recupero de gasto",
+      "val": 7,
+      "extra": null
+    },
+    {
+      "name": "AJUSTE_DE_PRECIO",
+      "label": "Ajuste de precio",
+      "val": 8,
+      "extra": null
+    }
+  ],
+  "tipoDocumentoAsociado": [
+    {
+      "name": "ELECTRONICO",
+      "label": "Electrónico",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "IMPRESO",
+      "label": "Impreso",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "CONSTANCIA_ELECTRONICA",
+      "label": "Constancia Electrónica",
+      "val": 3,
+      "extra": null
+    }
+  ],
+  "tipoConstancia": [
+    {
+      "name": "CONSTANCIA_NO_CONTRIBUYENTE",
+      "label": "Constancia de no ser contribuyente",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "CONSTANCIA_MICROPRODUCTORES",
+      "label": "Constancia de microproductores",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "tipoDocumentoImpreso": [
+    {
+      "name": "FACTURA",
+      "label": "Factura",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "NOTA_DE_CREDITO",
+      "label": "Nota de crédito",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "NOTA_DE_DEBITO",
+      "label": "Nota de débito",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "NOTA_DE_REMISION",
+      "label": "Nota de remisión",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "COMPROBANTE_DE_RETENCION",
+      "label": "Comprobante de retención",
+      "val": 5,
+      "extra": null
+    }
+  ],
+  "departamento": [
+    {
+      "name": "CAPITAL",
+      "label": "CAPITAL",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "CONCEPCION",
+      "label": "CONCEPCION",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "SAN_PEDRO",
+      "label": "SAN PEDRO",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "CORDILLERA",
+      "label": "CORDILLERA",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "GUAIRA",
+      "label": "GUAIRA",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "CAAGUAZU",
+      "label": "CAAGUAZU",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "CAAZAPA",
+      "label": "CAAZAPA",
+      "val": 7,
+      "extra": null
+    },
+    {
+      "name": "ITAPUA",
+      "label": "ITAPUA",
+      "val": 8,
+      "extra": null
+    },
+    {
+      "name": "MISIONES",
+      "label": "MISIONES",
+      "val": 9,
+      "extra": null
+    },
+    {
+      "name": "PARAGUARI",
+      "label": "PARAGUARI",
+      "val": 10,
+      "extra": null
+    },
+    {
+      "name": "ALTO_PARANA",
+      "label": "ALTO PARANA",
+      "val": 11,
+      "extra": null
+    },
+    {
+      "name": "CENTRAL",
+      "label": "CENTRAL",
+      "val": 12,
+      "extra": null
+    },
+    {
+      "name": "NEEMBUCU",
+      "label": "NEEMBUCU",
+      "val": 13,
+      "extra": null
+    },
+    {
+      "name": "AMAMBAY",
+      "label": "AMAMBAY",
+      "val": 14,
+      "extra": null
+    },
+    {
+      "name": "PTE_HAYES",
+      "label": "PTE. HAYES",
+      "val": 15,
+      "extra": null
+    },
+    {
+      "name": "BOQUERON",
+      "label": "BOQUERON",
+      "val": 16,
+      "extra": null
+    },
+    {
+      "name": "ALTO_PARAGUAY",
+      "label": "ALTO PARAGUAY",
+      "val": 17,
+      "extra": null
+    },
+    {
+      "name": "CANINDEYU",
+      "label": "CANINDEYU",
+      "val": 18,
+      "extra": null
+    },
+    {
+      "name": "CHACO",
+      "label": "CHACO",
+      "val": 19,
+      "extra": null
+    },
+    {
+      "name": "NUEVA_ASUNCION",
+      "label": "NUEVA ASUNCION",
+      "val": 20,
+      "extra": null
+    }
+  ],
+  "motivoTraslado": [
+    {
+      "name": "TRASLADO_POR_VENTAS",
+      "label": "Traslado por ventas",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_POR_CONSIGNACION",
+      "label": "Traslado por consignación",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "EXPORTACION",
+      "label": "Exportación",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_POR_COMPRA",
+      "label": "Traslado por compra",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "IMPORTACION",
+      "label": "Importación",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_POR_DEVOLUCION",
+      "label": "Traslado por devolución",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_ENTRE_LOCALES",
+      "label": "Traslado entre locales de la empresa",
+      "val": 7,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_BIENES_TRANSFORMACION",
+      "label": "Traslado de bienes por transformación",
+      "val": 8,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_BIENES_REPARACION",
+      "label": "Traslado de bienes para reparación",
+      "val": 9,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_POR_EMISOR_MOVIL",
+      "label": "Traslado por emisor móvil",
+      "val": 10,
+      "extra": null
+    },
+    {
+      "name": "EXHIBICION_O_DEMOSTRACION",
+      "label": "Exhibición o Demostración",
+      "val": 11,
+      "extra": null
+    },
+    {
+      "name": "PARTICIPACION_EN_FERIAS",
+      "label": "Participación en ferias",
+      "val": 12,
+      "extra": null
+    },
+    {
+      "name": "TRASLADO_DE_ENCOMIENDAS",
+      "label": "Traslado de encomienda",
+      "val": 13,
+      "extra": null
+    },
+    {
+      "name": "DECOMISO",
+      "label": "Decomiso",
+      "val": 14,
+      "extra": null
+    },
+    {
+      "name": "OTRO",
+      "label": "Otro",
+      "val": 99,
+      "extra": null
+    }
+  ],
+  "responsableEmision": [
+    {
+      "name": "EMISOR_FACTURA",
+      "label": "Emisor de la factura",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "POSEEDOR_FACTURA_Y_BIENES",
+      "label": "Poseedor de la factura y bienes",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "EMPRESA_TRANSPORTISTA",
+      "label": "Empresa transportista",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "DESPACHANTE_DE_ADUANAS",
+      "label": "Despachante de Aduanas",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "AGENTE_DE_TRANSPORTE_O_INTERMEDIARIO",
+      "label": "Agente de transporte o intermediario",
+      "val": 5,
+      "extra": null
+    }
+  ],
+  "tipoTransporte": [
+    {
+      "name": "PROPIO",
+      "label": "Propio",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "TERCERO",
+      "label": "Tercero",
+      "val": 2,
+      "extra": null
+    }
+  ],
+  "modalidadTransporte": [
+    {
+      "name": "TERRESTRE",
+      "label": "Terrestre",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "FLUVIAL",
+      "label": "Fluvial",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "AEREO",
+      "label": "Aéreo",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "MULTIMODAL",
+      "label": "Multimodal",
+      "val": 4,
+      "extra": null
+    }
+  ],
+  "responsableFlete": [
+    {
+      "name": "EMISOR_FACTURA_ELECTRONICA",
+      "label": "Emisor de la factura electrónica",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "RECEPTOR_FACTURA_ELECTRONICA",
+      "label": "Receptor de la factura electrónica",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "TERCERO",
+      "label": "Tercero",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "AGENTE_INTERMEDIARIO",
+      "label": "Agente intermediario",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "TRANSPORTE_PROPIO",
+      "label": "Transporte propio",
+      "val": 5,
+      "extra": null
+    }
+  ],
+  "tipoDocumentoTransportista": [
+    {
+      "name": "CEDULA_PARAGUAYA",
+      "label": "Cédula paraguaya",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "PASAPORTE",
+      "label": "Pasaporte",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "CEDULA_EXTRANJERA",
+      "label": "Cédula extranjera",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "CARNET_DE_RESIDENCIA",
+      "label": "Carnet de residencia",
+      "val": 4,
+      "extra": null
+    }
+  ],
+  "indicadorPresencia": [
+    {
+      "name": "OPERACION_PRESENCIAL",
+      "label": "Operación presencial",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "OPERACION_ELECTRONICA",
+      "label": "Operación electrónica",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "OPERACION_TELEMARKETING",
+      "label": "Operación telemarketing",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "VENTA_A_DOMICILIO",
+      "label": "Venta a domicilio",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "OPERACION_BANCARIA",
+      "label": "Operación bancaria",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "OPERACION_CICLICA",
+      "label": "Operación cíclica",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "OTRO",
+      "label": "Otro",
+      "val": 9,
+      "extra": null
+    }
+  ],
+  "tipoTarjeta": [
+    {
+      "name": "VISA",
+      "label": "Visa",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "MASTERCARD",
+      "label": "Mastercard",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "AMERICAN_EXPRESS",
+      "label": "American Express",
+      "val": 3,
+      "extra": null
+    },
+    {
+      "name": "MAESTRO",
+      "label": "Maestro",
+      "val": 4,
+      "extra": null
+    },
+    {
+      "name": "PANAL",
+      "label": "Panal",
+      "val": 5,
+      "extra": null
+    },
+    {
+      "name": "CABAL",
+      "label": "Cabal",
+      "val": 6,
+      "extra": null
+    },
+    {
+      "name": "OTRO",
+      "label": "Otro",
+      "val": 99,
+      "extra": null
+    }
+  ],
+  "formaProcesamientoPago": [
+    {
+      "name": "POS",
+      "label": "POS",
+      "val": 1,
+      "extra": null
+    },
+    {
+      "name": "PAGO_ELECTRONICO",
+      "label": "Pago Electrónico",
+      "val": 2,
+      "extra": null
+    },
+    {
+      "name": "OTRO",
+      "label": "Otro",
+      "val": 9,
+      "extra": null
+    }
+  ],
+  "moneda": [
+    {
+      "name": "PYG",
+      "label": "PYG",
+      "val": null,
+      "extra": null
+    },
+    {
+      "name": "USD",
+      "label": "USD",
+      "val": null,
+      "extra": null
+    },
+    {
+      "name": "BRL",
+      "label": "BRL",
+      "val": null,
+      "extra": null
+    }
+  ]
+}

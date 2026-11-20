@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="report_invoice_document_sifende"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//div[hasclass('page')]/*[1]" position="before">
+            <div
+                t-if="o.l10n_py_sifende_aviso_fiscal"
+                class="alert alert-warning text-center fw-bold"
+                role="alert"
+            >
+                <span t-out="o.l10n_py_sifende_aviso_fiscal" />
+            </div>
+        </xpath>
+    </template>
+</odoo>

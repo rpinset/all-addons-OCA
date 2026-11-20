@@ -33,7 +33,7 @@ query InventoryLevelForItem($inventoryItemId: ID!, $locationId: ID!) {
     tracked
     inventoryLevel(locationId: $locationId) {
       id
-      quantities(names: ["available"]) {
+      quantities(names: ["available", "on_hand"]) {
         name
         quantity
       }

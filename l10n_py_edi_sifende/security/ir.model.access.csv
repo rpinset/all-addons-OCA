@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_l10n_py_sifende_webhook_event_system,l10n_py.sifende.webhook.event system,model_l10n_py_sifende_webhook_event,base.group_system,1,0,0,0
+access_l10n_py_sifende_city_user,l10n_py.sifende.city user,model_l10n_py_sifende_city,base.group_user,1,0,0,0
+access_l10n_py_transport_invoice,l10n_py.transport invoice,l10n_py_edi_base.model_l10n_py_transport,account.group_account_invoice,1,1,1,1
+access_l10n_py_transport_vehicle_invoice,l10n_py.transport.vehicle invoice,l10n_py_edi_base.model_l10n_py_transport_vehicle,account.group_account_invoice,1,1,1,1
+access_l10n_py_transport_delivery_invoice,l10n_py.transport.delivery invoice,l10n_py_edi_base.model_l10n_py_transport_delivery,account.group_account_invoice,1,1,1,1

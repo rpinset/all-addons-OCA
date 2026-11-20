@@ -1,0 +1,1669 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_edi_sifende
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid "%(label)s debe ser numérico (valor actual: «%(value)s»)."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid ""
+"%(name)s fue cancelado en SIFEN: su KuDE ya no es un comprobante válido, por"
+" eso no se envía."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid ""
+"%(name)s todavía no tiene comprobante fiscal: SIFEN aún no lo aceptó "
+"(estado: %(status)s). Envíelo cuando figure como Aceptado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "%(subject)s no coinciden: el DV no corresponde al RUC."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "%(subject)s son obligatorios: RUC de 3 a 8 dígitos y DV de 1."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid ""
+"%(what)s de un documento con el envío a Sifende pendiente de confirmación no"
+" se pueden modificar: reintente el envío con «Reintentar»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid ""
+"%(what)s de un documento enviado a Sifende no se pueden modificar: SIFEN ya "
+"tiene los del documento %(name)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__sifende_api_key
+msgid "API key de Sifende"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_account_move_send
+msgid "Account Move Send"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_account_move_send_wizard
+msgid "Account Move Send Wizard"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__active
+msgid "Activo"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_responsable_emision__5
+msgid "Agente de transporte o intermediario"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_l10n_py_transport_form_sifende
+msgid "Agente intermediario del transporte"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__8
+msgid "Ajuste de precio"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__environment
+msgid "Ambiente"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__sifende_ambiente
+msgid "Ambiente de la API key"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Ambiente: %(env)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__3
+msgid "American Express"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "Autofactura"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid ""
+"Autofactura: falta la constancia electrónica como documento asociado. "
+"Indique su tipo y número en la sección Autofactura, o agréguela en "
+"Documentos Asociados."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_account_authorization
+msgid "Autorización de Facturación (Timbrado)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_aviso_fiscal
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_aviso_fiscal
+msgid "Aviso fiscal (Sifende)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_cheque_banco
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_cheque_banco
+msgid "Banco del cheque (SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__4
+msgid "Bonificación"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "CDC existente: %(cdc)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__6
+msgid "Cabal"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Cancelación solicitada desde Odoo"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.actions.act_window,name:l10n_py_edi_sifende.action_l10n_py_edi_cancel_wizard
+msgid "Cancelar documento electrónico"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_transport__sifende_transporter_document_type__4
+msgid "Carnet de residencia"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__name
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport_delivery__sifende_city_id
+msgid "Ciudad"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport_delivery__city
+msgid "Ciudad (E938)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_res_partner__l10n_py_sifende_city_id
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_res_users__l10n_py_sifende_city_id
+msgid "Ciudad SIFEN"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_afe_provision_city_id
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_afe_provision_city_id
+msgid "Ciudad de provisión"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_departure_city_id
+msgid "Ciudad de salida"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_sifende_city
+msgid "Ciudad del catálogo SIFEN"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_afe_vendor_city_id
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_afe_vendor_city_id
+msgid "Ciudad del vendedor"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_edi_connector
+msgid "Conector EDI Paraguay"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Conexión con SIFENDE"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Conexión con SIFENDE: revise la configuración"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid "Configure la API key de Sifende en el conector EDI de la empresa."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__connector_id
+msgid "Connector"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__5
+msgid "Crédito incobrable"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_transport__sifende_transporter_document_type__3
+msgid "Cédula extranjera"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_transport__sifende_transporter_document_type__1
+msgid "Cédula paraguaya"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__code
+msgid "Código de ciudad"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__department_code
+msgid "Código de departamento"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__district_code
+msgid "Código de distrito"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_authorization__l10n_py_establishment
+msgid "Código de establecimiento (3 dígitos)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_authorization__l10n_py_point
+msgid "Código de punto de expedición (3 dígitos)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_uom_uom__l10n_py_sifende_unidad_medida
+msgid "Código de unidad de medida SIFEN"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_uom_uom__l10n_py_sifende_unidad_medida
+msgid "Código del catálogo de unidades de medida de SIFEN (77 = Unidad)."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_agent_dv
+msgid "DV del agente (E996)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__department_name
+msgid "Departamento"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport_delivery__department
+msgid "Departamento (E934)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__3
+msgid "Descuento"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_responsable_emision__4
+msgid "Despachante de aduanas"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_import_dispatch
+msgid "Despacho de importación (E908)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__2
+msgid "Devolución"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__1
+msgid "Devolución y ajuste de precios"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_agent_address
+msgid "Dirección del agente (E997)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_driver_address
+msgid "Dirección del chofer (E993)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__district_name
+msgid "Distrito"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__move_id
+msgid "Documento"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_associated_document
+msgid "Documento Asociado (Grupo H SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid "Documento cancelado en SIFEN: sin validez fiscal."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_transporter_document_number
+msgid "Documento del transportista (E987)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_document_name
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_document_name
+msgid "Documento fiscal"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_transporter_address
+msgid "Domicilio fiscal del transportista (E992)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid ""
+"El ambiente (Sandbox, Pruebas o Producción) lo define la API key.\n"
+"                    Use «Probar Conexión» para verificar que coincida con el ambiente\n"
+"                    de este conector."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid "El catálogo de Sifende no tiene el valor %(code)s en «%(cat)s»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El certificado digital del contribuyente no está vigente en Sifende. Cargue "
+"uno vigente en el panel de Sifende (%(url)s) y pulse «Reintentar»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El conector está en ambiente «%(local)s» pero la API key es de «%(remote)s» "
+"(prefijo %(prefix)s). Cambie el ambiente del conector o use una API key del "
+"mismo ambiente."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El conector está en ambiente «%(local)s» pero la API key es del ambiente "
+"%(remote)s de SIFENDE."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "El conector no es de Sifende."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "El conector no tiene un webhook registrado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.constraint,message:l10n_py_edi_sifende.constraint_l10n_py_sifende_city_code_unique
+msgid "El código de ciudad del catálogo SIFEN debe ser único."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid ""
+"El documento %(name)s fue cancelado en SIFEN y su número no se reutiliza. "
+"Cancele este asiento en Odoo y emita un documento nuevo."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid ""
+"El documento %(name)s ya fue enviado a Sifende y no se puede restablecer a "
+"borrador. Cancélelo con «Cancelar EDI» o anúlelo con una nota de crédito."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El establecimiento %(est)s / punto %(point)s del timbrado %(stamp)s está "
+"inactivo en SIFENDE: actívelo en el panel de Sifende."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El establecimiento %(est)s / punto %(point)s del timbrado %(stamp)s no "
+"existe en SIFENDE."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.constraint,message:l10n_py_edi_sifende.constraint_l10n_py_sifende_webhook_event_event_unique
+msgid "El evento ya fue procesado para este conector."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "El número de documento ya está en uso en SIFENDE."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El número de este documento ya pertenece a uno rechazado por SIFEN y no se "
+"puede reenviar. Inutilice el número desde Facturación Electrónica > "
+"Inutilización de números, cancele este documento (Restablecer a borrador y "
+"Cancelar) y emita uno nuevo. %(detail)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "El número de timbrado debe ser numérico para Sifende."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "El número está inutilizado en SIFENDE y no se puede usar. %(detail)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid ""
+"El receptor necesita dirección, departamento y ciudad: complete la dirección"
+" e indique la «Ciudad SIFEN» en el contacto."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "El secreto anterior deja de valer de inmediato. ¿Rotarlo?"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El timbrado %(odoo)s de Odoo no coincide con el de SIFENDE (%(remote)s)."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "El timbrado de Odoo no coincide con el de SIFENDE. %(detail)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "El timbrado debe ser numérico."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"El timbrado no está vigente en Sifende. Cárguelo o renuévelo en el panel de "
+"Sifende (%(url)s) y pulse «Reintentar»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid ""
+"El webhook está desactivado en Sifende y no avisará a Odoo. Actívelo en el "
+"panel de Sifende, o pulse «Quitar webhook» y regístrelo de nuevo."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "El webhook ya está registrado en Sifende."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "El webhook ya no existe en Sifende. Regístrelo de nuevo."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_responsable_emision__1
+msgid "Emisor de la factura"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__company_id
+msgid "Empresa"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_responsable_emision__3
+msgid "Empresa transportista"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "Entrega %(number)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid "Error HTTP %(status)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_authorization__l10n_py_establishment
+msgid "Establecimiento (OCA)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__event_id
+msgid "Event"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__event_type
+msgid "Event Type"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_sifende_webhook_event
+msgid "Evento de webhook de Sifende procesado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "Factura de exportación"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"Falta completar la configuración del contribuyente en Sifende (dirección, "
+"actividad económica, certificado o CSC). Complétela en el panel de Sifende "
+"(%(url)s) y pulse «Reintentar»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid "Falta el motivo de emisión de la nota."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid "Falta la ciudad de «%s»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_sifende_transport_child
+msgid "Guarda de edición de los hijos del transporte"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/l10n_py_number_inutilization.py:0
+msgid ""
+"Hay %(count)s número(s) en el rango que ya fueron usados en facturas "
+"confirmadas y no fueron rechazadas por SIFEN."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__id
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_receipt_id
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_receipt_id
+msgid "ID de recibo"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_receipt_id
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_move__l10n_py_receipt_id
+msgid "ID único del sistema cliente"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid ""
+"Indique el documento asociado (Grupo H) de la nota: no hay una factura de "
+"origen con CDC de la que tomarlo."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Indique el motivo de emisión de la nota."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Indique la fecha de la factura."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_intento
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_intento
+msgid "Intento de envío a Sifende"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_number_inutilization
+msgid "Inutilización de Números"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.ui.menu,name:l10n_py_edi_sifende.menu_l10n_py_number_inutilization
+msgid "Inutilización de números"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_km_recorrido
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_km_recorrido
+msgid "Kilómetros del recorrido (NRE)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_archivos_pendientes
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_archivos_pendientes
+msgid "L10N Py Sifende Archivos Pendientes"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_cdc_existente
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_cdc_existente
+msgid "L10N Py Sifende Cdc Existente"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_enabled
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_enabled
+msgid "L10N Py Sifende Enabled"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_envio_fallido
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_envio_fallido
+msgid "L10N Py Sifende Envio Fallido"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_event_key
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_event_key
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_number_inutilization__l10n_py_sifende_event_key
+msgid "L10N Py Sifende Event Key"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_frozen
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_frozen
+msgid "L10N Py Sifende Frozen"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_numero_ocupado
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_numero_ocupado
+msgid "L10N Py Sifende Numero Ocupado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_reintento_misma_clave
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_reintento_misma_clave
+msgid "L10N Py Sifende Reintento Misma Clave"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_sandbox
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_sandbox
+msgid "L10N Py Sifende Sandbox"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_ultima_consulta
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_ultima_consulta
+msgid "L10N Py Sifende Ultima Consulta"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid "La URL de Sifende debe usar HTTPS; HTTP solo se admite para localhost."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid ""
+"La URL ya estaba registrada en Sifende, pero el secreto solo se muestra al "
+"crearlo. Use «Rotar secreto» para obtener uno nuevo."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "La faja de numeración está agotada para el timbrado %(timbrado)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/l10n_py_number_inutilization.py:0
+msgid ""
+"La inutilización tiene un envío pendiente de confirmación en Sifende: el "
+"timbrado, el rango y el motivo no se pueden cambiar. Envíela de nuevo tal "
+"como está o elimínela."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid "Las cuotas del plazo de pago no suman el total."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_city__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_sifende_webhook_event__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Listo para emitir: %(ready)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_edi_log
+msgid "Log de Operações EDI Paraguay"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Los datos de pago"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Los datos fiscales"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Los importes y los datos de pago"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__4
+msgid "Maestro"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_tarjeta_marca
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_tarjeta_marca
+msgid "Marca de la tarjeta (SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__2
+msgid "Mastercard"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_authorization__l10n_py_sifende_ultimo_numero_en_uso
+msgid ""
+"Mayor número que Sifende informó como ya usado o inutilizado en este punto "
+"de expedición. La numeración no lo reutiliza ni retrocede."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_motivo_emision
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_motivo_emision
+msgid "Motivo de emisión (SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "No"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"No se pudo contactar a SIFENDE (%(error)s). Al reintentar se usará la misma "
+"clave de idempotencia: no se duplica el documento."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "No se pudo contactar a SIFENDE: %(error)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid "No se pudo obtener el catálogo de SIFENDE: %(error)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_send.py:0
+msgid "No se puede enviar el comprobante fiscal:"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "No tiene permisos para operar el conector de Sifende."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_agent_name
+msgid "Nombre del agente (E994)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "Nota de Remisión"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Nota de Remisión: indique los kilómetros del recorrido."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Nota de Remisión: los datos de transporte son obligatorios."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport_vehicle__sifende_flight_number
+msgid "Número de vuelo (E967)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_cheque_numero
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_cheque_numero
+msgid "Número del cheque (SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__99
+msgid "Otra"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/request_builder.py:0
+msgid "Otros motivos de traslado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move.py:0
+msgid "Pago con tarjeta: elija la marca de la tarjeta."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__5
+msgid "Panal"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_transport__sifende_transporter_document_type__2
+msgid "Pasaporte"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_responsable_emision__2
+msgid "Poseedor de la factura y bienes"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_log__provider
+msgid "Provedor"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__provider_type
+msgid "Proveedor"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_transport_delivery
+msgid "Punto de Entrega"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_authorization__l10n_py_point
+msgid "Punto de expedición (OCA)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "Quitar webhook"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_agent_ruc
+msgid "RUC del agente (E995)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Razón social: %(name)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__6
+msgid "Recupero de costo"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_motivo_emision__7
+msgid "Recupero de gasto"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "Registrar webhook"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_move_form_edi_sifende
+msgid "Renumerar"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_ir_actions_report
+msgid "Report Action"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_sifende_responsable_emision
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_sifende_responsable_emision
+msgid "Responsable de la emisión de la NRE"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__freight_responsibility
+msgid "Responsable del Flete (E905)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "Rotar secreto"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"SIFEN no confirmó la aprobación del evento (estado: %(state)s). Vuelva a "
+"intentarlo en unos minutos."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "SIFEN rechazó el evento."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"SIFENDE no genera una vista previa sin emitir el documento. Use «Enviar a "
+"EDI» para emitirlo."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"SIFENDE no pudo procesar el envío ahora (HTTP %(status)s). Reintente: se "
+"usará la misma clave de idempotencia, sin duplicar el documento."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid ""
+"SIFENDE rechazó la API key (401). Verifique que sea válida y no esté "
+"vencida."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "SIFENDE sigue preparando el KuDE; se reintentará más tarde."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "SIFENDE todavía no tiene el XML de este documento."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "Salida"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__sifende_webhook_secret
+msgid "Secreto del webhook"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "Secreto del webhook rotado y guardado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_edi_connector__provider_type__sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_edi_log__provider__sifende
+msgid "Sifende"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid ""
+"Sifende dejará de avisar a Odoo; el cron seguirá consultando los estados. "
+"¿Quitarlo?"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid ""
+"Sifende exige una URL pública con HTTPS y la URL base de Odoo (web.base.url)"
+" es «%(url)s». Configúrela en Ajustes > Técnico > Parámetros del sistema."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/wizard/account_move_send_edi.py:0
+msgid "Sifende no aceptó el documento"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid ""
+"Sifende todavía no entregó %(label)s de %(name)s. Puede tardar unos minutos:"
+" reintente en un momento. Si continúa, contacte a soporte."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"Sifende ya había recibido esta clave de envío con otros datos. Pulse "
+"«Reintentar»: se enviará con una clave nueva."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_move_form_edi_sifende
+msgid ""
+"Sifende ya tiene ese número. El documento tomará el siguiente número libre "
+"del timbrado y deberá enviarlo de nuevo. ¿Renumerarlo?"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.actions.server,name:l10n_py_edi_sifende.ir_cron_sifende_check_status_ir_actions_server
+msgid "Sifende: verificar estado de documentos"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid ""
+"Sin validez fiscal: SIFEN todavía no aceptó este documento. El comprobante "
+"es el KuDE, que se entrega al figurar Aceptado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "Solo un administrador puede gestionar el webhook."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"Su plan de SIFENDE no permite emitir ahora: %(detail)s Revise la facturación"
+" en %(url)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid ""
+"Suba «Número Desde» del timbrado al siguiente número libre del punto (panel "
+"de Sifende > Numeración) y pulse «Renumerar» en este documento."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "Sí"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_res_partner__l10n_py_sifende_city_id
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_res_users__l10n_py_sifende_city_id
+msgid ""
+"Sólo hace falta si Sifende no reconoce la ciudad del contacto: se envía esta"
+" en lugar de deducirla del nombre."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__timeout
+msgid "Tiempo de espera (segundos)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_authorization_id
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_move__l10n_py_authorization_id
+msgid "Timbrado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_bank_statement_line__l10n_py_authorization_id
+#: model:ir.model.fields,help:l10n_py_edi_sifende.field_account_move__l10n_py_authorization_id
+msgid ""
+"Timbrado utilizado para esta factura. La faja está autorizada por tipo de "
+"documento: una nota de crédito usa un timbrado de NC, no el de la factura "
+"original."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_transport__sifende_transporter_document_type
+msgid "Tipo de documento del transportista (E985)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_transport
+msgid "Transporte de Mercaderías"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/l10n_py_transport.py:0
+msgid "Transporte nuevo"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__l10n_py_transport__freight_responsibility__5
+msgid "Transporte propio (E905)"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__sifende_base_url
+msgid "URL de Sifende"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__sifende_webhook_url
+msgid "URL del webhook"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_transport_vehicle
+msgid "Vehículo de Transporte"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields.selection,name:l10n_py_edi_sifende.selection__account_move__l10n_py_sifende_tarjeta_marca__1
+msgid "Visa"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "Webhook de Sifende"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "Webhook eliminado de Sifende."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_l10n_py_edi_connector__sifende_webhook_id
+msgid "Webhook en Sifende"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector_webhook.py:0
+msgid "Webhook registrado en Sifende: %(url)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_l10n_py_edi_cancel_wizard
+msgid "Wizard para cancelar documento EDI"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model,name:l10n_py_edi_sifende.model_account_move_send_edi_wizard
+msgid "Wizard para enviar factura a EDI"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid "conexión rechazada o interrumpida"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid "el KuDE"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el RUC y el DV del agente"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el RUC y el DV del transportista"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_kude.py:0
+msgid "el XML firmado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el cliente necesita departamento y ciudad (o la «Ciudad SIFEN»)."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el despacho de importación debe tener 16 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el fin del traslado no puede ser anterior al inicio."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el inicio del traslado debe ser posterior al 22/11/2018."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el manifiesto admite hasta 15 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el nombre del agente admite de 4 a 60 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el nombre del chofer admite de 4 a 60 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el nombre del vendedor admite de 4 a 60 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el número de vuelo del vehículo %(number)s debe tener 6 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el receptor no puede ser innominado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el tipo del vehículo %(number)s admite de 4 a 10 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "el vendedor debe identificarse con cédula paraguaya."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "https://api.sifende.com.py"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique al menos un punto de entrega."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique de 1 a 4 vehículos."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique el documento del chofer."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique el domicilio fiscal del transportista."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique el número de documento del transportista."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique el responsable del flete."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique el tipo de documento del transportista."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid ""
+"indique el transportista: nombre de 4 a 60 caracteres, documento y domicilio"
+" fiscal."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique juntas las fechas de inicio y fin del traslado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique la ciudad."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique la dirección de la entrega %(number)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique la dirección de salida."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique la dirección del agente."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique la dirección del chofer."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique la dirección del lugar de provisión."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique las fechas de inicio y fin del traslado."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "indique si el transporte es propio o de un tercero."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/l10n_py_sifende_city.py:0
+msgid "la ciudad %(city)s no pertenece al departamento %(department)s"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/l10n_py_sifende_city.py:0
+msgid "la ciudad con código %(code)s no existe en el catálogo de SIFEN"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid ""
+"la cédula del vendedor debe tener de 5 a 12 dígitos, sin puntos ni guiones."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "la importación exige el despacho de importación."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "la marca del vehículo %(number)s admite hasta 10 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "la matrícula del vehículo %(number)s admite de 6 a 7 caracteres."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "los kilómetros del recorrido no pueden pasar de %(max)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid ""
+"los ítems deben ser exentos de IVA; la línea \"%(line)s\" tiene IVA "
+"%(rates)s."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "lugar de provisión"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/edi_connector.py:0
+msgid "sin estado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "sk_..."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "sólo se admite la constancia de no contribuyente, no «%(type)s»."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/services/client.py:0
+msgid "tiempo de espera agotado"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#. odoo-python
+#: code:addons/l10n_py_edi_sifende/models/account_move_remision.py:0
+msgid "vendedor"
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifende.view_edi_connector_form_sifende
+msgid "whsec_..."
+msgstr ""
+
+#. module: l10n_py_edi_sifende
+#: model:ir.model.fields,field_description:l10n_py_edi_sifende.field_account_authorization__l10n_py_sifende_ultimo_numero_en_uso
+msgid "Último número en uso en Sifende"
+msgstr ""

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form_identity_sifende" model="ir.ui.view">
+        <field name="name">res.partner.form.identity.sifende</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="l10n_py_base.l10n_py_base_res_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='vat_vies_container']" position="after">
+                <xpath expr="//field[@name='l10n_py_taxpayer_type']" position="move" />
+                <field
+                    name="l10n_py_doc_type"
+                    invisible="country_id != %(base.py)d or l10n_py_taxpayer_type != '2'"
+                />
+                <field
+                    name="l10n_py_doc_number"
+                    invisible="country_id != %(base.py)d or l10n_py_taxpayer_type != '2'"
+                />
+                <xpath
+                    expr="//field[@name='l10n_py_activity_description']"
+                    position="move"
+                />
+                <field
+                    name="l10n_py_sifende_city_id"
+                    invisible="country_id != %(base.py)d"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

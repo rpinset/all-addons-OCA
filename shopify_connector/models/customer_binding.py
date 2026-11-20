@@ -31,6 +31,11 @@ class ShopifyCustomer(models.Model):
     )
     tags = fields.Text(readonly=True)
     tax_exempt = fields.Boolean(readonly=True)
+    initial_seed_pending = fields.Boolean(
+        readonly=True,
+        copy=False,
+        help="Retry marker for a customer created in Odoo by its first import.",
+    )
     address_binding_ids = fields.One2many(
         "shopify.customer.address",
         "customer_binding_id",

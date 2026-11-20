@@ -522,12 +522,25 @@ class L10nBrPurchaseBaseTest(TransactionCase):
 
     def test_purchase_report(self):
         """Test Purchase Report"""
-        self.env["purchase.report"].read_group(
-            [("product_id", "=", self.env.ref("product.product_product_12").id)],
-            ["qty_ordered", "price_average:avg"],
-            ["product_id"],
+        lines = self.po_products.order_line.filtered(lambda line: not line.display_type)
+        lines[0].discount_value = 5.0
+        self.env.flush_all()
+        rows = (
+            self.env["purchase.report"]
+            .with_company(self.po_products.company_id)
+            .search([("order_id", "=", self.po_products.id)])
         )
-        # TODO: Algo a ser validado?
+        for fname in ("icms_value", "ipi_value", "pis_value", "cofins_value"):
+            self.assertAlmostEqual(
+                sum(rows.mapped(fname)), sum(lines.mapped(fname)), places=2
+            )
+        # price_total already has the discount, IPI, ST and the other costs
+        self.assertAlmostEqual(
+            sum(rows.mapped("total_with_taxes")),
+            sum(lines.mapped("price_total"))
+            + sum(lines.mapped("amount_tax_withholding")),
+            places=2,
+        )
 
     def test_form_purchase(self):
         """Test Purchase with Form"""
@@ -544,11 +557,27 @@ class L10nBrPurchaseBaseTest(TransactionCase):
         purchase_form.save()
 
     def test_get_view(self):
+        """Executable spec of the fiscal fields injection contract: the fiscal
+        drivers (operation, tax ids) are injected into the order line views,
+        while the C4 census "dead" fiscal computes are pruned out of them."""
         arch, models = self.po_products._get_view()
-        self.assertTrue(
-            arch.findall(".//field[@name='fiscal_operation_id']"),
+        injected = {el.get("name") for el in arch.findall(".//field")}
+        self.assertIn(
+            "fiscal_operation_id",
+            injected,
             "Error to included Operation Line from Purchase Order Line.",
         )
+        self.assertIn("icms_tax_id", injected)
+        for dead in (
+            "ii_percent",
+            "cofins_wh_base_type",
+            "pis_wh_base_type",
+        ):
+            self.assertNotIn(
+                dead,
+                injected,
+                f"Pruned dead fiscal field {dead} must not be injected.",
+            )
 
     def test_fields_freight_insurance_other_costs(self):
         """Test fields Freight, Insurance and Other Costs when

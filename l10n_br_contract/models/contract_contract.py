@@ -24,8 +24,8 @@ class ContractContract(models.Model):
     )
 
     contract_recalculate_taxes_before_invoice = fields.Boolean(
-        string="Recalculate taxes before invoicing",
-        default="company.contract_recalculate_taxes_before_invoice",
+        string="Recalculate Fiscal Operation Line Before Invoicing",
+        default=True,
     )
 
     @api.model
@@ -90,6 +90,13 @@ class ContractContract(models.Model):
     @api.model
     def _get_fiscal_lines_field_name(self):
         return "contract_line_ids"
+
+    @api.model
+    def _get_view(self, view_id=None, view_type="form", **options):
+        arch, view = super()._get_view(view_id, view_type, **options)
+        if view_type == "form" and self.env.company.country_id.code == "BR":
+            arch = self.env["contract.line"].inject_fiscal_fields(arch)
+        return arch, view
 
     def _prepare_invoice(self, date_invoice, journal=None):
         self.ensure_one()
@@ -196,7 +203,13 @@ class ContractContract(models.Model):
                 )
                 doc_type_id = fiscal_document_type.id
 
-                key = (invoice_val.get("partner_id"), doc_type_id)
+                # one invoice per fiscal document key
+                split_key = (
+                    contract_line_id._get_document_split_key(fiscal_document_type)
+                    if contract_line_id
+                    else (doc_type_id,)
+                )
+                key = (invoice_val.get("partner_id"),) + split_key
 
                 if key not in groups:
                     inv_to_append = base_header.copy()

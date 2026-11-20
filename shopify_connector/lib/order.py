@@ -9,6 +9,8 @@ from collections.abc import Iterable
 from decimal import ROUND_DOWN, Decimal, InvalidOperation
 from typing import Any
 
+from .customer import normalize_customer_address
+
 
 class ShopifyOrderPayloadError(ValueError):
     """Raised when an order cannot be represented without guessing."""
@@ -175,7 +177,33 @@ def _normalise_line(payload: dict[str, Any], currency: str) -> dict[str, Any]:
             "currentTotalSet",
         )
     )
-    if all_discount_unit:
+    raw_allocations = payload.get("discountAllocations")
+    if raw_allocations is None:
+        raw_allocations = payload.get("discount_allocations")
+    discount_allocations = [
+        _discount_allocation(item, currency) for item in _nodes(raw_allocations)
+    ]
+    if (
+        all_discount_unit
+        and raw_allocations is not None
+        and quantity == original_quantity
+    ):
+        # The discounted unit price is rounded to the cent, so multiplying it
+        # by the quantity can miss the line total by up to half a cent a unit.
+        discounted_total = {}
+        for side in ("shop", "presentment"):
+            amount = decimal_amount(unit[side]["amount"]) * quantity - sum(
+                (
+                    decimal_amount(item["amount"][side]["amount"])
+                    for item in discount_allocations
+                ),
+                Decimal("0"),
+            )
+            discounted_total[side] = {
+                "amount": format(amount, "f"),
+                "currency": unit[side]["currency"],
+            }
+    elif all_discount_unit:
         normalized_unit = money_bag(all_discount_unit, fallback_currency=currency)
         discounted_total = {
             side: {
@@ -244,13 +272,7 @@ def _normalise_line(payload: dict[str, Any], currency: str) -> dict[str, Any]:
         ),
         "unit_price": unit,
         "discounted_total": discounted_total,
-        "discount_allocations": [
-            _discount_allocation(item, currency)
-            for item in _nodes(
-                payload.get("discountAllocations")
-                or payload.get("discount_allocations")
-            )
-        ],
+        "discount_allocations": discount_allocations,
         "tax_lines": [
             _tax_line(item, currency)
             for item in _nodes(payload.get("taxLines") or payload.get("tax_lines"))
@@ -462,6 +484,93 @@ def _risk_level(payload: dict[str, Any]) -> str:
     return max(values or ["UNKNOWN"], key=lambda value: priority.get(value, 0))
 
 
+def _draft_order_discount(payload: dict[str, Any], currency: str) -> dict[str, Any]:
+    """Return the order-level discount of a draft order, or an empty dict."""
+    discount = payload.get("appliedDiscount") or payload.get("applied_discount")
+    if not isinstance(discount, dict):
+        return {}
+    amount = _money(
+        discount, "amountSet", "amount_set", "amount", fallback_currency=currency
+    )
+    if not any(
+        decimal_amount(amount[side]["amount"]) for side in ("shop", "presentment")
+    ):
+        return {}
+    return {
+        "amount": amount,
+        "title": str(discount.get("title") or discount.get("description") or ""),
+    }
+
+
+def apply_draft_order_discount(
+    order: dict[str, Any], quanta: dict[str, Any]
+) -> dict[str, Any]:
+    """Spread the order-level discount of a draft order over its lines.
+
+    Shopify leaves this discount out of the draft line totals and only
+    allocates it to the lines when the draft becomes an order. Allocate it
+    the same way, by the discounted total of each line, so that the lines add
+    up to the draft subtotal. ``quanta`` gives the smallest unit of the shop
+    and presentment currencies.
+    """
+    discount = order.get("order_discount") or {}
+    targets = [
+        index
+        for index, line in enumerate(order["lines"])
+        if line["quantity"] > 0 and not line["gift_card"]
+    ]
+    if not discount or not targets:
+        return order
+    lines = [dict(line) for line in order["lines"]]
+    shares = {
+        side: allocate_amount(
+            discount["amount"][side]["amount"],
+            [lines[index]["discounted_total"][side]["amount"] for index in targets],
+            quanta[side],
+        )
+        for side in ("shop", "presentment")
+    }
+    for position, index in enumerate(targets):
+        line = lines[index]
+        discounted_total = {}
+        allocation = {}
+        for side in ("shop", "presentment"):
+            share = shares[side][position]
+            money = line["discounted_total"][side]
+            discounted_total[side] = {
+                "amount": format(decimal_amount(money["amount"]) - share, "f"),
+                "currency": money["currency"],
+            }
+            allocation[side] = {
+                "amount": format(share, "f"),
+                "currency": discount["amount"][side]["currency"],
+            }
+        line["discounted_total"] = discounted_total
+        line["discount_allocations"] = [
+            *line["discount_allocations"],
+            {
+                "amount": allocation,
+                "code": "",
+                "title": discount["title"],
+                "target_type": "LINE_ITEM",
+            },
+        ]
+    return {**order, "lines": lines, "order_discount": {}}
+
+
+def _order_address(payload: dict[str, Any], *keys: str) -> dict[str, Any] | None:
+    """Normalise the shipping or billing address of a GraphQL or REST order."""
+
+    for key in keys:
+        address = payload.get(key)
+        if isinstance(address, dict) and address:
+            normalized = normalize_customer_address(address)
+            normalized.pop("id")
+            normalized.pop("is_default")
+            return normalized
+    return None
+
+
 def normalize_order_payload(
     payload: dict[str, Any], *, is_draft: bool = False
 ) -> dict[str, Any]:
@@ -555,6 +664,7 @@ def normalize_order_payload(
         },
         "is_draft": is_draft,
         "draft_status": str(payload.get("status") or "").upper() if is_draft else "",
+        "order_discount": _draft_order_discount(payload, currency) if is_draft else {},
         "completed_order_id": shopify_gid(
             "Order", (payload.get("order") or {}).get("id")
         ),
@@ -569,6 +679,10 @@ def normalize_order_payload(
             or (payload.get("billing_address") or {}).get("country_code")
             or ""
         ).upper(),
+        "shipping_address": _order_address(
+            payload, "shippingAddress", "shipping_address"
+        ),
+        "billing_address": _order_address(payload, "billingAddress", "billing_address"),
         "email": str(payload.get("email") or payload.get("contactEmail") or ""),
         "note": str(payload.get("note2") or payload.get("note") or ""),
         "tags": [

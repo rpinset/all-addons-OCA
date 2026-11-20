@@ -1,7 +1,11 @@
 # pylint: disable=consider-merging-classes-inherited
 
+from datetime import timedelta
+
 from odoo import api, fields, models
 from odoo.exceptions import UserError
+
+from odoo.addons.queue_job.exception import RetryableJobError
 
 from ..graphql.inventory import (
     INVENTORY_LEVEL_QUERY,
@@ -13,15 +17,19 @@ from ..lib.bulk import ShopifyBulkRunner
 from ..lib.client import ShopifyUserError
 from ..lib.inventory import (
     apply_negative_policy,
-    available_quantity,
     build_inventory_set_payload,
     diff_inventory_levels,
     is_stale_compare_error,
+    level_quantities,
     normalize_inventory_bulk_levels,
     quantity_for_basis,
     should_ignore_echo,
 )
 from .webhook_event import WEBHOOK_HANDLERS
+
+#: How long an inventory change waits for the fulfillments of its variant
+#: that are still being recorded, before it is applied anyway.
+FULFILLMENT_WAIT = timedelta(minutes=10)
 
 
 def _shopify_gid(value, resource):
@@ -278,6 +286,78 @@ class ShopifyInstanceInventorySync(models.Model):
             },
         }
 
+    def _shopify_fulfillments_pending(self, variant, location):
+        """Whether Shopify may hold a fulfillment of the variant at the location
+        that the connector has not recorded yet.
+
+        The connector records a fulfillment when the job that pushes it ends,
+        or when it imports one created in Shopify after its webhook.
+        """
+        self.ensure_one()
+        jobs = (
+            self.env["queue.job"]
+            .sudo()
+            .search_fetch(
+                [
+                    (
+                        "state",
+                        "in",
+                        ("pending", "enqueued", "started", "wait_dependencies"),
+                    ),
+                    "|",
+                    "|",
+                    ("identity_key", "=like", f"shopify.fulfillment.push.{self.id}.%"),
+                    (
+                        "identity_key",
+                        "=like",
+                        f"shopify.fulfillment.import.{self.id}.%",
+                    ),
+                    (
+                        "identity_key",
+                        "=like",
+                        f"shopify.fulfillment.webhook.{self.id}.%",
+                    ),
+                ],
+                ["identity_key"],
+            )
+        )
+        pickings = []
+        webhook_ids = []
+        for job in jobs:
+            # shopify.fulfillment.<kind>.<store>.<...>
+            parts = job.identity_key.split(".")
+            if parts[2] == "push":
+                pickings.append(int(parts[-1]))
+            elif parts[2] == "webhook":
+                webhook_ids.append(".".join(parts[4:]))
+            else:
+                # The fulfillments of an order imported after them: which
+                # lines they hold is only known once they are imported.
+                return True
+        if pickings and self.env["stock.move"].sudo().search_count(
+            [
+                ("picking_id", "in", pickings),
+                ("product_id", "=", variant.odoo_id.id),
+                ("location_id", "child_of", location.odoo_location_id.id),
+            ],
+            limit=1,
+        ):
+            return True
+        events = (
+            self.env["shopify.webhook.event"]
+            .sudo()
+            .search(
+                [
+                    ("instance_id", "=", self.id),
+                    ("topic", "=like", "fulfillments/%"),
+                    "|",
+                    ("state", "in", ("received", "queued")),
+                    ("webhook_id", "in", webhook_ids),
+                ]
+            )
+        )
+        return any(event._fulfillment_holds(variant, location) for event in events)
+
 
 class ShopifyProductVariantInventorySync(models.Model):
     _inherit = "shopify.product.variant"
@@ -401,6 +481,7 @@ class ShopifyProductVariantInventorySync(models.Model):
                 }
             )
             return False
+        compared = remote_quantity
         try:
             self._execute_inventory_set(
                 client, location_binding, desired, remote_quantity
@@ -420,15 +501,23 @@ class ShopifyProductVariantInventorySync(models.Model):
                 )
                 return False
             self._execute_inventory_set(client, location_binding, desired, refreshed)
+            compared = refreshed
         pushed_at = fields.Datetime.now()
-        state.write(
-            {
-                "last_pushed_quantity": desired,
-                "last_pushed_at": pushed_at,
-                "last_shopify_quantity": desired,
-                "last_sync_date": pushed_at,
-            }
-        )
+        values = {
+            "last_pushed_quantity": desired,
+            "last_pushed_at": pushed_at,
+            "last_shopify_quantity": desired,
+            "last_sync_date": pushed_at,
+        }
+        if state.shopify_snapshot_at:
+            # Setting Shopify's available quantity moves its on-hand stock by
+            # the same amount. Recording it keeps the webhook that follows
+            # from bringing Odoo's own push back as a change made in Shopify.
+            values["last_shopify_on_hand"] = (
+                state.last_shopify_on_hand + desired - compared
+            )
+            values["shopify_snapshot_at"] = pushed_at
+        state.write(values)
         self.instance_id._write_log(
             entity="inventory",
             direction="export",
@@ -450,6 +539,14 @@ class ShopifyProductVariantInventorySync(models.Model):
 
     def _read_shopify_inventory_quantity(self, client, location_binding):
         self.ensure_one()
+        quantities = self._read_shopify_inventory_level(client, location_binding)
+        if not quantities:
+            return None
+        return quantities.get("available")
+
+    def _read_shopify_inventory_level(self, client, location_binding):
+        """Shopify's quantities of this variant at the location, by name."""
+        self.ensure_one()
         data = client.execute(
             INVENTORY_LEVEL_QUERY,
             {
@@ -463,10 +560,15 @@ class ShopifyProductVariantInventorySync(models.Model):
         if not item.get("tracked"):
             self.inventory_tracked = False
             return None
-        level = item.get("inventoryLevel")
-        if not level:
-            return None
-        return available_quantity(level)
+        return level_quantities(item.get("inventoryLevel"))
+
+    def _odoo_on_hand_quantity(self, location_binding):
+        """Odoo's on-hand stock of this variant at the mapped location."""
+        self.ensure_one()
+        product = self.odoo_id.with_company(self.instance_id.company_id).with_context(
+            location=location_binding.odoo_location_id.id
+        )
+        return int(product.qty_available)
 
     def _execute_inventory_set(
         self, client, location_binding, desired, compare_quantity
@@ -603,6 +705,18 @@ class StockQuantShopifyInventory(models.Model):
 class ShopifyWebhookInventoryHandlers(models.Model):
     _inherit = "shopify.webhook.event"
 
+    def _fulfillment_holds(self, variant, location):
+        """Whether this fulfillment webhook holds the variant at the location."""
+        self.ensure_one()
+        payload = self.payload or {}
+        location_id = payload.get("location_id")
+        if location_id and _shopify_gid(location_id, "Location") != location.shopify_id:
+            return False
+        return any(
+            _shopify_gid(line.get("variant_id"), "ProductVariant") == variant.shopify_id
+            for line in payload.get("line_items") or []
+        )
+
     def _handle_inventory_level_update(self):
         self.ensure_one()
         instance = self.instance_id
@@ -680,8 +794,59 @@ class ShopifyWebhookInventoryHandlers(models.Model):
                 record=variant,
             )
             return
-        current = variant._odoo_inventory_quantity(location, apply_export_policy=False)
-        delta = int(quantity) - current
+        # The webhook carries only the available quantity, which an order
+        # changes as much as a count does. Orders leave Shopify's on-hand
+        # quantity alone until they are fulfilled, and the connector takes
+        # each fulfillment out of the recorded on-hand stock, so what is left
+        # of its change is a count, a receipt or a correction made in Shopify.
+        quantities = variant._read_shopify_inventory_level(
+            instance._shopify_client(), location
+        )
+        on_hand = (quantities or {}).get("on_hand")
+        if on_hand is not None and state.shopify_snapshot_at:
+            delta = on_hand - state.last_shopify_on_hand
+        elif on_hand is not None:
+            # Nothing recorded yet to compare with: Odoo's on-hand stock has
+            # to be Shopify's, and an order placed but not fulfilled is still
+            # in both.
+            delta = on_hand - variant._odoo_on_hand_quantity(location)
+        else:
+            # Shopify gave no on-hand quantity: the webhook's available
+            # quantity is all there is to go by.
+            current = variant._odoo_inventory_quantity(
+                location, apply_export_policy=False
+            )
+            delta = int(quantity) - current
+        if delta and instance._shopify_fulfillments_pending(variant, location):
+            # Shopify lowers its on-hand stock as soon as it fulfills, and
+            # until the connector records that fulfillment it reads as a
+            # count. The change is applied once none is pending, or once it
+            # has waited long enough for a stuck job not to hold it back.
+            if fields.Datetime.now() - self.create_date < FULFILLMENT_WAIT:
+                raise RetryableJobError(
+                    self.env._(
+                        "Shopify inventory of %(variant)s at %(location)s waits "
+                        "for its fulfillments still being recorded.",
+                        variant=variant.odoo_id.display_name,
+                        location=location.name,
+                    ),
+                    seconds=30,
+                    ignore_retry=True,
+                )
+            instance._write_log(
+                entity="inventory",
+                direction="import",
+                level="warning",
+                message=self.env._(
+                    "Shopify inventory of %(variant)s at %(location)s waited "
+                    "%(minutes)s minutes for its fulfillments still being "
+                    "recorded, and is applied without them.",
+                    variant=variant.odoo_id.display_name,
+                    location=location.name,
+                    minutes=int(FULFILLMENT_WAIT.total_seconds() // 60),
+                ),
+                record=variant,
+            )
         if delta:
             self.env["stock.quant"].with_company(instance.company_id).with_context(
                 skip_shopify_inventory_export=True,
@@ -691,23 +856,32 @@ class ShopifyWebhookInventoryHandlers(models.Model):
                 location.odoo_location_id,
                 delta,
             )
-        state.write(
-            {
-                "last_shopify_quantity": int(quantity),
-                "last_sync_date": fields.Datetime.now(),
-            }
-        )
+        values = state._snapshot_values(quantities)
+        values.setdefault("last_shopify_quantity", int(quantity))
+        state.write(values)
+        if delta:
+            message = self.env._(
+                "Applied Shopify inventory change %(delta)+d for %(variant)s at "
+                "%(location)s (available %(quantity)s).",
+                delta=delta,
+                variant=variant.odoo_id.display_name,
+                location=location.name,
+                quantity=int(quantity),
+            )
+        else:
+            message = self.env._(
+                "Shopify inventory of %(variant)s at %(location)s changed through "
+                "its orders (available %(quantity)s); Odoo records them with the "
+                "order and its delivery.",
+                variant=variant.odoo_id.display_name,
+                location=location.name,
+                quantity=int(quantity),
+            )
         instance._write_log(
             entity="inventory",
             direction="import",
             level="info",
-            message=self.env._(
-                "Applied Shopify inventory %(quantity)s for %(variant)s at "
-                "%(location)s.",
-                quantity=int(quantity),
-                variant=variant.odoo_id.display_name,
-                location=location.name,
-            ),
+            message=message,
             record=variant,
         )
 

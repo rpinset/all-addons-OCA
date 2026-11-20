@@ -18,6 +18,7 @@
                 <field name="dashboard_fulfillments" />
                 <field name="dashboard_financial" />
                 <field name="dashboard_queue_backlog" />
+                <field name="dashboard_failed_jobs" />
                 <field name="dashboard_recent_errors" />
                 <field name="dashboard_webhooks" />
                 <field name="dashboard_drift_crons" />
@@ -76,6 +77,12 @@
                             <strong>Shopify queue backlog:</strong>
                             <field name="dashboard_queue_backlog" />
                         </div>
+                        <div
+                            t-att-class="record.dashboard_failed_jobs.raw_value ? 'text-danger' : ''"
+                        >
+                            <strong>Failed jobs:</strong>
+                            <field name="dashboard_failed_jobs" />
+                        </div>
                         <div class="mt-2">
                             <strong>Financial</strong>
                             <pre class="small text-wrap">
@@ -120,6 +127,13 @@
                                 type="object"
                                 string="Open Errors"
                                 class="btn btn-secondary"
+                            />
+                            <button
+                                name="action_open_failed_jobs"
+                                type="object"
+                                string="Open Failed Jobs"
+                                class="btn btn-secondary"
+                                groups="queue_job.group_queue_job_manager"
                             />
                             <button
                                 name="action_check_webhook_health"
