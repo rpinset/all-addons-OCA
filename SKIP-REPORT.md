@@ -1,12 +1,12 @@
 # Skipped repos — branch `17.0`
 
-Generated 2026-11-17 12:04 UTC
+Generated 2026-11-20 22:04 UTC
 
-Total skipped: **138**
+Total skipped: **139**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **41**
+Count: **42**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -16,6 +16,7 @@ Count: **41**
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [17.0](https://github.com/OCA/connector-magento-php-extension/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [17.0](https://github.com/OCA/connector-mercadolibre/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [17.0](https://github.com/OCA/connector-shopify/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [17.0](https://github.com/OCA/edi-framework-wms/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [17.0](https://github.com/OCA/l10n-australia/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | [17.0](https://github.com/OCA/maintainer-tools/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [mass-mailing](https://github.com/OCA/mass-mailing) | [17.0](https://github.com/OCA/mass-mailing/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |

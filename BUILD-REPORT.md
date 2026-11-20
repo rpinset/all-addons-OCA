@@ -1,6 +1,6 @@
 # Build report — `17.0`
 
-Generated 2026-11-17 12:04 UTC
+Generated 2026-11-20 22:04 UTC
 
 ## Skipped repos
 
@@ -39,6 +39,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
 | [infrastructure](https://github.com/OCA/infrastructure) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |

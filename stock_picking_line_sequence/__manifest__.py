@@ -6,7 +6,7 @@
 {
     "name": "Stock picking lines with sequence number",
     "summary": "Manages the order of stock moves by displaying its sequence",
-    "version": "17.0.1.0.1",
+    "version": "17.0.1.1.0",
     "category": "Warehouse Management",
     "author": "Camptocamp, "
     "Eficent, "
@@ -18,6 +18,7 @@
     "data": [
         "views/stock_picking_views.xml",
         "report/report_deliveryslip.xml",
+        "report/report_picking.xml",
     ],
     "post_init_hook": "post_init_hook",
     "installable": True,
