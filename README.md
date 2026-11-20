@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-11-17 12:02 UTC** (elapsed 70s)
+Last build: **2026-11-20 22:04 UTC** (elapsed 161s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **150**
+- Skipped repos (no branch / no module): **151**
 
 ## Integrated repos
 
@@ -61,7 +61,7 @@ Last build: **2026-11-17 12:02 UTC** (elapsed 70s)
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | 4 | f2c808b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 97256e8 2025-06-05 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 3 | e6b142a 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-france](https://github.com/OCA/l10n-france) | 18 | 7100ac8 2026-01-20 OCA-git-bot [BOT] post-merge updates |
+| [l10n-france](https://github.com/OCA/l10n-france) | 18 | a419b15 2026-11-17 Weblate Update translation files |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 5 | 95c5cc9 2025-10-07 Weblate Update translation files |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 1 | dfdea67 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 3 | fbb9ae9 2025-02-02 oca-git-bot [IMP] update dotfiles |
@@ -116,13 +116,13 @@ Last build: **2026-11-17 12:02 UTC** (elapsed 70s)
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 60 | f710c14 2026-10-01 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 79 | 1976215 2026-07-23 OCA-git-bot [BOT] post-merge updates |
-| [stock-weighing](https://github.com/OCA/stock-weighing) | 14 | 0fbad2b 2026-04-20 Weblate Update translation files |
+| [stock-weighing](https://github.com/OCA/stock-weighing) | 14 | c668ac3 2026-11-18 OCA-git-bot [BOT] post-merge updates |
 | [storage](https://github.com/OCA/storage) | 13 | 1ea7f73 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [survey](https://github.com/OCA/survey) | 19 | 3ab2f0d 2026-07-28 mymage Translated using Weblate (Italian) |
 | [timesheet](https://github.com/OCA/timesheet) | 19 | ce46fb5 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [vertical-association](https://github.com/OCA/vertical-association) | 7 | f8bcf39 2025-06-21 mymage Translated using Weblate (Italian) |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 9690e36 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 0ea3f0d 2026-11-15 mymage Translated using Weblate (Italian) |
+| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 78b9dbc 2026-11-17 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 1 | 9debad8 2026-03-27 OCA-git-bot [ADD] setup.py |
 | [web](https://github.com/OCA/web) | 53 | 0503b0a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [web-api](https://github.com/OCA/web-api) | 1 | 0102039 2025-06-04 OCA-git-bot [UPD] addons table in README.md |

@@ -3069,15 +3069,15 @@ addon | version | maintainers | summary
 [l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 15.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant Factur-X invoices
 [l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add checks on sale orders for Chorus Pro
 [l10n_fr_cog](l10n_fr_cog/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Code Officiel Géographique (COG) on countries
-[l10n_fr_das2](l10n_fr_das2/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DAS2 (France)
+[l10n_fr_das2](l10n_fr_das2/) | 15.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DAS2 (France)
 [l10n_fr_department](l10n_fr_department/) | 15.0.1.2.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_ecotaxe](l10n_fr_ecotaxe/) | 15.0.1.0.0 |  | Use Ecotaxe in French localisation contexte
 [l10n_fr_ecotaxe_product](l10n_fr_ecotaxe_product/) | 15.0.1.0.0 |  | Move Ecotax management from templates to products
 [l10n_fr_ecotaxe_sale](l10n_fr_ecotaxe_sale/) | 15.0.1.0.0 |  | Sale Ecotaxe used in French localisation contexte
-[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DEB (Déclaration d'Échange de Biens) for France
+[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 15.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DEB (Déclaration d'Échange de Biens) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 15.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Module for Intrastat service reporting (DES) for France
-[l10n_fr_siret](l10n_fr_siret/) | 15.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | French company identity numbers SIRET/SIREN/NIC
+[l10n_fr_siret](l10n_fr_siret/) | 15.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | French company identity numbers SIRET/SIREN/NIC
 [l10n_fr_state](l10n_fr_state/) | 15.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Populate Database with French States (Régions)
 
 [//]: # (end addons)
@@ -6923,7 +6923,7 @@ addon | version | maintainers | summary
 [sale_stock_weighing](sale_stock_weighing/) | 15.0.1.0.0 |  | Weight assistant extension sales
 [stock_picking_batch_weighing](stock_picking_batch_weighing/) | 15.0.1.0.1 |  | Launch the weighing assistant from batch pickings
 [stock_secondary_unit_weighing](stock_secondary_unit_weighing/) | 15.0.1.0.0 |  | Show secondary unit info in the weighing assistant
-[stock_weighing](stock_weighing/) | 15.0.2.5.0 |  | Weighing assistant for stock operations
+[stock_weighing](stock_weighing/) | 15.0.2.5.1 |  | Weighing assistant for stock operations
 [stock_weighing_auto_create_lot](stock_weighing_auto_create_lot/) | 15.0.1.0.0 |  | Allow to create lots from the weighing kanban cards
 [stock_weighing_auto_create_lot_config](stock_weighing_auto_create_lot_config/) | 15.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Allow to configure the lots created
 [stock_weighing_auto_package](stock_weighing_auto_package/) | 15.0.1.1.0 |  | Auto create package for every weighing operation
