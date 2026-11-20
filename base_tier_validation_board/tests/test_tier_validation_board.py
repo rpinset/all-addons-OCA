@@ -163,6 +163,19 @@ class TierValidationBoard(CommonTierValidation):
         )
         self.assertFalse(no_action)
 
+    def test_tier_review_dashboard_action_for_non_admin(self):
+        """A board user who is not an administrator gets the action too:
+        reading ir.actions.act_window is restricted to administrators."""
+        group = self.env.ref("base_tier_validation_board.group_show_tier_review_board")
+        self.test_user_2.group_ids += group
+        self.assertFalse(self.test_user_2.has_group("base.group_system"))
+        action = (
+            self.env["res.users"]
+            .with_user(self.test_user_2)
+            .tier_review_dashboard_action()
+        )
+        self.assertEqual(action.get("res_model"), "tier.review")
+
     def test_search_filters_by_user_acl(self):
         """The `_search` override hides reviews whose underlying record
         the current user cannot read. The standard tester model has a

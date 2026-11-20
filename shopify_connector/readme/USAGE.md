@@ -7,6 +7,13 @@ configuration or data, select error bindings, and choose **Retry Failed
 Shopify Bindings**. Resetting to pending clears the state without scheduling
 work.
 
+When Shopify edits or cancels an order that Odoo already delivered, the order
+binding goes to error for manual resolution. Handle the change in Odoo, for
+example with a return or a credit note, then choose **Mark as Handled** on the
+order binding. Later imports keep the Odoo order lines, mark the refunds of
+that change as synced, and apply only new changes such as tags or notes. A
+further edit of the order lines goes to error again.
+
 Tax lines with the same rate on one order line are added together before the
 tax mapping lookup. For example, an order line with a 1% city tax and a 1%
 transit tax needs a tax mapping for 0.02. If you mapped 0.01 to a 2% tax as a

@@ -6,6 +6,8 @@ from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Command
 
+from odoo.addons.queue_job.exception import RetryableJobError
+
 from ..graphql.customer import (
     CATALOGS_QUERY,
     COMPANIES_QUERY,
@@ -271,7 +273,10 @@ class ShopifyCustomerSync(models.Model):
                 ],
                 limit=1,
             )
-            partner = company_contact.odoo_id or self._match_partner(instance, customer)
+            partner = company_contact.odoo_id
+            if not partner:
+                self._lock_partner_match(instance, customer)
+                partner = self._match_partner(instance, customer)
             is_new_partner = not partner
             if is_new_partner:
                 partner = (
@@ -341,6 +346,41 @@ class ShopifyCustomerSync(models.Model):
         if not customer:
             return False
         return self._job_import_customer(instance.id, customer)
+
+    def _partner_match_lock_key(self, instance, customer):
+        """Return the advisory lock key for matching this customer to a partner.
+
+        The key is the company plus the e-mail, or the phone without an e-mail.
+        It is False when the customer has neither.
+        """
+        company = instance.company_id
+        email = normalize_email(customer["email"])
+        if email:
+            return f"shopify.customer.match.{company.id}.email.{email}"
+        phone = normalize_phone(customer["phone"], company.country_id.phone_code)
+        if phone:
+            return f"shopify.customer.match.{company.id}.phone.{phone}"
+        return False
+
+    def _lock_partner_match(self, instance, customer):
+        # Two stores can import the same person at the same moment. Their
+        # jobs do not see each other's new partner yet, so both would create
+        # one. Only one job may match a given e-mail or phone at a time.
+        lock_key = self._partner_match_lock_key(instance, customer)
+        if not lock_key:
+            return
+        # The single-key form does not overlap the per-store two-key locks.
+        self.env.cr.execute(
+            "SELECT pg_try_advisory_xact_lock(hashtext(%s))", (lock_key,)
+        )
+        if not self.env.cr.fetchone()[0]:
+            raise RetryableJobError(
+                self.env._(
+                    "Another job is matching a contact for Shopify customer %s.",
+                    customer["id"],
+                ),
+                seconds=5,
+            )
 
     def _match_partner(self, instance, customer):
         partner_model = self.env["res.partner"].with_context(active_test=False)

@@ -193,6 +193,44 @@ class TestShopifyPosImport(TransactionCase):
         self.assertTrue(order.picking_ids)
         self.assertTrue(all(picking.state == "done" for picking in order.picking_ids))
 
+    def test_pos_delivery_is_not_pushed_to_shopify(self):
+        # Shopify already fulfilled the POS order. The import validates its
+        # delivery without a fulfillment, and must not send it back.
+        self.instance.write(
+            {
+                "pos_enabled": True,
+                "pos_auto_confirm": True,
+                "pos_auto_fulfill": True,
+            }
+        )
+        self.env["stock.quant"]._update_available_quantity(
+            self.product, self.warehouse.lot_stock_id, 1
+        )
+
+        binding_id = self.env["shopify.order"]._job_import_order(
+            self.instance.id, self._payload(813)
+        )
+        self.env["shopify.order"]._job_import_order(
+            self.instance.id, self._payload(813)
+        )
+        binding = self.env["shopify.order"].browse(binding_id)
+        picking = binding.odoo_id.picking_ids
+
+        self.assertEqual(binding.state, "synced")
+        self.assertEqual(picking.state, "done")
+        self.assertFalse(picking.shopify_push_pending)
+        push_jobs = self.env["queue.job"].search(
+            [
+                (
+                    "identity_key",
+                    "=",
+                    f"shopify.fulfillment.push.{self.instance.id}."
+                    f"{binding.id}.{picking.id}",
+                )
+            ]
+        )
+        self.assertFalse(push_jobs)
+
     def test_pos_walk_in_uses_instance_guest_partner(self):
         self.instance.write(
             {

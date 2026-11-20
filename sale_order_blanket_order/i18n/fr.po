@@ -24,32 +24,21 @@ msgid ""
 msgstr ""
 
 #. module: sale_order_blanket_order
-#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Les valeurs sont spécifique à "
-"la société.\" groups=\"base.group_multi_company\"/>"
-
-#. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "A blanket order cannot have a blanket order."
 msgstr "A une commande-cadre ne peut pas référencer une commande-cadre."
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/wizards/sale_order_deliver_remaining_wizard.py:0
-#, fuzzy, python-format
+#, fuzzy
 msgid "A call off order should have at least one product."
 msgstr "Une commande d'appel doit avoir une commande-cadre."
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "A call-off order must have a blanket order."
 msgstr "Une commande d'appel doit avoir une commande-cadre."
 
@@ -63,7 +52,6 @@ msgstr "Ligne de commande-cadre"
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "An order cannot have a blanket order."
 msgstr "Une commande ne peut pas référencer une commande-cadre."
 
@@ -199,7 +187,6 @@ msgstr "Créer des Commandes d'appel pour les produits restants"
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "Create call-off sale order for products still to be delivered"
 msgstr "Créer des Commandes d'appel pour les produits restants à livrer"
 
@@ -232,16 +219,27 @@ msgid "Deliver remaining"
 msgstr "Livrer les quantités restantes"
 
 #. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_product_template__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_company__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__display_name
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__display_name
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_stock_move__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_stock_rule__display_name
 msgid "Display Name"
 msgstr "Nome d'Affichage"
 
 #. module: sale_order_blanket_order
 #: model:ir.actions.server,name:sale_order_blanket_order.ir_cron_sale_order_blanket_order_finalizer_ir_actions_server
-#: model:ir.cron,cron_name:sale_order_blanket_order.ir_cron_sale_order_blanket_order_finalizer
 msgid "Finalize expired sale blanket orders"
 msgstr "Finaliser les commandes-cadre expirées"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__blanket_reservation_strategy__fake
+msgid "For tests"
+msgstr ""
 
 #. module: sale_order_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
@@ -258,9 +256,27 @@ msgstr ""
 "lorsque la commande client est confirmée."
 
 #. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_product_template__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_company__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__id
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__id
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_stock_move__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_stock_rule__id
 msgid "ID"
+msgstr ""
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_strict_packaging
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__blanket_strict_packaging
+msgid ""
+"If checked, the system will enforce that the products are called off with "
+"the same packaging as the one defined on the blanket order lines. If not "
+"checked, the system will not take care of the packaging defined on the "
+"blanket order lines when calling off products nor the one on the call-off "
+"order lines."
 msgstr ""
 
 #. module: sale_order_blanket_order
@@ -291,36 +307,24 @@ msgstr ""
 #. module: sale_order_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
 msgid ""
+"If the blanket order does not have enough available quantity, the call-off "
+"order will be generated with the available quantity and the original sale "
+"order line will be split into two lines: one line with the available "
+"quantity and one line with the remaining quantity. All the lines related to\n"
+"                            a blanket order will be moved to a new call-off "
+"order and the new call-off order will be confirmed."
+msgstr ""
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
+msgid ""
 "If this option is enabled, a call-off order will be generated from a sale "
 "order if the sale order contains products\n"
 "                            that are part of an open blanket order. The call-"
 "off order will be generated with the same products and quantities as the\n"
 "                            sale order provided that the blanket order has "
-"enough available quantity. If the blanket order does not have enough "
-"available\n"
-"                            quantity, the call-off order will be generated "
-"with the available quantity and the original sale order line will be\n"
-"                            split into two lines: one line with the "
-"available quantity and one line with the remaining quantity. All the lines "
-"related to\n"
-"                            a blanket order will be moved to a new call-off "
-"order and the new call-off order will be confirmed."
+"enough available quantity."
 msgstr ""
-"Si cette option est activée, une commande d'appel sera générée à partir "
-"d'une commande client si la commande client contient des produits\n"
-"                            qui font partie d'une commande-cadre ouverte. La "
-"commande d'appel sera générée avec les mêmes produits et quantités que la\n"
-"                            commande client à condition que la commande-"
-"cadre ait une quantité disponible suffisante. Si la commande-cadre n'a pas "
-"une quantité\n"
-"                            disponible suffisante, la commande d'appel sera "
-"générée avec la quantité disponible et la ligne de commande client d'origine "
-"sera\n"
-"                            divisée en deux lignes : une ligne avec la "
-"quantité disponible et une ligne avec la quantité restante. Toutes les "
-"lignes liées à\n"
-"                            une commande-cadre seront déplacées vers une "
-"nouvelle commande d'appel et la nouvelle commande d'appel sera confirmée."
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_need_to_be_finalized
@@ -373,12 +377,6 @@ msgid "Is Blanket Reservation Strategy Editable"
 msgstr "La stratégie de réservation de la commande-cadre est-elle modifiable"
 
 #. module: sale_order_blanket_order
-#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard____last_update
-#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line____last_update
-msgid "Last Modified on"
-msgstr "Dernière modification le"
-
-#. module: sale_order_blanket_order
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__write_uid
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__write_uid
 msgid "Last Updated by"
@@ -404,7 +402,6 @@ msgstr "Commandes normales"
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "Only blanket orders can be confirmed as blanket orders."
 msgstr ""
 "Seules les commandes-cadre peuvent être confirmées en tant que commandes-"
@@ -413,7 +410,12 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
+msgid "Only call-off orders can be canceled as call-off orders."
+msgstr ""
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
 msgid "Only call-off orders can be confirmed as call-off orders."
 msgstr ""
 "Seules les commandes d'appel peuvent être confirmées en tant que commandes "
@@ -432,11 +434,6 @@ msgstr "Commande"
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_search_view
 msgid "Order Type"
 msgstr "Type de commande"
-
-#. module: sale_order_blanket_order
-#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__product_packaging_id
-msgid "Packaging"
-msgstr "Emballage"
 
 #. module: sale_order_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
@@ -555,9 +552,18 @@ msgid "Stock Rule"
 msgstr "Règle de stock minimum"
 
 #. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_strict_packaging
+msgid "Strict Packaging"
+msgstr ""
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_strict_packaging
+msgid "Strict Packaging ?"
+msgstr ""
+
+#. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/wizards/sale_order_deliver_remaining_wizard.py:0
-#, python-format
 msgid ""
 "The 'Quantity to Deliver' cannot be greater than the 'Remaining Quantity'."
 msgstr ""
@@ -567,7 +573,6 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/wizards/sale_order_deliver_remaining_wizard.py:0
-#, python-format
 msgid "The 'Quantity to Deliver' cannot be negative."
 msgstr "La 'Quantité à livrer' ne peut pas être négative."
 
@@ -580,7 +585,6 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The blanket order must be confirmed before creating a call-off order."
 msgstr ""
 "La commande-cadre doit être confirmée avant de créer une commande d'appel."
@@ -599,11 +603,18 @@ msgstr "Les lignes de commande d'appel liées à cette ligne de commande-cadre."
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid ""
 "The call-off order must be within the validity period of the blanket order."
 msgstr ""
 "La commande d'appel doit être dans la période de validité de la commande-"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+msgid ""
+"The call-off order(s) %(orders)s cannot be canceled since some products have "
+"already been delivered."
+msgstr ""
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__call_off_order_ids
@@ -624,16 +635,14 @@ msgstr "La date de fin de la période de validité de la commande-cadre."
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The end-of-life strategy cannot be modified on order %(order)s."
 msgstr ""
-"La stratégie de fin de vie ne peut pas être modifiée sur la commande "
-"%(order)s."
+"La stratégie de fin de vie ne peut pas être modifiée sur la commande %"
+"(order)s."
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
-#, python-format
 msgid ""
 "The forecasted quantity cannot be less than the quantity already called by "
 "call-off orders."
@@ -644,10 +653,9 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid ""
-"The line %(line)s has been created from order %(order)s. (Qty moved: "
-"%(qty_deliverable)s)"
+"The line %(line)s has been created from order %(order)s. (Qty moved: %"
+"(qty_deliverable)s)"
 msgstr ""
 "La ligne %(line)s a été créée à partir de la commande %(order)s. (Qté "
 "déplacée: %(qty_deliverable)s)"
@@ -655,26 +663,23 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The line %(line)s has been moved from order %(order)s."
 msgstr "La ligne %(line)s a été déplacée de la commande %(order)s."
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The line %(line)s has been moved to a new call-off order %(call_off)s."
 msgstr ""
-"La ligne %(line)s a été déplacée vers une nouvelle commande d'appel "
-"%(call_off)s."
+"La ligne %(line)s a été déplacée vers une nouvelle commande d'appel %"
+"(call_off)s."
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid ""
-"The line %(line)s has been partially moved to a new call-off order "
-"%(call_off)s. (Qty moved: %(qty_deliverable)s)"
+"The line %(line)s has been partially moved to a new call-off order %"
+"(call_off)s. (Qty moved: %(qty_deliverable)s)"
 msgstr ""
 "La ligne %(line)s a été partiellement déplacée vers une nouvelle commande "
 "d'appel %(call_off)s. (Qté déplacée: %(qty_deliverable)s)"
@@ -687,35 +692,32 @@ msgstr "Le nombre de commandes d'appel liées à cette commande-cadre."
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
-#, python-format
 msgid ""
 "The price of a call-off order line must be 0.0. (Order: '%(order)s', "
 "Product: '%(product)s')"
 msgstr ""
-"Le prix d'une ligne de commande d'appel doit être de 0,0. (Commande: "
-"'%(order)s', Produit: '%(product)s')"
+"Le prix d'une ligne de commande d'appel doit être de 0,0. (Commande: '%"
+"(order)s', Produit: '%(product)s')"
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
-#, python-format
 msgid ""
-"The product '%(product_name)s' is already part of another blanket order "
-"%(order_name)s."
+"The product '%(product_name)s' is already part of another blanket order %"
+"(order_name)s."
 msgstr ""
-"Le produit '%(product_name)s' fait déjà partie d'une autre commande-cadre "
-"%(order_name)s."
+"Le produit '%(product_name)s' fait déjà partie d'une autre commande-cadre %"
+"(order_name)s."
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
-#, python-format
 msgid ""
 "The product is not part of linked blanket order. (Product: '%(product)s', "
 "Order: '%(order)s', Blanket Order: '%(blanket_order)s')"
 msgstr ""
-"Le produit ne fait pas partie de la commande-cadre liée. (Produit: "
-"'%(product)s', Commande: '%(order)s', Commande-cadre: '%(blanket_order)s')"
+"Le produit ne fait pas partie de la commande-cadre liée. (Produit: '%"
+"(product)s', Commande: '%(order)s', Commande-cadre: '%(blanket_order)s')"
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__call_off_remaining_qty
@@ -733,24 +735,22 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
-#, python-format
 msgid ""
 "The quantity to procure is greater than the quantity remaining to deliver in "
-"the linked blanket order for this product. (Product: '%(product)s', Order: "
-"'%(order)s', Blanket Order: '%(blanket_order)s')"
+"the linked blanket order for this product. (Product: '%(product)s', Order: '%"
+"(order)s', Blanket Order: '%(blanket_order)s')"
 msgstr ""
 "La quantité à acheter est supérieure à la quantité restante à livrer dans la "
-"commande-cadre liée pour ce produit. (Produit: '%(product)s', Commande: "
-"'%(order)s', Commande-cadre: '%(blanket_order)s')"
+"commande-cadre liée pour ce produit. (Produit: '%(product)s', Commande: '%"
+"(order)s', Commande-cadre: '%(blanket_order)s')"
 
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The reservation strategy cannot be modified on order %(order)s."
 msgstr ""
-"La stratégie de réservation ne peut pas être modifiée sur la commande "
-"%(order)s."
+"La stratégie de réservation ne peut pas être modifiée sur la commande %"
+"(order)s."
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_validity_start_date
@@ -761,7 +761,6 @@ msgstr "La date de début de la période de validité de la commande-cadre."
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The validity end date is required for a blanket order."
 msgstr "La date de fin de validité est requise pour une commande-cadre."
 
@@ -769,7 +768,6 @@ msgstr "La date de fin de validité est requise pour une commande-cadre."
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
 #: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
-#, python-format
 msgid "The validity end date must be greater than the validity start date."
 msgstr ""
 "La date de fin de validité doit être supérieure à la date de début de "
@@ -778,7 +776,6 @@ msgstr ""
 #. module: sale_order_blanket_order
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
-#, python-format
 msgid "The validity start date is required for a blanket order."
 msgstr "La date de début de validité est requise pour une commande-cadre."
 
@@ -791,6 +788,11 @@ msgstr "A"
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
 msgid "To Call-off"
 msgstr "A l'appel"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__product_uom_id
+msgid "Unit"
+msgstr ""
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_validity_end_date
@@ -808,6 +810,11 @@ msgstr "Date de début de validité"
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
 msgid "Validity period"
 msgstr "Période de validité"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
+msgid "Values set here are company-specific."
+msgstr ""
 
 #. module: sale_order_blanket_order
 #: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__create_call_off_from_so_if_possible
@@ -829,3 +836,51 @@ msgstr "Afficher ou non le bouton 'livraison restante'."
 #: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__wizard_id
 msgid "Wizard"
 msgstr ""
+
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "
+#~ "company-specific.\" groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Les valeurs sont "
+#~ "spécifique à la société.\" groups=\"base.group_multi_company\"/>"
+
+#~ msgid ""
+#~ "If this option is enabled, a call-off order will be generated from a sale "
+#~ "order if the sale order contains products\n"
+#~ "                            that are part of an open blanket order. The "
+#~ "call-off order will be generated with the same products and quantities as "
+#~ "the\n"
+#~ "                            sale order provided that the blanket order "
+#~ "has enough available quantity. If the blanket order does not have enough "
+#~ "available\n"
+#~ "                            quantity, the call-off order will be "
+#~ "generated with the available quantity and the original sale order line "
+#~ "will be\n"
+#~ "                            split into two lines: one line with the "
+#~ "available quantity and one line with the remaining quantity. All the "
+#~ "lines related to\n"
+#~ "                            a blanket order will be moved to a new call-"
+#~ "off order and the new call-off order will be confirmed."
+#~ msgstr ""
+#~ "Si cette option est activée, une commande d'appel sera générée à partir "
+#~ "d'une commande client si la commande client contient des produits\n"
+#~ "                            qui font partie d'une commande-cadre ouverte. "
+#~ "La commande d'appel sera générée avec les mêmes produits et quantités que "
+#~ "la\n"
+#~ "                            commande client à condition que la commande-"
+#~ "cadre ait une quantité disponible suffisante. Si la commande-cadre n'a "
+#~ "pas une quantité\n"
+#~ "                            disponible suffisante, la commande d'appel "
+#~ "sera générée avec la quantité disponible et la ligne de commande client "
+#~ "d'origine sera\n"
+#~ "                            divisée en deux lignes : une ligne avec la "
+#~ "quantité disponible et une ligne avec la quantité restante. Toutes les "
+#~ "lignes liées à\n"
+#~ "                            une commande-cadre seront déplacées vers une "
+#~ "nouvelle commande d'appel et la nouvelle commande d'appel sera confirmée."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Dernière modification le"
+
+#~ msgid "Packaging"
+#~ msgstr "Emballage"

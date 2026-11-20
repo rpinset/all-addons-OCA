@@ -675,7 +675,11 @@ class TierValidation(models.AbstractModel):
         )
         if self.has_comment:
             user_reviews = reviews.filtered(
-                lambda r: r.status == "pending" and (self.env.user in r.reviewer_ids)
+                lambda r: (
+                    r.status == "pending"
+                    or (r.approve_sequence_bypass and r.status != "approved")
+                )
+                and (self.env.user in r.reviewer_ids)
             )
             action = self._add_comment("validate", user_reviews)
             action["context"]["default_comment"] = (

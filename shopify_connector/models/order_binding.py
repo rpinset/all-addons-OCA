@@ -119,6 +119,17 @@ class ShopifyOrder(models.Model):
     return_binding_ids = fields.One2many(
         "shopify.return", "order_binding_id", string="Shopify Returns"
     )
+    handled_state = fields.Json(
+        string="Handled Shopify State",
+        readonly=True,
+        copy=False,
+        help="The Shopify line quantities and cancellation that a person "
+        "handled by hand after delivery. Later imports only apply new changes.",
+    )
+    handled_date = fields.Datetime(string="Handled On", readonly=True, copy=False)
+    handled_uid = fields.Many2one(
+        "res.users", string="Handled By", readonly=True, copy=False
+    )
 
     @api.constrains("instance_id", "odoo_id")
     def _check_order_company(self):

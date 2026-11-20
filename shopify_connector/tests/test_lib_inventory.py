@@ -6,6 +6,7 @@ from odoo.addons.shopify_connector.lib.inventory import (
     apply_negative_policy,
     build_inventory_set_payload,
     diff_inventory_levels,
+    is_stale_compare_error,
     quantity_for_basis,
     should_ignore_echo,
 )
@@ -68,7 +69,17 @@ class TestShopifyLibInventory(TransactionCase):
                     "inventoryItemId": "gid://shopify/InventoryItem/1",
                     "locationId": "gid://shopify/Location/2",
                     "quantity": 9,
-                    "compareQuantity": 7,
+                    "changeFromQuantity": 7,
                 }
             ],
         }
+
+    def test_stale_quantity_error_is_recognized(self):
+        # API 2026-04 (changeFromQuantity) and the older compareQuantity text.
+        assert is_stale_compare_error(
+            "The changeFromQuantity argument no longer matches the persisted quantity."
+        )
+        assert is_stale_compare_error(
+            "The compareQuantity argument no longer matches the persisted quantity."
+        )
+        assert not is_stale_compare_error("Inventory item is not stocked here.")

@@ -18,6 +18,7 @@ from ..lib.fulfillment import (
     FulfillmentAllocationError,
     allocate_fulfillment_lines,
 )
+from ..models.order_sync import ShopifyOrderSync
 
 LOCATION_ID = "gid://shopify/Location/650"
 
@@ -680,6 +681,95 @@ class TestShopifyFulfillmentSync(TransactionCase):
         job.db_record().write({"state": "failed", "exc_message": "Boom"})
 
         self.assertFalse(self._push_failure_activities(picking))
+
+    def _push_jobs(self, picking):
+        return self.env["queue.job"].search(
+            [
+                (
+                    "identity_key",
+                    "=",
+                    f"shopify.fulfillment.push.{self.instance.id}."
+                    f"{self.order_binding.id}.{picking.id}",
+                )
+            ]
+        )
+
+    def _import_order_again(self):
+        """Run the end of a successful order import, without the payload."""
+
+        def write_synced(model, binding, sale_order, order_data, digest):
+            binding.write({"state": "synced", "error_message": False})
+
+        with patch.object(ShopifyOrderSync, "_write_success", write_synced):
+            # Other modules read the order source here, such as the POS one.
+            self.env["shopify.order"]._write_success(
+                self.order_binding, self.sale, {"source": "web"}, "digest"
+            )
+
+    def test_done_delivery_without_fulfillment_is_pushed_after_import(self):
+        self.order_binding.state = "error"
+        self.env["stock.quant"]._update_available_quantity(
+            self.product, self.warehouse.lot_stock_id, 1
+        )
+        self.sale.action_confirm()
+        picking = self.sale.picking_ids
+        picking.action_assign()
+        picking.move_ids.quantity = 1
+        picking.button_validate()
+        self.assertEqual(picking.state, "done")
+        self.assertFalse(self._push_jobs(picking), "No push while in error.")
+        self.assertTrue(picking.shopify_push_pending)
+
+        self._import_order_again()
+        self._import_order_again()
+
+        job = self._push_jobs(picking)
+        self.assertEqual(len(job), 1, "A second import queues no duplicate.")
+        self.assertEqual(job.method_name, "_job_push_picking_fulfillment")
+        self.assertEqual(job.args, [picking.id])
+        self.assertFalse(picking.shopify_push_pending)
+
+    def test_delivery_validated_without_push_is_not_pushed_after_import(self):
+        # A POS delivery and a delivery validated by a fulfillment imported
+        # from Shopify skip the push. Shopify already has them, so the next
+        # import must not send them back, even without a linked fulfillment.
+        picking = self._delivered_picking()
+        self.assertFalse(picking.shopify_fulfillment_ids)
+        self.assertFalse(picking.shopify_push_pending)
+
+        self._import_order_again()
+
+        self.assertFalse(self._push_jobs(picking))
+
+    def test_delivery_with_fulfillment_is_not_pushed_again_after_import(self):
+        picking = self._delivered_picking()
+        picking.shopify_push_pending = True
+        self._unconfirmed_attempt(picking)
+
+        self._import_order_again()
+
+        self.assertFalse(self._push_jobs(picking))
+
+    def test_failed_push_is_not_queued_again_after_import(self):
+        picking = self._delivered_picking()
+        picking.shopify_push_pending = True
+        self.env["shopify.location"].search(
+            [("instance_id", "=", self.instance.id)]
+        ).active = False
+        self._failed_push_job(picking)
+
+        self._import_order_again()
+
+        self.assertFalse(self._push_jobs(picking))
+
+    def test_draft_order_import_pushes_no_delivery(self):
+        picking = self._delivered_picking()
+        picking.shopify_push_pending = True
+        self.order_binding.is_draft = True
+
+        self._import_order_again()
+
+        self.assertFalse(self._push_jobs(picking))
 
     def _pushed_fulfillment(self, picking, *, origin="odoo", number="3SOLD"):
         return self.env["shopify.fulfillment"].create(

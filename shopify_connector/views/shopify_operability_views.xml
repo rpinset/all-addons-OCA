@@ -473,6 +473,14 @@
         <field name="state">code</field>
         <field name="code">records.action_reset_to_pending()</field>
     </record>
+    <record id="action_mark_handled_shopify_orders" model="ir.actions.server">
+        <field name="name">Mark Shopify Orders as Handled</field>
+        <field name="model_id" ref="model_shopify_order" />
+        <field name="binding_model_id" ref="model_shopify_order" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_mark_handled()</field>
+    </record>
     <record id="action_retry_shopify_fulfillments" model="ir.actions.server">
         <field name="name">Retry Failed Shopify Bindings</field>
         <field name="model_id" ref="model_shopify_fulfillment" />

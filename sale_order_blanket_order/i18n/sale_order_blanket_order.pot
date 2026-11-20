@@ -228,6 +228,11 @@ msgid "Finalize expired sale blanket orders"
 msgstr ""
 
 #. module: sale_order_blanket_order
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__blanket_reservation_strategy__fake
+msgid "For tests"
+msgstr ""
+
+#. module: sale_order_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
 msgid "From"
 msgstr ""
@@ -360,6 +365,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
 msgid "Only blanket orders can be confirmed as blanket orders."
+msgstr ""
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+msgid "Only call-off orders can be canceled as call-off orders."
 msgstr ""
 
 #. module: sale_order_blanket_order
@@ -534,6 +545,14 @@ msgstr ""
 #: code:addons/sale_order_blanket_order/models/sale_order.py:0
 msgid ""
 "The call-off order must be within the validity period of the blanket order."
+msgstr ""
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+msgid ""
+"The call-off order(s) %(orders)s cannot be canceled since some products have"
+" already been delivered."
 msgstr ""
 
 #. module: sale_order_blanket_order

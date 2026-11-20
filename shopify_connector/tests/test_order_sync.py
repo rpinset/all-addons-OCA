@@ -4,6 +4,7 @@ from unittest.mock import Mock, patch
 from freezegun import freeze_time
 
 from odoo import SUPERUSER_ID
+from odoo.exceptions import UserError
 from odoo.sql_db import db_connect
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
@@ -60,6 +61,31 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
             }
         )
         cls.order_model = cls.env["shopify.order"]
+        cls.goods = cls.env["product.product"].create(
+            {
+                "name": "Bound Goods Product",
+                "type": "consu",
+                "is_storable": True,
+                "company_id": cls.instance.company_id.id,
+            }
+        )
+        cls.goods_variant_binding = cls.env["shopify.product.variant"].create(
+            {
+                "instance_id": cls.instance.id,
+                "shopify_id": "gid://shopify/ProductVariant/21",
+                "template_binding_id": cls.env["shopify.product.template"]
+                .create(
+                    {
+                        "instance_id": cls.instance.id,
+                        "shopify_id": "gid://shopify/Product/11",
+                        "odoo_id": cls.goods.product_tmpl_id.id,
+                        "status": "ACTIVE",
+                    }
+                )
+                .id,
+                "odoo_id": cls.goods.id,
+            }
+        )
 
     def _bag(self, amount):
         return {
@@ -445,6 +471,118 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertTrue(result, binding.error_message)
         self.assertEqual(sale_order.state, "cancel")
         self.assertEqual(sale_order.order_line.product_uom_qty, 1)
+        self.assertEqual(sale_order.amount_total, 10)
+
+    def _two_line_payload(self, order_id, second_quantity=1, **values):
+        """Return an order with a second line of a stored product.
+
+        Without ``second_quantity`` the second line is not sent, as after
+        Shopify removed it in an order edit.
+        """
+        quantity = second_quantity or 0
+        payload = self._payload(
+            order_id=order_id, total=f"{10 + quantity * 10}.00", **values
+        )
+        if second_quantity is None:
+            return payload
+        second = dict(payload["lineItems"]["nodes"][0])
+        second.update(
+            {
+                "id": f"gid://shopify/LineItem/{order_id}31",
+                "name": "Bound Goods Product",
+                "sku": "ORDER-2",
+                "quantity": 1,
+                "currentQuantity": quantity,
+                "refundableQuantity": quantity,
+                "variant": {"id": self.goods_variant_binding.shopify_id},
+            }
+        )
+        payload["lineItems"]["nodes"].append(second)
+        return payload
+
+    def _import_confirmed_two_line_order(self, order_id):
+        self.instance.order_confirmation_policy = "auto"
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id,
+                self._two_line_payload(order_id, displayFinancialStatus="PAID"),
+            )
+        )
+        self.assertEqual(binding.state, "synced", binding.error_message)
+        self.assertEqual(binding.odoo_id.state, "sale")
+        self.assertEqual(binding.odoo_id.amount_total, 20)
+        return binding
+
+    def test_refunded_line_of_confirmed_order_keeps_quantity_zero(self):
+        binding = self._import_confirmed_two_line_order(16)
+        sale_order = binding.odoo_id
+        goods_line = sale_order.order_line.filtered(
+            lambda line: line.product_id == self.goods
+        )
+        self.assertEqual(goods_line.move_ids.product_uom_qty, 1)
+
+        result = self.order_model._job_import_order(
+            self.instance.id,
+            self._two_line_payload(
+                16,
+                second_quantity=0,
+                displayFinancialStatus="PARTIALLY_REFUNDED",
+                updatedAt="2026-01-11T10:00:00Z",
+            ),
+        )
+
+        self.assertTrue(result, binding.error_message)
+        self.assertEqual(binding.state, "synced", binding.error_message)
+        self.assertEqual(len(sale_order.order_line), 2)
+        self.assertEqual(goods_line.product_uom_qty, 0)
+        self.assertEqual(len(binding.line_binding_ids), 2)
+        self.assertEqual(sale_order.amount_total, 10)
+        self.assertEqual(sum(goods_line.move_ids.mapped("product_uom_qty")), 0)
+
+    def test_removed_line_of_confirmed_order_keeps_quantity_zero(self):
+        binding = self._import_confirmed_two_line_order(17)
+        sale_order = binding.odoo_id
+        goods_line = sale_order.order_line.filtered(
+            lambda line: line.product_id == self.goods
+        )
+
+        result = self.order_model._job_import_order(
+            self.instance.id,
+            self._two_line_payload(
+                17,
+                second_quantity=None,
+                displayFinancialStatus="PAID",
+                updatedAt="2026-01-11T10:00:00Z",
+            ),
+        )
+
+        self.assertTrue(result, binding.error_message)
+        self.assertEqual(binding.state, "synced", binding.error_message)
+        self.assertEqual(len(sale_order.order_line), 2)
+        self.assertEqual(goods_line.product_uom_qty, 0)
+        self.assertEqual(len(binding.line_binding_ids), 2)
+        self.assertEqual(sale_order.amount_total, 10)
+
+    def test_removed_line_of_quotation_is_deleted(self):
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id, self._two_line_payload(18)
+            )
+        )
+        sale_order = binding.odoo_id
+        self.assertEqual(sale_order.state, "draft")
+        self.assertEqual(len(sale_order.order_line), 2)
+
+        result = self.order_model._job_import_order(
+            self.instance.id,
+            self._two_line_payload(
+                18, second_quantity=None, updatedAt="2026-01-11T10:00:00Z"
+            ),
+        )
+
+        self.assertTrue(result, binding.error_message)
+        self.assertEqual(len(sale_order.order_line), 1)
+        self.assertEqual(len(binding.line_binding_ids), 1)
         self.assertEqual(sale_order.amount_total, 10)
 
     def test_unmapped_tax_records_actionable_error(self):
@@ -1114,3 +1252,92 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
 
         binding = self.order_model.browse(binding_id)
         self.assertEqual(binding.odoo_id.state, "cancel", binding.error_message)
+
+    def _delivered(self):
+        return patch.object(type(self.order_model), "_is_delivered", return_value=True)
+
+    def test_refund_after_delivery_marked_handled_is_not_applied_again(self):
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id, self._payload(order_id=98, quantity=3, total="30.00")
+            )
+        )
+        sale_order = binding.odoo_id
+        refunded = self._refunded_before_invoice_payload(98, refunded_quantity=1)
+        refunded["updatedAt"] = "2026-01-11T10:00:00Z"
+
+        with self._delivered():
+            with self.assertRaises(UserError):
+                binding.action_mark_handled()
+            self.assertFalse(
+                self.order_model._job_import_order(self.instance.id, refunded)
+            )
+            self.assertIn("manual resolution", binding.error_message)
+
+            with trap_jobs() as trap:
+                binding.action_mark_handled()
+            trap.assert_jobs_count(1)
+            self.assertEqual(
+                binding.handled_state,
+                {
+                    "lines": [{"id": "gid://shopify/LineItem/30", "quantity": 2}],
+                    "cancelled": False,
+                },
+            )
+            self.assertEqual(binding.handled_uid, self.env.user)
+            self.assertEqual(binding.refund_binding_ids.state, "synced")
+            # The handled refund shows its amount, as an imported one does.
+            self.assertEqual(binding.refund_binding_ids.amount, "10.00")
+            self.assertEqual(binding.refund_binding_ids.currency_id, self.currency)
+
+            result = self.order_model._job_import_order(self.instance.id, refunded)
+            self.assertTrue(result, binding.error_message)
+            self.assertEqual(binding.state, "synced")
+            # The Odoo lines stay as the person left them.
+            self.assertEqual(sale_order.order_line.product_uom_qty, 3)
+            # The line binding shows Shopify's current quantity.
+            self.assertEqual(binding.line_binding_ids.current_quantity, 2)
+            self.assertEqual(len(binding.refund_binding_ids), 1)
+
+            refunded["tags"] = ["web", "vip"]
+            refunded["updatedAt"] = "2026-01-12T10:00:00Z"
+            result = self.order_model._job_import_order(self.instance.id, refunded)
+            self.assertTrue(result, binding.error_message)
+            self.assertEqual(sale_order.shopify_tags, "web, vip")
+
+            # A new edit of the lines needs manual resolution again.
+            edited = self._refunded_before_invoice_payload(98, refunded_quantity=2)
+            edited["updatedAt"] = "2026-01-13T10:00:00Z"
+            self.assertFalse(
+                self.order_model._job_import_order(self.instance.id, edited)
+            )
+            self.assertIn("manual resolution", binding.error_message)
+            self.assertEqual(sale_order.order_line.product_uom_qty, 3)
+
+    def test_cancel_after_delivery_marked_handled_is_imported(self):
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id, self._payload(order_id=99)
+            )
+        )
+        sale_order = binding.odoo_id
+
+        with self._delivered():
+            self.assertFalse(
+                self.order_model._job_import_order(
+                    self.instance.id, self._cancelled_payload(order_id=99)
+                )
+            )
+            self.assertIn("already delivered", binding.error_message)
+            with trap_jobs():
+                binding.action_mark_handled()
+            self.assertTrue(binding.handled_state["cancelled"])
+
+            result = self.order_model._job_import_order(
+                self.instance.id, self._cancelled_payload(order_id=99)
+            )
+
+        self.assertTrue(result, binding.error_message)
+        self.assertEqual(binding.state, "synced")
+        self.assertNotEqual(sale_order.state, "cancel")
+        self.assertEqual(sale_order.order_line.product_uom_qty, 1)

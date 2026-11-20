@@ -293,6 +293,10 @@
                                             ('company_id', '=', parent.company_id)]"
                             />
                             <field name="tracking_company" />
+                            <field
+                                name="shipping_method_names"
+                                placeholder="e.g. Standard, Express"
+                            />
                         </list>
                     </field>
                 </page>

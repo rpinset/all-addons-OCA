@@ -47,19 +47,9 @@ msgid "Activity Type Icon"
 msgstr "Activiteitstype-icoon"
 
 #. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Actual Correct"
-msgstr "Werkelijke correctie"
-
-#. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_actual_correct
 msgid "Actual Correction Date"
 msgstr "Werkelijke correctiedatum"
-
-#. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Actual Revert"
-msgstr "Werkelijke terugdraaiing"
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_actual_revert
@@ -82,6 +72,26 @@ msgstr "Betrokken niveaubeoordelingen"
 #: model:res.groups,name:base_tier_validation_correction.group_tier_correction
 msgid "Allowed"
 msgstr "Toegestaan"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Applied on"
+msgstr ""
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid ""
+"Apply and revert this correction automatically, for example\n"
+"                                for an interim period. A scheduled action "
+"checks every hour.\n"
+"                                Leave the dates empty to apply and revert by "
+"hand."
+msgstr ""
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Apply on"
+msgstr ""
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
@@ -444,9 +454,19 @@ msgid "Revert Date should be after Correct Date"
 msgstr "De terugdraaidatum moet na de correctiedatum liggen"
 
 #. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Revert on"
+msgstr ""
+
+#. module: base_tier_validation_correction
 #: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__revert
 msgid "Reverted"
 msgstr "Teruggedraaid"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Reverted on"
+msgstr ""
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__review_ids
@@ -465,13 +485,13 @@ msgstr "Beoordelaar(s)"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled Action"
-msgstr "Geplande actie"
+msgid "Schedule"
+msgstr ""
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled Correct"
-msgstr "Geplande correctie"
+msgid "Scheduled Action"
+msgstr "Geplande actie"
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_correct
@@ -479,20 +499,9 @@ msgid "Scheduled Correction Date"
 msgstr "Geplande correctiedatum"
 
 #. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled Revert"
-msgstr "Geplande terugdraaiing"
-
-#. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_revert
 msgid "Scheduled Revert Date"
 msgstr "Geplande terugdraaidatum"
-
-#. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled date/time to auto correct and/or revert by"
-msgstr ""
-"Geplande datum/tijd voor automatische correctie en/of terugdraaiing door"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
@@ -619,6 +628,22 @@ msgstr "Website communicatiehistorie"
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
 msgid "e.g. Correction for..."
 msgstr "bijv. Correctie voor..."
+
+#~ msgid "Actual Correct"
+#~ msgstr "Werkelijke correctie"
+
+#~ msgid "Actual Revert"
+#~ msgstr "Werkelijke terugdraaiing"
+
+#~ msgid "Scheduled Correct"
+#~ msgstr "Geplande correctie"
+
+#~ msgid "Scheduled Revert"
+#~ msgstr "Geplande terugdraaiing"
+
+#~ msgid "Scheduled date/time to auto correct and/or revert by"
+#~ msgstr ""
+#~ "Geplande datum/tijd voor automatische correctie en/of terugdraaiing door"
 
 #~ msgid "Name Search"
 #~ msgstr "Zoeken op naam"

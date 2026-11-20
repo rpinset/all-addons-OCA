@@ -232,6 +232,54 @@ class TestSaleBlanketOrder(SaleOrderBlanketOrderCase):
             self.assertEqual(call_off.product_uom_qty, line.product_uom_qty)
             self.assertTrue(line.move_ids)
 
+    def test_eol_call_off_addresses(self):
+        # The call-off order created at the end of life of a blanket order uses
+        # the addresses of the blanket order, not the default ones of the customer
+        self.env["res.partner"].create(
+            [
+                {
+                    "name": "Default Invoice Address",
+                    "type": "invoice",
+                    "parent_id": self.partner.id,
+                },
+                {
+                    "name": "Default Shipping Address",
+                    "type": "delivery",
+                    "parent_id": self.partner.id,
+                },
+            ]
+        )
+        partner_shipping = self.env["res.partner"].create(
+            {
+                "name": "Shipping Address of the Blanket Order",
+                "type": "delivery",
+                "parent_id": self.partner.id,
+            }
+        )
+        self.blanket_so.write(
+            {
+                "partner_invoice_id": self.partner.id,
+                "partner_shipping_id": partner_shipping.id,
+                "blanket_eol_strategy": "deliver",
+            }
+        )
+        self.blanket_so.action_confirm()
+        self.blanket_so.flush_recordset()
+        with (
+            RecordCapturer(self.so_model, self.call_off_domain) as captured,
+            freezegun.freeze_time("2026-12-31"),
+        ):
+            self.so_model._cron_manage_blanket_order_eol()
+        self.assertRecordValues(
+            captured.records,
+            [
+                {
+                    "partner_invoice_id": self.partner.id,
+                    "partner_shipping_id": partner_shipping.id,
+                }
+            ],
+        )
+
     @freezegun.freeze_time("2025-02-01")
     def test_prevent_call_off_with_only_delivery_products(self):
         """

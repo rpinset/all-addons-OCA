@@ -401,6 +401,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/customer_sync.py:0
+msgid "Another job is matching a contact for Shopify customer %s."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid ""
 "Another worker is renewing the Shopify access token of %s. Try again in a "
@@ -1695,6 +1701,21 @@ msgid "Handle"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__handled_uid
+msgid "Handled By"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__handled_date
+msgid "Handled On"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__handled_state
+msgid "Handled Shopify State"
+msgstr ""
+
+#. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Health"
 msgstr ""
@@ -2203,6 +2224,7 @@ msgstr ""
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_collection_view_form
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_form
 msgid "Last Error"
 msgstr ""
@@ -2423,6 +2445,23 @@ msgid "Mapped"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.actions.server,name:shopify_connector.action_mark_handled_shopify_orders
+msgid "Mark Shopify Orders as Handled"
+msgstr ""
+
+#. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
+msgid "Mark as Handled"
+msgstr ""
+
+#. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
+msgid ""
+"Mark this Shopify change as handled by hand in Odoo? Later imports keep the "
+"current Odoo order lines and apply only new changes."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__webhook_max_payload_bytes
 msgid "Maximum Webhook Payload"
 msgstr ""
@@ -2492,6 +2531,15 @@ msgid ""
 " #1001, instead of the Odoo sequence. Sale orders already in Odoo keep their"
 " name. Two stores of the same company can both send an order #1001, so their"
 " sale orders get the same name."
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_carrier_mapping__shipping_method_names
+msgid ""
+"Names of the Shopify shipping methods that this carrier delivers, separated "
+"by commas (e.g. Standard, Express). An imported order with one of these "
+"shipping methods gets this carrier on the order and its delivery. Upper and "
+"lower case do not matter."
 msgstr ""
 
 #. module: shopify_connector
@@ -2776,6 +2824,14 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__source__online
 msgid "Online Store"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"Only a Shopify order in error with a delivered sales order can be marked as "
+"handled."
 msgstr ""
 
 #. module: shopify_connector
@@ -4108,6 +4164,11 @@ msgid "Shopify Product Variant Binding"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_stock_picking__shopify_push_pending
+msgid "Shopify Push Pending"
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_shopify_refund
 msgid "Shopify Refund Binding"
 msgstr ""
@@ -4146,6 +4207,11 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__sku_snapshot
 msgid "Shopify SKU"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_carrier_mapping__shipping_method_names
+msgid "Shopify Shipping Methods"
 msgstr ""
 
 #. module: shopify_connector
@@ -4842,6 +4908,13 @@ msgid "The Shopify guest customer is not configured."
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_order__handled_state
+msgid ""
+"The Shopify line quantities and cancellation that a person handled by hand "
+"after delivery. Later imports only apply new changes."
+msgstr ""
+
+#. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_binding.py:0
 msgid "The Shopify order line must belong to its bound order."
@@ -4881,6 +4954,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_binding.py:0
 msgid "The delivery must belong to the Shopify instance company."
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_stock_picking__shopify_push_pending
+msgid ""
+"The delivery was validated while its Shopify order was not synced, so it was"
+" not sent to Shopify yet. It is sent after the next successful import of the"
+" order."
 msgstr ""
 
 #. module: shopify_connector
@@ -5406,6 +5487,11 @@ msgstr ""
 msgid ""
 "You cannot change the company or shop domain of an instance after "
 "synchronized records have been created."
+msgstr ""
+
+#. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_fulfillment_view_form
+msgid "e.g. Standard, Express"
 msgstr ""
 
 #. module: shopify_connector

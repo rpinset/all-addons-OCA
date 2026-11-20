@@ -66,7 +66,13 @@ empty and enter the app's Admin API access token and API secret key instead.
      synchronization policies, install the webhooks and queue the initial
      imports.
 5. Review the payment-gateway and carrier mappings before enabling unattended
-   order and fulfillment processing.
+   order and fulfillment processing. In the carrier mappings (tab
+   **Fulfillment**), **Shopify Shipping Methods** lists the Shopify shipping
+   methods that each carrier delivers, separated by commas (e.g. `Standard`).
+   An imported order with one of these shipping methods (title or code, upper
+   and lower case do not matter) gets that carrier on the order and its
+   delivery. A carrier that is already set is kept, and an open delivery
+   without a carrier gets it when the order is imported again.
 
 Jobs run on the `root.shopify.import`, `root.shopify.export` and
 `root.shopify.webhook` channels. Add `queue_job` to the server-wide modules,

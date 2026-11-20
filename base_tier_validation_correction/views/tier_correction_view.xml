@@ -168,41 +168,42 @@
                                 </form>
                             </field>
                         </page>
-                        <page string="Scheduled Action">
-                            <div class="oe_grey" colspan="4">
-                                Scheduled date/time to auto correct and/or revert by
+                        <page name="schedule" string="Schedule">
+                            <p class="text-muted">
+                                Apply and revert this correction automatically, for example
+                                for an interim period. A scheduled action checks every hour.
+                                Leave the dates empty to apply and revert by hand.
                                 <button
-                                name="%(view_affected_tier_reviews_action)d"
+                                name="view_scheduled_action"
                                 string="Scheduled Action"
-                                type="action"
+                                type="object"
                                 icon="fa-clock-o"
-                                class="oe_inline"
+                                class="oe_inline btn-link"
+                                groups="base.group_system"
                             />
-                            </div>
+                            </p>
                             <group>
                                 <group>
                                     <field
                                         name="date_schedule_correct"
                                         readonly="state not in ['draft', 'prepare']"
-                                        string="Scheduled Correct"
+                                        string="Apply on"
                                     />
                                     <field
                                         name="date_actual_correct"
-                                        string="Actual Correct"
+                                        string="Applied on"
                                         invisible="not date_actual_correct"
                                         readonly="1"
                                     />
-                                </group>
-                                <group>
                                     <field
                                         name="date_schedule_revert"
                                         readonly="state not in ['draft', 'prepare', 'done']"
-                                        string="Scheduled Revert"
+                                        string="Revert on"
                                     />
                                     <field
                                         name="date_actual_revert"
-                                        string="Actual Revert"
-                                        invisible="not date_actual_correct"
+                                        string="Reverted on"
+                                        invisible="not date_actual_revert"
                                         readonly="1"
                                     />
                                 </group>

@@ -38,6 +38,9 @@ export class TierReviewMenu extends Component {
         // the document. The server sends one notification per reviewer per
         // transaction, and ``scheduleRecount`` throttles what is left.
         this.fetchSystrayReviewer();
+        // The footer link's action does not change while the page is open:
+        // read it once, not on every recount.
+        this.loadDashboardAction();
         this.busService.subscribe("base.tier.validation/updated", () =>
             this.scheduleRecount()
         );
@@ -76,7 +79,10 @@ export class TierReviewMenu extends Component {
             const groups = await this.orm.call("res.users", "review_user_count");
             let total = 0;
             for (const group of groups) {
-                total += group.pending_count || 0;
+                // Headline counter mirrors what the reviewer must act on
+                // *right now*: late + pending. Future is a heads-up only
+                // and shouldn't inflate the urgency badge.
+                total += (group.late_count || 0) + (group.pending_count || 0);
             }
             this.store.tierReviewCounter = total;
             this.store.tierReviewGroups = groups;
@@ -89,6 +95,23 @@ export class TierReviewMenu extends Component {
         }
     }
 
+    async loadDashboardAction() {
+        // False when no downstream module exposes a global review dashboard
+        // (default); a serialised action dict when one does (e.g.
+        // ``base_tier_validation_board``).
+        const action = await this.orm.call("res.users", "tier_review_dashboard_action");
+        this.store.tierReviewDashboardAction = action || null;
+    }
+
+    openDashboard() {
+        const action = this.store.tierReviewDashboardAction;
+        if (!action) {
+            return;
+        }
+        this.dropdown.close();
+        this.action.doAction(action, {clearBreadcrumbs: true});
+    }
+
     availableViews() {
         return [
             [false, "kanban"],
@@ -98,10 +121,35 @@ export class TierReviewMenu extends Component {
         ];
     }
 
-    openReviewGroup(group) {
+    openReviewGroup(group, bucket = null) {
         this.dropdown.close();
-        const context = {};
-        const domain = [["can_review", "=", true]];
+        // Per-bucket ids are pre-computed server-side so we just hand
+        // them to the action's domain. Empty buckets are no-ops.
+        const idsByBucket = {
+            late: group.late_ids || [],
+            pending: group.pending_ids || [],
+            future: group.future_ids || [],
+        };
+        let ids = [];
+        if (bucket) {
+            ids = idsByBucket[bucket] || [];
+        } else {
+            // Clicking the row opens what the reviewer can act on (late +
+            // pending), or the future reviews when there is nothing else.
+            ids = [...idsByBucket.late, ...idsByBucket.pending];
+            if (!ids.length) {
+                ids = idsByBucket.future;
+            }
+        }
+        if (!ids.length) {
+            return;
+        }
+        const labelByBucket = {
+            late: "Late",
+            pending: "Pending",
+            future: "Future",
+        };
+        const domain = [["id", "in", ids]];
         if (group.active_field) {
             domain.push(["active", "in", [true, false]]);
         }
@@ -109,9 +157,11 @@ export class TierReviewMenu extends Component {
 
         this.action.doAction(
             {
-                context,
+                context: {},
                 domain,
-                name: group.name,
+                name: bucket
+                    ? `${group.name} - ${labelByBucket[bucket] || bucket}`
+                    : group.name,
                 res_model: group.model,
                 search_view_id: [false],
                 type: "ir.actions.act_window",

@@ -1,7 +1,7 @@
 {
     "name": "Shopify Connector POS",
     "summary": "Import Shopify POS sales into location-routed sale orders",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Sales/Sales",
     "author": "Sawir Studio, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/connector-shopify",

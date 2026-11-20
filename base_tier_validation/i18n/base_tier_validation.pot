@@ -351,6 +351,12 @@ msgid "Four-eyes Principle"
 msgstr ""
 
 #. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
+msgid "Future"
+msgstr ""
+
+#. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_review.py:0
 msgid "Group %s"
@@ -451,6 +457,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__write_date
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__write_date
 msgid "Last Updated on"
+msgstr ""
+
+#. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
+msgid "Late"
 msgstr ""
 
 #. module: base_tier_validation
@@ -555,6 +567,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__pending
 msgid "Pending"
+msgstr ""
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__pending_date
+msgid "Pending Since"
 msgstr ""
 
 #. module: base_tier_validation
@@ -708,6 +725,12 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__sequence
 msgid "Sequence"
+msgstr ""
+
+#. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
+msgid "Show all reviews"
 msgstr ""
 
 #. module: base_tier_validation
@@ -949,6 +972,14 @@ msgid ""
 "in the same group as the configured reviewers can auto-validate their own "
 "request. Only meaningful for review_type='group'; the form hides this field "
 "for the other review types."
+msgstr ""
+
+#. module: base_tier_validation
+#: model:ir.model.fields,help:base_tier_validation.field_tier_review__pending_date
+msgid ""
+"When the review became pending, i.e. when its reviewers could act on it. "
+"With Approve by sequence that is when the previous tier was validated, not "
+"when the validation was requested."
 msgstr ""
 
 #. module: base_tier_validation

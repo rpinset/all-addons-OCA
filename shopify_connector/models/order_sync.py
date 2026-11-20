@@ -278,6 +278,85 @@ class ShopifyInstanceOrderSync(models.Model):
 class ShopifyOrderSync(models.Model):
     _inherit = "shopify.order"
 
+    def action_mark_handled(self):
+        """Accept the Shopify change of a delivered order handled by hand.
+
+        Shopify changed or cancelled an order that Odoo already delivered,
+        so the import stopped for manual resolution. A person handled it in
+        Odoo (a return, a credit note). Store the Shopify state they accepted
+        and mark its refunds synced, so later imports apply only new changes.
+        """
+        for binding in self:
+            if (
+                binding.state != "error"
+                or not binding.odoo_id
+                or not self._is_delivered(binding.odoo_id)
+                or not binding.raw_payload
+            ):
+                raise UserError(
+                    self.env._(
+                        "Only a Shopify order in error with a delivered sales "
+                        "order can be marked as handled."
+                    )
+                )
+            order_data = normalize_order_payload(
+                binding.raw_payload, is_draft=binding.is_draft
+            )
+            binding.write(
+                {
+                    "handled_state": {
+                        "lines": [
+                            {"id": line["id"], "quantity": line["quantity"]}
+                            for line in order_data["lines"]
+                        ],
+                        "cancelled": bool(order_data["cancelled_at"]),
+                    },
+                    "handled_date": fields.Datetime.now(),
+                    "handled_uid": self.env.uid,
+                }
+            )
+            # The refunds were handled by hand. A refund that failed is not
+            # stored yet, so create it already synced.
+            refunds = self.env["shopify.refund"]
+            for refund in order_data["refunds"]:
+                if not refund["id"]:
+                    continue
+                existing = refunds.search(
+                    [
+                        ("instance_id", "=", binding.instance_id.id),
+                        ("shopify_id", "=", refund["id"]),
+                    ],
+                    limit=1,
+                )
+                if not existing:
+                    refunds.create(
+                        {
+                            "instance_id": binding.instance_id.id,
+                            "shopify_id": refund["id"],
+                            "order_binding_id": binding.id,
+                            "note": refund["note"],
+                            "created_at": _utc_datetime(refund["created_at"]),
+                            # Show what was refunded, as a normal import does.
+                            "amount": format(
+                                self._shopify_refund_amount(binding, refund), "f"
+                            ),
+                            "currency_id": binding.order_currency_id.id
+                            or binding.odoo_id.currency_id.id,
+                            "raw_payload": refund,
+                            "state": "synced",
+                        }
+                    )
+            binding.refund_binding_ids.filtered(
+                lambda refund: refund.state != "synced"
+            ).write({"state": "synced", "error_message": False})
+        return self.action_retry_sync()
+
+    def _delivered_line_snapshot(self, binding, sale_order):
+        """Return the lines that Shopify's lines must match after delivery."""
+        if binding.handled_state:
+            return binding.handled_state["lines"]
+        return self._existing_line_snapshot(binding, sale_order)
+
     @api.model
     def _job_import_order_from_api(self, instance_id, order_id, webhook_payload=None):
         instance = self.env["shopify.instance"].sudo().browse(instance_id).exists()
@@ -561,9 +640,10 @@ class ShopifyOrderSync(models.Model):
             # order to 0. Keep the lines: Odoo does not remove the lines of a
             # confirmed order, and _apply_state cancels the order.
             return sale_order
+        keep_lines = False
         if sale_order and self._is_delivered(sale_order):
             differences = line_diffs(
-                self._existing_line_snapshot(binding, sale_order),
+                self._delivered_line_snapshot(binding, sale_order),
                 [
                     {"id": line["id"], "quantity": line["quantity"]}
                     for line in order_data["lines"]
@@ -576,6 +656,9 @@ class ShopifyOrderSync(models.Model):
                         "manual resolution is required."
                     )
                 )
+            # A person handled this Shopify state by hand. Keep the Odoo
+            # lines as they made them and only update the order header.
+            keep_lines = bool(binding.handled_state)
         currency = self._currency(instance, order_data)
         partner = self._partner(instance, order_data)
         pricelist = self._pricelist(instance, currency)
@@ -639,6 +722,15 @@ class ShopifyOrderSync(models.Model):
                 .create(values)
             )
         binding.odoo_id = sale_order
+        if keep_lines:
+            # The sales order lines stay as the person made them, but the line
+            # bindings still show Shopify's current quantities and amounts.
+            line_bindings = {item.shopify_id: item for item in binding.line_binding_ids}
+            for line_data in order_data["lines"]:
+                line_binding = line_bindings.get(line_data["id"])
+                if line_binding:
+                    line_binding.write(self._line_binding_values(line_data))
+            return sale_order
         self._apply_lines(binding, sale_order, instance, order_data)
         self._verify_total(sale_order, currency, instance, order_data)
         return sale_order
@@ -907,7 +999,7 @@ class ShopifyOrderSync(models.Model):
             line_binding = existing.get(line_data["id"])
             if line_data["quantity"] <= 0:
                 if line_binding:
-                    line_binding.odoo_id.unlink()
+                    self._remove_line(sale_order, line_binding)
                 continue
             product = self._line_product(instance, line_data)
             taxes = self._mapped_taxes(
@@ -971,8 +1063,19 @@ class ShopifyOrderSync(models.Model):
             line_binding.write(self._line_binding_values(line_data))
         for identifier, line_binding in existing.items():
             if identifier not in incoming_ids and not line_binding.is_shipping:
-                line_binding.odoo_id.unlink()
+                self._remove_line(sale_order, line_binding)
         self._apply_shipping_lines(binding, sale_order, instance, order_data, country)
+
+    def _remove_line(self, sale_order, line_binding):
+        """Remove a line that Shopify refunded in full or no longer sends."""
+        if sale_order.state in ("draft", "sent"):
+            line_binding.odoo_id.unlink()
+            return
+        # Odoo does not delete a line of a confirmed order. Set its quantity
+        # to 0 instead, as Odoo asks, and keep the binding for later imports.
+        line_binding.odoo_id.with_context(shopify_order_import=True).write(
+            {"product_uom_qty": 0}
+        )
 
     def _line_binding_values(self, line_data):
         allocations = line_data["discount_allocations"]
@@ -1080,6 +1183,41 @@ class ShopifyOrderSync(models.Model):
         for identifier, line_binding in existing.items():
             if identifier not in incoming_ids:
                 line_binding.odoo_id.unlink()
+        self._apply_shipping_carrier(instance, sale_order, order_data)
+
+    def _apply_shipping_carrier(self, instance, sale_order, order_data):
+        """Set the carrier mapped to the order's Shopify shipping method.
+
+        The shipping method is only a price line on the order. Without a
+        carrier on the delivery, the warehouse has to choose it by hand.
+        """
+        carrier = self._shipping_method_carrier(instance, order_data["shipping_lines"])
+        if not carrier:
+            return
+        # Keep a carrier that is already set: a user may have changed it.
+        if not sale_order.carrier_id:
+            sale_order.with_context(shopify_order_import=True).write(
+                {"carrier_id": carrier.id}
+            )
+        # The order sets the carrier on the deliveries made after this point.
+        # A delivery that already exists (an order imported again) gets it here.
+        sale_order.picking_ids.filtered(
+            lambda picking: picking.picking_type_code == "outgoing"
+            and picking.state not in ("done", "cancel")
+            and not picking.carrier_id
+        ).write({"carrier_id": carrier.id})
+
+    def _shipping_method_carrier(self, instance, shipping_lines):
+        mappings = instance.carrier_mapping_ids.filtered("shipping_method_names")
+        for shipping in shipping_lines:
+            names = {
+                (shipping.get(key) or "").strip().casefold()
+                for key in ("title", "code")
+            } - {""}
+            for mapping in mappings:
+                if names & mapping._shipping_method_name_set():
+                    return mapping.carrier_id
+        return self.env["delivery.carrier"]
 
     def _line_product(self, instance, line_data):
         if line_data["gift_card"]:
@@ -1193,6 +1331,9 @@ class ShopifyOrderSync(models.Model):
             }
         )
         if order_data["cancelled_at"]:
+            if (binding.handled_state or {}).get("cancelled"):
+                # A person handled this cancellation by hand after delivery.
+                return
             if self._is_delivered(sale_order):
                 raise ShopifyOrderImportError(
                     self.env._("Shopify cancelled an order already delivered in Odoo.")
@@ -1391,6 +1532,24 @@ class ShopifyOrderSync(models.Model):
             else:
                 model.create(values)
 
+    def _shopify_refund_amount(self, binding, refund):
+        """Return the refunded amount in the currency the store imports."""
+        selected_side = binding.instance_id.order_currency_policy == "presentment"
+        amount = decimal_amount(
+            selected_money(refund["total"], selected_side)["amount"]
+        )
+        if amount:
+            return amount
+        return sum(
+            decimal_amount(selected_money(line["subtotal"], selected_side)["amount"])
+            + decimal_amount(selected_money(line["tax"], selected_side)["amount"])
+            for line in refund["lines"]
+        ) + sum(
+            decimal_amount(selected_money(item["amount"], selected_side)["amount"])
+            + decimal_amount(selected_money(item["tax"], selected_side)["amount"])
+            for item in refund["adjustments"]
+        )
+
     def _apply_refund(self, binding, refund):
         if not refund["id"]:
             return
@@ -1404,21 +1563,7 @@ class ShopifyOrderSync(models.Model):
         if existing and existing.state == "synced":
             return
         selected_side = binding.instance_id.order_currency_policy == "presentment"
-        amount = decimal_amount(
-            selected_money(refund["total"], selected_side)["amount"]
-        )
-        if not amount:
-            amount = sum(
-                decimal_amount(
-                    selected_money(line["subtotal"], selected_side)["amount"]
-                )
-                + decimal_amount(selected_money(line["tax"], selected_side)["amount"])
-                for line in refund["lines"]
-            ) + sum(
-                decimal_amount(selected_money(item["amount"], selected_side)["amount"])
-                + decimal_amount(selected_money(item["tax"], selected_side)["amount"])
-                for item in refund["adjustments"]
-            )
+        amount = self._shopify_refund_amount(binding, refund)
         if not existing:
             existing = self.env["shopify.refund"].create(
                 {

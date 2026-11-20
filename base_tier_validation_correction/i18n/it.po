@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-06 09:46+0000\n"
+"PO-Revision-Date: 2026-11-18 12:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
@@ -47,19 +47,9 @@ msgid "Activity Type Icon"
 msgstr "Icona tipo attività"
 
 #. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Actual Correct"
-msgstr "Attuale corretto"
-
-#. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_actual_correct
 msgid "Actual Correction Date"
 msgstr "Data correzione attuale"
-
-#. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Actual Revert"
-msgstr "Ripristino attuale"
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_actual_revert
@@ -82,6 +72,31 @@ msgstr "Revisioni livello interessate"
 #: model:res.groups,name:base_tier_validation_correction.group_tier_correction
 msgid "Allowed"
 msgstr "Consentito"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Applied on"
+msgstr "Applicato a"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid ""
+"Apply and revert this correction automatically, for example\n"
+"                                for an interim period. A scheduled action "
+"checks every hour.\n"
+"                                Leave the dates empty to apply and revert by "
+"hand."
+msgstr ""
+"Applica e annulla automaticamente questa correzione, ad esempio\n"
+"                                per un periodo provvisorio. Un'operazione "
+"pianificata esegue un controllo ogni ora. \n"
+"                                Lasciare vuote le date per procedere "
+"all'applicazione e all'annullamento manualmente."
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Apply on"
+msgstr "Applica a"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
@@ -440,9 +455,19 @@ msgid "Revert Date should be after Correct Date"
 msgstr "La data di ripristino deve essere dopo la data di corretta"
 
 #. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Revert on"
+msgstr "Ritorna su"
+
+#. module: base_tier_validation_correction
 #: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__revert
 msgid "Reverted"
 msgstr "Ripristinato"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Reverted on"
+msgstr "Ritornato a"
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__review_ids
@@ -461,13 +486,13 @@ msgstr "Revisore(i)"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled Action"
-msgstr "Azione schedulata"
+msgid "Schedule"
+msgstr "Pianifica"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled Correct"
-msgstr "Correzione schedulato"
+msgid "Scheduled Action"
+msgstr "Azione schedulata"
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_correct
@@ -475,19 +500,9 @@ msgid "Scheduled Correction Date"
 msgstr "Data correzione schedulato"
 
 #. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled Revert"
-msgstr "Ripristina schedulato"
-
-#. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_revert
 msgid "Scheduled Revert Date"
 msgstr "Data ripristino schedulato"
-
-#. module: base_tier_validation_correction
-#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
-msgid "Scheduled date/time to auto correct and/or revert by"
-msgstr "Data/ora schedulata da auto correggere e/o ripristinare da"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
@@ -613,6 +628,21 @@ msgstr "Cronologia comunicazioni sito web"
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
 msgid "e.g. Correction for..."
 msgstr "es. Correzione per..."
+
+#~ msgid "Actual Correct"
+#~ msgstr "Attuale corretto"
+
+#~ msgid "Actual Revert"
+#~ msgstr "Ripristino attuale"
+
+#~ msgid "Scheduled Correct"
+#~ msgstr "Correzione schedulato"
+
+#~ msgid "Scheduled Revert"
+#~ msgstr "Ripristina schedulato"
+
+#~ msgid "Scheduled date/time to auto correct and/or revert by"
+#~ msgstr "Data/ora schedulata da auto correggere e/o ripristinare da"
 
 #~ msgid "Group By"
 #~ msgstr "Raggruppa per"

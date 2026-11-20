@@ -38,6 +38,13 @@
                         invisible="not missing_tax_rate"
                         class="oe_highlight"
                     />
+                    <button
+                        name="action_mark_handled"
+                        type="object"
+                        string="Mark as Handled"
+                        invisible="state != 'error' or not odoo_id"
+                        confirm="Mark this Shopify change as handled by hand in Odoo? Later imports keep the current Odoo order lines and apply only new changes."
+                    />
                     <field name="state" widget="statusbar" />
                 </header>
                 <sheet>
@@ -65,7 +72,20 @@
                             <field name="risk_level" readonly="1" widget="badge" />
                             <field name="discount_codes" readonly="1" />
                             <field name="last_sync_date" readonly="1" />
+                            <field
+                                name="handled_date"
+                                readonly="1"
+                                invisible="not handled_date"
+                            />
+                            <field
+                                name="handled_uid"
+                                readonly="1"
+                                invisible="not handled_date"
+                            />
                         </group>
+                    </group>
+                    <group string="Last Error" invisible="state != 'error'">
+                        <field name="error_message" nolabel="1" readonly="1" />
                     </group>
                     <group string="Shop Money">
                         <field name="shop_currency_id" readonly="1" />

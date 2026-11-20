@@ -367,6 +367,12 @@ msgid "Four-eyes Principle"
 msgstr "Vier Augen Prinzip"
 
 #. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
+msgid "Future"
+msgstr ""
+
+#. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_review.py:0
 msgid "Group %s"
@@ -487,6 +493,12 @@ msgid "Last Updated on"
 msgstr "Zuletzt geändert am"
 
 #. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
+msgid "Late"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__model
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__model_id
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
@@ -591,6 +603,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__pending
 msgid "Pending"
 msgstr "Ausstehend"
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__pending_date
+msgid "Pending Since"
+msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__model_id
@@ -744,6 +761,12 @@ msgstr "Erinnerung zur Überprüfung der Stufe senden"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__sequence
 msgid "Sequence"
 msgstr "Sequenz"
+
+#. module: base_tier_validation
+#. odoo-javascript
+#: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
+msgid "Show all reviews"
+msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__individual
@@ -1002,6 +1025,14 @@ msgstr ""
 "Anfrage automatisch validieren. Dies ist nur bei review_type='group'; von "
 "Bedeutung. Bei den anderen Überprüfungstypen wird dieses Feld im Formular "
 "ausgeblendet."
+
+#. module: base_tier_validation
+#: model:ir.model.fields,help:base_tier_validation.field_tier_review__pending_date
+msgid ""
+"When the review became pending, i.e. when its reviewers could act on it. "
+"With Approve by sequence that is when the previous tier was validated, not "
+"when the validation was requested."
+msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__no

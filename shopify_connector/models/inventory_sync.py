@@ -1,5 +1,7 @@
 # pylint: disable=consider-merging-classes-inherited
 
+from uuid import uuid4
+
 from odoo import api, fields, models
 from odoo.exceptions import UserError
 
@@ -469,7 +471,7 @@ class ShopifyProductVariantInventorySync(models.Model):
         return available_quantity(level)
 
     def _execute_inventory_set(
-        self, client, location_binding, desired, compare_quantity
+        self, client, location_binding, desired, change_from_quantity
     ):
         self.ensure_one()
         database_uuid = (
@@ -487,9 +489,13 @@ class ShopifyProductVariantInventorySync(models.Model):
                     self.inventory_item_shopify_id,
                     location_binding.shopify_id,
                     desired,
-                    compare_quantity,
+                    change_from_quantity,
                     reference_document_uri=reference,
-                )
+                ),
+                # Shopify requires an idempotency key from API version 2026-04.
+                # A retry after a stale quantity is a new request, so each call
+                # gets its own key.
+                "idempotencyKey": str(uuid4()),
             },
         )
 

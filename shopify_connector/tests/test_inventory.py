@@ -1,7 +1,10 @@
 from unittest.mock import Mock, patch
+from uuid import UUID
 
 from odoo import fields
 from odoo.tests.common import TransactionCase
+
+from odoo.addons.shopify_connector.lib.client import ShopifyUserError
 
 
 class TestShopifyInventory(TransactionCase):
@@ -180,3 +183,44 @@ class TestShopifyInventory(TransactionCase):
             limit=1,
         )
         self.assertIn("echo", log.message.lower())
+
+    def test_push_uses_change_from_quantity_and_a_key_per_attempt(self):
+        location = self._location_binding()
+        client = Mock()
+        client.execute.side_effect = [
+            ShopifyUserError(
+                "The changeFromQuantity argument no longer matches the persisted "
+                "quantity."
+            ),
+            {"inventorySetQuantities": {"userErrors": []}},
+        ]
+        with (
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+            patch.object(
+                type(self.variant_binding),
+                "_odoo_inventory_quantity",
+                return_value=9,
+            ),
+            patch.object(
+                type(self.variant_binding),
+                "_read_shopify_inventory_quantity",
+                side_effect=[5, 6],
+            ),
+        ):
+            self.assertTrue(self.variant_binding._push_inventory_level(location))
+
+        # The stale first attempt is retried with the quantity Shopify has now.
+        self.assertEqual(client.execute.call_count, 2)
+        keys = []
+        for call, expected_from in zip(
+            client.execute.call_args_list, (5, 6), strict=False
+        ):
+            variables = call.args[1]
+            quantity = variables["input"]["quantities"][0]
+            self.assertEqual(quantity["quantity"], 9)
+            self.assertEqual(quantity["changeFromQuantity"], expected_from)
+            self.assertNotIn("compareQuantity", quantity)
+            UUID(variables["idempotencyKey"])
+            keys.append(variables["idempotencyKey"])
+        self.assertNotEqual(keys[0], keys[1])
+        self.assertIn("@idempotent(key: $idempotencyKey)", call.args[0])

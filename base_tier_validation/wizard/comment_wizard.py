@@ -17,7 +17,14 @@ class CommentWizard(models.TransientModel):
     def add_comment(self):
         self.ensure_one()
         rec = self.env[self.res_model].browse(self.res_id)
-        self.review_ids.write({"comment": self.comment})
+        commented = self.review_ids
+        if self.validate_reject == "validate" and commented.filtered(
+            "approve_sequence_bypass"
+        ):
+            # With Approve by sequence bypass one approval covers several
+            # tiers: comment only the last one instead of repeating it.
+            commented = commented.sorted("sequence")[-1:]
+        commented.write({"comment": self.comment})
         if self.validate_reject == "validate":
             rec._validate_tier(self.review_ids)
         if self.validate_reject == "reject":

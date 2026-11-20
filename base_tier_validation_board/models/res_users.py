@@ -32,4 +32,8 @@ class Users(models.Model):
             "base_tier_validation_board.group_show_tier_review_board"
         ):
             return False
-        return action.read()[0]
+        # Reading ir.actions.act_window is restricted to administrators,
+        # so read the action the way Odoo does for client-side actions.
+        return self.env["ir.actions.actions"]._for_xml_id(
+            "base_tier_validation_board.open_boards_tier_reviews"
+        )

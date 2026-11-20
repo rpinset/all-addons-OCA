@@ -5,7 +5,7 @@
     "summary": "Dashboard with kanban, list, pivot and graph views over"
     " every pending/approved/rejected tier review, gated by an opt-in"
     " group and per-document ACL.",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "development_status": "Beta",
     "maintainers": ["JasminSForgeFlow"],
     "category": "Tools",

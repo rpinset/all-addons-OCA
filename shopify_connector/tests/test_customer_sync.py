@@ -2,6 +2,8 @@ from unittest.mock import Mock, patch
 
 from odoo.tests.common import TransactionCase
 
+from odoo.addons.queue_job.exception import RetryableJobError
+
 from ..models.customer_sync import PHONE_MATCH_CANDIDATE_LIMIT
 
 
@@ -339,3 +341,52 @@ class TestShopifyCustomerSync(TransactionCase):
 
         sent = client.execute.call_args.args[1]["input"]
         self.assertEqual(sent, {"id": binding.shopify_id, "phone": None})
+
+    def _hold_match_lock(self, customer):
+        """Take the partner match lock in a second cursor, like another job."""
+        lock_key = self.customer_model._partner_match_lock_key(self.instance, customer)
+        self.assertTrue(lock_key)
+        other_cr = self.env.registry.cursor()
+        other_cr.execute("SELECT pg_try_advisory_xact_lock(hashtext(%s))", (lock_key,))
+        self.assertTrue(other_cr.fetchone()[0])
+        return other_cr
+
+    def _release_match_lock(self, other_cr):
+        # The other cursor only held a lock; it never commits anything.
+        other_cr.rollback()
+        other_cr.close()
+
+    def test_busy_email_match_lock_retries_the_import(self):
+        payload = self._payload(60, email="Shared@Example.com")
+        # A job of another store imports the same e-mail at the same moment.
+        other_cr = self._hold_match_lock({"email": "shared@example.com", "phone": ""})
+        try:
+            with self.assertRaises(RetryableJobError):
+                self.customer_model._job_import_customer(self.instance.id, payload)
+        finally:
+            self._release_match_lock(other_cr)
+        # The other job is done, so the import goes on.
+        binding_id = self.customer_model._job_import_customer(self.instance.id, payload)
+        self.assertTrue(binding_id)
+
+    def test_busy_phone_match_lock_retries_the_import(self):
+        payload = self._payload(61, email="", phone="+6281234567001")
+        other_cr = self._hold_match_lock({"email": "", "phone": "+6281234567001"})
+        try:
+            with self.assertRaises(RetryableJobError):
+                self.customer_model._job_import_customer(self.instance.id, payload)
+        finally:
+            self._release_match_lock(other_cr)
+        binding_id = self.customer_model._job_import_customer(self.instance.id, payload)
+        self.assertTrue(binding_id)
+
+    def test_customer_without_email_and_phone_takes_no_match_lock(self):
+        payload = self._payload(62, email="", phone="")
+        self.assertFalse(
+            self.customer_model._partner_match_lock_key(
+                self.instance, {"email": "", "phone": ""}
+            )
+        )
+        # There is nothing to match on, so the import does not wait for a lock.
+        binding_id = self.customer_model._job_import_customer(self.instance.id, payload)
+        self.assertTrue(binding_id)

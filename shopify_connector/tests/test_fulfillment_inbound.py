@@ -173,6 +173,49 @@ class TestShopifyInboundFulfillment(TransactionCase):
         self.assertEqual(picking.carrier_tracking_ref, "7701,7702")
         self.assertEqual(self.sale.order_line.mapped("qty_delivered"), [2, 2])
 
+    def _delivery_with_shipping_carrier(self):
+        # A delivery with a carrier that creates shipments, as set from the
+        # Shopify shipping method, and an operation type that prints labels.
+        self._stock(self.widget, 2)
+        self._stock(self.gadget, 2)
+        self.sale.action_confirm()
+        picking = self.sale.picking_ids
+        self.assertEqual(self.carrier.integration_level, "rate_and_ship")
+        picking.picking_type_id.print_label = True
+        picking.carrier_id = self.carrier
+        return picking
+
+    def test_fulfillment_without_tracking_books_no_shipment(self):
+        picking = self._delivery_with_shipping_carrier()
+
+        with patch.object(
+            type(self.carrier), "fixed_send_shipping", autospec=True
+        ) as send_shipping:
+            self._import(
+                self._payload(901, [(self.widget_line, 2), (self.gadget_line, 2)])
+            )
+
+        self.assertEqual(picking.state, "done")
+        self.assertFalse(picking.carrier_tracking_ref)
+        send_shipping.assert_not_called()
+
+    def test_delivery_validated_in_odoo_still_books_a_shipment(self):
+        # The same delivery, validated by a user, books the shipment as usual.
+        picking = self._delivery_with_shipping_carrier()
+        picking.move_ids.quantity = 2
+        picking.move_ids.picked = True
+
+        with patch.object(
+            type(self.carrier),
+            "fixed_send_shipping",
+            autospec=True,
+            return_value=[{"exact_price": 0.0, "tracking_number": False}],
+        ) as send_shipping:
+            picking.with_context(skip_shopify_fulfillment_push=True).button_validate()
+
+        self.assertEqual(picking.state, "done")
+        send_shipping.assert_called_once()
+
     def test_partial_fulfillment_ships_only_the_fulfilled_items(self):
         self._stock(self.widget, 2)
         self._stock(self.gadget, 2)

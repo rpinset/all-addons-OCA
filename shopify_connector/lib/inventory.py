@@ -60,11 +60,15 @@ def build_inventory_set_payload(
     inventory_item_id: str,
     location_id: str,
     quantity: int,
-    compare_quantity: int,
+    change_from_quantity: int,
     *,
     reference_document_uri: str | None = None,
 ) -> dict[str, Any]:
-    """Build an ``InventorySetQuantitiesInput`` using compare-and-set."""
+    """Build an ``InventorySetQuantitiesInput`` using compare-and-set.
+
+    ``changeFromQuantity`` replaces ``compareQuantity``, which Shopify removes
+    in API version 2026-04. Both work in 2026-01.
+    """
 
     payload: dict[str, Any] = {
         "name": "available",
@@ -74,7 +78,7 @@ def build_inventory_set_payload(
                 "inventoryItemId": inventory_item_id,
                 "locationId": location_id,
                 "quantity": int(quantity),
-                "compareQuantity": int(compare_quantity),
+                "changeFromQuantity": int(change_from_quantity),
             }
         ],
     }
@@ -145,6 +149,9 @@ def is_stale_compare_error(error: Exception | str) -> bool:
     """Recognize Shopify's compare-and-set mismatch user errors."""
 
     message = str(error).casefold()
+    # "The changeFromQuantity argument no longer matches the persisted quantity."
+    if "changefromquantity" in message or "change_from_quantity_stale" in message:
+        return True
     return "compare" in message and (
         "quantity" in message or "persisted" in message or "stale" in message
     )

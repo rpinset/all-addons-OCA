@@ -70,8 +70,11 @@ INVENTORY_LEVELS_BULK_QUERY = """
 """
 
 INVENTORY_SET_QUANTITIES_MUTATION = """
-mutation InventorySetQuantities($input: InventorySetQuantitiesInput!) {
-  inventorySetQuantities(input: $input) {
+mutation InventorySetQuantities(
+  $input: InventorySetQuantitiesInput!
+  $idempotencyKey: String!
+) {
+  inventorySetQuantities(input: $input) @idempotent(key: $idempotencyKey) {
     inventoryAdjustmentGroup {
       createdAt
       reason

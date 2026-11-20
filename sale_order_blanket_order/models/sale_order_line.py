@@ -4,7 +4,7 @@ import functools
 from collections import defaultdict
 
 from odoo import api, fields, models
-from odoo.exceptions import ValidationError
+from odoo.exceptions import UserError, ValidationError
 from odoo.tools import SQL, float_compare, float_is_zero, float_round
 
 
@@ -821,6 +821,84 @@ class SaleOrderLine(models.Model):
                         "already called by call-off orders."
                     )
                 )
+
+    def _prepare_call_off_blanket_moves_to_cancel(self):
+        """Return blanket order moves related to the call-off.
+
+        This includes the moves linked to the call-off lines and unprocessed
+        upstream moves feeding them. Shared upstream moves are split when needed
+        so that only the quantity related to the call-off is canceled.
+        """
+        moves = self.blanket_move_ids.filtered(lambda move: move.state != "cancel")
+        upstream_moves = moves.move_orig_ids
+        while upstream_moves:
+            moves_to_cancel = self.env["stock.move"]
+            for move in upstream_moves:
+                if move.state in ("done", "cancel") or move in moves:
+                    continue
+                dest_moves = move.move_dest_ids & moves
+                if not dest_moves:
+                    continue
+                if move.move_dest_ids - moves:
+                    move = move._split_for_dest_moves(dest_moves)
+                moves_to_cancel |= move
+            moves |= moves_to_cancel
+            upstream_moves = moves_to_cancel.move_orig_ids
+        return moves
+
+    def _check_call_off_blanket_moves_to_cancel(self):
+        """Check that the call-off blanket moves can be canceled.
+
+        Only delivery moves are checked, as canceling a partially delivered
+        call-off would make the delivered quantity available for future call-offs.
+        """
+        done_moves = self.blanket_move_ids.filtered(lambda move: move.state == "done")
+        if done_moves:
+            orders = done_moves.call_off_sale_line_id.order_id
+            raise UserError(
+                self.env._(
+                    "The call-off order(s) %(orders)s cannot be canceled since "
+                    "some products have already been delivered.",
+                    orders=", ".join(orders.mapped("name")),
+                )
+            )
+
+    def _cancel_call_off_blanket_moves(self):
+        """Cancel the stock moves created on the blanket order for the call-off
+        order lines and remove the stock references no more used.
+        """
+        call_off_lines = self.filtered(lambda line: line.order_type == "call_off")
+        call_off_lines._check_call_off_blanket_moves_to_cancel()
+        moves = call_off_lines._prepare_call_off_blanket_moves_to_cancel()
+        references = moves.reference_ids
+        moves._action_cancel()
+        call_off_lines._unlink_call_off_stock_references(references)
+
+    def _unlink_call_off_stock_references(self, references):
+        """Unlink the stock references created on the blanket order for the
+        call-off order lines.
+
+        Since the deliveries of several call-off orders can be grouped into the
+        same stock reference, a reference is only removed if it's no more used by
+        any active stock move.
+        """
+        references = references.filtered(
+            lambda reference: reference.sale_ids & self.order_id.blanket_order_id
+        )
+        if not references:
+            return
+        # Stock references are technical records no group can delete, and a
+        # reference must be kept for any move using it, visible or not to the
+        # user canceling the call-off order.
+        used_references = (
+            self.env["stock.move"]
+            .sudo()
+            .search(
+                [("reference_ids", "in", references.ids), ("state", "!=", "cancel")]
+            )
+            .reference_ids
+        )
+        (references - used_references).sudo().unlink()
 
     def write(self, values):
         self._blanket_check_update_product_uom_qty(values)

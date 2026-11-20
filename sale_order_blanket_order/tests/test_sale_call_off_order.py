@@ -3,7 +3,8 @@
 import freezegun
 
 from odoo import Command
-from odoo.exceptions import ValidationError
+from odoo.exceptions import UserError, ValidationError
+from odoo.tests import new_test_user
 
 from .common import SaleOrderBlanketOrderCase
 
@@ -406,6 +407,260 @@ class TestSaleCallOffOrderProcessing(SaleOrderBlanketOrderCase):
             order.order_line.blanket_line_id,
             blanket_lines,
         )
+
+    def _create_call_off_order(self, product_uom_qty, commitment_date=None):
+        return self.env["sale.order"].create(
+            {
+                "order_type": "call_off",
+                "partner_id": self.partner.id,
+                "blanket_order_id": self.blanket_so.id,
+                "commitment_date": commitment_date,
+                "order_line": [
+                    Command.create(
+                        {
+                            "product_id": self.product_1.id,
+                            "product_uom_qty": product_uom_qty,
+                        }
+                    ),
+                ],
+            }
+        )
+
+    def _set_pulled_pick_ship(self):
+        """Deliver in 2 steps, the pick being pulled by the ship.
+
+        On 19.0, the next delivery steps are pushed once the first one is done:
+        pull the pick from the ship, as the delivery steps used to be.
+        """
+        warehouse = self.env["stock.warehouse"].search(
+            [("company_id", "=", self.env.company.id)], limit=1
+        )
+        warehouse.delivery_steps = "pick_ship"
+        route = self.env["stock.route"].create(
+            {
+                "name": "Pulled pick + ship",
+                "product_selectable": True,
+                "rule_ids": [
+                    Command.create(
+                        {
+                            "name": "Ship",
+                            "action": "pull",
+                            "picking_type_id": warehouse.out_type_id.id,
+                            "location_src_id": warehouse.wh_output_stock_loc_id.id,
+                            "location_dest_id": self.env.ref(
+                                "stock.stock_location_customers"
+                            ).id,
+                            "procure_method": "make_to_order",
+                        }
+                    ),
+                    Command.create(
+                        {
+                            "name": "Pick",
+                            "action": "pull",
+                            "picking_type_id": warehouse.pick_type_id.id,
+                            "location_src_id": warehouse.lot_stock_id.id,
+                            "location_dest_id": warehouse.wh_output_stock_loc_id.id,
+                            "procure_method": "make_to_stock",
+                        }
+                    ),
+                ],
+            }
+        )
+        self.product_1.route_ids = [Command.link(route.id)]
+        return warehouse
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order(self):
+        blanket_line = self.blanket_so.order_line.filtered(
+            lambda line: line.product_id == self.product_1
+        )[0]
+        remaining_qty = blanket_line.call_off_remaining_qty
+        order = self._create_call_off_order(5.0, commitment_date="2025-02-10 10:00:00")
+        order.action_confirm()
+        moves = order.order_line.blanket_move_ids
+        reference = moves.reference_ids
+        self.assertTrue(reference)
+        self.assertEqual(blanket_line.call_off_remaining_qty, remaining_qty - 5.0)
+
+        order._action_cancel()
+
+        self.assertEqual(order.state, "cancel")
+        self.assertEqual(set(moves.mapped("state")), {"cancel"})
+        self.assertFalse(reference.exists())
+        self.assertEqual(blanket_line.call_off_remaining_qty, remaining_qty)
+        self.assertEqual(blanket_line.qty_to_procure, blanket_line.product_uom_qty)
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_as_salesman(self):
+        # No group can delete stock references: the unused ones are removed
+        # whatever the rights of the user canceling the call-off order.
+        salesman = new_test_user(
+            self.env,
+            login="call_off_salesman",
+            groups="sales_team.group_sale_salesman_all_leads,stock.group_stock_user",
+        )
+        order = self._create_call_off_order(5.0, commitment_date="2025-02-10 10:00:00")
+        order.action_confirm()
+        moves = order.order_line.blanket_move_ids
+        reference = moves.reference_ids
+
+        order.with_user(salesman)._action_cancel()
+
+        self.assertEqual(order.state, "cancel")
+        self.assertEqual(set(moves.mapped("state")), {"cancel"})
+        self.assertFalse(reference.exists())
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_sharing_reference(self):
+        # Only the moves of the canceled call-off order are canceled and the
+        # stock reference shared with another call-off order is kept.
+        order_1 = self._create_call_off_order(
+            5.0, commitment_date="2025-02-10 10:00:00"
+        )
+        order_1.action_confirm()
+        order_2 = self._create_call_off_order(
+            3.0, commitment_date="2025-02-10 10:00:00"
+        )
+        order_2.action_confirm()
+        moves_1 = order_1.order_line.blanket_move_ids
+        moves_2 = order_2.order_line.blanket_move_ids
+        reference = moves_1.reference_ids
+        self.assertEqual(reference, moves_2.reference_ids)
+
+        order_1._action_cancel()
+
+        self.assertEqual(set(moves_1.mapped("state")), {"cancel"})
+        self.assertNotIn("cancel", moves_2.mapped("state"))
+        self.assertTrue(reference.exists())
+        self.assertEqual(moves_2.picking_id.sale_id, self.blanket_so)
+
+        order_2._action_cancel()
+        self.assertFalse(reference.exists())
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_multi_steps(self):
+        self._set_pulled_pick_ship()
+        order = self._create_call_off_order(5.0, commitment_date="2025-02-10 10:00:00")
+        order.action_confirm()
+        ship_moves = order.order_line.blanket_move_ids
+        pick_moves = ship_moves.move_orig_ids
+        self.assertTrue(pick_moves)
+        reference = ship_moves.reference_ids
+
+        order._action_cancel()
+
+        # The upstream moves only feeding the moves of the call-off order are
+        # also canceled
+        self.assertEqual(set(ship_moves.mapped("state")), {"cancel"})
+        self.assertEqual(set(pick_moves.mapped("state")), {"cancel"})
+        self.assertFalse(reference.exists())
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_multi_steps_merged_moves(self):
+        self._set_pulled_pick_ship()
+        order_1 = self._create_call_off_order(
+            5.0, commitment_date="2025-02-10 10:00:00"
+        )
+        order_1.action_confirm()
+        order_2 = self._create_call_off_order(
+            3.0, commitment_date="2025-02-10 10:00:00"
+        )
+        order_2.action_confirm()
+        ship_moves_1 = order_1.order_line.blanket_move_ids
+        ship_moves_2 = order_2.order_line.blanket_move_ids
+        # The pick moves of the call-off orders are merged into a single
+        # operation
+        pick_move = ship_moves_1.move_orig_ids
+        self.assertEqual(len(pick_move), 1)
+        self.assertEqual(pick_move, ship_moves_2.move_orig_ids)
+        self.assertEqual(pick_move.product_uom_qty, 8.0)
+        pick_move._action_assign()
+        self.assertEqual(pick_move.quantity, 8.0)
+        move_line = pick_move.move_line_ids
+        self.assertEqual(len(move_line), 1)
+
+        order_1._action_cancel()
+
+        # The qty of the pick move feeding the canceled call-off order is
+        # removed from the merged pick move
+        self.assertEqual(set(ship_moves_1.mapped("state")), {"cancel"})
+        self.assertNotIn("cancel", ship_moves_2.mapped("state"))
+        self.assertEqual(pick_move.state, "assigned")
+        self.assertEqual(pick_move.product_uom_qty, 3.0)
+        self.assertEqual(pick_move.quantity, 3.0)
+        # The existing reservation is decreased, not done again
+        self.assertEqual(pick_move.move_line_ids, move_line)
+        self.assertEqual(move_line.quantity, 3.0)
+        quants = self.env["stock.quant"].search(
+            [
+                ("product_id", "=", self.product_1.id),
+                ("location_id", "=", move_line.location_id.id),
+            ]
+        )
+        self.assertEqual(sum(quants.mapped("reserved_quantity")), 3.0)
+        self.assertEqual(pick_move.move_dest_ids, ship_moves_2)
+        self.assertEqual(len(pick_move.picking_id.move_ids), 1)
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_pushed_steps(self):
+        # With the default delivery steps, only the first step exists until it
+        # is done, the next ones being pushed
+        warehouse = self.env["stock.warehouse"].search(
+            [("company_id", "=", self.env.company.id)], limit=1
+        )
+        warehouse.delivery_steps = "pick_ship"
+        order = self._create_call_off_order(5.0, commitment_date="2025-02-10 10:00:00")
+        order.action_confirm()
+        moves = order.order_line.blanket_move_ids
+        self.assertEqual(moves.picking_type_id, warehouse.pick_type_id)
+        reference = moves.reference_ids
+
+        order._action_cancel()
+
+        self.assertEqual(set(moves.mapped("state")), {"cancel"})
+        self.assertFalse(reference.exists())
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_pushed_steps_shared_picking(self):
+        # The first step moves of call-off orders delivered together share
+        # their picking but are not merged: the reservation of the other
+        # call-off order is kept as is
+        warehouse = self.env["stock.warehouse"].search(
+            [("company_id", "=", self.env.company.id)], limit=1
+        )
+        warehouse.delivery_steps = "pick_ship"
+        order_1 = self._create_call_off_order(
+            5.0, commitment_date="2025-02-10 10:00:00"
+        )
+        order_1.action_confirm()
+        order_2 = self._create_call_off_order(
+            3.0, commitment_date="2025-02-10 10:00:00"
+        )
+        order_2.action_confirm()
+        moves_1 = order_1.order_line.blanket_move_ids
+        moves_2 = order_2.order_line.blanket_move_ids
+        self.assertEqual(moves_1.picking_id, moves_2.picking_id)
+        (moves_1 | moves_2)._action_assign()
+        move_line_2 = moves_2.move_line_ids
+        self.assertEqual(moves_2.quantity, 3.0)
+
+        order_1._action_cancel()
+
+        self.assertEqual(set(moves_1.mapped("state")), {"cancel"})
+        self.assertEqual(moves_2.state, "assigned")
+        self.assertEqual(moves_2.quantity, 3.0)
+        self.assertEqual(moves_2.move_line_ids, move_line_2)
+
+    @freezegun.freeze_time("2025-02-01")
+    def test_cancel_call_off_order_delivered(self):
+        order = self._create_call_off_order(5.0, commitment_date="2025-02-10 10:00:00")
+        order.action_confirm()
+        picking = order.order_line.blanket_move_ids.picking_id
+        picking.action_assign()
+        picking.move_ids.picked = True
+        picking._action_done()
+        with self.assertRaisesRegex(UserError, "already been delivered"):
+            order._action_cancel()
 
 
 class TestSaleAutoDoneCallOffOrderProcessing(TestSaleCallOffOrderProcessing):

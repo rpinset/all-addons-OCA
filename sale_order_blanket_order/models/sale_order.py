@@ -483,6 +483,24 @@ class SaleOrder(models.Model):
         # reset the manual delivery flag to False
         self._set_manual_delivery(False)
 
+    def _blanket_order_update_call_off_remaining_qty_reservation(self):
+        """Update the stock reservation for the qty available to call off.
+
+        This method is called when the qty available to call off is modified
+        without any change on the blanket order lines (e.g. when a call-off order
+        is canceled).
+        """
+        # With the 'at_call_off' strategy, nothing is reserved on the blanket
+        # orders
+        orders = self.filtered(
+            lambda order: order.state in ("sale", "done")
+            and order.blanket_need_to_be_finalized
+            and order.blanket_reservation_strategy != "at_call_off"
+        )
+        for order in orders:
+            order._blanket_order_release_call_off_remaining_qty()
+            order._blanket_order_reserve_call_off_remaining_qty()
+
     def _set_manual_delivery(self, value):
         """Set manual delivery."""
         # the manual delivery can oly be set on draft orders. Unfortunatly, the
@@ -741,6 +759,9 @@ class SaleOrder(models.Model):
         self.ensure_one()
         vals = self._get_default_call_off_order_values(self)
         vals["commitment_date"] = self.blanket_validity_end_date
+        # Same addresses as the call-off orders created from the blanket order
+        vals["partner_invoice_id"] = self.partner_invoice_id.id
+        vals["partner_shipping_id"] = self.partner_shipping_id.id
         return vals
 
     def _split_recrodset_for_reservation_strategy(self, strategy):
@@ -799,4 +820,21 @@ class SaleOrder(models.Model):
             lambda so: so.order_type == "blanket"
             and so.blanket_reservation_strategy == "at_call_off"
         )._blanket_order_release_call_off_remaining_qty()
-        return super()._action_cancel()
+        call_off_orders = self.filtered(lambda so: so.order_type == "call_off")
+        call_off_orders._on_call_off_order_cancel()
+        res = super()._action_cancel()
+        call_off_orders.blanket_order_id._blanket_order_update_call_off_remaining_qty_reservation()
+        return res
+
+    def _on_call_off_order_cancel(self):
+        """This method is called when a call-off order is canceled.
+
+        It's responsible to implement the specific behavior of a call-off order.
+        It can be overriden to implement additionalbehavior.
+        """
+        invalid_orders = self.filtered(lambda order: order.order_type != "call_off")
+        if invalid_orders:
+            raise ValidationError(
+                self.env._("Only call-off orders can be canceled as call-off orders.")
+            )
+        self.order_line._cancel_call_off_blanket_moves()

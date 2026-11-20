@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-11-17 12:08 UTC
+Generated 2026-11-20 22:08 UTC
 
-Total skipped: **134**
+Total skipped: **135**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -44,7 +44,7 @@ Count: **31**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **103**
+Count: **104**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -75,6 +75,7 @@ Count: **103**
 | [donation](https://github.com/OCA/donation) | [19.0](https://github.com/OCA/donation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | [19.0](https://github.com/OCA/dotnet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
+| [edi-framework-wms](https://github.com/OCA/edi-framework-wms) | [19.0](https://github.com/OCA/edi-framework-wms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [19.0](https://github.com/OCA/edi-voxel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | [19.0](https://github.com/OCA/infrastructure/tree/19.0) | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | [19.0](https://github.com/OCA/interface-git/tree/19.0) | No directory with __manifest__.py at repo root |
