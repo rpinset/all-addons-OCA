@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-11-20 22:01 UTC** (elapsed 160s)
+Last build: **2026-11-24 05:18 UTC** (elapsed 119s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -37,7 +37,7 @@ Last build: **2026-11-20 22:01 UTC** (elapsed 160s)
 | [connector-jira](https://github.com/OCA/connector-jira) | 4 | e2a57d5 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [connector-magento](https://github.com/OCA/connector-magento) | 1 | c496d4c 2025-02-20 mymage Translated using Weblate (Italian) |
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 14 | a964366 2024-07-22 mymage Translated using Weblate (Italian) |
-| [contract](https://github.com/OCA/contract) | 35 | 1ae526b 2026-10-01 mymage Translated using Weblate (Italian) |
+| [contract](https://github.com/OCA/contract) | 35 | efd000e 2026-11-23 mymage Translated using Weblate (Italian) |
 | [cooperative](https://github.com/OCA/cooperative) | 9 | bebb28f 2026-11-09 mymage Translated using Weblate (Italian) |
 | [credit-control](https://github.com/OCA/credit-control) | 10 | 67f333f 2026-09-16 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 23 | fa12f23 2026-11-15 mymage Translated using Weblate (Italian) |
