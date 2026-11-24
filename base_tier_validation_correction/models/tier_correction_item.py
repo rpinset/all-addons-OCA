@@ -17,7 +17,16 @@ class TierCorrectionItem(models.Model):
     resource_ref = fields.Reference(
         string="Resource",
         selection=lambda self: [
-            (model.model, model.name) for model in self.env["ir.model"].search([])
+            (model.model, model.name)
+            for model in self.env["ir.model"].search(
+                [
+                    (
+                        "model",
+                        "in",
+                        self.env["tier.definition"]._get_tier_validation_model_names(),
+                    )
+                ]
+            )
         ],
         readonly=True,
     )
@@ -37,8 +46,12 @@ class TierCorrectionItem(models.Model):
     def _notify_reviewer_change(self, ttype="correct"):
         self.ensure_one()
         post = "message_post"
-        if hasattr(self.resource_ref, post):
-            tier_reviews = self.review_ids
+        # Only the waiting / pending reviews are changed by a correction or a
+        # revert: list those, not the reviews approved in the meantime.
+        tier_reviews = self.review_ids.filtered(
+            lambda record: record.status in ["waiting", "pending"]
+        )
+        if tier_reviews and hasattr(self.resource_ref, post):
             reviews = ", ".join(tier_reviews.filtered("name").mapped("name"))
             reviewers = ", ".join(
                 tier_reviews.reviewer_ids.filtered("name").mapped("name")

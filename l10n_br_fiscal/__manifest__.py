@@ -10,7 +10,7 @@
     "maintainers": ["renatonlima", "rvalyi"],
     "website": "https://github.com/OCA/l10n-brazil",
     "development_status": "Production/Stable",
-    "version": "19.0.2.11.1",
+    "version": "19.0.2.12.0",
     "depends": [
         "product",
         "uom_alias",
@@ -105,6 +105,7 @@
         "views/document_line_view.xml",
         "views/document_line_mixin_view.xml",
         "views/res_config_settings_view.xml",
+        "views/report_templates.xml",
         "views/uom_uom.xml",
         "views/invalidate_number_view.xml",
         "views/city_taxation_code.xml",
@@ -116,6 +117,7 @@
         "views/l10n_br_fiscal_action.xml",
         # Menus
         "views/l10n_br_fiscal_menu.xml",
+        "views/document_line_report_view.xml",
     ],
     "assets": {
         "web.assets_backend": [
@@ -138,7 +140,7 @@
     "auto_install": False,
     "external_dependencies": {
         "python": [
-            "erpbrasil-base>=2.4.2",
+            "erpbrasil-base>=2.5.0",
             # the document import wizard parses the XML with xsdata; on 18.0
             # the dependency arrives transitively via l10n_br_nfe, which does
             # not exist on 19.0, so it must be declared here.

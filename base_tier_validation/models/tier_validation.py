@@ -605,19 +605,33 @@ class TierValidation(models.AbstractModel):
                     lambda x: x.approve_sequence
                 )[0]
         if reviews_to_notify:
-            subscribe = "message_subscribe"
-            if hasattr(self, subscribe):
-                getattr(self, subscribe)(
-                    partner_ids=reviews_to_notify.mapped("reviewer_ids")
-                    .mapped("partner_id")
-                    .ids,
-                    subtype_ids=self.env.ref(
-                        self._get_accepted_notification_subtype()
-                    ).ids,
-                )
+            self._subscribe_reviewers(
+                reviews_to_notify.mapped("reviewer_ids").mapped("partner_id").ids,
+                self._get_accepted_notification_subtype(),
+            )
             for review in reviews_to_notify:
                 rec = self.env[review.model].browse(review.res_id)
                 rec._notify_accepted_reviews()
+
+    def _subscribe_reviewers(self, partner_ids, subtype_xmlid):
+        """Subscribe the partners to a tier validation subtype.
+
+        With ``subtype_ids``, ``message_subscribe`` replaces the subtypes of
+        the partners who already follow the record, which would unsubscribe
+        them from its discussion. Keep the subtypes they already follow.
+        """
+        if not hasattr(self, "message_subscribe"):
+            return
+        subtype = self.env.ref(subtype_xmlid)
+        for rec in self:
+            for partner_id in partner_ids:
+                follower = rec.message_follower_ids.filtered(
+                    lambda f, p=partner_id: f.partner_id.id == p
+                )
+                rec.message_subscribe(
+                    partner_ids=[partner_id],
+                    subtype_ids=(follower.subtype_ids | subtype).ids,
+                )
 
     def _get_requested_notification_subtype(self):
         return "base_tier_validation.mt_tier_validation_requested"
@@ -759,16 +773,10 @@ class TierValidation(models.AbstractModel):
                     lambda x: x.approve_sequence
                 )[0]
         if reviews_to_notify:
-            subscribe = "message_subscribe"
-            if hasattr(self, subscribe):
-                getattr(self, subscribe)(
-                    partner_ids=reviews_to_notify.mapped("reviewer_ids")
-                    .mapped("partner_id")
-                    .ids,
-                    subtype_ids=self.env.ref(
-                        self._get_rejected_notification_subtype()
-                    ).ids,
-                )
+            self._subscribe_reviewers(
+                reviews_to_notify.mapped("reviewer_ids").mapped("partner_id").ids,
+                self._get_rejected_notification_subtype(),
+            )
             for review in reviews_to_notify:
                 rec = self.env[review.model].browse(review.res_id)
                 rec._notify_rejected_review()
@@ -820,11 +828,9 @@ class TierValidation(models.AbstractModel):
                 ).mapped("reviewer_ids")
                 # Subscribe reviewers and notify
                 if len(users_to_notify) > 0:
-                    getattr(rec, subscribe)(
-                        partner_ids=users_to_notify.mapped("partner_id").ids,
-                        subtype_ids=self.env.ref(
-                            self._get_requested_notification_subtype()
-                        ).ids,
+                    rec._subscribe_reviewers(
+                        users_to_notify.mapped("partner_id").ids,
+                        self._get_requested_notification_subtype(),
                     )
                     getattr(rec, post)(
                         subtype_xmlid=self._get_requested_notification_subtype(),
@@ -967,17 +973,13 @@ class TierValidation(models.AbstractModel):
                     rec._update_counter({"review_deleted": True})
                 rec.mapped("review_ids").unlink()
             if partners_to_notify_ids:
-                subscribe = "message_subscribe"
                 reviews_to_notify = rec.review_ids.filtered(
                     lambda r: r.definition_id.notify_on_restarted
                 )
-                if hasattr(self, subscribe):
-                    getattr(self, subscribe)(
-                        partner_ids=partners_to_notify_ids,
-                        subtype_ids=self.env.ref(
-                            self._get_restarted_notification_subtype()
-                        ).ids,
-                    )
+                rec._subscribe_reviewers(
+                    partners_to_notify_ids,
+                    self._get_restarted_notification_subtype(),
+                )
                 rec._notify_restarted_review()
 
     @api.model
@@ -1127,11 +1129,9 @@ class TierValidation(models.AbstractModel):
                 # notified -- mirroring ``_notify_review_requested``.
                 if not users_to_notify:
                     continue
-                rec.message_subscribe(
-                    partner_ids=users_to_notify.mapped("partner_id").ids,
-                    subtype_ids=self.env.ref(
-                        self._get_requested_notification_subtype()
-                    ).ids,
+                rec._subscribe_reviewers(
+                    users_to_notify.mapped("partner_id").ids,
+                    self._get_requested_notification_subtype(),
                 )
                 rec.message_post(
                     subtype_xmlid=self._get_requested_notification_subtype(),

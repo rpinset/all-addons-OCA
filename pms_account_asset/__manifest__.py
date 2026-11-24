@@ -5,7 +5,7 @@
 {
     "name": "PMS - Asset Management",
     "summary": "Manage the assets related to your properties",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "development_status": "Beta",
     "category": "Generic Modules/Property Management System",
     "website": "https://github.com/OCA/pms",
@@ -17,6 +17,9 @@
         "pms_account",
     ],
     "demo": [
+        "demo/account_journal_demo.xml",
+        "demo/account_account_demo.xml",
+        "demo/account_asset_profile_demo.xml",
         "demo/account_asset.xml",
     ],
     "data": [

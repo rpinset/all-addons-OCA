@@ -179,3 +179,93 @@ class TierTierValidation(CommonTierValidation):
         button = etree.fromstring(arch).xpath("//button[@string='Scheduled Action']")[0]
         self.assertEqual(button.get("name"), "view_scheduled_action")
         self.assertEqual(button.get("type"), "object")
+
+    def _get_correction_messages(self):
+        subtype = self.env.ref(
+            "base_tier_validation_correction.mt_tier_validation_correction"
+        )
+        return self.test_record.message_ids.filtered(lambda m: m.subtype_id == subtype)
+
+    def _prepare_correction(self, new_reviewer):
+        correction = self.env["tier.correction"].create(
+            {
+                "name": "Correction",
+                "model_id": self.tester_model.id,
+                "document_domain": str([("id", "=", self.test_record.id)]),
+                "old_reviewer_ids": [Command.set(self.test_user_1.ids)],
+                "new_reviewer_ids": [Command.set(new_reviewer.ids)],
+            }
+        )
+        correction.action_prepare()
+        return correction
+
+    def _make_correction(self, new_reviewer):
+        correction = self._prepare_correction(new_reviewer)
+        correction.action_done()
+        return correction
+
+    def _request_validation_in_sequence(self):
+        """Tiers in sequence: user 1, user 2, then user 1 again.
+        Return the first and the last review, both for user 1."""
+        self.definition_1.approve_sequence = True
+        for sequence, reviewer in ((10, self.test_user_1), (20, self.test_user_2)):
+            self._create_tier_definition(
+                model_id=self.tester_model.id,
+                review_type="individual",
+                reviewer_id=reviewer.id,
+                definition_domain="[('test_field', '=', 1.0)]",
+                approve_sequence=True,
+                sequence=sequence,
+            )
+        self.test_record.request_validation()
+        reviews = self.test_record.review_ids.sorted("sequence")
+        return reviews[0], reviews[-1]
+
+    def test_correct_message_lists_corrected_reviewers_only(self):
+        """A review approved between Prepare and Done is not corrected, so the
+        correction message does not name its reviewer."""
+        new_reviewer = self.test_user_3_multi_company
+        first, last = self._request_validation_in_sequence()
+        correction = self._prepare_correction(new_reviewer)
+        self.assertEqual(correction.item_ids.review_ids, first | last)
+        # User 1 approves the first tier before the correction is done
+        self.test_record.with_user(self.test_user_1).validate_tier()
+        self.assertEqual(first.status, "approved")
+        correction.action_done()
+        self.assertEqual(first.reviewer_ids, self.test_user_1)
+        self.assertEqual(last.reviewer_ids, new_reviewer)
+        message = self._get_correction_messages()
+        self.assertEqual(len(message), 1)
+        self.assertIn(new_reviewer.name, message.body)
+        self.assertNotIn(self.test_user_1.name, message.body)
+
+    def test_revert_message_lists_restored_reviewers_only(self):
+        """A review approved by the new reviewer is not reverted, so the
+        revert message does not name that reviewer."""
+        new_reviewer = self.test_user_3_multi_company
+        first, last = self._request_validation_in_sequence()
+        correction = self._make_correction(new_reviewer)
+        self.assertEqual(first.reviewer_ids, new_reviewer)
+        self.assertEqual(last.reviewer_ids, new_reviewer)
+        # The new reviewer approves the first tier, the last one stays open
+        self.test_record.with_user(new_reviewer).validate_tier()
+        self.assertEqual(first.status, "approved")
+        self.assertIn(last.status, ["waiting", "pending"])
+        correction.action_revert()
+        self.assertEqual(first.reviewer_ids, new_reviewer)
+        self.assertEqual(last.reviewer_ids, self.test_user_1)
+        message = self._get_correction_messages()[0]
+        self.assertIn("reverted reviewers", message.body)
+        self.assertIn(self.test_user_1.name, message.body)
+        self.assertNotIn(new_reviewer.name, message.body)
+
+    def test_revert_message_skipped_when_nothing_reverted(self):
+        """No revert message when the new reviewer approved every review."""
+        new_reviewer = self.test_user_3_multi_company
+        self.test_record.request_validation()
+        correction = self._make_correction(new_reviewer)
+        self.test_record.with_user(new_reviewer).validate_tier()
+        self.assertEqual(self.test_record.review_ids.status, "approved")
+        messages_before = self._get_correction_messages()
+        correction.action_revert()
+        self.assertEqual(self._get_correction_messages(), messages_before)

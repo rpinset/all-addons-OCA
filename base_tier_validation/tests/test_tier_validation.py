@@ -2236,6 +2236,73 @@ class TierTierValidation(CommonTierValidation):
             self.test_user_3_multi_company.partner_id, followers.mapped("partner_id")
         )
 
+    def test_reviewers_keep_followed_subtypes(self):
+        """Reviewers who already follow the record keep what they follow
+        (e.g. its discussion) when they are notified as reviewers."""
+        mt_comment = self.env.ref("mail.mt_comment")
+        mt_requested = self.env.ref("base_tier_validation.mt_tier_validation_requested")
+        mt_accepted = self.env.ref("base_tier_validation.mt_tier_validation_accepted")
+        self.tier_definition.write({"approve_sequence": True, "notify_on_create": True})
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "sequence": 20,
+                "approve_sequence": True,
+                "notify_on_accepted": True,
+            }
+        )
+        test_record = self.test_model.create({"test_field": 1.0})
+        partner_1 = self.test_user_1.partner_id
+        partner_2 = self.test_user_2.partner_id
+        test_record.message_subscribe(
+            partner_ids=(partner_1 | partner_2).ids, subtype_ids=mt_comment.ids
+        )
+
+        def followed_subtypes(partner):
+            return test_record.message_follower_ids.filtered(
+                lambda f: f.partner_id == partner
+            ).subtype_ids
+
+        test_record.request_validation()
+        self.assertEqual(followed_subtypes(partner_1), mt_comment | mt_requested)
+        test_record.with_user(self.test_user_1).validate_tier()
+        self.assertEqual(followed_subtypes(partner_2), mt_comment | mt_accepted)
+
+    def test_reviewers_not_subscribed_without_mail_thread(self):
+        """Without chatter, there is no one to subscribe: notifying the
+        next reviewer must not crash."""
+        self.definition_7.notify_on_accepted = True
+        record = self.test_record_2
+        record.request_validation()
+        record.with_user(self.test_user_1).validate_tier()
+        review_7 = record.review_ids.filtered(
+            lambda r: r.definition_id == self.definition_7
+        )
+        self.assertEqual(review_7.status, "pending")
+        self.assertFalse(hasattr(record, "message_follower_ids"))
+
+    def test_restart_validation_subscribes_reviewers_of_each_record(self):
+        """Restarting several records subscribes the reviewers of each
+        record to that record only."""
+        self.tier_definition.notify_on_restarted = True
+        self._create_tier_definition(
+            model_id=self.tester_model.id,
+            review_type="individual",
+            reviewer_id=self.test_user_2.id,
+            definition_domain="[('test_field', '=', 2.0)]",
+            notify_on_restarted=True,
+        )
+        record_1 = self.test_model.create({"test_field": 1.0})
+        record_2 = self.test_model.create({"test_field": 2.0})
+        (record_1 | record_2).request_validation()
+        (record_1 | record_2).restart_validation()
+        self.assertIn(self.test_user_1.partner_id, record_1.message_partner_ids)
+        self.assertNotIn(self.test_user_2.partner_id, record_1.message_partner_ids)
+        self.assertIn(self.test_user_2.partner_id, record_2.message_partner_ids)
+        self.assertNotIn(self.test_user_1.partner_id, record_2.message_partner_ids)
+
     def test_32_test_review_by_res_groups_field(self):
         """Test using field-based validation with groups"""
         selected_field = self.env["ir.model.fields"].search(

@@ -110,3 +110,15 @@ class TestStockPickingTierValidation(BaseCommon):
         self._run_tier_validation_flow(
             self.picking_type_out, self.location_stock, self.location_customer
         )
+
+    def test_tier_validation_several_pickings(self):
+        pickings = self._create_picking(
+            self.picking_type_in, self.location_supplier, self.location_stock
+        ) + self._create_picking(
+            self.picking_type_in, self.location_supplier, self.location_stock
+        )
+        pickings.action_confirm()
+        pickings.action_assign()
+        # The reviewer validates both pickings at once
+        pickings.with_user(self.test_user).button_validate()
+        self.assertEqual(pickings.mapped("state"), ["done", "done"])

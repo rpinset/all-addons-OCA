@@ -63,7 +63,7 @@ class TestPartnerTierValidation(BaseCommon):
 
         # Request and validate partner
         contact.request_validation()
-        contact._invalidate_cache()
+        contact.invalidate_recordset()
         contact.with_user(self.user_approver).validate_tier()
         contact.with_user(self.user_approver).write(
             {"stage_id": self.stage_confirmed.id}
@@ -101,7 +101,7 @@ class TestPartnerTierValidation(BaseCommon):
         self.assertFalse(contact.review_ids.status)
         # Request and validate partner
         contact.request_validation()
-        contact._invalidate_cache()
+        contact.invalidate_recordset()
         self.assertEqual(contact.validation_status, "pending")
         self.assertEqual(contact.review_ids.status, "pending")
         contact.with_user(self.user_approver).validate_tier()
