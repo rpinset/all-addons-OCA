@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-11-20 22:00 UTC** (elapsed 84s)
+Last build: **2026-11-24 05:17 UTC** (elapsed 80s)
 
 - Repos integrated: **140**
 - Canonical modules: **2917**
@@ -37,7 +37,7 @@ Last build: **2026-11-20 22:00 UTC** (elapsed 84s)
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | 4 | 105699b 2025-08-07 OCA-git-bot [BOT] post-merge updates |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | 2 | 1028f1b 2025-05-29 mymage Translated using Weblate (Italian) |
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 10 | 5adf2c9 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
-| [contract](https://github.com/OCA/contract) | 27 | 7257b82 2026-11-15 mymage Translated using Weblate (Italian) |
+| [contract](https://github.com/OCA/contract) | 27 | 7830568 2026-11-23 mymage Translated using Weblate (Italian) |
 | [cooperative](https://github.com/OCA/cooperative) | 7 | e09ca12 2026-11-09 mymage Translated using Weblate (Italian) |
 | [credit-control](https://github.com/OCA/credit-control) | 11 | 6052288 2026-11-04 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 19 | a32d29e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
