@@ -264,10 +264,9 @@ class UpsRequest:
             package_info = self._quant_package_data_from_picking(
                 self.default_packaging_id, picking, False
             )
-            package_weight = round(
-                (picking.shipping_weight / (picking.number_of_packages or 1)), 2
-            )
-            for i in range(0, picking.number_of_packages):
+            number_of_packages = picking.number_of_packages or 1
+            package_weight = round((picking.shipping_weight / number_of_packages), 2)
+            for i in range(0, number_of_packages):
                 package_item = package_info.copy()
                 package_name = f"{picking.name} ({i+1})"
                 package_item["Description"] = package_name
@@ -487,11 +486,17 @@ class UpsRequest:
         )
         self._raise_for_status(status, False)
         shipment = status["trackResponse"]["shipment"][0]
-        package = shipment["package"][0]
+        # UPS omits the package (only returns warnings) when the tracking
+        # information is not found yet
+        package = (shipment.get("package") or [{}])[0]
         current_status = package.get("currentStatus") or {}
         states_list = []
-        delivery_state = "incident"
-        tracking_state = f"[{current_status['code']}] {current_status['description']}"
+        delivery_state = picking.delivery_state or "incident"
+        tracking_state = picking.tracking_state or False
+        if current_status:
+            tracking_state = (
+                f"[{current_status.get('code')}] {current_status.get('description')}"
+            )
         pod = (
             package.get("deliveryInformation", {}).get("pod", {}).get("content", False)
         )

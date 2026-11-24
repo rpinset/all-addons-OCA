@@ -3,6 +3,7 @@ import {_t} from "@web/core/l10n/translation";
 import {barcodeMatchDomain} from "@barcode_scanner/js/utils/scan_match.esm";
 import {barcodeScreens} from "@barcode_scanner/js/registries.esm";
 import {recordImageUrl} from "@barcode_stock/js/utils/avatar.esm";
+import {roundQty} from "@barcode_stock/js/utils/quantity.esm";
 import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.esm";
 import {useBarcodeScanner} from "@barcode_scanner/js/hooks/use_inventory.esm";
 import {useService} from "@web/core/utils/hooks";
@@ -139,32 +140,51 @@ export class ProductSelectorScreen extends Component {
             return;
         }
 
-        const qty = parseInt(this.state.qty, 10) || 1;
+        const qty = roundQty(parseFloat(this.state.qty) || 1);
+        const tracking = product.tracking || "none";
         const lines = this.props.params.lines || [];
-        const existing = lines.find((l) => l.product_id === product.id);
-        const lots = await this.inventory.searchRead(
-            "stock.lot",
-            [["product_id", "=", product.id]],
-            ["id", "name"]
-        );
-        if (existing) {
-            existing.qty += qty;
-        } else {
-            lines.push({
-                product_id: product.id,
-                product_name: product.name,
-                qty: qty,
-                price_unit: product.standard_price || 0,
-                tracking: product.tracking || "none",
-                lot_id: null,
-                lots: lots,
-                default_code: product.default_code || "",
-            });
-        }
-        this.store.goBack({
-            ...this.props.params,
-            lines: lines,
+        const lots =
+            tracking === "none"
+                ? []
+                : await this.inventory.searchRead(
+                      "stock.lot",
+                      [["product_id", "=", product.id]],
+                      ["id", "name"]
+                  );
+        const newLine = (lineQty) => ({
+            product_id: product.id,
+            product_name: product.name,
+            qty: lineQty,
+            price_unit: product.standard_price || 0,
+            tracking,
+            lot_id: null,
+            lot_name: null,
+            lots,
+            default_code: product.default_code || "",
         });
+
+        if (tracking === "serial") {
+            // A serial number is a single unit: one line per unit, each with its
+            // own serial to choose, never a second unit on an existing line.
+            const units = Math.max(1, Math.trunc(qty));
+            for (let i = 0; i < units; i++) {
+                lines.push(newLine(1));
+            }
+        } else {
+            // Untracked: add to the product's line. Lot-tracked: only to a line
+            // whose lot is not chosen yet, since the added units' lot is unknown.
+            const existing = lines.find(
+                (line) =>
+                    line.product_id === product.id &&
+                    (tracking === "none" || !line.lot_id)
+            );
+            if (existing) {
+                existing.qty = roundQty((parseFloat(existing.qty) || 0) + qty);
+            } else {
+                lines.push(newLine(qty));
+            }
+        }
+        this.store.goBack({...this.props.params, lines});
     }
 
     updateSearch(ev) {

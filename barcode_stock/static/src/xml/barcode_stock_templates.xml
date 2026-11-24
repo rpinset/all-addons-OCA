@@ -995,11 +995,7 @@
                     </div>
 
                     <div class="ilx-tx-v2-lines-container">
-                        <t
-                            t-foreach="state.lines"
-                            t-as="line"
-                            t-key="line.product_id + '_' + (line.lot_id || '')"
-                        >
+                        <t t-foreach="state.lines" t-as="line" t-key="line.uid">
                             <div class="ilx-tx-v2-line-card">
                                 <button
                                     class="ilx-tx-v2-line-delete"
@@ -1026,17 +1022,31 @@
                                     <t t-if="line.tracking !== 'none'">
                                         <select
                                             class="ilx-tx-v2-lot-select"
-                                            t-model="line.lot_id"
                                             t-on-change="(ev) => this.onLotChanged(line, ev)"
                                         >
-                                            <option value="">Select lot</option>
+                                            <option
+                                                value=""
+                                                t-att-selected="!line.lot_id"
+                                            >Select lot</option>
                                             <t
                                                 t-foreach="line.lots"
                                                 t-as="lot"
                                                 t-key="lot.id"
                                             >
-                                                <option t-att-value="lot.id">
+                                                <t
+                                                    t-set="taken"
+                                                    t-value="isLotTaken(line, lot.id)"
+                                                />
+                                                <option
+                                                    t-att-value="lot.id"
+                                                    t-att-selected="isLotSelected(line, lot.id)"
+                                                    t-att-disabled="taken"
+                                                    t-att-class="taken ? 'ilx-tx-v2-lot-option--taken' : ''"
+                                                >
                                                     <t t-esc="lot.name" />
+                                                    <t
+                                                        t-if="taken"
+                                                    > — already in another line</t>
                                                 </option>
                                             </t>
                                         </select>

@@ -17,6 +17,12 @@ msgstr ""
 "X-Generator: Weblate 5.15.2\n"
 
 #. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "%(product)s is tracked by serial number: the quantity must be 1."
+msgstr ""
+
+#. module: barcode_stock
 #. odoo-python
 #: code:addons/barcode_stock/models/stock_quant.py:0
 msgid ""
@@ -1398,6 +1404,20 @@ msgstr "Numero di serie"
 
 #. module: barcode_stock
 #. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Serial number %(lot)s is already in this transfer."
+msgstr ""
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Serial number %(lot)s is included more than once."
+msgstr ""
+
+#. module: barcode_stock
+#. odoo-javascript
 #: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
 msgid ""
 "Serial number %(lot)s is not the selected one (%(held)s). The serial number "
@@ -1644,3 +1664,9 @@ msgstr "Sì"
 #: code:addons/barcode_stock/static/src/js/components/picking_move_card.esm.js:0
 msgid "pending"
 msgstr "in sospeso"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "— already in another line"
+msgstr ""

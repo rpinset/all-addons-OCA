@@ -198,3 +198,9 @@
         width: 100%;
     }
 }
+
+.ilx-tx-v2-lot-select option.ilx-tx-v2-lot-option--taken {
+    color: var(--bs-danger, #d44c59);
+    background-color: rgba(212, 76, 89, 0.12);
+    font-style: italic;
+}

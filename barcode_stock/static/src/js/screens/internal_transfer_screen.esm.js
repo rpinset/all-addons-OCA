@@ -10,6 +10,19 @@ import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.e
 import {useBarcodeScanner} from "@barcode_scanner/js/hooks/use_inventory.esm";
 import {useService} from "@web/core/utils/hooks";
 
+let lineSequence = 0;
+/**
+ * Give a line an id of its own for the template's t-key: product and lot
+ * can't be the key, two lines may share them while being edited.
+ */
+function ensureLineUid(line) {
+    if (!line.uid) {
+        lineSequence += 1;
+        line.uid = `${Date.now()}_${lineSequence}`;
+    }
+    return line;
+}
+
 export class InternalTransferScreen extends Component {
     setup() {
         this.inventory = useBarcodeScanner();
@@ -22,6 +35,7 @@ export class InternalTransferScreen extends Component {
             if (!line.lots) {
                 line.lots = [];
             }
+            ensureLineUid(line);
         }
         this.state = useState({
             origin_location: params.origin_location || null,
@@ -32,6 +46,7 @@ export class InternalTransferScreen extends Component {
             isCheckingAvailability: false,
             isValidating: false,
         });
+        this.lotsCache = new Map();
         useBarcodeHandler({
             onScan: (barcode, parsedData) => {
                 this.onBarcodeScanned(barcode, parsedData);
@@ -52,6 +67,7 @@ export class InternalTransferScreen extends Component {
                 if (!line.lots) {
                     line.lots = [];
                 }
+                ensureLineUid(line);
             }
             this.state.lines = nextLines;
             if (
@@ -148,6 +164,9 @@ export class InternalTransferScreen extends Component {
                     type: "warning",
                 }
             );
+            if (product.tracking === "serial") {
+                return;
+            }
         }
         await this.addLine(product, lot?.id || null, lot?.name || null, qty);
     }
@@ -157,7 +176,7 @@ export class InternalTransferScreen extends Component {
         const match = (lots) =>
             lots.find((lot) => (lot.name || "").toUpperCase() === wanted) || null;
         // Prefer a lot actually on hand at the origin...
-        const atOrigin = match((await this.fetchLots(productId)) || []);
+        const atOrigin = match(await this.getProductLots(productId));
         if (atOrigin) {
             return atOrigin;
         }
@@ -168,33 +187,84 @@ export class InternalTransferScreen extends Component {
     }
 
     async addLine(product, lotId, lotName, qty) {
+        if (product.tracking === "serial") {
+            await this.addSerialLine(product, lotId, lotName);
+            return;
+        }
         const existing = this.state.lines.find(
             (l) => l.product_id === product.id && l.lot_id === lotId
         );
         if (existing) {
             // The input hands an edited quantity back as text.
             existing.qty = roundQty((parseFloat(existing.qty) || 0) + qty);
-            if (existing.tracking !== "none") {
-                if (!existing.lots) {
-                    existing.lots = [];
-                }
-                if (!existing.lots.length) {
-                    existing.lots = (await this.fetchLots(product.id)) || [];
-                }
+            if (existing.tracking !== "none" && !existing.lots?.length) {
+                existing.lots = [...(await this.getProductLots(product.id))];
             }
             return;
         }
         const lots =
-            product.tracking === "none" ? [] : (await this.fetchLots(product.id)) || [];
-        this.state.lines.push({
-            product_id: product.id,
-            product_name: product.name,
-            qty: qty,
-            tracking: product.tracking,
-            lot_id: lotId,
-            lot_name: lotName,
-            lots: lots,
-        });
+            product.tracking === "none"
+                ? []
+                : [...(await this.getProductLots(product.id))];
+        this.state.lines.push(
+            ensureLineUid({
+                product_id: product.id,
+                product_name: product.name,
+                qty: qty,
+                tracking: product.tracking,
+                lot_id: lotId,
+                lot_name: lotName,
+                lots: lots,
+            })
+        );
+    }
+
+    getProductLots(productId) {
+        if (!this.lotsCache.has(productId)) {
+            const promise = this.fetchLots(productId)
+                .then((lots) => lots || [])
+                .catch((error) => {
+                    this.lotsCache.delete(productId);
+                    throw error;
+                });
+            this.lotsCache.set(productId, promise);
+        }
+        return this.lotsCache.get(productId);
+    }
+
+    /**
+     * A serial number is a single unit: each one goes on its own line with a
+     * quantity of 1, and scanning one already in the transfer adds nothing.
+     * A scan without a serial (the plain product barcode) adds a new line for
+     * the operator to choose the serial on, never a second unit on another.
+     */
+    async addSerialLine(product, lotId, lotName) {
+        if (
+            lotId &&
+            this.state.lines.some(
+                (line) =>
+                    line.product_id === product.id && Number(line.lot_id) === lotId
+            )
+        ) {
+            this.notification.add(
+                _t("Serial number %(lot)s is already in this transfer.", {
+                    lot: lotName,
+                }),
+                {type: "warning"}
+            );
+            return;
+        }
+        this.state.lines.push(
+            ensureLineUid({
+                product_id: product.id,
+                product_name: product.name,
+                qty: 1,
+                tracking: product.tracking,
+                lot_id: lotId,
+                lot_name: lotName,
+                lots: [...(await this.getProductLots(product.id))],
+            })
+        );
     }
 
     async fetchAllLots(productId) {
@@ -237,11 +307,8 @@ export class InternalTransferScreen extends Component {
     async loadLotsForTrackedLines() {
         for (const line of this.state.lines) {
             if (line.tracking !== "none") {
-                if (!line.lots) {
-                    line.lots = [];
-                }
-                if (!line.lots.length) {
-                    line.lots = (await this.fetchLots(line.product_id)) || [];
+                if (!line.lots?.length) {
+                    line.lots = [...(await this.getProductLots(line.product_id))];
                 }
                 this.updateLineLotName(line);
             }
@@ -350,6 +417,7 @@ export class InternalTransferScreen extends Component {
             this.notification.add(_t("Add at least one product."), {type: "warning"});
             return false;
         }
+        const serialLotIds = new Set();
         for (const line of this.state.lines) {
             if (!(parseFloat(line.qty) > 0)) {
                 this.notification.add(
@@ -369,6 +437,30 @@ export class InternalTransferScreen extends Component {
                     {type: "warning"}
                 );
                 return false;
+            }
+            if (line.tracking === "serial") {
+                if (parseFloat(line.qty) !== 1) {
+                    this.notification.add(
+                        _t(
+                            "%(product)s is tracked by serial number: the quantity must be 1.",
+                            {
+                                product: line.product_name,
+                            }
+                        ),
+                        {type: "warning"}
+                    );
+                    return false;
+                }
+                if (serialLotIds.has(line.lot_id)) {
+                    this.notification.add(
+                        _t("Serial number %(lot)s is included more than once.", {
+                            lot: line.lot_name,
+                        }),
+                        {type: "warning"}
+                    );
+                    return false;
+                }
+                serialLotIds.add(line.lot_id);
             }
         }
         return true;
@@ -466,9 +558,42 @@ export class InternalTransferScreen extends Component {
         }
     }
 
+    /**
+     * Whether a serial number is already chosen on another line: a serial is
+     * a single unit, so it can't go on two.
+     */
+    isLotTaken(line, lotId) {
+        return (
+            line.tracking === "serial" &&
+            Boolean(lotId) &&
+            this.state.lines.some(
+                (other) =>
+                    other.uid !== line.uid &&
+                    other.product_id === line.product_id &&
+                    Number(other.lot_id) === Number(lotId)
+            )
+        );
+    }
+
     onLotChanged(line, ev) {
-        line.lot_id = ev.target.value ? parseInt(ev.target.value, 10) : false;
+        const lotId = ev.target.value ? parseInt(ev.target.value, 10) : false;
+        if (this.isLotTaken(line, lotId)) {
+            const lot = (line.lots || []).find((item) => item.id === lotId);
+            this.notification.add(
+                _t("Serial number %(lot)s is already in this transfer.", {
+                    lot: lot?.name || lotId,
+                }),
+                {type: "warning"}
+            );
+            ev.target.value = line.lot_id || "";
+            return;
+        }
+        line.lot_id = lotId;
         this.updateLineLotName(line);
+    }
+
+    isLotSelected(line, lotId) {
+        return Number(line.lot_id) === lotId;
     }
 
     goBack() {

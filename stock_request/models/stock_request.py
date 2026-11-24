@@ -124,10 +124,18 @@ class StockRequest(models.Model):
                 )
 
     def _get_all_origin_moves(self, move):
-        all_moves = move
-        if move.move_orig_ids:
-            for orig_move in move.move_orig_ids:
-                all_moves |= self._get_all_origin_moves(orig_move)
+        # Collect the move and all its transitive origin moves. The traversal
+        # is iterative and keeps track of the moves already visited because
+        # ``move_orig_ids`` can form a cyclic graph (e.g. returning both legs
+        # of a two-step inter-warehouse transfer that share a transit
+        # location links each leg's return to the other). A naive recursion
+        # over such a cycle raises RecursionError.
+        all_moves = self.env["stock.move"]
+        moves_to_visit = move
+        while moves_to_visit:
+            moves_to_visit -= all_moves
+            all_moves |= moves_to_visit
+            moves_to_visit = moves_to_visit.move_orig_ids
         return all_moves
 
     @api.depends("allocation_ids", "allocation_ids.stock_move_id")
@@ -366,7 +374,9 @@ class StockRequest(models.Model):
         return {
             "stock_request_id": self.id,
             "stock_move_id": move.id,
-            "requested_product_uom_qty": move.product_uom_qty,
+            "requested_product_uom_qty": move.product_uom._compute_quantity(
+                move.product_uom_qty, self.product_uom_id, round=False
+            ),
         }
 
     def _action_use_stock_available(self):
@@ -377,7 +387,7 @@ class StockRequest(models.Model):
             "Product Unit of Measure"
         )
         quants = self.env["stock.quant"]._gather(self.product_id, self.location_id)
-        pending_qty = self.product_uom_qty
+        pending_qty = self.product_qty
         for quant in quants.filtered(lambda x: x.available_quantity >= 0):
             qty_move = min(pending_qty, quant.available_quantity)
             if float_compare(qty_move, 0, precision_digits=precision) > 0:
@@ -419,7 +429,7 @@ class StockRequest(models.Model):
                         request.product_id.sudo()
                         .with_context(location=request.location_id.id)
                         .free_qty,
-                        request.product_uom_qty,
+                        request.product_qty,
                         precision_digits=precision,
                     )
                     >= 0

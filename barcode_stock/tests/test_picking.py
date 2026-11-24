@@ -574,6 +574,81 @@ class TestBarcodeScannerInternalTransfer(TransactionCase):
         picking = self.env["stock.picking"].browse(result["picking_id"])
         self.assertEqual(picking.state, "done")
 
+    def test_lines_of_same_product_share_one_move(self):
+        lot_2 = self.env["stock.lot"].create(
+            {
+                "name": "LOT-INT-002",
+                "product_id": self.tracked_product.id,
+                "company_id": self.company.id,
+            }
+        )
+        self.env["stock.quant"]._update_available_quantity(
+            self.tracked_product, self.stock_location, 4, lot_id=lot_2
+        )
+        # Interleave products so a wrong product -> move mapping would show up
+        lines = [
+            {"product_id": self.tracked_product.id, "lot_id": self.lot.id, "qty": 2},
+            {"product_id": self.untracked_product.id, "lot_id": False, "qty": 3},
+            {"product_id": self.tracked_product.id, "lot_id": lot_2.id, "qty": 3},
+            {"product_id": self.untracked_product.id, "lot_id": False, "qty": 2},
+        ]
+        result = self.env["stock.picking"].action_barcode_scanner_internal_transfer(
+            self.stock_location.id,
+            self.destination_location.id,
+            False,
+            lines,
+        )
+        picking = self.env["stock.picking"].browse(result["picking_id"])
+        self.assertEqual(picking.state, "done")
+        self.assertTrue(result["fully_transferred"])
+        self.assertEqual(
+            [summary["moved_qty"] for summary in result["lines"]], [2, 3, 3, 2]
+        )
+
+        # One move per product, carrying the sum of all its lines
+        self.assertEqual(len(picking.move_ids), 2)
+        self.assertEqual(
+            picking.move_ids.product_id,
+            self.tracked_product | self.untracked_product,
+        )
+        tracked_move = picking.move_ids.filtered(
+            lambda move: move.product_id == self.tracked_product
+        )
+        untracked_move = picking.move_ids - tracked_move
+        self.assertEqual(tracked_move.product_uom_qty, 5)
+        self.assertEqual(untracked_move.product_uom_qty, 5)
+
+        # Every allocation becomes a move line on its own product's move
+        self.assertEqual(picking.move_line_ids, picking.move_ids.move_line_ids)
+        self.assertEqual(
+            sorted((ml.lot_id.name, ml.quantity) for ml in tracked_move.move_line_ids),
+            [("LOT-INT-001", 2), ("LOT-INT-002", 3)],
+        )
+        self.assertEqual(
+            untracked_move.move_line_ids.product_id, self.untracked_product
+        )
+        self.assertEqual(sum(untracked_move.move_line_ids.mapped("quantity")), 5)
+
+        # Stock actually moved from origin to destination
+        expected = [
+            (self.tracked_product, self.lot, 3, 2),
+            (self.tracked_product, lot_2, 1, 3),
+            (self.untracked_product, None, 3, 5),
+        ]
+        for product, lot, at_origin, at_destination in expected:
+            self.assertEqual(
+                self.env["stock.quant"]._get_available_quantity(
+                    product, self.stock_location, lot_id=lot
+                ),
+                at_origin,
+            )
+            self.assertEqual(
+                self.env["stock.quant"]._get_available_quantity(
+                    product, self.destination_location, lot_id=lot
+                ),
+                at_destination,
+            )
+
 
 class TestStockMoveQtyProgress(TransactionCase):
     @classmethod

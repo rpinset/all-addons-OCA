@@ -208,6 +208,15 @@ export class MoveWizardScreen extends Component {
         if (!name || !this.isTracked) {
             return true;
         }
+        if (this.isSerialAlreadyPicked(lot?.id || false, name)) {
+            this.feedback.warning({
+                notify: true,
+                message: _t("Serial number %(lot)s is already in this transfer.", {
+                    lot: name,
+                }),
+            });
+            return false;
+        }
         if (lot && this.canUseExistingLot) {
             if (!this.state.lots.some((item) => item.id === lot.id)) {
                 this.state.lots = [lot, ...this.state.lots];
@@ -934,7 +943,38 @@ export class MoveWizardScreen extends Component {
         return lot;
     }
 
+    /**
+     * Whether a serial number is already picked in this move: a serial is a
+     * single unit, so picking it again would add a second unit of one item.
+     *
+     * @param {Number|false} lotId the lot's id, if it exists
+     * @param {String} lotName the lot's name
+     * @returns {Boolean}
+     */
+    isSerialAlreadyPicked(lotId, lotName) {
+        if (!this.isSerial) {
+            return false;
+        }
+        return (this.state.moveLines || []).some(
+            (line) =>
+                Number(line.qty_picked) > 0 &&
+                ((lotId && lineLotId(line) === lotId) ||
+                    (lotName &&
+                        sameLotName(line.lot_name || line.lot_id?.[1], lotName)))
+        );
+    }
+
     async confirmPick() {
+        const pickedLotName = this.selectedLot?.name || this.state.newLotName;
+        if (this.isSerialAlreadyPicked(this.selectedLotIdNumber, pickedLotName)) {
+            this.inventory.notify(
+                _t("Serial number %(lot)s is already in this transfer.", {
+                    lot: pickedLotName,
+                }),
+                {type: "danger"}
+            );
+            return;
+        }
         if (this.state.mode === "create_lot" && !this.isIncoming) {
             this.inventory.notify(_t("Lots can only be created in receptions"), {
                 type: "danger",

@@ -302,38 +302,50 @@ class StockPicking(models.Model):
         )
 
         move_line_model = self.env["stock.move.line"]
-        move_line_vals_list = []
+
+        qty_by_product = {}
         for plan in move_plan:
-            line = plan["line"]
-            product = line["product"]
-            move = self.env["stock.move"].create(
+            product = plan["line"]["product"]
+            qty_by_product[product] = qty_by_product.get(product, 0.0) + plan["qty"]
+        products = list(qty_by_product)
+        moves = self.env["stock.move"].create(
+            [
                 {
                     "name": product.display_name,
                     "product_id": product.id,
-                    "product_uom_qty": plan["qty"],
+                    "product_uom_qty": qty_by_product[product],
                     "product_uom": product.uom_id.id,
                     "picking_id": picking.id,
                     "location_id": origin_location.id,
                     "location_dest_id": destination_location.id,
                     "company_id": picking.company_id.id,
                 }
-            )
+                for product in products
+            ]
+        )
+        moves_by_product = dict(zip(products, moves, strict=True))
+
+        move_line_vals_list = []
+        for plan in move_plan:
+            product = plan["line"]["product"]
+            move = moves_by_product[product]
             for alloc in plan["allocations"]:
-                vals = {
-                    "move_id": move.id,
-                    "picking_id": picking.id,
-                    "product_id": product.id,
-                    "product_uom_id": product.uom_id.id,
-                    "quantity": alloc["qty"],
-                    "picked": True,
-                    "location_id": alloc["location"].id,
-                    "location_dest_id": destination_location.id,
-                    "company_id": picking.company_id.id,
-                    "lot_id": alloc["lot"].id if alloc["lot"] else False,
-                    "lot_name": alloc["lot"].name if alloc["lot"] else False,
-                    "qty_picked": alloc["qty"],
-                }
-                move_line_vals_list.append(vals)
+                move_line_vals_list.append(
+                    {
+                        "move_id": move.id,
+                        "picking_id": picking.id,
+                        "product_id": product.id,
+                        "product_uom_id": product.uom_id.id,
+                        "quantity": alloc["qty"],
+                        "picked": True,
+                        "location_id": alloc["location"].id,
+                        "location_dest_id": destination_location.id,
+                        "company_id": picking.company_id.id,
+                        "lot_id": alloc["lot"].id if alloc["lot"] else False,
+                        "lot_name": alloc["lot"].name if alloc["lot"] else False,
+                        "qty_picked": alloc["qty"],
+                    }
+                )
 
         picking.action_confirm()
         # Our manually-allocated move lines are authoritative; drop anything the

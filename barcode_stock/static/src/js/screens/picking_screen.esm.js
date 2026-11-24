@@ -568,6 +568,33 @@ export class PickingScreen extends Component {
     async handleScannedLot(move, normalized, source) {
         const {barcode, lot, quantity, expiration} = normalized;
         const lotName = lot?.name || normalized.lotName;
+        const productId = move.product_id?.[0];
+        const tracking =
+            this.barcodeScannerState.indexes.trackingByProductId[productId];
+        if (tracking === "serial") {
+            const alreadyPicked = this.state.moveLines.some(
+                (line) =>
+                    (line.qty_picked || 0) > 0 &&
+                    line.product_id?.[0] === productId &&
+                    ((lot && line.lot_id?.[0] === lot.id) || line.lot_name === lotName)
+            );
+            if (alreadyPicked) {
+                const message = _t(
+                    "Serial number %(lot)s is already in this transfer.",
+                    {lot: lotName}
+                );
+                this.setLastScanContext({
+                    barcode,
+                    source,
+                    tone: "warning",
+                    message,
+                    move,
+                    lotName,
+                });
+                this.feedback.warning({notify: true, message});
+                return;
+            }
+        }
         const isOutgoing = this.state.pickingTypeCode === "outgoing";
         const today = new Date().toISOString().slice(0, 10);
         const expired =

@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Import",
-    "version": "18.0.2.1.0",
+    "version": "18.0.2.3.0",
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "summary": "Import supplier invoices/refunds as PDF or XML files",
@@ -23,7 +23,7 @@
     # transition, we don't declare them in "excludes", to avoid
     # an error on the first upgrade
     # "excludes": ["account_invoice_import_ubl", "account_invoice_import_facturx"],
-    "external_dependencies": {"python": ["factur-x>=7.9"]},
+    "external_dependencies": {"python": ["factur-x>=7.10"]},
     "data": [
         "security/ir.model.access.csv",
         "views/res_config_settings.xml",

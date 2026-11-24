@@ -623,6 +623,52 @@ class TestStockRequestBase(TestStockRequest):
         self.assertEqual(order.state, "done")
         self.assertEqual(len(order.stock_request_ids.move_ids), 2)
 
+    def test_stock_request_available_stock_uom(self):
+        self.main_company.stock_request_check_available_first = True
+        self._create_stock_quant(self.product, self.warehouse.lot_stock_id, 24)
+        stock_request = self.stock_request.create(
+            {
+                "product_id": self.product.id,
+                "product_uom_id": self.uom_dozen.id,
+                "product_uom_qty": 1.0,
+                "company_id": self.main_company.id,
+                "warehouse_id": self.warehouse.id,
+                "location_id": self.warehouse.lot_stock_id.id,
+            }
+        )
+        stock_request.action_confirm()
+        self.assertEqual(stock_request.move_ids.product_uom_qty, 12.0)
+        self.assertEqual(stock_request.allocation_ids.requested_product_uom_qty, 1.0)
+        self.assertEqual(stock_request.qty_done, 1.0)
+        self.assertEqual(stock_request.state, "done")
+
+    def test_stock_request_available_stock_uom_several_quants(self):
+        self.main_company.stock_request_check_available_first = True
+        for rounding in (0.01, 1.0):
+            product = self._create_product(f"SQ{rounding}", "Socks", False)
+            for name in ("A", "B", "C"):
+                location = self.env["stock.location"].create(
+                    {"name": name, "location_id": self.warehouse.lot_stock_id.id}
+                )
+                self._create_stock_quant(product, location, 4)
+            stock_request = self.stock_request.create(
+                {
+                    "product_id": product.id,
+                    "product_uom_id": self.uom_dozen.copy({"rounding": rounding}).id,
+                    "product_uom_qty": 1.0,
+                    "company_id": self.main_company.id,
+                    "warehouse_id": self.warehouse.id,
+                    "location_id": self.warehouse.lot_stock_id.id,
+                }
+            )
+            stock_request.action_confirm()
+            self.assertEqual(
+                stock_request.move_ids.mapped("product_uom_qty"), [4.0] * 3
+            )
+            self.assertAlmostEqual(stock_request.qty_done, 1.0)
+            self.assertEqual(stock_request.qty_cancelled, 0.0)
+            self.assertEqual(stock_request.state, "done")
+
     def test_stock_request_validations_01(self):
         vals = {
             "product_id": self.product.id,
@@ -696,6 +742,54 @@ class TestStockRequestBase(TestStockRequest):
         self.assertEqual(stock_request.qty_done, stock_request.product_uom_qty)
         self.assertEqual(order.state, "done")
         self.assertEqual(stock_request.state, "done")
+
+    def test_compute_move_ids_cyclic_origin_moves(self):
+        """A cycle in ``move_orig_ids`` must not raise RecursionError.
+
+        Returning both legs of a two-step inter-warehouse transfer that share
+        a transit location links each leg's return move back to the other,
+        so ``move_orig_ids`` becomes circular. Computing ``move_ids`` /
+        ``picking_ids`` used to recurse infinitely over that graph.
+        """
+        vals = {
+            "product_id": self.product.id,
+            "product_uom_id": self.product.uom_id.id,
+            "product_uom_qty": 1.0,
+            "company_id": self.main_company.id,
+            "warehouse_id": self.warehouse.id,
+            "location_id": self.warehouse.lot_stock_id.id,
+        }
+        stock_request = self.stock_request.with_user(self.stock_request_user).create(
+            vals
+        )
+        self.product.route_ids = [Command.set(self.route.ids)]
+        stock_request.with_user(self.stock_request_manager).action_confirm()
+
+        move_a = stock_request.allocation_ids.stock_move_id.sudo()
+        self.assertTrue(move_a, "The confirmed request should have a stock move")
+        move_b = (
+            self.env["stock.move"]
+            .sudo()
+            .create(
+                {
+                    "name": self.product.name,
+                    "product_id": self.product.id,
+                    "product_uom_qty": 1.0,
+                    "product_uom": self.product.uom_id.id,
+                    "location_id": self.warehouse.lot_stock_id.id,
+                    "location_dest_id": self.warehouse.lot_stock_id.id,
+                    "company_id": self.main_company.id,
+                }
+            )
+        )
+        # Build the cycle: A -> B -> A.
+        move_a.move_orig_ids = [Command.link(move_b.id)]
+        move_b.move_orig_ids = [Command.link(move_a.id)]
+
+        request_sudo = stock_request.sudo()
+        request_sudo.invalidate_recordset(["move_ids", "picking_ids", "picking_count"])
+        # Must not raise RecursionError, and must collect both moves once.
+        self.assertEqual(request_sudo.move_ids, move_a | move_b)
 
     def test_create_request_02(self):
         """Use different UoM's"""
