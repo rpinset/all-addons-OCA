@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-11-20 22:04 UTC** (elapsed 73s)
+Last build: **2026-11-24 05:22 UTC** (elapsed 160s)
 
 - Repos integrated: **129**
 - Canonical modules: **2018**
@@ -35,7 +35,7 @@ Last build: **2026-11-20 22:04 UTC** (elapsed 73s)
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | 2 | 5d3c85c 2026-11-06 mymage Translated using Weblate (Italian) |
 | [connector-jira](https://github.com/OCA/connector-jira) | 2 | 7785d96 2026-11-15 mymage Translated using Weblate (Italian) |
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 3 | 8fa3e45 2026-06-11 OCA-git-bot [BOT] post-merge updates |
-| [contract](https://github.com/OCA/contract) | 16 | 7a86582 2026-11-16 mymage Translated using Weblate (Italian) |
+| [contract](https://github.com/OCA/contract) | 16 | f39ab2e 2026-11-23 mymage Translated using Weblate (Italian) |
 | [credit-control](https://github.com/OCA/credit-control) | 10 | 59d98d2 2026-10-27 OCA-git-bot [BOT] post-merge updates |
 | [crm](https://github.com/OCA/crm) | 21 | 5f7b448 2026-10-27 OCA-git-bot [BOT] post-merge updates |
 | [currency](https://github.com/OCA/currency) | 2 | a59b2fb 2026-11-09 mymage Translated using Weblate (Italian) |
@@ -75,7 +75,7 @@ Last build: **2026-11-20 22:04 UTC** (elapsed 73s)
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 3 | 00dccfb 2026-04-07 OCA-git-bot Merge PR #158 into 17.0 |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 40 | d251e13 2026-11-12 OCA-git-bot [BOT] post-merge updates |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | 2 | 1b15529 2026-02-24 oca-ci [UPD] Update l10n_ru.pot |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 63 | ca66cad 2026-11-17 OCA-git-bot [BOT] post-merge updates |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 63 | e5bc9db 2026-11-21 OCA-git-bot [BOT] post-merge updates |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 5 | 6c6462c 2026-09-14 OCA-git-bot [BOT] post-merge updates |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 8 | 4e0a878 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 7 | 1746b5f 2026-06-29 Weblate Update translation files |
