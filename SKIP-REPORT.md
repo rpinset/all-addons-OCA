@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-11-20 22:09 UTC
+Generated 2026-11-24 05:26 UTC
 
-Total skipped: **218**
+Total skipped: **217**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -40,7 +40,7 @@ Count: **27**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **191**
+Count: **190**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -200,7 +200,6 @@ Count: **191**
 | [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | [20.0](https://github.com/OCA/stock-logistics-orderpoint/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [20.0](https://github.com/OCA/stock-logistics-putaway/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [20.0](https://github.com/OCA/stock-logistics-release-channel/tree/20.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | [20.0](https://github.com/OCA/stock-logistics-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [20.0](https://github.com/OCA/stock-logistics-reservation/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [20.0](https://github.com/OCA/stock-logistics-shopfloor/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [20.0](https://github.com/OCA/stock-logistics-tracking/tree/20.0) | No directory with __manifest__.py at repo root |

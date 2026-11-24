@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-20 22:09 UTC
+Generated 2026-11-24 05:26 UTC
 
 ## Skipped repos
 
@@ -191,7 +191,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_module` | No directory with __manifest__.py at repo root |
-| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | `no_module` | No directory with __manifest__.py at repo root |

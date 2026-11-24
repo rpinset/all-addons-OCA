@@ -366,6 +366,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_risk](account_financial_risk/) | 20.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+[sale_financial_risk](sale_financial_risk/) | 20.0.1.0.0 |  | Manage partner risk in sales orders
 
 [//]: # (end addons)
 
@@ -464,6 +465,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_chatter](ddmrp_chatter/) | 20.0.1.0.0 |  | Adds chatter and activities to stock buffers.
+[ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 20.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_history](ddmrp_history/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to store historical data of DDMRP buffers.
 [ddmrp_warning](ddmrp_warning/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds configuration warnings on stock buffers.
 
@@ -1438,6 +1440,7 @@ addon | version | maintainers | summary
 [mrp_multi_level](mrp_multi_level/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_production_unique_lot](mrp_production_unique_lot/) | 20.0.1.0.0 |  | Ensures that production lot numbers are unique and cannot be reused in another manufacturing order.
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 20.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
+[mrp_subcontracting_resupply_status](mrp_subcontracting_resupply_status/) | 20.0.1.0.0 |  | MRP Subcontracting Resupply Status
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
 [mrp_workorder_last_worker](mrp_workorder_last_worker/) | 20.0.1.0.0 |  | See the last user who worked on a workorder
 
@@ -1538,6 +1541,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_multi_company](base_multi_company/) | 20.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
+[crm_tag_multi_company](crm_tag_multi_company/) | 20.0.1.0.0 |  | This module add multi-company management to crm tag
+[product_multi_company](product_multi_company/) | 20.0.1.0.0 |  | Select individually the product template visibility on each company
 
 [//]: # (end addons)
 
@@ -2238,6 +2243,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/stock-logistics-reporting
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-reporting
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-reporting&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/stock-logistics-reporting/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/stock-logistics-reporting/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/stock-logistics-reporting/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-reporting/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-reporting-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-reporting-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+stock-logistics-reporting
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[stock_picking_report_custom_description](stock_picking_report_custom_description/) | 20.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/stock-logistics-request
 
 
@@ -2264,7 +2317,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[stock_request](stock_request/) | 20.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Internal request for stock
+[stock_request](stock_request/) | 20.0.1.0.2 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Internal request for stock
 
 [//]: # (end addons)
 
@@ -2487,6 +2540,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_employee_cost_history](hr_employee_cost_history/) | 20.0.1.0.1 | <a href='https://github.com/SabrinaRMArtin'><img src='https://github.com/SabrinaRMArtin.png' width='32' height='32' style='border-radius:50%;' alt='SabrinaRMArtin'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Adds an history to employee's costs.
 [hr_timesheet_amount_security](hr_timesheet_amount_security/) | 20.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add security restrictions to timesheet amount fields
+[hr_timesheet_autofill_project_off](hr_timesheet_autofill_project_off/) | 20.0.1.0.0 | <a href='https://github.com/innovara'><img src='https://github.com/innovara.png' width='32' height='32' style='border-radius:50%;' alt='innovara'/></a> | Timesheet - Autofill project off
+[hr_timesheet_task_domain](hr_timesheet_task_domain/) | 20.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
 
 [//]: # (end addons)
 

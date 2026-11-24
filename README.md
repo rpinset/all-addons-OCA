@@ -1,26 +1,26 @@
 # all-addons-OCA — branch `20.0`
 
-Last build: **2026-11-20 22:09 UTC** (elapsed 110s)
+Last build: **2026-11-24 05:26 UTC** (elapsed 99s)
 
-- Repos integrated: **50**
-- Canonical modules: **212**
+- Repos integrated: **51**
+- Canonical modules: **220**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **218**
+- Skipped repos (no branch / no module): **217**
 
 ## Integrated repos
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
 | [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 1 | 480dce6 2026-11-12 Pedro M. Baeza Merge pull request #6088 from Tecnativa/20.0-imp-crm_stage_multi_team |
-| [account-analytic](https://github.com/OCA/account-analytic) | 2 | 2ba1c4b 2026-11-17 oca-ci [UPD] Update account_analytic_line_commercial_partner.pot |
+| [account-analytic](https://github.com/OCA/account-analytic) | 2 | 568fb7d 2026-11-23 OCA-git-bot Merge PR #1004 into 20.0 |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 1 | f8f25b2 2026-11-17 oca-ci [UPD] Update account_tax_balance.pot |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 2 | d696586 2026-11-17 Pedro M. Baeza Merge pull request #2451 from Tecnativa/20.0-imp-update-dotfiles-v1.48 |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 2 | c3bf9d4 2026-11-20 oca-ci [UPD] Update portal_account_personal_data_only.pot |
 | [account-payment](https://github.com/OCA/account-payment) | 1 | 5aa44db 2026-11-11 oca-ci [UPD] Update account_payment_method_base.pot |
 | [community-data-files](https://github.com/OCA/community-data-files) | 1 | 05e4c30 2026-11-11 oca-ci [UPD] Update base_bank_from_iban.pot |
-| [credit-control](https://github.com/OCA/credit-control) | 1 | 95d5d6f 2026-11-12 Pedro M. Baeza Merge pull request #613 from Tecnativa/20.0-imp-update-dotfiles-v1.48 |
+| [credit-control](https://github.com/OCA/credit-control) | 2 | 1b26873 2026-11-23 oca-ci [UPD] Update sale_financial_risk.pot |
 | [crm](https://github.com/OCA/crm) | 2 | ee2262a 2026-11-19 Pedro M. Baeza Merge pull request #785 from Tecnativa/20.0-imp-update-dotfiles-v1.48 |
-| [ddmrp](https://github.com/OCA/ddmrp) | 4 | a4dcc4d 2026-11-20 oca-ci [UPD] Update ddmrp_warning.pot |
+| [ddmrp](https://github.com/OCA/ddmrp) | 5 | 0212772 2026-11-23 oca-ci [UPD] Update ddmrp_cron_actions_as_job.pot |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 2 | 78c7416 2026-11-20 oca-ci [UPD] Update delivery_package_number.pot |
 | [dms](https://github.com/OCA/dms) | 4 | 0f23e50 2026-11-17 oca-ci [UPD] Update hr_dms_field.pot |
 | [e-commerce](https://github.com/OCA/e-commerce) | 2 | 64b53e8 2026-11-13 oca-ci [UPD] Update website_sale_tax_toggle.pot |
@@ -39,10 +39,10 @@ Last build: **2026-11-20 22:09 UTC** (elapsed 110s)
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 2 | 4940289 2026-11-14 Saran @ Ecosoft Merge pull request #637 from ecosoft-odoo/20.0-upd-copier |
 | [mail](https://github.com/OCA/mail) | 2 | 29c6ad3 2026-11-20 oca-ci [UPD] Update mail_gateway.pot |
 | [maintenance](https://github.com/OCA/maintenance) | 2 | 0faaa5a 2026-11-17 mymage chore(l10n): update Italian translation |
-| [manufacture](https://github.com/OCA/manufacture) | 5 | dc60ab6 2026-11-19 oca-ci [UPD] Update mrp_workorder_last_worker.pot |
+| [manufacture](https://github.com/OCA/manufacture) | 6 | 530a8ed 2026-11-23 oca-ci [UPD] Update mrp_subcontracting_resupply_status.pot |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 70560de 2026-11-03 Stéphane Bidoul Merge pull request #852 from OCA/renovate/20.0-https-github.com-oca-oca-addons-repo-template-1.x |
-| [multi-company](https://github.com/OCA/multi-company) | 1 | 140f7cd 2026-11-17 mymage chore(l10n): update Italian translation |
-| [odoo-pim](https://github.com/OCA/odoo-pim) | 2 | db496b7 2026-11-19 oca-ci [UPD] Update product_attribute_set.pot |
+| [multi-company](https://github.com/OCA/multi-company) | 3 | bd43b5b 2026-11-23 oca-ci [UPD] Update product_multi_company.pot |
+| [odoo-pim](https://github.com/OCA/odoo-pim) | 2 | 007f7f4 2026-11-23 mymage chore(l10n): update Italian translation |
 | [partner-contact](https://github.com/OCA/partner-contact) | 6 | 1e00d75 2026-11-19 oca-ci [UPD] Update partner_industry_secondary.pot |
 | [product-attribute](https://github.com/OCA/product-attribute) | 6 | c7704ee 2026-11-20 oca-ci [UPD] Update product_category_code.pot |
 | [project](https://github.com/OCA/project) | 7 | e1128c8 2026-11-16 oca-ci [UPD] Update project_task_pull_request_state.pot |
@@ -55,10 +55,11 @@ Last build: **2026-11-20 22:09 UTC** (elapsed 110s)
 | [server-tools](https://github.com/OCA/server-tools) | 4 | 2522f5d 2026-11-17 oca-ci [UPD] Update upgrade_analysis.pot |
 | [server-ux](https://github.com/OCA/server-ux) | 4 | fbcaea8 2026-11-19 oca-ci [UPD] Update developer_menu.pot |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | 1 | 3ee75a1 2026-10-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | 1 | ab1076f 2026-11-20 oca-ci [UPD] Update stock_request.pot |
+| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 1 | 99a8109 2026-11-23 oca-ci [UPD] Update stock_picking_report_custom_description.pot |
+| [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | 1 | 4cccf76 2026-11-23 Weblate Update translation files |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 3 | 939adca 2026-11-10 oca-ci [UPD] Update stock_warehouse_out_pull.pot |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 4 | 3f5aa01 2026-11-18 oca-ci [UPD] Update stock_account_product_run_fifo_hook.pot |
 | [storage](https://github.com/OCA/storage) | 25 | a7169e7 2026-09-25 OCA-git-bot [BOT] post-merge updates |
-| [timesheet](https://github.com/OCA/timesheet) | 2 | 15946ab 2026-11-19 OCA-git-bot [BOT] post-merge updates |
+| [timesheet](https://github.com/OCA/timesheet) | 4 | 1597740 2026-11-23 oca-ci [UPD] Update hr_timesheet_task_domain.pot |
 | [web](https://github.com/OCA/web) | 13 | f1e1e83 2026-11-13 mymage Translated using Weblate (Italian) |
 
